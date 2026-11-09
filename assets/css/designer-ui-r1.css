@@ -1,0 +1,67 @@
+/* Local design candidate R1. Measured reference: evidence/rockfon-final-computed.json.
+   Existing font families, brand palette, media identities and behaviors retained. */
+:root{--grecho-ui-r1-width:1200px;--grecho-ui-r1-reading:736px}
+body .grecho-v3-nav .grecho-v3-nav__inner{max-width:var(--grecho-ui-r1-width);width:calc(100% - 40px);margin-inline:auto;padding-inline:0}
+body .grecho-v3-nav .grecho-v3-nav__brand img{width:176px;height:auto;max-width:100%;object-fit:contain}
+#grecho-v3-main :is(.grecho-v3-container,.grecho-v1-container),#main .grecho-challenge .gc-section:not(.gc-hero){width:calc(100% - 40px);max-width:var(--grecho-ui-r1-width);margin-inline:auto}
+#grecho-v3-main h1,#main .grecho-challenge h1{font-size:48px;line-height:56px;letter-spacing:-.025em}
+#grecho-v3-main h2,#main .grecho-challenge h2{font-size:36px;line-height:48px;letter-spacing:-.02em}
+#grecho-v3-main h3,#main .grecho-challenge h3{font-size:24px;line-height:32px;letter-spacing:-.01em}
+#grecho-v3-main :is(.grecho-product-section-head,.grecho-product-panel__copy,.gc-section-head) p:not([class*="eyebrow"]),
+#grecho-v3-main :is(.grecho-product-proof-card,.grecho-product-card,.gac-v1-info-card,.gac-v1-material-card) p,
+#main .grecho-challenge :is(.gc-lead,.gc-section-head>p,.gc-problem p:not(.gc-number),.gc-problem-context p,.gc-solution-copy p,.gc-card-body>p,.gc-cta-copy>p:not(.gc-eyebrow)){font-size:16px;line-height:26px}
+#grecho-v3-main :is(.grecho-product-section-head,.gc-section-head),#main .grecho-challenge .gc-section-head{max-width:var(--grecho-ui-r1-reading)}
+#main .grecho-challenge .gc-hero-copy{max-width:1200px;width:100%;margin-inline:auto}
+#main .grecho-challenge .gc-hero-copy h1{max-width:1000px}
+#main .grecho-challenge .gc-hero-copy .gc-lead{max-width:900px}
+/* Pilot only: no global image filter, no image removal. */
+#grecho-v3-main[data-page-id="white-acoustic-ceiling-facer"] #section-01{position:relative}
+#grecho-v3-main[data-page-id="white-acoustic-ceiling-facer"] #section-01::before{content:"";position:absolute;inset:0;background:rgba(231,242,255,.90)}
+#grecho-v3-main[data-page-id="white-acoustic-ceiling-facer"] #section-01 .grecho-product-hero__grid{position:relative}
+#grecho-v3-main[data-page-id="white-acoustic-ceiling-facer"] #section-01 :is(h1,p,li){color:#123b7a}
+#grecho-v3-main[data-page-id="white-acoustic-ceiling-facer"] #section-01 li{border-color:#b9cbe6;background:#f2f7fc}
+#grecho-v3-main.sample-acoustic-hub #hero{background:#e7f2ff}
+#grecho-v3-main.sample-acoustic-hub #hero :is(h1,p,li){color:#123b7a}
+#main :is(#grecho-challenge-C01,#grecho-challenge-C02) .gc-hero::after{background:linear-gradient(100deg,rgba(231,242,255,.96),rgba(231,242,255,.90) 55%,rgba(231,242,255,.68))}
+#main :is(#grecho-challenge-C01,#grecho-challenge-C02) .gc-hero :is(h1,p){color:#123b7a}
+#main :is(#grecho-challenge-C01,#grecho-challenge-C02) .gc-hero .gc-pill{border-color:#b9cbe6;background:#f2f7fc}
+/* Existing P01 final-section design language, using its existing local asset. */
+#main .grecho-challenge #technical-discussion{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding:58px 56px;border-radius:16px;background:linear-gradient(100deg,rgba(9,42,96,.95),rgba(36,71,131,.85) 48%,rgba(103,118,144,.70)),url('../../content-review-20261023/assets/images/product/cta-background-1448.webp') center 35%/cover no-repeat;color:#fff}
+#main .grecho-challenge #technical-discussion :is(h2,h3,p,li){color:#fff}
+#main .grecho-challenge #technical-discussion .gc-eyebrow{color:#bdefff}
+#main .grecho-challenge #technical-discussion .gc-cta-copy{max-width:none}
+#main .grecho-challenge #technical-discussion .gc-cta-copy>p:not(.gc-eyebrow){max-width:none}
+#main .grecho-challenge #technical-discussion .gc-recap{background:transparent;border-color:rgba(255,255,255,.35);padding:0;max-width:none}
+#main .grecho-challenge #technical-discussion button.gc-disabled-contact{background:#fff;color:#123b7a;border:1px solid #d9e3ed;opacity:1;min-height:46px;padding:12px 20px;border-radius:4px}
+#main .grecho-challenge #technical-discussion .designer-contact-methods{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:20px}
+#main .grecho-challenge #technical-discussion .designer-contact-methods p{display:flex;gap:9px;align-items:center;margin:0;font-size:15px;line-height:24px;overflow-wrap:anywhere}
+.designer-contact-methods svg{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-width:1.7}
+@media(max-width:760px){
+ body .grecho-v3-nav .grecho-v3-nav__brand img{width:128px}
+ #grecho-v3-main h1,#main .grecho-challenge h1{font-size:32px;line-height:40px}
+ #grecho-v3-main h2,#main .grecho-challenge h2{font-size:26px;line-height:36px}
+ #grecho-v3-main h3,#main .grecho-challenge h3{font-size:20px;line-height:28px}
+ #main .grecho-challenge .gc-hero{padding-inline:20px}
+ #main .grecho-challenge #technical-discussion{padding:32px 22px}
+ #main .grecho-challenge #technical-discussion .designer-contact-methods{flex-direction:column;gap:12px}
+}
+
+/* R2 local review: C02 approved visual removal and consultation button sizing. */
+#main #grecho-challenge-C02 .gc-hero{min-height:420px;background:#e7f2ff}
+#main #grecho-challenge-C02 .gc-hero::after{background:transparent}
+#main .grecho-challenge #technical-discussion button.gc-disabled-contact{width:100%;max-width:320px;justify-self:start}
+@media(max-width:760px){#main #grecho-challenge-C02 .gc-hero{min-height:0;padding-block:48px}}
+
+/* UI-R6 local: consultation composition only; existing background retained. */
+#main .grecho-challenge #technical-discussion{grid-template-columns:minmax(0,1fr) 300px;column-gap:40px}
+#main .grecho-challenge #technical-discussion .gc-cta-copy{min-width:0}
+#main .grecho-challenge #technical-discussion .gc-cta-actions{min-width:0;align-self:center;text-align:left}
+#main .grecho-challenge #technical-discussion .designer-contact-methods{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+#main .grecho-challenge #technical-discussion .designer-contact-methods p{font-size:15px;line-height:24px}
+#main .grecho-challenge #technical-discussion>.gc-recap:not(.gc-cta-actions){grid-column:1/-1}
+@media(max-width:1080px){#main .grecho-challenge #technical-discussion{grid-template-columns:minmax(0,1fr)}#main .grecho-challenge #technical-discussion .gc-cta-actions{width:100%;max-width:320px}}
+
+/* UI-R6 closure: content-fitting phone Heroes only. Desktop/tablet unchanged. */
+@media(max-width:600px){
+ #main :is(#grecho-challenge-C01,#grecho-challenge-C03,#grecho-challenge-C06) .gc-hero{min-height:0;align-items:flex-start;justify-content:flex-start;padding-block:48px}
+}

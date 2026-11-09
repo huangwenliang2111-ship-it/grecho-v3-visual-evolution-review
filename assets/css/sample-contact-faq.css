@@ -1,0 +1,151 @@
+/* Contact and FAQ samples only. Frozen Homepage V3 tokens; original content and local logic retained. */
+.grecho-existing.sample-contact-faq {overflow-wrap:normal}
+.grecho-existing.sample-contact-faq :is(h1,h2,h3,p,a,span,label) {overflow-wrap:break-word}
+.grecho-existing.sample-contact-faq .gc-section:not(.gc-hero) {padding-block:64px}
+.grecho-existing.sample-contact-faq .gc-section-head h2 {font-size:clamp(29px,3vw,40px);line-height:1.12}
+.grecho-existing.sample-contact-faq .gc-card {box-shadow:none}
+.grecho-existing.sample-contact-faq :is(a,button,summary,input):focus-visible {outline:3px solid #709eee;outline-offset:4px}
+.grecho-existing.sample-contact-faq .gc-hero {padding-block:56px;background:var(--grecho-v3-brand-deep)}
+.grecho-existing.sample-contact-faq :is(.gcv2-hero-inner,.gfaq-hero-inner) {display:block}
+.grecho-existing.sample-contact-faq .gc-hero h1 {color:#fff;max-width:960px;font-size:clamp(36px,4.4vw,58px);line-height:1.04;letter-spacing:-.045em;margin-bottom:22px}
+.grecho-existing.sample-contact-faq .gc-hero p {color:#dce7f5;max-width:850px;font-size:17px;line-height:1.65}
+.grecho-existing.sample-contact-faq .gc-hero .gc-eyebrow {color:#bbcee7;font-size:11px;letter-spacing:.14em;margin-bottom:18px}
+.grecho-existing.sample-contact .gc-hero .gc-actions {margin-top:26px}
+.grecho-existing.sample-contact .gc-hero .gc-button:first-child {background:#fff;color:var(--grecho-v3-brand-deep);border-color:#fff}
+.grecho-existing.sample-contact .gc-hero .gc-button+.gc-button {background:transparent;color:#fff;border-color:#8ca8cf}
+/* A compact request selector leads directly to the visually dominant form. */
+.grecho-existing.sample-contact #request-paths {padding-block:34px}
+.grecho-existing.sample-contact #request-paths .gc-section-head {max-width:none;margin-bottom:22px;text-align:left}
+.grecho-existing.sample-contact #request-paths .gcv2-label {display:block;font-size:11px;line-height:1.5;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--grecho-v3-brand);margin-bottom:8px}
+.grecho-existing.sample-contact #request-paths h2 {font-size:26px;line-height:1.18;margin-bottom:10px}
+.grecho-existing.sample-contact #request-paths .gc-section-head p {font-size:14px;max-width:none;margin:0}
+.grecho-existing.sample-contact .gcv2-card-grid {grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--grecho-v3-border)}
+.grecho-existing.sample-contact .gcv2-card-grid .gcv2-card {border:0;border-radius:0;padding:20px 20px 0 0;display:flex;flex-direction:column;background:transparent;overflow:visible}
+.grecho-existing.sample-contact .gcv2-card-grid .gcv2-card+.gcv2-card {padding-left:20px;border-left:1px solid var(--grecho-v3-border)}
+.grecho-existing.sample-contact .gcv2-card .kicker {font-size:10px;letter-spacing:.08em;margin-bottom:9px}
+.grecho-existing.sample-contact .gcv2-card h3 {font-size:18px;margin-bottom:10px}
+.grecho-existing.sample-contact .gcv2-card p {font-size:13px;line-height:1.6;margin-bottom:12px}
+.grecho-existing.sample-contact .gcv2-card a {font-size:13px;font-weight:750;color:var(--grecho-v3-brand);margin-top:auto;min-height:36px;padding-block:8px}
+.grecho-existing.sample-contact #request-form {padding-block:52px;background:var(--grecho-v3-tint)}
+.grecho-existing.sample-contact .gcv2-form-layout {grid-template-columns:minmax(0,2.5fr) minmax(230px,1fr);gap:36px}
+.grecho-existing.sample-contact .gcv2-form-layout .gcv2-label {display:block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:750;color:var(--grecho-v3-brand);margin-bottom:14px}
+.grecho-existing.sample-contact .gcv2-form-box {padding:30px;border-radius:10px;border-top:4px solid var(--grecho-v3-brand)}
+.grecho-existing.sample-contact [data-preview-form] {padding:0;border:0;border-radius:0}
+.grecho-existing.sample-contact [data-preview-form] fieldset {padding:0;margin:0;border:0;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:22px}
+.grecho-existing.sample-contact [data-preview-form] fieldset>legend {position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.grecho-existing.sample-contact [data-preview-form] fieldset>.ff-el-group {grid-column:1/-1;margin-bottom:22px}
+.grecho-existing.sample-contact [data-preview-form] fieldset>.ff-el-group:nth-of-type(-n+4) {grid-column:auto}
+.grecho-existing.sample-contact .ff-el-input--label {font-size:13px;margin-bottom:8px}
+.grecho-existing.sample-contact .ff-el-input--content:has(.ff-el-form-check-checkbox) {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 20px}
+.grecho-existing.sample-contact .grecho-marketing-email-opt-in .ff-el-input--content {display:block}
+.grecho-existing.sample-contact .grecho-form-privacy-notice p {font-size:12px;line-height:1.65}
+.grecho-existing.sample-contact .gcv2-side-stack {padding-top:8px;display:flex;flex-direction:column;gap:24px}
+.grecho-existing.sample-contact .gcv2-side-stack .gc-card {padding:0;background:transparent;border:0;border-radius:0}
+.grecho-existing.sample-contact .gcv2-side-stack h3 {font-size:17px;line-height:1.35}
+.grecho-existing.sample-contact .gcv2-side-stack p {font-size:14px;line-height:1.65}
+.grecho-existing.sample-contact .gcv2-side-stack img {aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.grecho-existing.sample-contact .gcv2-side-stack figcaption {font-size:12px}
+.grecho-existing.sample-contact .sample-request-review {margin-top:32px;padding:24px 0 0;border:0;border-top:1px solid var(--grecho-v3-border);border-radius:0;background:transparent}
+.grecho-existing.sample-contact .gcv2-hero-panel-title {font-size:14px;font-weight:750;color:var(--grecho-v3-muted);margin-bottom:18px}
+.grecho-existing.sample-contact .gcv2-path-list {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.grecho-existing.sample-contact .gcv2-path-item {display:flex;gap:12px}
+.grecho-existing.sample-contact .gcv2-path-item>span {font-size:12px;font-weight:750;color:var(--grecho-v3-brand)}
+.grecho-existing.sample-contact .gcv2-path-item h3 {font-size:15px;margin-bottom:6px}
+.grecho-existing.sample-contact .gcv2-path-item p {font-size:13px;line-height:1.6}
+.grecho-existing.sample-contact :is(.gcv2-mini,.gcv2-process) {padding:20px 0;border-top:1px solid var(--grecho-v3-border)}
+.grecho-existing.sample-contact :is(.gcv2-mini,.gcv2-process)>span {font-size:12px;color:var(--grecho-v3-brand);font-weight:750;display:block;margin-bottom:14px}
+.grecho-existing.sample-contact :is(.gcv2-mini,.gcv2-process) h3 {font-size:18px}
+.grecho-existing.sample-contact .gcv2-media-card {padding:0;border:0;background:transparent}
+.grecho-existing.sample-contact .gcv2-guidance-layout {grid-template-columns:1fr 1.2fr;gap:48px}
+.grecho-existing.sample-contact .gcv2-mini-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+/* FAQ: search and one primary set of category filters precede featured answers. */
+.grecho-existing.sample-faq #faq-explorer {padding-block:32px;background:#fff;border-bottom:1px solid var(--grecho-v3-border)}
+.grecho-existing.sample-faq #faq-explorer .gc-section-head {max-width:none;margin-bottom:20px}
+.grecho-existing.sample-faq #faq-explorer h2 {font-size:28px;margin-bottom:10px}
+.grecho-existing.sample-faq #faq-explorer .gc-section-head p {font-size:14px;margin-bottom:0}
+.grecho-existing.sample-faq .gfaq-search {display:flex;align-items:center;gap:12px;background:var(--grecho-v3-tint);border:1px solid #b8cce4;border-radius:6px;margin:0;max-width:850px;padding:0 16px}
+.grecho-existing.sample-faq .gfaq-search svg {flex:0 0 18px;color:var(--grecho-v3-brand)}
+.grecho-existing.sample-faq .gfaq-search input {border:0;background:transparent;min-height:54px;padding:14px 0}
+.grecho-existing.sample-faq .gfaq-topic-tabs {margin:18px 0 0;gap:8px}
+.grecho-existing.sample-faq button.gfaq-tab {font-size:13px;border-radius:4px;padding:10px 13px;min-height:44px}
+.grecho-existing.sample-faq button.gfaq-tab.is-active {background:var(--grecho-v3-brand);color:#fff}
+.grecho-existing.sample-faq .gfaq-section:has(.gfaq-quick-grid) {padding-block:34px;background:var(--grecho-v3-tint)}
+.grecho-existing.sample-faq .gfaq-section:has(.gfaq-quick-grid) .gc-section-head {margin-bottom:24px}
+.grecho-existing.sample-faq .gfaq-section:has(.gfaq-quick-grid) h2 {font-size:28px;margin-bottom:10px}
+.grecho-existing.sample-faq .gfaq-section:has(.gfaq-quick-grid) .gc-section-head p {font-size:14px;margin:0}
+.grecho-existing.sample-faq .gfaq-quick-grid {grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.grecho-existing.sample-faq .gfaq-quick-card {padding:0;border:0;border-radius:0;background:transparent;overflow:visible}
+.grecho-existing.sample-faq .gfaq-card-num {font-size:12px;font-weight:750;color:var(--grecho-v3-brand);display:block;margin-bottom:12px}
+.grecho-existing.sample-faq .gfaq-quick-card h3 {font-size:17px;line-height:1.35;margin-bottom:12px}
+.grecho-existing.sample-faq .gfaq-quick-card p {font-size:13px;line-height:1.65;margin-bottom:10px}
+.grecho-existing.sample-faq .gfaq-quick-card small {font-size:11px}
+.grecho-existing.sample-faq .gfaq-explorer {display:block;max-width:960px;margin-inline:auto}
+.grecho-existing.sample-faq .sample-faq-answers {padding-block:52px}
+.grecho-existing.sample-faq .gfaq-group {margin-bottom:52px;scroll-margin-top:145px}
+.grecho-existing.sample-faq .gfaq-group:last-child {margin-bottom:0}
+.grecho-existing.sample-faq .gfaq-group-head {margin-bottom:22px;max-width:780px}
+.grecho-existing.sample-faq .gfaq-group-head h3 {font-size:28px;line-height:1.16;margin-bottom:12px}
+.grecho-existing.sample-faq .gfaq-group-head p {font-size:15px;line-height:1.65}
+.grecho-existing.sample-faq .gfaq-item {margin:0;border-radius:0;border:0;border-bottom:1px solid var(--grecho-v3-border);overflow:visible}
+.grecho-existing.sample-faq .gfaq-item:first-child {border-top:1px solid var(--grecho-v3-border)}
+.grecho-existing.sample-faq .gfaq-question {display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:17px;line-height:1.5;padding:21px 18px;min-height:64px}
+.grecho-existing.sample-faq .gfaq-question::after {float:none;flex:0 0 20px;margin:0;text-align:center}
+.grecho-existing.sample-faq .gfaq-item[open]>.gfaq-question {background:var(--grecho-v3-tint);border-bottom:0;color:var(--grecho-v3-brand-deep)}
+.grecho-existing.sample-faq .gfaq-answer {padding:0 56px 24px 18px;font-size:15px;line-height:1.75;color:var(--grecho-v3-muted);background:var(--grecho-v3-tint)}
+.grecho-existing.sample-faq .sample-faq-support {padding-block:32px;background:var(--grecho-v3-tint)}
+.grecho-existing.sample-faq .sample-faq-support>.gc-container {max-width:960px}
+.grecho-existing.sample-faq .sample-faq-category-index {border:0;border-bottom:1px solid var(--grecho-v3-border);background:transparent;border-radius:0;margin:0 0 28px}
+.grecho-existing.sample-faq .sample-faq-category-index summary {font-size:14px;padding:14px 0}
+.grecho-existing.sample-faq .gfaq-side {display:flex;flex-wrap:wrap;gap:10px 22px;background:transparent;padding:16px 0}
+.grecho-existing.sample-faq .gfaq-side a {margin:0;font-size:13px;padding-block:6px}
+.grecho-existing.sample-faq .gfaq-side a span {margin-left:8px;color:var(--grecho-v3-muted)}
+.grecho-existing.sample-faq .gfaq-hero-panel {padding:0;border:0;background:transparent;border-radius:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.grecho-existing.sample-faq .gfaq-panel-label {grid-column:1/-1;font-size:13px;font-weight:750;color:var(--grecho-v3-muted)}
+.grecho-existing.sample-faq .gfaq-panel-item {padding:0;border:0;display:flex;gap:12px}
+.grecho-existing.sample-faq .gfaq-panel-item>span {font-size:12px;color:var(--grecho-v3-brand)}
+.grecho-existing.sample-faq .gfaq-panel-item h3 {font-size:16px}
+.grecho-existing.sample-faq .gfaq-panel-item p {font-size:13px}
+.grecho-existing.sample-faq .gfaq-resource-card {margin-top:32px;padding:24px;background:#fff;border-radius:8px}
+.grecho-existing.sample-faq .gfaq-resource-card h3 {font-size:22px}
+.grecho-existing.sample-faq .gfaq-next-grid {grid-template-columns:repeat(3,minmax(0,1fr))}
+.grecho-existing.sample-faq .gfaq-next-card {padding:24px;border-radius:8px}
+.grecho-existing.sample-faq .gfaq-next-card h3 {font-size:21px}
+.grecho-existing.sample-faq .gfaq-next-card p {font-size:14px}
+.grecho-existing.sample-faq .gfaq-next-card a {font-size:14px;color:var(--grecho-v3-brand);font-weight:750}
+@media(max-width:960px) {
+ .grecho-existing.sample-contact .gcv2-form-layout {grid-template-columns:1fr}
+ .grecho-existing.sample-contact .gcv2-side-stack {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding-top:0}
+ .grecho-existing.sample-contact .gcv2-side-stack .gcv2-media-card {grid-row:span 2}
+ .grecho-existing.sample-contact .gcv2-card-grid,.grecho-existing.sample-faq .gfaq-quick-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+ .grecho-existing.sample-contact .gcv2-card-grid .gcv2-card+.gcv2-card {padding-left:0;border-left:0}
+ .grecho-existing.sample-contact .gcv2-guidance-layout {grid-template-columns:1fr;gap:24px}
+}
+@media(max-width:600px) {
+ .grecho-existing.sample-contact-faq .gc-hero {padding-block:38px}
+ .grecho-existing.sample-contact-faq .gc-hero h1 {font-size:36px;line-height:1.08}
+ .grecho-existing.sample-contact-faq .gc-hero p {font-size:16px}
+ .grecho-existing.sample-contact-faq .gc-section:not(.gc-hero) {padding-block:40px}
+ .grecho-existing.sample-contact #request-paths,.grecho-existing.sample-faq #faq-explorer {padding-block:28px}
+ .grecho-existing.sample-contact .gcv2-card-grid {gap:0}
+ .grecho-existing.sample-contact .gcv2-card-grid .gcv2-card {padding:18px 12px 18px 0;border-bottom:1px solid var(--grecho-v3-border)}
+ .grecho-existing.sample-contact .gcv2-card h3 {font-size:17px}
+ .grecho-existing.sample-contact #request-form {padding-block:36px}
+ .grecho-existing.sample-contact .gcv2-form-box {padding:20px 16px}
+ .grecho-existing.sample-contact [data-preview-form] fieldset {display:block}
+ .grecho-existing.sample-contact .ff-el-input--content:has(.ff-el-form-check-checkbox) {display:block}
+ .grecho-existing.sample-contact .gcv2-side-stack,.grecho-existing.sample-contact .gcv2-path-list {grid-template-columns:1fr}
+ .grecho-existing.sample-contact .gcv2-side-stack .gcv2-media-card {grid-row:auto}
+ .grecho-existing.sample-contact .gcv2-mini-grid {gap:20px}
+ .grecho-existing.sample-faq .gfaq-topic-tabs {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .grecho-existing.sample-faq button.gfaq-tab {text-align:left;min-height:48px}
+ .grecho-existing.sample-faq button.gfaq-tab:first-child {grid-column:1/-1}
+ .grecho-existing.sample-faq .gfaq-search {padding-inline:12px}
+ .grecho-existing.sample-faq .gfaq-search input {font-size:14px}
+ .grecho-existing.sample-faq .gfaq-quick-grid {gap:24px 20px}
+ .grecho-existing.sample-faq .gfaq-quick-card h3 {font-size:16px}
+ .grecho-existing.sample-faq .gfaq-group-head h3 {font-size:25px}
+ .grecho-existing.sample-faq .gfaq-question {font-size:16px;padding:18px 12px;gap:14px}
+ .grecho-existing.sample-faq .gfaq-answer {padding:0 16px 22px 12px;font-size:15px}
+ .grecho-existing.sample-faq .gfaq-hero-panel,.grecho-existing.sample-faq .gfaq-next-grid {grid-template-columns:1fr;gap:18px}
+ .grecho-existing.sample-faq .gfaq-resource-card {padding:20px}
+}

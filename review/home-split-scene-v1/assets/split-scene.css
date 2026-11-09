@@ -1,0 +1,14 @@
+/* Homepage-only composition. The accepted REV03 engine and all layers stay unchanged. */
+#solution-hubs .grecho-home-split .grecho-rev03-scene{aspect-ratio:var(--split-ratio);background:#f5f6f8}
+#solution-hubs .grecho-home-split .grecho-split-fallback{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;object-fit:contain;opacity:1;z-index:0;pointer-events:none;transform:none;transition:none;filter:none}
+#solution-hubs .grecho-home-split .grecho-split-live{position:absolute;inset:0;display:block;z-index:1;clip-path:var(--split-right);background:var(--split-plate,#f5f6f8);visibility:hidden;pointer-events:none}
+#solution-hubs .grecho-home-split.grecho-rev03-ready.grecho-split-decoded .grecho-split-live{visibility:visible}
+#solution-hubs .grecho-home-split[data-rev03-phase="fallback"] .grecho-split-live{visibility:hidden}
+#solution-hubs .grecho-home-split .grecho-split-stage{position:absolute;display:block;left:var(--stage-x);top:var(--stage-y);width:var(--stage-w);height:var(--stage-h)}
+#solution-hubs .grecho-home-split .grecho-rev03-assembly{inset:0;transform:none}
+/* Cast beneath the union of all material layers, strongest only near full contact. */
+#solution-hubs .grecho-home-split .grecho-split-stage{filter:drop-shadow(0 3px 3px rgb(34 48 61 / calc(.14 * var(--assembly-progress) * var(--assembly-progress) * var(--assembly-progress) * var(--assembly-progress) * var(--assembly-progress) * var(--assembly-progress) * var(--assembly-progress) * var(--assembly-progress))))}
+/* The original two-pixel card lift also moved the application scene. */
+#solution-hubs .grecho-v3-solution-card:has(> .grecho-home-split){transform:none}
+/* Keep controller-required cue nodes, without a visible row or reserved space. */
+#solution-hubs .grecho-home-split .grecho-rev03-cue{display:none!important;min-height:0;padding:0;margin:0}

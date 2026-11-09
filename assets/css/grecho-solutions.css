@@ -1,0 +1,93 @@
+/* Solutions landing: scoped composition of the frozen V3 components.
+   Visual tokens, global navigation, buttons and footer remain code-owned V3. */
+.grecho-solutions{background:var(--grecho-v3-tint)}
+.grecho-solutions-hero{position:relative;background:linear-gradient(100deg,rgba(226,236,253,.88),rgba(218,234,254,.8)),url('../images/solutions/hero-background-1672.webp') center 46%/cover no-repeat}
+.grecho-solutions-hero__grid{display:grid;grid-template-columns:1fr 1.12fr;align-items:center;gap:32px;min-height:490px;padding-block:42px}
+.grecho-solutions-hero h1{max-width:540px;margin-bottom:20px;color:var(--grecho-v3-text);font-size:clamp(38px,3.6vw,50px);font-weight:750;letter-spacing:-.035em;line-height:1.08}
+.grecho-solutions-hero p{margin-bottom:22px;color:#33475d;font-size:16px;line-height:1.55}
+.grecho-solutions-hero__image{width:100%;height:auto}
+.grecho-solutions-picker{padding-bottom:64px;scroll-margin-top:calc(96px + var(--grecho-local-safety-offset, 0px))}
+.grecho-solutions-picker .grecho-v3-section-head{max-width:900px}
+.grecho-solutions-picker .grecho-v3-solution-card h3{color:var(--grecho-v3-brand-deep)}
+.grecho-solutions-picker .grecho-v3-solution-card__body{min-height:155px}
+.grecho-solutions-picker .grecho-v3-solution-card p{margin-bottom:0}
+.grecho-solutions-picker .grecho-v3-solution-card a{display:inline-block}
+/* Entire direction card is an ordinary same-page link, including without JS. */
+.grecho-solutions-direction-card{position:relative}
+.grecho-solutions-direction-card h3 a::after{position:absolute;inset:0;content:""}
+.grecho-solutions-direction-card:focus-within{outline:3px solid #f8c44f;outline-offset:3px}
+.grecho-solutions-details{padding-top:64px}
+.grecho-solutions-details__stack{display:grid;gap:34px}
+.grecho-solutions-detail{padding:26px;scroll-margin-top:calc(96px + var(--grecho-local-safety-offset, 0px))}
+/* Reuse the frozen card surface; explanatory panels have no lift or hover state. */
+.grecho-solutions-detail--static,
+.grecho-solutions-detail--static:hover,
+.grecho-solutions-detail--static:focus-within{transform:none;transition:none}
+.grecho-solutions-detail:focus-visible{outline:3px solid #f8c44f;outline-offset:3px}
+.grecho-solutions-detail__title{margin:0 0 18px;color:var(--grecho-v3-brand-deep);font-size:20px;font-weight:700;line-height:1.3;letter-spacing:-.015em}
+.grecho-solutions-detail > img{aspect-ratio:1060 / 364;border-radius:var(--grecho-v3-radius-md);object-fit:cover}
+/* Focal positions checked against the original designer image, without retouching. */
+.grecho-solutions-detail#acoustic-facing > img{object-position:50% 100%}
+.grecho-solutions-detail#mineral-wool-facing > img{object-position:50% 90%}
+.grecho-solutions-detail#pir-pur-facing > img{object-position:50% 50%}
+.grecho-solutions-detail#gypsum-facing > img{object-position:50% 18%}
+.grecho-solutions-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+.grecho-solutions-comparison__panel{min-width:0;min-height:194px;padding:24px;background:var(--grecho-v3-tint);border-radius:var(--grecho-v3-radius-md)}
+.grecho-solutions-comparison__panel--answer{background:var(--grecho-v3-tint-strong)}
+.grecho-solutions-comparison__panel h3{margin-bottom:20px;color:var(--grecho-v3-brand);font-size:20px}
+/* Original mockup uses neutral bullets for challenges and solutions, not checks. */
+.grecho-solutions-comparison__panel ul{margin-bottom:0;padding-left:18px;list-style:disc}
+.grecho-solutions-comparison__panel li{padding-left:0;font-size:14px;line-height:1.65}
+.grecho-solutions-comparison__panel li::before{content:none}
+.grecho-solutions-partner{padding-top:60px;padding-bottom:64px}
+.grecho-solutions-partner__panel{padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;background:var(--grecho-v3-white);border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);box-shadow:var(--grecho-v3-shadow-card)}
+.grecho-solutions-partner .grecho-v3-section-head{margin-bottom:0}
+.grecho-solutions-partner .grecho-v3-section-head h2{font-size:34px;color:var(--grecho-v3-brand-deep);letter-spacing:-.035em}
+.grecho-solutions-partner .grecho-v3-section-head p{font-size:14px}
+.grecho-solutions-steps{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0;padding:0}
+.grecho-solutions-steps li{padding:18px;border-radius:var(--grecho-v3-radius-md);background:var(--grecho-v3-tint);font-size:13px;line-height:1.45}
+.grecho-solutions-steps strong{display:block;margin-bottom:5px;color:var(--grecho-v3-brand);font-size:13px;line-height:1.3}
+.grecho-solutions-cta{padding-block:78px;min-height:268px;display:flex;align-items:center;text-align:center;color:#fff;background:linear-gradient(100deg,rgba(18,59,122,.82),rgba(27,74,161,.84)),url('../images/solutions/cta-background-1672.webp') center 50%/cover no-repeat}
+.grecho-solutions-cta h2{margin-bottom:18px;font-size:34px;line-height:1.15;letter-spacing:-.035em}
+.grecho-solutions-cta p{margin:0;color:#e7f2ff;font-size:15px}
+.grecho-solutions-cta__actions{justify-content:center}
+.grecho-solutions-after-cta{height:104px;background:white}
+@media(prefers-reduced-motion:reduce){
+ .grecho-solutions-direction-card:hover,
+ .grecho-solutions-direction-card:focus-within{transform:none}
+}
+@media(max-width:850px){
+ .grecho-solutions-hero__grid{grid-template-columns:1fr 1fr;gap:24px;min-height:460px}
+ .grecho-solutions-hero h1{font-size:38px}
+ .grecho-solutions-detail{padding:20px}
+ .grecho-solutions-comparison{gap:18px;margin-top:20px}
+ .grecho-solutions-comparison__panel{padding:20px}
+ .grecho-solutions-partner__panel{grid-template-columns:1fr;gap:26px;padding:28px}
+ .grecho-solutions-after-cta{height:68px}
+}
+@media(max-width:600px){
+ .grecho-solutions-hero__grid{grid-template-columns:1fr;gap:30px;padding-block:48px;min-height:0}
+ .grecho-solutions-hero h1{max-width:480px;font-size:clamp(36px,9.5vw,48px);line-height:1.09}
+ .grecho-solutions-hero .grecho-v3-button{width:100%;justify-content:center}
+ .grecho-solutions-hero__image{max-width:480px;margin-inline:auto}
+ .grecho-solutions-picker{padding-bottom:32px}
+ .grecho-solutions-picker .grecho-v3-solution-card__body{min-height:0}
+ .grecho-solutions-picker .grecho-v3-solution-card a{min-height:44px;display:flex;align-items:center}
+ .grecho-solutions-details{padding-top:32px;padding-bottom:32px}
+ .grecho-solutions-details__stack{gap:24px}
+ .grecho-solutions-detail{padding:14px}
+ .grecho-solutions-detail__title{margin-bottom:14px;font-size:18px}
+ .grecho-solutions-detail > img{aspect-ratio:16 / 9}
+ .grecho-solutions-comparison{grid-template-columns:1fr;gap:12px;margin-top:14px}
+ .grecho-solutions-comparison__panel{min-height:0;padding:20px}
+ .grecho-solutions-comparison__panel h3{margin-bottom:14px}
+ .grecho-solutions-partner{padding-top:32px}
+ .grecho-solutions-partner__panel{padding:24px 20px}
+ .grecho-solutions-partner .grecho-v3-section-head h2{font-size:31px}
+ .grecho-solutions-steps{grid-template-columns:1fr}
+ .grecho-solutions-steps li{padding:18px 20px}
+ .grecho-solutions-cta{padding-block:64px}
+ .grecho-solutions-cta h2{font-size:31px}
+ .grecho-solutions-cta .grecho-v3-button{width:100%;max-width:360px}
+ .grecho-solutions-after-cta{height:64px}
+}

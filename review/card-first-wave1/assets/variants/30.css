@@ -1,0 +1,10 @@
+/* LOCAL CANDIDATE REQUEST-WORKSPACE-01. Parents UIV3-07/13/15/16; static non-submitting workspace, not a production Form renderer. */
+main[data-local-candidate="30"] .ux-preview-form {border-radius:var(--grecho-v3-radius-md);box-shadow:var(--grecho-v3-shadow-card)}
+main[data-local-candidate="30"] .r3-request-option {background:white;border-radius:var(--grecho-v3-radius-sm);font-size:13px!important;color:var(--grecho-v3-text)}
+main[data-local-candidate="30"] .r3-request-option:has(input:checked) {background:var(--grecho-v3-tint-strong);border-color:var(--grecho-v3-brand);box-shadow:inset 3px 0 var(--grecho-v3-brand)}
+main[data-local-candidate="30"] .r3-request-option:focus-within {outline:3px solid #f8c44f;outline-offset:3px}
+main[data-local-candidate="30"] .r3-review-image {border-radius:var(--grecho-v3-radius-md)}
+main[data-local-candidate="30"] .ux-help-copy {border-color:var(--grecho-v3-border)}
+main[data-local-candidate="30"] .ux-preview-form :is(input:disabled,select:disabled,textarea:disabled) {color:var(--grecho-v3-muted);opacity:1}
+@media(max-width:600px){main[data-local-candidate="30"] .ux-contact-layout {gap:28px}main[data-local-candidate="30"] .ux-preview-form {padding:22px}main[data-local-candidate="30"] .r3-request-option {min-height:52px}}
+@media(prefers-reduced-motion:reduce){main[data-local-candidate="30"] .r3-request-option {transition:none!important}}

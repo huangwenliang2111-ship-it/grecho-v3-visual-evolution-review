@@ -1,0 +1,22 @@
+/* LOCAL LIMITED MODULE SAMPLE HUB-SELECTION-01. Parents UIV3-07/08/11/13/15/16. ONLY #materials and #documents; no other Hub propagation. */
+main[data-local-candidate="171"] :is(#materials,#documents) .gac-v1-material-layout {display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:22px;align-items:start}
+main[data-local-candidate="171"] #materials .gac-v1-media-card {padding:0;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);overflow:hidden;box-shadow:var(--grecho-v3-shadow-card);background:white}
+main[data-local-candidate="171"] #materials .gac-v1-media-card img {display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center;background:white;border-radius:0}
+main[data-local-candidate="171"] #materials .gac-v1-visual-caption {padding:22px;background:white;border-top:1px solid var(--grecho-v3-border)}
+main[data-local-candidate="171"] #materials .gac-v1-material-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+main[data-local-candidate="171"] #materials .gac-v1-material-card {display:block;padding:24px;min-height:156px;background:white;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);box-shadow:none}
+main[data-local-candidate="171"] #materials .grecho-v1-card-base-title {font-size:20px;line-height:1.2;color:var(--grecho-v3-text)}
+main[data-local-candidate="171"] #materials .grecho-v1-card-base-description {font-size:14px;line-height:1.56;color:var(--grecho-v3-muted)}
+main[data-local-candidate="171"] #documents .sample-hub-doc-intro {display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px;align-items:center;margin-bottom:32px}
+main[data-local-candidate="171"] #documents .sample-hub-doc-intro .gac-v1-media-card {border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);overflow:hidden;padding:0;background:white;box-shadow:none}
+main[data-local-candidate="171"] #documents .gac-v1-doc-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+main[data-local-candidate="171"] #documents .gac-v1-doc-card {display:flex;flex-direction:column;align-items:flex-start;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);padding:26px;background:white;box-shadow:none}
+main[data-local-candidate="171"] #documents .gac-v1-doc-card .gac-v1-doc-link {margin-top:auto;min-height:46px}
+main[data-local-candidate="171"] #documents .gac-v1-doc-meta {display:block;margin-bottom:20px}
+main[data-local-candidate="171"] #documents .gac-v1-document-note {background:transparent;border:0;border-left:3px solid var(--grecho-v3-brand);border-radius:0;padding:8px 0 8px 20px;margin-top:28px}
+main[data-local-candidate="171"] :is(#materials,#documents) a:focus-visible {outline:3px solid #f8c44f;outline-offset:3px}
+@media(max-width:850px){main[data-local-candidate="171"] #materials .gac-v1-material-layout,main[data-local-candidate="171"] #documents .sample-hub-doc-intro {grid-template-columns:1fr}}
+@media(max-width:600px){main[data-local-candidate="171"] #materials .gac-v1-material-grid,main[data-local-candidate="171"] #documents .gac-v1-doc-grid {grid-template-columns:1fr}main[data-local-candidate="171"] #materials .gac-v1-material-card {min-height:0;padding:22px}main[data-local-candidate="171"] #documents .gac-v1-doc-card {padding:22px}}
+
+/* 2026-10-09 limited module image frames follow native ratios: materials 3:2, document illustration 4:3. No subject or evidence crop. */
+main[data-local-candidate="171"] #documents .gac-v1-media-card img {display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center;margin:0;border-radius:0}

@@ -1,0 +1,6 @@
+/* Homepage-only adapter. Layout, typography and REV03 runtime stay authoritative. */
+#solution-hubs.grecho-home-rev03 .grecho-v3-solution-card > figure.grecho-rev03-card {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}

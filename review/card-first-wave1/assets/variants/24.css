@@ -1,0 +1,16 @@
+/* LOCAL CANDIDATE APPLICATION-STATIC-01. Parents UIV3-07/08/10/15/16. No paired choreography. */
+main[data-local-candidate="24"] #application-examples .gcases-scenario-grid {gap:22px;align-items:stretch}
+main[data-local-candidate="24"] #application-examples .gcases-scenario-card {display:flex;flex-direction:column;background:white;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);overflow:hidden;box-shadow:var(--grecho-v3-shadow-card)}
+main[data-local-candidate="24"] .gcases-scenario-image img {border-radius:0;aspect-ratio:16/9;object-fit:cover}
+main[data-local-candidate="24"] .gcases-scenario-body {display:flex;flex-direction:column;flex:1;padding:27px 29px 30px}
+main[data-local-candidate="24"] .gcases-scenario-body h3 {font-size:25px;line-height:1.22;letter-spacing:-.025em;margin-bottom:18px}
+main[data-local-candidate="24"] .gcases-mini-list {gap:12px;margin-bottom:22px}
+main[data-local-candidate="24"] .gcases-card-actions {margin-top:auto;gap:10px 20px;align-items:center}
+main[data-local-candidate="24"] .gcases-card-actions .gcases-btn-secondary {background:transparent;color:var(--grecho-v3-brand);border:0;box-shadow:none;padding:8px 0;text-decoration:underline;text-underline-offset:3px;min-height:44px}
+main[data-local-candidate="24"] #support-scope .gcases-support-grid .gc-card {background:white;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);padding:28px}
+main[data-local-candidate="24"] #solution-hubs .gc-card {border-radius:var(--grecho-v3-radius-md);box-shadow:none;border:1px solid var(--grecho-v3-border)}
+main[data-local-candidate="24"] .gcases-filter-btn {min-height:46px}
+main[data-local-candidate="24"] :is(a,button):focus-visible {outline:3px solid #f8c44f;outline-offset:3px}
+@media(hover:hover) and (pointer:fine){main[data-local-candidate="24"] .gcases-scenario-card:hover {border-color:var(--grecho-v3-brand);transform:translateY(-2px);transition:transform .22s cubic-bezier(.2,0,0,1)}}
+@media(max-width:600px){main[data-local-candidate="24"] .gcases-scenario-body {padding:22px}main[data-local-candidate="24"] .gcases-card-actions {align-items:flex-start;flex-direction:column}main[data-local-candidate="24"] .gcases-card-actions > .gcases-btn {flex:0 0 auto;width:auto}main[data-local-candidate="24"] .gcases-card-actions .gcases-btn-primary {width:100%}}
+@media(prefers-reduced-motion:reduce){main[data-local-candidate="24"] .gcases-scenario-card {transition:none!important;transform:none!important}}

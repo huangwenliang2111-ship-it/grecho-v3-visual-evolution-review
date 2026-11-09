@@ -1,0 +1,104 @@
+/* Final independent About page. Opt-in only; frozen shared assets unchanged. */
+.grecho-existing.final-about{--about-ink:#123a52;--about-line:#d6e2e8}
+.final-about .gc-section{padding-block:80px}
+.final-about .gc-section-head{max-width:790px;margin-bottom:34px}
+.final-about h2{font-size:clamp(29px,3.25vw,42px);line-height:1.15;max-width:760px}
+.final-about h2 span{color:var(--grecho-v3-brand)}
+.final-about .gc-hero{background:#edf4f7;padding:72px 0}
+.final-about .grecho-v1-hero:has(>.grecho-v1-hero-media) .grecho-v1-hero-content{width:60%;min-height:370px;padding-right:36px}
+.final-about .grecho-v1-hero:has(>.grecho-v1-hero-media) h1{font-size:clamp(36px,4.35vw,56px);line-height:1.08;letter-spacing:-.045em;text-wrap:balance;max-width:700px}
+.final-about .grecho-v1-hero>.grecho-v1-hero-media{inset:0 0 0 auto;width:37%;max-width:none;border-radius:0}
+.final-about .grecho-v1-hero>.grecho-v1-hero-media img{object-position:60% center}
+.final-about .gc-hero p{font-size:17px;line-height:1.65}
+.final-about .gab-split{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:64px;align-items:center}
+.final-about .gab-image-card{border:0;border-radius:0;padding:0;box-shadow:none;background:transparent}
+.final-about .gab-image-card img{display:block;border-radius:4px;aspect-ratio:4/3;object-fit:cover}
+.final-about .gab-position-box{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:0;border:0;box-shadow:none;background:transparent;overflow:visible}
+.final-about .gab-position-card{padding:20px 0 0;border:0;border-top:2px solid var(--grecho-v3-brand);border-radius:0;box-shadow:none;background:transparent}
+.final-about .gab-position-card.is-dark{border-color:#b8c9d2}
+.final-about .gab-position-card h3{font-size:18px}
+.final-about .gab-list{font-size:14px;line-height:1.6;color:var(--grecho-v3-muted);padding-left:18px}
+.final-about .gab-cap-strip.gc-section{padding-block:0 52px}
+.final-about .gab-cap-grid{gap:0;border-block:1px solid var(--about-line);grid-template-columns:repeat(4,minmax(0,1fr))}
+.final-about .gab-cap-strip .gc-card{padding:24px;border:0;border-radius:0;border-right:1px solid var(--about-line);box-shadow:none;background:transparent}
+.final-about .gab-cap-strip .gc-card:first-child{padding-left:0}
+.final-about .gab-cap-strip .gc-card:last-child{border:0}
+.final-about .gab-cap-card h3{font-size:17px}
+.final-about .gab-cap-card p{font-size:14px}
+.final-about .gab-solutions-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.final-about .gab-solution-card.gc-card{border:0;border-top:1px solid #c7d8e1;border-radius:0;background:transparent;box-shadow:none;padding:28px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 20px}
+.final-about .gab-solution-card small,.final-about .gab-solution-card h3,.final-about .gab-solution-card p{grid-column:1/-1}
+.final-about .gab-solution-card small{color:var(--grecho-v3-brand);margin-bottom:12px;line-height:1.5}
+.final-about .gab-solution-card h3{font-size:23px}
+.final-about .gab-card-link{font-size:14px;color:var(--grecho-v3-brand);font-weight:750}
+.final-about .gab-section-dark{background:var(--about-ink);color:#fff}
+.final-about .gab-section-dark h2,.final-about .gab-section-dark h3{color:#fff}
+.final-about .gab-section-dark h2 span,.final-about .gab-section-dark .gc-eyebrow{color:#a6d9ec}
+.final-about .gab-section-dark p{color:#d5e3ea}
+.final-about .gab-split-reverse{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);margin-bottom:38px}
+.final-about .gab-split-reverse .gab-image-card img{aspect-ratio:16/10}
+.final-about .gab-work-layout{display:block}
+.final-about .gab-work-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.final-about .gab-work-card{border:0;border-top:1px solid #658391;border-radius:0;background:none;box-shadow:none;padding:24px 0}
+.final-about .gab-work-card h3{font-size:19px}
+.final-about .gab-work-card p{font-size:14px}
+.final-about .gab-work-card .step{display:block;font-size:28px;color:#90cde3;margin-bottom:22px;font-weight:500}
+.final-about .gab-resource-band{display:flex;align-items:center;gap:32px;justify-content:space-between;border:0;border-top:1px solid #c7d8e1;border-radius:0;background:transparent;padding:28px 0 0;margin-top:28px}
+.final-about .gab-resource-band>div{max-width:740px}
+.final-about .gab-resource-band h3{font-size:21px}
+.final-about .gab-resource-band p{font-size:15px;margin:0}
+.final-about .gab-resource-band a{flex-shrink:0}
+.final-about .gab-section-dark .gab-resource-band{border-color:#658391}
+.final-about .gab-section-dark .gab-resource-band a{background:#fff;color:var(--about-ink)}
+.final-about .gab-scope-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 38px}
+.final-about .gab-scope-card{border:0;border-top:1px solid var(--about-line);border-radius:0;box-shadow:none;padding:26px 0}
+.final-about .gab-scope-card h3{font-size:20px}
+.final-about .gab-scope-card p{font-size:15px}
+.final-about .gab-global-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;border:0;padding:0;background:transparent;box-shadow:none;border-radius:0;align-items:stretch}
+.final-about .gab-global-panel figure img{height:100%;aspect-ratio:1/1;object-fit:cover}
+.final-about .gab-global-card{border:0;border-bottom:1px solid #c7d8e1;border-radius:0;padding:20px 0;background:none;box-shadow:none}
+.final-about .gab-global-card:first-child{padding-top:0}
+.final-about .gab-global-card p{font-size:15px}
+.final-about .gab-faq-grid{grid-template-columns:1fr;gap:0}
+.final-about .gab-faq-item{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:40px;border-top:1px solid var(--about-line);padding:25px 0}
+.final-about .gab-faq-item h3{font-size:19px;margin:0}
+.final-about .gab-faq-item p{margin:0}
+.final-about .grecho-v1-section:has(.grecho-v1-dark-cta){padding-top:0}
+.final-about .grecho-v1-dark-cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px;background:var(--about-ink);border-radius:8px;padding:44px;color:#fff}
+.final-about .grecho-v1-dark-cta>div{flex:1 1 500px}
+.final-about .grecho-v1-dark-cta h3{color:#fff;font-size:30px;max-width:710px}
+.final-about .grecho-v1-dark-cta p{color:#d5e3ea;max-width:760px;margin:0}
+.final-about .grecho-v1-dark-cta>a{border:1px solid #9cc6d8;padding:13px 18px;border-radius:5px;background:#fff;color:var(--about-ink);line-height:1.4;font-size:14px;font-weight:700}
+@media(max-width:960px){
+.final-about .gc-section{padding-block:56px}
+.final-about .grecho-v1-hero:has(>.grecho-v1-hero-media) .grecho-v1-hero-content{width:100%;min-height:0;padding:0}
+.final-about .grecho-v1-hero>.grecho-v1-hero-media{position:static;width:100%;height:260px;margin:0 0 30px;max-width:none}
+.final-about .gc-hero{display:flex;flex-direction:column;padding-top:0}
+.final-about .grecho-v1-hero>.grecho-v1-hero-media{order:2;margin:36px 0 0;height:280px}
+.final-about .grecho-v1-hero>.gc-container{padding-top:48px}
+.final-about .gab-split,.final-about .gab-split-reverse{grid-template-columns:1fr;gap:28px}
+.final-about .gab-split-reverse>figure{order:2}
+.final-about .gab-cap-grid,.final-about .gab-work-grid,.final-about .gab-scope-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.final-about .gab-cap-strip .gc-card{padding:22px 20px!important;border-right:0;border-bottom:1px solid var(--about-line)}
+.final-about .gab-cap-strip .gc-card:last-child{border-bottom:1px solid var(--about-line)}
+.final-about .gab-global-panel{gap:28px}
+.final-about .gab-resource-band{flex-wrap:wrap}
+}
+@media(max-width:600px){
+.final-about .gc-section{padding-block:44px}
+.final-about .gc-hero{padding-top:0}
+.final-about .grecho-v1-hero:has(>.grecho-v1-hero-media) h1{font-size:36px;line-height:1.12;letter-spacing:-.035em}
+.final-about .grecho-v1-hero>.grecho-v1-hero-media{height:220px}
+.final-about .gab-position-box,.final-about .gab-solutions-grid,.final-about .gab-global-panel,.final-about .gab-faq-item{grid-template-columns:1fr;gap:16px}
+.final-about .gab-cap-grid{grid-template-columns:1fr 1fr}
+.final-about .gab-cap-strip .gc-card{padding:18px 12px!important}
+.final-about .gab-cap-strip .gc-card:nth-child(odd){padding-left:0!important}
+.final-about .gab-cap-card h3{font-size:16px}
+.final-about .gab-cap-card p{font-size:13px}
+.final-about .gab-work-grid,.final-about .gab-scope-grid{grid-template-columns:1fr}
+.final-about .gab-work-card{padding-left:50px;position:relative}
+.final-about .gab-work-card .step{position:absolute;left:0;top:22px;font-size:23px}
+.final-about .gab-global-panel figure img{aspect-ratio:16/11;height:auto}
+.final-about .grecho-v1-dark-cta{padding:28px 22px}
+.final-about .grecho-v1-dark-cta h3{font-size:27px}
+}

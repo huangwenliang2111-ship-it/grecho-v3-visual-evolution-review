@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'">
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facing Solution Finder | GRECHO</title>
+<meta name="description" content="Tell GRECHO what board you manufacture and which facing issues you need solved. Request a sample or talk to our technical team with your requirements pre-filled.">
+<link rel="icon" type="image/webp" href="/grecho-v3-visual-evolution-review/assets/images/navigation/grecho-logo-blue-webp-v1.webp">
+
+<!-- GRECHO V3 site stylesheets (same files as the live review site). When deploying, point these at the site's own /assets/css/. -->
+<link rel="stylesheet" href="/grecho-v3-visual-evolution-review/assets/css/grecho-homepage-v3-pilot.css">
+<link rel="stylesheet" href="/grecho-v3-visual-evolution-review/assets/css/grecho-navigation-phase1b1.css?v=products-nav-r3-20261103">
+<link rel="stylesheet" href="/grecho-v3-visual-evolution-review/assets/css/grecho-solutions.css">
+<link rel="stylesheet" href="/grecho-v3-visual-evolution-review/assets/css/isolated-base.css">
+<link rel="stylesheet" href="/grecho-v3-visual-evolution-review/assets/css/nojs-nav.css">
+<link rel="stylesheet" href="/grecho-v3-visual-evolution-review/assets/css/sitewide-remediation.css">
+
+<!-- Solution Finder page styles. Everything is scoped under .gsf and uses the site's --grecho-v3-* tokens. -->
+<style>
+body{margin:0}
+.gsf{--b:var(--grecho-v3-brand,#1b4aa1);--bd:var(--grecho-v3-brand-deep,#123b7a);--acc:var(--grecho-v3-brand-accent,#3b82f6);--tx:var(--grecho-v3-text,#1e293b);--mu:var(--grecho-v3-muted,#5c6f82);--ln:var(--grecho-v3-border,#d9e3ed);--tint:var(--grecho-v3-tint,#f2f7fc);--tint2:var(--grecho-v3-tint-strong,#e7f2ff);--r:var(--grecho-v3-radius-md,10px);--rl:var(--grecho-v3-radius-lg,16px);--sh:var(--grecho-v3-shadow-card,0 12px 30px rgba(26,65,96,.09));--err:#b42332}
+.gsf *{box-sizing:border-box}
+.gsf img{display:block;max-width:100%}
+.gsf button,.gsf select{font:inherit;color:inherit}
+.gsf :focus-visible{outline:3px solid #8fb4ef;outline-offset:2px}
+.gsf .grecho-v3-section{scroll-margin-top:90px}
+
+
+/* Step numbering in section heads */
+.gsf .gsf-num{margin-right:.28em;color:var(--b)}
+.gsf .gsf-next .gsf-num{color:#bdefff}
+.gsf .gsf-opt{display:inline-block;margin-left:8px;padding:1px 8px;border:1px dashed #9ab6df;border-radius:999px;font-size:10px;letter-spacing:1px}
+
+/* Step 1 — board cards (solution-card look) */
+.gsf .gsf-boards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.gsf .gsf-board{position:relative;display:flex;flex-direction:column;padding:0;text-align:left;background:#fff;border:1px solid var(--ln);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.gsf .gsf-board:hover{transform:translateY(-3px)}
+.gsf .gsf-board__media{aspect-ratio:20/9;background:var(--tint);overflow:hidden}
+.gsf .gsf-board__media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gsf .gsf-board:hover .gsf-board__media img{transform:scale(1.04)}
+.gsf .gsf-board__body{padding:18px 20px 22px}
+.gsf .gsf-board__title{display:block;margin:0 0 6px;font-size:18px;font-weight:700;line-height:1.3;color:#22303d}
+.gsf .gsf-board__desc{display:block;margin:0;font-size:13.5px;line-height:1.55;color:var(--mu)}
+.gsf .gsf-board__tick{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.94);border:1px solid #b9cde9;color:transparent;font-weight:900;font-size:14px}
+.gsf .gsf-board__badge{position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:999px;background:var(--bd);color:#fff;font-size:11px;font-weight:700}
+.gsf .gsf-board.is-on{border-color:var(--b);box-shadow:0 0 0 2px var(--b),0 16px 34px rgba(27,74,161,.18)}
+.gsf .gsf-board.is-on .gsf-board__tick{background:var(--b);border-color:var(--b);color:#fff}
+.gsf .gsf-product{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px}
+.gsf .gsf-product>div:first-child{flex:1 1 360px}
+.gsf .gsf-product strong{display:block;font-size:17px;color:#22303d}
+.gsf .gsf-product span{display:block;margin-top:3px;font-size:14px;color:var(--mu)}
+.gsf .gsf-product__field{flex:0 1 340px;width:100%}
+.gsf .gsf-label{display:block;margin-bottom:7px;font-size:12px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:#33485e}
+.gsf .gsf-label i{font-style:normal;color:var(--err)}
+.gsf select{width:100%;min-height:48px;margin:0;padding:11px 40px 11px 14px;border:1px solid #c7d7ea;border-radius:4px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231b4aa1' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center;-webkit-appearance:none;appearance:none;font-size:15px}
+.gsf select:focus{outline:none;border-color:var(--b);box-shadow:0 0 0 3px rgba(27,74,161,.15)}
+.gsf select.is-invalid{border-color:var(--err);box-shadow:0 0 0 3px rgba(180,35,50,.12)}
+
+/* Step 2 — categories (diagnostic-card look) + checklist */
+.gsf .gsf-context{display:flex;justify-content:center;margin:-8px 0 26px}
+.gsf .gsf-context span{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--ln);font-size:13px;font-weight:700;color:#33485e}
+.gsf .gsf-context i{width:8px;height:8px;border-radius:50%;background:var(--b)}
+.gsf .gsf-cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px}
+.gsf .gsf-cat{display:flex;align-items:center;gap:14px;min-height:82px;padding:16px 18px;text-align:left;background:#fff;border:1px solid #dce6ef;border-radius:var(--r);box-shadow:0 10px 26px rgba(29,65,95,.06);cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.gsf .gsf-cat:hover{border-color:#a9c3e8}
+.gsf .gsf-cat__icon{display:grid;place-items:center;flex-shrink:0;width:42px;height:42px;border-radius:8px;background:var(--tint2);color:var(--b)}
+.gsf .gsf-cat__icon svg{width:21px;height:21px}
+.gsf .gsf-cat__txt{flex:1;min-width:0}
+.gsf .gsf-cat__txt strong{display:block;font-size:14.5px;line-height:1.3;color:#22303d}
+.gsf .gsf-cat__txt small{display:block;margin-top:2px;font-size:12px;color:var(--mu)}
+.gsf .gsf-cat__cnt{flex-shrink:0;display:grid;place-items:center;min-width:26px;height:26px;padding:0 8px;border-radius:999px;background:#eef2f7;color:#7488a3;font-size:12px;font-weight:800}
+.gsf .gsf-cat__cnt.has{background:var(--b);color:#fff}
+.gsf .gsf-cat.is-on{border-color:var(--b);box-shadow:0 0 0 1px var(--b),0 12px 26px rgba(27,74,161,.12)}
+.gsf .gsf-cat.is-on .gsf-cat__icon{background:var(--b);color:#fff}
+.gsf .gsf-finder{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:22px;align-items:start}
+.gsf .gsf-panel{background:#fff;border:1px solid var(--ln);border-radius:var(--r);box-shadow:var(--sh);padding:28px}
+.gsf .gsf-panel__top{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-bottom:16px;border-bottom:1px solid #e6edf4}
+.gsf .gsf-panel__top h3{margin:0;font-size:21px;font-weight:700;color:#22303d}
+.gsf .gsf-panel__top p{margin:2px 0 0;font-size:13.5px;color:var(--mu)}
+.gsf .gsf-pill{white-space:nowrap;padding:6px 11px;border-radius:999px;background:var(--tint2);color:var(--b);font-size:12px;font-weight:800}
+.gsf .gsf-issues{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.gsf .gsf-issue{position:relative;display:flex;align-items:flex-start;gap:12px;min-height:62px;margin:0;padding:15px 16px;border:1px solid #e0e7ed;border-radius:var(--r);background:#fbfcfe;cursor:pointer;font-size:15px;line-height:1.45;color:var(--tx);transition:border-color .15s,background .15s}
+.gsf .gsf-issue:hover{border-color:#a9c3e8}
+.gsf .gsf-issue input{position:absolute;opacity:0;pointer-events:none}
+.gsf .gsf-issue__box{flex-shrink:0;display:grid;place-items:center;width:20px;height:20px;margin-top:1px;border:2px solid #9fb5d4;border-radius:4px;background:#fff}
+.gsf .gsf-issue__box svg{width:12px;height:12px;opacity:0}
+.gsf .gsf-issue input:focus-visible+.gsf-issue__box{outline:3px solid #8fb4ef;outline-offset:2px}
+.gsf .gsf-issue.is-on{border-color:#7fa4dd;background:#f0f6ff}
+.gsf .gsf-issue.is-on .gsf-issue__box{background:var(--b);border-color:var(--b)}
+.gsf .gsf-issue.is-on .gsf-issue__box svg{opacity:1}
+.gsf .gsf-catnav{display:flex;justify-content:space-between;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid #e6edf4}
+.gsf .gsf-linkbtn{border:0;background:none;padding:6px 0;font-size:13px;font-weight:800;color:var(--b);cursor:pointer}
+.gsf .gsf-linkbtn:disabled{color:#b3c1d4;cursor:default}
+.gsf .gsf-summary{position:sticky;top:96px}
+.gsf .gsf-summary h3{margin:0 0 6px;font-size:18px;font-weight:700;color:#22303d}
+.gsf .gsf-count{display:flex;align-items:baseline;gap:8px;font-size:36px;font-weight:800;line-height:1.1;color:var(--b)}
+.gsf .gsf-count small{font-size:13px;font-weight:500;color:var(--mu)}
+.gsf .gsf-sel{max-height:300px;overflow:auto;margin:14px -6px 18px;padding:0 6px}
+.gsf .gsf-sel__empty{margin:0;padding:14px;border-radius:8px;background:var(--tint);font-size:13px;color:var(--mu)}
+.gsf .gsf-sel__group{margin-bottom:12px}
+.gsf .gsf-sel__group h4{margin:0 0 6px;font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--mu)}
+.gsf .gsf-chip{display:inline-flex;align-items:center;gap:6px;margin:0 6px 6px 0;padding:5px 6px 5px 10px;border-radius:999px;background:var(--tint2);font-size:12.5px;color:#1f3b66}
+.gsf .gsf-chip button{display:grid;place-items:center;width:18px;height:18px;padding:0;border:0;border-radius:50%;background:#cfdff5;color:var(--b);font-size:12px;line-height:1;cursor:pointer}
+.gsf .gsf-chip button:hover{background:var(--b);color:#fff}
+.gsf .gsf-summary .grecho-v3-button{width:100%;justify-content:center}
+.gsf .gsf-btn-outline{display:flex;align-items:center;justify-content:center;width:100%;min-height:46px;margin-top:10px;padding:11px 18px;border:1px solid #bfd3ed;border-radius:4px;background:#fff;color:var(--b);font-size:13px;font-weight:800;cursor:pointer}
+.gsf .gsf-btn-outline:hover{background:var(--tint2)}
+.gsf .gsf-summary .grecho-v3-text-link{display:block;margin-top:14px;text-align:center}
+
+/* Step 3 — application cards (application-card look) */
+.gsf .gsf-apps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.gsf .gsf-app{position:relative;display:flex;flex-direction:column;margin:0;background:#fff;border:1px solid var(--ln);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.gsf .gsf-app:hover{transform:translateY(-3px)}
+.gsf .gsf-app:focus-within{outline:3px solid #8fb4ef;outline-offset:2px}
+.gsf .gsf-app input{position:absolute;opacity:0;pointer-events:none}
+.gsf .gsf-app__media{aspect-ratio:4/3;background:var(--tint);overflow:hidden}
+.gsf .gsf-app__media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gsf .gsf-app:hover .gsf-app__media img{transform:scale(1.05)}
+.gsf .gsf-app__check{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.94);border:1px solid #b9cde9;color:transparent;font-weight:900;font-size:14px}
+.gsf .gsf-app__body{flex:1;padding:18px 20px 20px}
+.gsf .gsf-app__body .grecho-v3-kicker{display:block;margin:0;font-size:11px}
+.gsf .gsf-app__title{display:block;margin:6px 0 2px;font-size:17px;font-weight:700;line-height:1.35;color:#22303d}
+.gsf .gsf-app__body small{display:block;font-size:12.5px;color:var(--mu)}
+.gsf .gsf-app__pick{display:inline-block;margin-top:12px;font-size:13px;font-weight:800;color:var(--b)}
+.gsf .gsf-app.is-on{border-color:var(--b);box-shadow:0 0 0 2px var(--b),0 16px 34px rgba(27,74,161,.18)}
+.gsf .gsf-app.is-on .gsf-app__check{background:var(--b);border-color:var(--b);color:#fff}
+
+/* Step 4 — "Next Step" card with requirements recap and an inline contact form */
+.gsf .gsf-next{background:var(--tint)}
+.gsf .gsf-next__panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:start;padding:56px;border-radius:var(--rl);overflow:hidden;color:#fff;box-shadow:0 22px 50px rgba(16,44,90,.18);background:linear-gradient(100deg,rgba(9,42,96,.95),rgba(36,71,131,.71) 48%,rgba(103,118,144,.36)),url("/grecho-v3-visual-evolution-review/assets/images/product/cta-background-1448.webp") center 35%/cover no-repeat,#123b7a}
+.gsf .gsf-next__eyebrow{display:flex;align-items:center;margin:0 0 16px;color:#bdefff;font-size:11px;font-weight:800;letter-spacing:.14em;line-height:1.5;text-transform:uppercase}
+.gsf .gsf-next h2{margin:0 0 18px;color:#fff;font-size:clamp(29px,2.9vw,40px);font-weight:700;line-height:1.1;letter-spacing:-.035em}
+.gsf .gsf-next__lead{max-width:560px;margin:0 0 26px;color:#edf5ff;font-size:15px;line-height:1.6}
+.gsf .gsf-recap{padding:22px 22px;border-radius:var(--r);background:rgba(255,255,255,.12);border:1px solid rgba(239,247,255,.3);backdrop-filter:blur(6px)}
+.gsf .gsf-recap h3{margin:0 0 14px;color:#cfe0ff;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.gsf .gsf-recap dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:0;font-size:14px}
+.gsf .gsf-recap dt{color:#c9d9f2}
+.gsf .gsf-recap dd{margin:0;color:#fff;font-weight:700;overflow-wrap:anywhere}
+.gsf .gsf-recap dd.is-miss{color:#ffd5da;font-weight:600}
+/* white form card inside the panel */
+.gsf .gsf-form{padding:28px;border-radius:var(--r);background:#fff;color:var(--tx);box-shadow:0 16px 36px rgba(5,27,70,.25)}
+.gsf .gsf-form__title{margin:0 0 16px;font-size:18px;font-weight:700;color:#22303d}
+.gsf .gsf-form__grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.gsf .gsf-f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.gsf .gsf-f label{font-size:13px;font-weight:750;color:var(--tx)}
+.gsf .gsf-f i,.gsf .gsf-consent i{font-style:normal;color:var(--err)}
+.gsf .gsf-f input,.gsf .gsf-f select{width:100%;min-height:48px;margin:0;padding:12px 14px;border:1px solid var(--ln);border-radius:4px;background-color:#fff;font-size:15px;line-height:1.4}
+.gsf .gsf-f input::placeholder{color:#8a99aa}
+.gsf .gsf-f input:focus,.gsf .gsf-f select:focus{outline:none;border-color:var(--b);box-shadow:0 0 0 3px rgba(27,74,161,.14)}
+.gsf .gsf-f.is-error input,.gsf .gsf-f.is-error select{border-color:var(--err);box-shadow:0 0 0 3px rgba(180,35,50,.1)}
+.gsf .gsf-err{margin:0;font-size:12.5px;font-weight:600;color:var(--err)}
+.gsf .gsf-consent{display:flex;align-items:flex-start;gap:10px;margin:18px 0 0;font-size:13px;line-height:1.5;color:#33475d;cursor:pointer}
+.gsf .gsf-consent input{flex-shrink:0;width:17px;height:17px;margin:2px 0 0;accent-color:var(--b)}
+.gsf .gsf-consent a{color:var(--b);font-weight:700}
+.gsf .gsf-consent.is-error span{color:var(--err)}
+.gsf .gsf-honey{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.gsf .gsf-form__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.gsf .gsf-form__actions .grecho-v3-button{flex:1 1 180px}
+.gsf .grecho-v3-button.gsf-btn-line{background:#fff;color:var(--b);border-color:#bfd3ed;box-shadow:none}
+.gsf .grecho-v3-button.gsf-btn-line:hover{background:var(--tint2);border-color:var(--b);color:var(--b)}
+.gsf .gsf-form__actions .grecho-v3-button[disabled]{opacity:.65;cursor:wait;transform:none}
+.gsf .gsf-form__msg{min-height:20px;margin:12px 0 0;font-size:13.5px;font-weight:700;color:var(--err)}
+.gsf .gsf-form__msg a{color:var(--err)}
+.gsf .gsf-done:focus{outline:none}
+.gsf .gsf-done__icon{display:grid;place-items:center;width:52px;height:52px;margin-bottom:16px;border-radius:50%;background:#e3f4ea;color:#16794c}
+.gsf .gsf-done__icon svg{width:26px;height:26px}
+.gsf .gsf-done h3{margin:0 0 10px;font-size:22px;font-weight:700;line-height:1.25;letter-spacing:-.02em;color:#22303d}
+.gsf .gsf-done p{margin:0 0 16px;font-size:14.5px;line-height:1.6;color:var(--mu)}
+.gsf .gsf-done p strong{color:#22303d}
+.gsf .gsf-done__preview{padding:10px 12px;border-radius:6px;background:#fff7e6;border:1px solid #f3d9a4;color:#7a5410!important;font-size:13px!important}
+@media(max-width:1080px){.gsf .gsf-next__panel{grid-template-columns:1fr;gap:32px;padding:45px 40px}}
+@media(max-width:760px){.gsf .gsf-next__panel{padding:36px 24px}.gsf .gsf-form{padding:22px 18px}.gsf .gsf-form__grid{grid-template-columns:1fr}.gsf .gsf-form__actions .grecho-v3-button{flex-basis:100%}}
+@media(max-width:600px){.gsf .gsf-next__panel{padding:32px 16px;background-position:center}.gsf .gsf-recap{padding:18px 16px}.gsf .gsf-recap dl{grid-template-columns:1fr;gap:2px}.gsf .gsf-recap dd{margin-bottom:10px}}
+
+
+/* Mobile floating bar */
+.gsf-mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:12px;padding:10px 10px 10px 16px;border-radius:10px;background:var(--grecho-v3-brand-deep,#123b7a);color:#fff;box-shadow:0 16px 36px rgba(16,44,90,.3);font-size:13px}
+.gsf-mbar strong{font-size:18px}
+.gsf-mbar a{margin-left:auto;padding:10px 16px;border-radius:4px;background:#fff;color:#123b7a;font-weight:800;text-decoration:none}
+
+@media(max-width:1080px){
+  .gsf .gsf-boards,.gsf .gsf-apps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gsf .gsf-finder{grid-template-columns:1fr}
+  .gsf .gsf-summary{position:static}
+  .gsf-mbar.is-show{display:flex}
+}
+@media(max-width:680px){
+  .gsf .gsf-boards,.gsf .gsf-cats,.gsf .gsf-apps,.gsf .gsf-issues{grid-template-columns:1fr}
+  .gsf .gsf-board{flex-direction:row}
+  .gsf .gsf-board__media{aspect-ratio:auto;width:120px;flex-shrink:0}
+  .gsf .gsf-board__body{padding:14px 44px 14px 16px}
+  .gsf .gsf-panel{padding:18px}
+  .gsf .grecho-v3-footer{padding-bottom:84px}
+}
+@media(prefers-reduced-motion:reduce){.gsf *{transition:none!important}}
+</style>
+<link rel="stylesheet" href="assets/css/finder-local.css?v=20261020-other-1"><link rel="stylesheet" href="/grecho-v3-visual-evolution-review/review/solution-finder-v1/assets/css/finder-nav-review.css">
+<link rel="stylesheet" href="/grecho-v3-visual-evolution-review/assets/css/solutions-finder-promotion.css">
+</head>
+<body class="grecho-isolated-v3">
+<div class="grecho-v3 gsf">
+
+<!-- ============ GRECHO V3 global header (copied from the review site) ============ -->
+<a class="grecho-v3-skip" href="#grecho-v3-main">Skip to page content</a>
+<aside aria-label="Europe 2026 initiative" class="grecho-v3-initiative">
+<div class="grecho-v3-container grecho-v3-initiative__inner">
+<strong>EUROPE 2026</strong>
+<span>Planning a wide-width facer project in Europe? Share your requirements with our Europe initiative.</span>
+<a href="/grecho-v3-visual-evolution-review/europe-wide-width-facer-initiative/">Explore the initiative</a>
+</div>
+</aside>
+<header aria-label="GRECHO V3 global navigation candidate" class="grecho-v3-nav" data-grecho-v3-nav="">
+<div class="grecho-v3-nav__inner">
+<a aria-label="GRECHO home" class="grecho-v3-nav__brand" href="/grecho-v3-visual-evolution-review/">
+<img alt="GRECHO" height="60" src="/grecho-v3-visual-evolution-review/assets/images/navigation/grecho-logo-blue-webp-v1.webp" width="640"/>
+</a>
+<nav aria-label="Primary navigation" class="grecho-v3-nav__desktop">
+<div class="grecho-v3-nav__item">
+<button aria-controls="grecho-nav-solutions" aria-expanded="false" class="grecho-v3-nav__trigger" data-nav-trigger="solutions" type="button">Solutions<span aria-hidden="true" class="grecho-v3-nav__chevron"></span></button>
+<div class="grecho-v3-mega grecho-v3-mega--solutions" data-nav-panel="solutions" hidden="" id="grecho-nav-solutions">
+<div class="grecho-v3-mega__grid grecho-v3-mega__grid--solutions">
+<section aria-labelledby="grecho-nav-challenge-title">
+<p class="grecho-v3-mega__eyebrow" id="grecho-nav-challenge-title">Find a solution by challenge</p>
+<div class="grecho-v3-mega__links">
+<span class="is-held">Surface Appearance <small>Held</small></span>
+<a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic Performance</a>
+<span class="is-held">Cleanability / Durability <small>Held</small></span>
+<span class="is-held">Bonding / Lamination <small>Held</small></span>
+<span class="is-held">Fire Performance <small>Held</small></span>
+<span class="is-held">Production Consistency <small>Held</small></span>
+</div>
+</section>
+<section aria-labelledby="grecho-nav-board-title">
+<p class="grecho-v3-mega__eyebrow" id="grecho-nav-board-title">Find a solution by board type</p>
+<div class="grecho-v3-mega__links">
+<a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic Ceiling Tiles</a>
+<a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic Wall Panels</a>
+<a href="/grecho-v3-visual-evolution-review/solutions/mineral-wool-insulation/">Mineral Wool Boards</a>
+<a href="/grecho-v3-visual-evolution-review/solutions/pir-pur-etics-insulation-facers/">PIR / PUR Insulation Boards</a>
+<a href="/grecho-v3-visual-evolution-review/solutions/gypsum-board-facers/">Gypsum Boards</a>
+</div>
+<a class="grecho-v3-mega__all" href="/grecho-v3-visual-evolution-review/solutions/">View all solutions<span aria-hidden="true">→</span></a>
+</section>
+<a aria-labelledby="grecho-nav-finder-title" aria-describedby="grecho-nav-finder-description" class="grecho-v3-mega__feature grecho-finder-nav-promotion" href="/grecho-v3-visual-evolution-review/review/solution-finder-v1/">
+<img alt="Illustrative acoustic layer assembly" height="450" src="/grecho-v3-visual-evolution-review/assets/images/navigation/featured-acoustic-solution.png" width="1000"/>
+<span class="grecho-v3-mega__feature-body"><small>GUIDED TOOL</small><strong id="grecho-nav-finder-title">Solution Finder</strong><span id="grecho-nav-finder-description">Define your board system and priorities.<br/>Prepare a clear request for GRECHO's review.</span><b>Start Solution Finder <i aria-hidden="true">→</i></b></span>
+</a>
+
+</div>
+</div>
+</div>
+<div class="grecho-v3-nav__item">
+<button aria-controls="grecho-nav-products" aria-expanded="false" class="grecho-v3-nav__trigger" data-nav-trigger="products" type="button">Products<span aria-hidden="true" class="grecho-v3-nav__chevron"></span></button>
+<div class="grecho-v3-mega" data-nav-panel="products" hidden="" id="grecho-nav-products"><div class="grecho-v3-mega__grid grecho-v3-mega__grid--three"><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Acoustic facings</p><div class="grecho-v3-mega__links"><a data-nav-product-id="P01" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/white-acoustic-ceiling-facer.html">White Acoustic Ceiling Facer</a><a data-nav-product-id="P05" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/acoustic-fiberglass-fabric.html">Acoustic Fiberglass Fabric</a><a data-nav-product-id="P06" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/high-air-permeability-fiberglass-coated-veil.html">Airflow Fiberglass Coated Veil</a><a data-nav-product-id="P07" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/low-air-permeability-fiberglass-coated-veil.html">Airtight Fiberglass Coated Veil</a><a data-nav-product-id="P08" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/matte-black-fiberglass-coated-veil.html">Matte Black Fiberglass Coated Veil</a><a data-nav-product-id="P09" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/washable-fiberglass-coated-veil.html">Washable Fiberglass Coated Veil</a><a data-nav-product-id="P10" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/wood-grain-acoustic-fiberglass-fabric.html">Wood Grain Acoustic Fiberglass Fabric</a><a data-nav-product-id="P11" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/wood-grain-fiberglass-coated-veil.html">Wood Grain Fiberglass Coated Veil</a></div></section><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Insulation facers</p><div class="grecho-v3-mega__links"><a data-nav-product-id="P02" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/aluminum-foil-facers-for-thermal-insulation.html">Aluminum Foil Facer</a><a data-nav-product-id="P03" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-mineral-wool-roof-insulation.html">Mineral Wool Insulation Facer</a><a data-nav-product-id="P04" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-pir-pur-insulation-boards.html">PIR/PUR Insulation Facer</a><a data-nav-product-id="P14" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/uv-resistant-fiberglass-coated-veil.html">UV-Resistant Fiberglass Coated Veil</a></div></section><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Building board facers</p><div class="grecho-v3-mega__links"><a data-nav-product-id="P12" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-gypsum-board.html">Gypsum Board Facer</a><a data-nav-product-id="P13" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/high-waterproof-fiberglass-coated-veil-for-gypsum-board.html">Waterproof facer for Gypsum Board</a><a data-nav-product-id="P14" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/uv-resistant-fiberglass-coated-veil.html">UV-Resistant Fiberglass Coated Veil</a></div></section></div></div>
+</div>
+<div class="grecho-v3-nav__item">
+<button aria-controls="grecho-nav-applications" aria-expanded="false" class="grecho-v3-nav__trigger" data-nav-trigger="applications" type="button">Applications<span aria-hidden="true" class="grecho-v3-nav__chevron"></span></button>
+<div class="grecho-v3-mega" data-nav-panel="applications" hidden="" id="grecho-nav-applications">
+<div class="grecho-v3-mega__grid grecho-v3-mega__grid--three">
+<section><p class="grecho-v3-mega__eyebrow">Acoustic</p><div class="grecho-v3-mega__links"><a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic Ceiling</a><a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic Wall</a><span class="is-held">Wrapped Acoustic Panels <small>Held</small></span></div></section>
+<section><p class="grecho-v3-mega__eyebrow">Insulation</p><div class="grecho-v3-mega__links"><a href="/grecho-v3-visual-evolution-review/solutions/mineral-wool-insulation/">Mineral Wool Insulation</a><a href="/grecho-v3-visual-evolution-review/solutions/pir-pur-etics-insulation-facers/">PIR / PUR Insulation</a><span class="is-held">Roof Insulation <small>Held</small></span><span class="is-held">Wall Insulation <small>Held</small></span></div></section>
+<section><p class="grecho-v3-mega__eyebrow">Building materials</p><div class="grecho-v3-mega__links"><a href="/grecho-v3-visual-evolution-review/solutions/gypsum-board-facers/">Gypsum Board</a><span class="is-held">HVAC <small>Held</small></span><span class="is-held">Industrial Insulation <small>Held</small></span><a href="/grecho-v3-visual-evolution-review/case-studies/">Application Examples</a></div></section>
+</div>
+</div>
+</div>
+<div class="grecho-v3-nav__item">
+<button aria-controls="grecho-nav-resources" aria-expanded="false" class="grecho-v3-nav__trigger" data-nav-trigger="resources" type="button">Resources<span aria-hidden="true" class="grecho-v3-nav__chevron"></span></button>
+<div class="grecho-v3-mega grecho-v3-mega--compact" data-nav-panel="resources" hidden="" id="grecho-nav-resources"><div class="grecho-v3-mega__grid grecho-v3-mega__grid--two"><section><p class="grecho-v3-mega__eyebrow">Technical resources</p><div class="grecho-v3-mega__links"><a href="/grecho-v3-visual-evolution-review/resource-center/">Technical Data Sheets</a><a href="/grecho-v3-visual-evolution-review/resource-center/">Application Guides</a><a href="/grecho-v3-visual-evolution-review/case-studies/">Case / Application Examples</a></div></section><section><p class="grecho-v3-mega__eyebrow">Learn &amp; request</p><div class="grecho-v3-mega__links"><a href="/grecho-v3-visual-evolution-review/insights/">Technical Articles</a><a href="/grecho-v3-visual-evolution-review/faq/">FAQ</a><a href="/grecho-v3-visual-evolution-review/contact/?request=sample#request-form">Sample Review Support</a></div><p class="grecho-v3-mega__note">Protected documents stay inside the current request and review flow.</p></section></div></div>
+</div>
+<div class="grecho-v3-nav__item">
+<button aria-controls="grecho-nav-about" aria-expanded="false" class="grecho-v3-nav__trigger" data-nav-trigger="about" type="button">About<span aria-hidden="true" class="grecho-v3-nav__chevron"></span></button>
+<div class="grecho-v3-mega grecho-v3-mega--compact" data-nav-panel="about" hidden="" id="grecho-nav-about"><div class="grecho-v3-mega__grid grecho-v3-mega__grid--two"><section><p class="grecho-v3-mega__eyebrow">GRECHO</p><div class="grecho-v3-mega__links"><a href="/grecho-v3-visual-evolution-review/about/">About GRECHO</a><span class="is-held">Production &amp; Quality <small>Copy review</small></span><span class="is-held">R&amp;D / Technical Support <small>Copy review</small></span><span class="is-held">Sustainability <small>Held</small></span></div></section><section><p class="grecho-v3-mega__eyebrow">Connect</p><div class="grecho-v3-mega__links"><a href="/grecho-v3-visual-evolution-review/insights/">Insights</a><a href="/grecho-v3-visual-evolution-review/contact/">Contact</a></div><p class="grecho-v3-mega__note">GRECHO remains positioned as a fiberglass facer solution provider and application-matched material partner.</p></section></div></div>
+</div>
+<div class="grecho-v3-nav__item grecho-v3-nav__item--search">
+<button aria-controls="grecho-nav-search" aria-disabled="true" aria-expanded="false" aria-label="Search disabled in local build" class="grecho-v3-nav__search" data-nav-trigger="search" disabled="disabled" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg></button>
+<div class="grecho-v3-mega grecho-v3-mega--search" data-nav-panel="search" hidden="" id="grecho-nav-search"><p class="grecho-v3-mega__eyebrow">Search</p><h2>Search behavior is held for resource safety.</h2><p>Search is disabled. Synthetic protection tests run separately in this local build.</p><button disabled="" type="button">Search disabled</button></div>
+</div>
+</nav>
+<div class="grecho-v3-nav__actions">
+<div class="grecho-v3-language" data-language-switcher="">
+<button aria-controls="grecho-nav-language" aria-expanded="false" aria-haspopup="menu" class="grecho-v3-nav__language" data-language-trigger="" type="button"><b>EN</b><span aria-hidden="true" class="grecho-v3-nav__chevron"></span><span class="screen-reader-text">Open language choices</span></button>
+<div aria-label="Language choices; English local build" class="grecho-v3-language__panel" data-language-panel="" hidden="" id="grecho-nav-language" role="menu">
+<p>Language</p>
+<button aria-checked="true" aria-disabled="true" data-language-option="" disabled="disabled" role="menuitemradio" type="button">EN <small>Current</small></button>
+<button aria-checked="false" aria-disabled="true" data-language-option="" disabled="disabled" role="menuitemradio" type="button">DE <small>Unavailable locally</small></button>
+<button aria-checked="false" aria-disabled="true" data-language-option="" disabled="disabled" role="menuitemradio" type="button">FR <small>Unavailable locally</small></button>
+<button aria-checked="false" aria-disabled="true" data-language-option="" disabled="disabled" role="menuitemradio" type="button">nl-BE <small>Unavailable locally</small></button>
+<span>English is enabled in this local build.</span>
+</div>
+</div>
+<button aria-controls="grecho-nav-mobile-search" aria-disabled="true" aria-expanded="false" aria-label="Search disabled in local build" class="grecho-v3-nav__mobile-search" data-mobile-search-trigger="" disabled="disabled" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg></button>
+<a class="grecho-v3-nav__cta" data-cta-route-id="CTA-01" href="https://huangwenliang2111-ship-it.github.io/grecho-v3-visual-evolution-review/contact/?request=sample&amp;source=header-primary&amp;cta_source=header-primary&amp;cta_location=header&amp;source_page_type=solution-finder#request-form">Request a Sample</a>
+<button aria-controls="grecho-nav-mobile" aria-expanded="false" aria-label="Open navigation menu" class="grecho-v3-nav__mobile-toggle" data-mobile-nav-trigger="" type="button"><span></span><span></span><span></span><span class="screen-reader-text">Open navigation menu</span></button>
+</div>
+</div>
+<div class="grecho-v3-mobile-search-panel" data-mobile-search-panel="" hidden="" id="grecho-nav-mobile-search">
+<button aria-label="Close Search" class="grecho-v3-mobile-search-panel__close" data-mobile-search-close="" type="button">×</button>
+<p class="grecho-v3-mega__eyebrow">Search</p>
+<h2>Search is disabled for review.</h2>
+<p>Protected Resource scope and multilingual behavior must pass the Search activation gate before release.</p>
+<button disabled="" type="button">Search unavailable in this Local candidate</button>
+</div>
+<div class="grecho-v3-nav__backdrop" data-mobile-nav-backdrop="" hidden=""></div>
+<aside aria-label="Mobile navigation" aria-modal="true" class="grecho-v3-nav__mobile" data-mobile-nav-panel="" hidden="" id="grecho-nav-mobile" role="dialog">
+<div class="grecho-v3-nav__mobile-head">
+<img alt="GRECHO" height="60" src="/grecho-v3-visual-evolution-review/assets/images/navigation/grecho-logo-blue-webp-v1.webp" width="640"/>
+<button aria-label="Close navigation menu" data-mobile-nav-close="" type="button">×</button>
+</div>
+<p class="grecho-v3-nav__mobile-intro">Explore GRECHO solutions, products and technical resources.</p>
+<nav aria-label="Mobile primary navigation">
+<section class="grecho-v3-mobile-group">
+<button aria-controls="grecho-mobile-solutions" aria-expanded="false" data-mobile-accordion-trigger="" type="button">Solutions<span aria-hidden="true">+</span></button>
+<div data-mobile-accordion-panel="" hidden="" id="grecho-mobile-solutions">
+<a class="grecho-finder-nav-entry" href="/grecho-v3-visual-evolution-review/review/solution-finder-v1/"><strong>Solution Finder</strong><span class="grecho-finder-nav-entry__arrow" aria-hidden="true">→</span><small>Quickly define your needs for a tailored review.</small></a>
+<a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic Performance</a><a href="/grecho-v3-visual-evolution-review/solutions/mineral-wool-insulation/">Mineral Wool Boards</a><a href="/grecho-v3-visual-evolution-review/solutions/pir-pur-etics-insulation-facers/">PIR / PUR Insulation Boards</a><a href="/grecho-v3-visual-evolution-review/solutions/gypsum-board-facers/">Gypsum Boards</a><span class="is-held">Surface Appearance <small>Held</small></span><span class="is-held">Cleanability / Durability <small>Held</small></span><span class="is-held">Bonding / Lamination <small>Held</small></span><span class="is-held">Fire Performance <small>Held</small></span><span class="is-held">Production Consistency <small>Held</small></span><a class="grecho-v3-mobile-group__all" href="/grecho-v3-visual-evolution-review/solutions/">View all solutions</a></div>
+</section>
+<section class="grecho-v3-mobile-group">
+<button aria-controls="grecho-mobile-products" aria-expanded="false" data-mobile-accordion-trigger="" type="button">Products<span aria-hidden="true">+</span></button>
+<div data-mobile-accordion-panel="" hidden="" id="grecho-mobile-products"><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Acoustic facings</p><div class="grecho-v3-products-links"><a data-nav-product-id="P01" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/white-acoustic-ceiling-facer.html">White Acoustic Ceiling Facer</a><a data-nav-product-id="P05" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/acoustic-fiberglass-fabric.html">Acoustic Fiberglass Fabric</a><a data-nav-product-id="P06" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/high-air-permeability-fiberglass-coated-veil.html">Airflow Fiberglass Coated Veil</a><a data-nav-product-id="P07" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/low-air-permeability-fiberglass-coated-veil.html">Airtight Fiberglass Coated Veil</a><a data-nav-product-id="P08" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/matte-black-fiberglass-coated-veil.html">Matte Black Fiberglass Coated Veil</a><a data-nav-product-id="P09" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/washable-fiberglass-coated-veil.html">Washable Fiberglass Coated Veil</a><a data-nav-product-id="P10" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/wood-grain-acoustic-fiberglass-fabric.html">Wood Grain Acoustic Fiberglass Fabric</a><a data-nav-product-id="P11" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/wood-grain-fiberglass-coated-veil.html">Wood Grain Fiberglass Coated Veil</a></div></section><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Insulation facers</p><div class="grecho-v3-products-links"><a data-nav-product-id="P02" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/aluminum-foil-facers-for-thermal-insulation.html">Aluminum Foil Facer</a><a data-nav-product-id="P03" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-mineral-wool-roof-insulation.html">Mineral Wool Insulation Facer</a><a data-nav-product-id="P04" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-pir-pur-insulation-boards.html">PIR/PUR Insulation Facer</a><a data-nav-product-id="P14" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/uv-resistant-fiberglass-coated-veil.html">UV-Resistant Fiberglass Coated Veil</a></div></section><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Building board facers</p><div class="grecho-v3-products-links"><a data-nav-product-id="P12" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-gypsum-board.html">Gypsum Board Facer</a><a data-nav-product-id="P13" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/high-waterproof-fiberglass-coated-veil-for-gypsum-board.html">Waterproof facer for Gypsum Board</a><a data-nav-product-id="P14" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/uv-resistant-fiberglass-coated-veil.html">UV-Resistant Fiberglass Coated Veil</a></div></section></div>
+</section>
+<section class="grecho-v3-mobile-group">
+<button aria-controls="grecho-mobile-applications" aria-expanded="false" data-mobile-accordion-trigger="" type="button">Applications<span aria-hidden="true">+</span></button>
+<div data-mobile-accordion-panel="" hidden="" id="grecho-mobile-applications"><a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic Ceiling &amp; Wall</a><a href="/grecho-v3-visual-evolution-review/solutions/mineral-wool-insulation/">Mineral Wool Insulation</a><a href="/grecho-v3-visual-evolution-review/solutions/pir-pur-etics-insulation-facers/">PIR / PUR Insulation</a><a href="/grecho-v3-visual-evolution-review/solutions/gypsum-board-facers/">Gypsum Board</a><span class="is-held">Wrapped Acoustic Panels <small>Held</small></span><span class="is-held">Roof Insulation <small>Held</small></span><span class="is-held">Wall Insulation <small>Held</small></span><span class="is-held">HVAC <small>Held</small></span><span class="is-held">Industrial Insulation <small>Held</small></span><a class="grecho-v3-mobile-group__all" href="/grecho-v3-visual-evolution-review/case-studies/">Application examples</a></div>
+</section>
+<section class="grecho-v3-mobile-group">
+<button aria-controls="grecho-mobile-resources" aria-expanded="false" data-mobile-accordion-trigger="" type="button">Resources<span aria-hidden="true">+</span></button>
+<div data-mobile-accordion-panel="" hidden="" id="grecho-mobile-resources"><a href="/grecho-v3-visual-evolution-review/resource-center/">Technical Data Sheets</a><a href="/grecho-v3-visual-evolution-review/resource-center/">Application Guides</a><a href="/grecho-v3-visual-evolution-review/insights/">Technical Articles</a><a href="/grecho-v3-visual-evolution-review/faq/">FAQ</a><a href="/grecho-v3-visual-evolution-review/contact/?request=sample#request-form">Sample Review Support</a></div>
+</section>
+<section class="grecho-v3-mobile-group">
+<button aria-controls="grecho-mobile-about" aria-expanded="false" data-mobile-accordion-trigger="" type="button">About<span aria-hidden="true">+</span></button>
+<div data-mobile-accordion-panel="" hidden="" id="grecho-mobile-about"><a href="/grecho-v3-visual-evolution-review/about/">About GRECHO</a><a href="/grecho-v3-visual-evolution-review/insights/">Insights</a><a href="/grecho-v3-visual-evolution-review/contact/">Contact</a><span class="is-held">Production &amp; Quality <small>Held</small></span><span class="is-held">R&amp;D / Technical Support <small>Held</small></span><span class="is-held">Sustainability <small>Held</small></span></div>
+</section>
+</nav>
+<div aria-labelledby="grecho-mobile-language-title" class="grecho-v3-mobile-language">
+<p id="grecho-mobile-language-title">Language <small>English local build</small></p>
+<div><button aria-current="true" aria-disabled="true" disabled="disabled" type="button">EN</button><button aria-disabled="true" disabled="disabled" type="button">DE</button><button aria-disabled="true" disabled="disabled" type="button">FR</button><button aria-disabled="true" disabled="disabled" type="button">nl-BE</button></div>
+</div>
+<a class="grecho-v3-nav__mobile-cta" data-cta-route-id="CTA-01" href="https://huangwenliang2111-ship-it.github.io/grecho-v3-visual-evolution-review/contact/?request=sample&amp;source=header-primary&amp;cta_source=header-primary&amp;cta_location=header&amp;source_page_type=solution-finder#request-form">Request a Sample</a>
+</aside>
+</header><noscript><nav class="grecho-v3-products-nojs" aria-label="Products navigation"><details data-products-nojs><summary>Products</summary><div><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Acoustic facings</p><div class="grecho-v3-products-links"><a data-nav-product-id="P01" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/white-acoustic-ceiling-facer.html">White Acoustic Ceiling Facer</a><a data-nav-product-id="P05" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/acoustic-fiberglass-fabric.html">Acoustic Fiberglass Fabric</a><a data-nav-product-id="P06" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/high-air-permeability-fiberglass-coated-veil.html">Airflow Fiberglass Coated Veil</a><a data-nav-product-id="P07" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/low-air-permeability-fiberglass-coated-veil.html">Airtight Fiberglass Coated Veil</a><a data-nav-product-id="P08" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/matte-black-fiberglass-coated-veil.html">Matte Black Fiberglass Coated Veil</a><a data-nav-product-id="P09" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/washable-fiberglass-coated-veil.html">Washable Fiberglass Coated Veil</a><a data-nav-product-id="P10" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/wood-grain-acoustic-fiberglass-fabric.html">Wood Grain Acoustic Fiberglass Fabric</a><a data-nav-product-id="P11" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/wood-grain-fiberglass-coated-veil.html">Wood Grain Fiberglass Coated Veil</a></div></section><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Insulation facers</p><div class="grecho-v3-products-links"><a data-nav-product-id="P02" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/aluminum-foil-facers-for-thermal-insulation.html">Aluminum Foil Facer</a><a data-nav-product-id="P03" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-mineral-wool-roof-insulation.html">Mineral Wool Insulation Facer</a><a data-nav-product-id="P04" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-pir-pur-insulation-boards.html">PIR/PUR Insulation Facer</a><a data-nav-product-id="P14" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/uv-resistant-fiberglass-coated-veil.html">UV-Resistant Fiberglass Coated Veil</a></div></section><section class="grecho-v3-products-category"><p class="grecho-v3-mega__eyebrow">Building board facers</p><div class="grecho-v3-products-links"><a data-nav-product-id="P12" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/fiberglass-coated-veil-for-gypsum-board.html">Gypsum Board Facer</a><a data-nav-product-id="P13" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/high-waterproof-fiberglass-coated-veil-for-gypsum-board.html">Waterproof facer for Gypsum Board</a><a data-nav-product-id="P14" href="/grecho-v3-visual-evolution-review/content-review-20261023/pages/uv-resistant-fiberglass-coated-veil.html">UV-Resistant Fiberglass Coated Veil</a></div></section></div></details></nav></noscript>
+<!-- ============ /header ============ -->
+
+<aside class="local-review" id="finder-review-notice" aria-label="Design preview notice"><strong>Design preview only. No inquiry will be sent. Please do not enter real contact details.</strong><span>All four systems await Business Copy Final and technical confirmation.</span></aside>
+<noscript><section class="nojs-fallback"><h1>Solution Finder needs JavaScript</h1><p>This local preview cannot collect or send information. Enable JavaScript to select a board and review your requirements. You may leave challenges and applications unspecified, or choose Other / Not sure.</p><p>For human assistance, use the existing GRECHO Contact page in an approved environment. No separate Inquiry page is introduced.</p><a href="/grecho-v3-visual-evolution-review/solutions/">Return to review overview</a></section><style>#finder-board,#finder-challenges,#finder-application,#finder-inquiry,.gsf-mbar{display:none!important}</style></noscript>
+<main id="grecho-v3-main">
+
+  <!-- HERO (same pattern as /solutions/) -->
+  <section aria-labelledby="finder-title" class="grecho-solutions-hero">
+    <div class="grecho-v3-container grecho-solutions-hero__grid">
+      <div>
+        <p class="grecho-v3-eyebrow">Facing Solution Finder</p>
+        <h1 id="finder-title">Tell us your board. We'll find the facing.</h1>
+        <p>Start from what you manufacture, not from our product codes. Select your board, tick the issues you need solved, and GRECHO's technical team will come back with a matched facer direction.</p>
+        <a class="grecho-v3-button" href="#finder-board">Start the Finder <span aria-hidden="true">→</span></a>
+      </div>
+      <img alt="Exploded view of fiberglass facer layers around a mineral wool board core" class="grecho-solutions-hero__image" fetchpriority="high" height="383" src="/grecho-v3-visual-evolution-review/assets/images/solutions/hero-layered-facer-611.webp" width="611">
+    </div>
+  </section>
+
+  <!-- STEP 1 -->
+  <section aria-labelledby="finder-board-title" class="grecho-v3-section" id="finder-board">
+    <div class="grecho-v3-container">
+      <div class="grecho-v3-section-head grecho-v3-section-head--centered">
+        <p class="grecho-v3-eyebrow">Select your board system</p>
+        <h2 id="finder-board-title"><span class="gsf-num">1.</span>What are you <span class="grecho-v3-heading-accent">manufacturing?</span></h2>
+        <p>Choose your board system, then specify the product type. The challenges in the next step update to match your board.</p>
+      </div>
+      <p class="draft-note" id="copyStatus" role="status"></p>
+      <div id="boardSelector" role="radiogroup" aria-label="Board system">
+        <div class="gsf-boards" id="boardGrid"></div>
+        <button type="button" id="otherBoard" class="gsf-other gsf-other--board" role="radio" aria-checked="false" tabindex="-1" data-id="other" aria-labelledby="otherBoardTitle" aria-describedby="otherBoardHelp">
+          <span class="gsf-other__icon" aria-hidden="true">+</span>
+          <span class="gsf-other__body"><strong id="otherBoardTitle">Other Board / Product</strong><small id="otherBoardHelp">Don't see your product above? Tell us what you manufacture.</small></span>
+          <span class="gsf-other__action" aria-hidden="true">Select →</span>
+        </button>
+      </div>
+      <div id="otherBoardDetails" class="gsf-other-details" hidden>
+        <label for="otherBoardDescription">What product or board do you manufacture?</label>
+        <input id="otherBoardDescription" type="text" maxlength="160" aria-describedby="otherBoardDescriptionHelp" autocomplete="off">
+        <small id="otherBoardDescriptionHelp">Optional. Up to 160 characters. For this preview, use synthetic details only.</small>
+      </div>
+      <div class="grecho-v3-inline-cta gsf-product">
+        <div>
+          <strong id="boardTitle"></strong>
+          <span id="productGuidance">Select the specific product you manufacture — or choose “Other / Not sure” and describe it in the inquiry form.</span>
+        </div>
+        <div class="gsf-product__field">
+          <label for="productType" class="gsf-label">Product type (optional)</label>
+          <select id="productType" aria-describedby="productGuidance"></select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section aria-labelledby="finder-challenges-title" class="grecho-v3-section grecho-v3-section--tint" id="finder-challenges">
+    <div class="grecho-v3-container">
+      <div class="grecho-v3-section-head grecho-v3-section-head--centered">
+        <p class="grecho-v3-eyebrow">Your performance challenges</p>
+        <h2 id="finder-challenges-title"><span class="gsf-num">2.</span>Start with the problem<br>— not the <span class="grecho-v3-heading-accent">product.</span></h2>
+        <p>Six performance areas, each with the issues manufacturers raise most often. Select anything that applies, or continue with no challenges. Your choices are kept as you switch areas.</p>
+      </div>
+      <div class="gsf-context"><span><i></i><span id="ctxBoard"></span></span></div>
+      <div class="gsf-cats" id="catGrid" role="tablist" aria-label="Performance areas"></div>
+      <div class="gsf-finder">
+        <div class="gsf-panel" id="challenge-panel" role="tabpanel" tabindex="0" aria-labelledby="category-0">
+          <div class="gsf-panel__top">
+            <div><h3 id="catTitle"></h3><p>Choose all issues that apply to your product.</p></div>
+            <span class="gsf-pill" id="catCount"></span>
+          </div>
+          <div class="gsf-issues" id="problems"></div>
+          <div class="gsf-catnav">
+            <button type="button" class="gsf-linkbtn" id="prevCat">← Previous area</button>
+            <button type="button" class="gsf-linkbtn" id="nextCat">Next area →</button>
+          </div>
+        </div>
+        <aside class="gsf-panel gsf-summary" aria-live="polite">
+          <h3>Your selected challenges</h3>
+          <div class="gsf-count"><span id="chosenCount">0</span><small>issues selected</small></div>
+          <div class="gsf-sel" id="selectedList"></div>
+          <a class="grecho-v3-button" href="#finder-application">Next: Applications <span aria-hidden="true">→</span></a>
+          <button class="gsf-btn-outline" type="button" id="clearBtn">Clear selections</button>
+          <a class="grecho-v3-text-link" href="#finder-inquiry">Skip to inquiry <span aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section aria-labelledby="finder-app-title" class="grecho-v3-section" id="finder-application">
+    <div class="grecho-v3-container">
+      <div class="grecho-v3-section-head grecho-v3-section-head--centered">
+        <p class="grecho-v3-eyebrow">Applications <span class="gsf-opt">OPTIONAL</span></p>
+        <h2 id="finder-app-title"><span class="gsf-num">3.</span>Where will the board <span class="grecho-v3-heading-accent">be used?</span></h2>
+        <p>Choose one or more end-use scenarios — or skip this step and discuss it with the GRECHO team later.</p>
+      </div>
+      <div class="gsf-apps" id="appGrid"></div>
+      <div class="gsf-other-application">
+        <label id="otherApplicationOption" class="gsf-other gsf-other--application">
+          <input type="checkbox" id="otherApplicationCheckbox" aria-labelledby="otherApplicationTitle" aria-describedby="otherApplicationHelp">
+          <span class="gsf-other__icon" aria-hidden="true">+</span>
+          <span class="gsf-other__body"><strong id="otherApplicationTitle">Other Application</strong><small id="otherApplicationHelp">Not listed above? Specify another environment or end use. You can select other applications above as well.</small></span>
+          <span class="gsf-other__action" aria-hidden="true">Select →</span>
+        </label>
+        <div id="otherApplicationDetails" class="gsf-other-details" hidden>
+          <label for="otherApplicationDescription">Please describe your application (optional)</label>
+          <input id="otherApplicationDescription" type="text" maxlength="200" aria-describedby="otherApplicationDescriptionHelp" autocomplete="off">
+          <small id="otherApplicationDescriptionHelp">Optional. Up to 200 characters. For this preview, use synthetic details only.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="finder-inquiry-title" class="grecho-v3-section gsf-next" id="finder-inquiry">
+    <div class="grecho-v3-container"><div class="gsf-next__panel">
+      <div class="gsf-next__copy"><p class="gsf-next__eyebrow">Next step</p>
+        <h2 id="finder-inquiry-title"><span class="gsf-num">4.</span>Need product samples or direct technical support?</h2>
+        <p class="gsf-next__lead">Share your contact details and choose how we can help. Your current board, challenges and applications are summarized below for manual review by our team.</p>
+        <div class="gsf-recap" aria-live="polite"><h3>Your requirements</h3><dl>
+          <dt>Board system</dt><dd id="rBoard"></dd><dt>Product type</dt><dd id="rProduct"></dd>
+          <dt>Challenges</dt><dd id="rIssues"></dd><dt>Applications</dt><dd id="rApps"></dd>
+        </dl><nav class="gsf-edit-links" aria-label="Edit requirements"><a href="#finder-board" data-edit="board">Edit board &amp; product</a><a href="#finder-challenges" data-edit="challenges">Edit challenges</a><a href="#finder-application" data-edit="applications">Edit applications</a></nav></div>
+      </div>
+      <div class="gsf-form"><form id="inquiryForm" novalidate>
+        <h3 class="gsf-form__title">Your contact details</h3>
+        <p class="preview-note">Design preview only. No inquiry will be sent. Please do not enter real contact details.</p>
+        <p class="gsf-required-note">Fields marked * are required.</p>
+        <div class="gsf-form__grid">
+          <div class="gsf-f"><label for="f_name">Contact Person <i>*</i></label><input id="f_name" name="contact_person" autocomplete="name" type="text" required maxlength="120" placeholder="Synthetic Test"></div>
+          <div class="gsf-f"><label for="f_email">Business Email <i>*</i></label><input id="f_email" name="email" autocomplete="email" type="email" required maxlength="254" placeholder="test@example.com"></div>
+          <div class="gsf-f"><label for="f_company">Company Name <i>*</i></label><input id="f_company" name="company_name" autocomplete="organization" type="text" required maxlength="160" placeholder="Example Test Company"></div>
+          <div class="gsf-f"><label for="f_country">Country / Region <i>*</i></label><select id="f_country" name="country_region" autocomplete="country-name" required><option value="">Select country or region</option></select></div>
+        </div>
+        <details id="additionalDetails"><summary>Additional project details (optional)</summary><p class="draft-note">Draft optional fields — pending owner confirmation.</p><div class="gsf-f"><label for="f_phone">Phone / WhatsApp (optional)</label><input id="f_phone" name="phone_whatsapp" autocomplete="tel" type="tel" maxlength="60"></div><div class="gsf-f"><label for="f_details">Project / Application Details (optional)</label><textarea id="f_details" name="project_details" rows="3" maxlength="3000"></textarea></div></details>
+        <label class="gsf-consent" id="consentWrap"><input type="checkbox" id="f_privacy" name="privacy_consent" required><span>I agree that GRECHO may use these details to respond to my inquiry, as described in the <a href="#privacyNote">Privacy Policy</a>. <i>*</i></span></label>
+        <p id="privacyNote">Local review: privacy wording and version require approval before runtime integration.</p>
+        <div class="gsf-form__actions"><button type="submit" id="sampleSubmit" class="grecho-v3-button" name="request_intent" value="sample">Request a Sample <span aria-hidden="true">→</span></button><button type="submit" id="talkSubmit" class="grecho-v3-button gsf-btn-line" name="request_intent" value="consultation">Talk to Our Team <span aria-hidden="true">→</span></button></div>
+        <p id="intentStatus" class="gsf-intent-status" aria-live="polite"></p><p id="ctaMsg" class="gsf-form__msg" role="alert"></p>
+        <div id="previewResult" class="preview-note" role="status" tabindex="-1" hidden><strong>Preview only — no information was sent.</strong><span id="previewIntent"></span></div>
+        <button type="button" id="restartPreview" class="gsf-btn-outline" hidden>Start a new local preview</button>
+        <p class="gsf-sample-note">Sample availability, quantity, fees, freight and shipping remain subject to manual confirmation.</p>
+      </form></div>
+    </div></div>
+  </section>
+</main>
+
+<!-- ============ GRECHO V3 global footer (copied from the review site) ============ -->
+<footer class="grecho-v3-footer" id="grecho-v3-footer">
+<div class="grecho-v3-container">
+<div class="grecho-v3-footer-grid">
+<div class="grecho-v3-footer-brand"><a aria-label="GRECHO home" class="grecho-v3-footer-logo" href="/grecho-v3-visual-evolution-review/"><img alt="GRECHO" height="60" src="/grecho-v3-visual-evolution-review/assets/images/navigation/grecho-logo-white-webp-v1.webp" width="640"></a><p>Fiberglass facer solution support for board manufacturers — from application review and sample selection to technical documents and selected supply coordination.</p><div aria-label="GRECHO social media" class="grecho-v3-social-links"><a aria-disabled="true" aria-label="GRECHO on LinkedIn" data-cta-route-id="CTA-23" rel="noopener noreferrer" tabindex="-1"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.32 8h4.36v14H.32V8zm7.6 0h4.18v1.91h.06c.58-1.1 2-2.26 4.12-2.26 4.41 0 5.22 2.9 5.22 6.67V22h-4.36v-6.81c0-1.63-.03-3.72-2.27-3.72-2.27 0-2.62 1.77-2.62 3.6V22H7.92V8z"></path></svg></a><a aria-disabled="true" aria-label="GRECHO on Facebook" data-cta-route-id="CTA-24" rel="noopener noreferrer" tabindex="-1"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.77l-.44 2.91h-2.33V22C18.34 21.24 22 17.08 22 12.06z"></path></svg></a><a aria-disabled="true" aria-label="GRECHO on YouTube" data-cta-route-id="CTA-25" rel="noopener noreferrer" tabindex="-1"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.13-2.14C19.49 3.56 12 3.56 12 3.56s-7.49 0-9.37.5A3.02 3.02 0 0 0 .5 6.2C0 8.1 0 12.06 0 12.06s0 3.96.5 5.86a3.02 3.02 0 0 0 2.13 2.14c1.88.5 9.37.5 9.37.5s7.49 0 9.37-.5a3.02 3.02 0 0 0 2.13-2.14c.5-1.9.5-5.86.5-5.86s0-3.96-.5-5.86zM9.54 15.61v-7.1l6.27 3.55-6.27 3.55z"></path></svg></a></div></div>
+<div><h2>Solutions</h2><a href="/grecho-v3-visual-evolution-review/solutions/acoustic-ceiling-wall-facers/">Acoustic</a><a href="/grecho-v3-visual-evolution-review/solutions/mineral-wool-insulation/">Mineral Wool</a><a href="/grecho-v3-visual-evolution-review/solutions/gypsum-board-facers/">Gypsum</a><a href="/grecho-v3-visual-evolution-review/solutions/pir-pur-etics-insulation-facers/">PIR / PUR / ETICS</a></div>
+<div><h2>Explore</h2><a href="/grecho-v3-visual-evolution-review/solutions/">Solutions</a><a href="/grecho-v3-visual-evolution-review/resource-center/">Resources</a><a data-cta-route-id="CTA-20" href="/grecho-v3-visual-evolution-review/case-studies/">Application Examples</a><a href="/grecho-v3-visual-evolution-review/faq/">FAQ</a><a data-cta-route-id="CTA-21" href="/grecho-v3-visual-evolution-review/privacy-policy/">Privacy Policy</a><a data-cta-route-id="CTA-22" href="/grecho-v3-visual-evolution-review/cookie-policy/">Cookie Policy</a></div>
+<div><h2>Contact</h2><p class="grecho-v3-footer-contact"><a aria-disabled="true" tabindex="-1"><span aria-hidden="true" class="grecho-v3-footer-contact__icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"></path><path d="m22 7-10 6L2 7"></path></svg></span>info@grechofiberglass.com</a><a aria-disabled="true" tabindex="-1"><span aria-hidden="true" class="grecho-v3-footer-contact__icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.89.66 2.78a2 2 0 0 1-.45 2.11L8.05 9.88a16 16 0 0 0 6.07 6.07l1.27-1.27a2 2 0 0 1 2.11-.45c.89.31 1.82.53 2.78.66A2 2 0 0 1 22 16.92z"></path></svg></span>+86 186 7718 8374</a><span><span aria-hidden="true" class="grecho-v3-footer-contact__icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>Nanning, Guangxi, China</span></p><a data-cta-route-id="CTA-26" href="/grecho-v3-visual-evolution-review/contact/?request=technical-data#request-form">Request Technical Data</a><a data-cta-route-id="CTA-27" href="/grecho-v3-visual-evolution-review/contact/?request=sample#request-form">Request Sample</a></div>
+</div>
+<div class="grecho-v3-footer-bottom"><span>© 2026 GRECHO Fiberglass. All rights reserved.</span><span>Fiberglass facer solution support for board manufacturers.</span></div>
+</div>
+</footer>
+<!-- ============ /footer ============ -->
+
+<div class="gsf-mbar" id="mbar" aria-hidden="true">
+  <span><strong id="mCount">0</strong> issues selected</span>
+  <a href="#finder-inquiry">Continue →</a>
+</div>
+
+</div>
+
+
+<!-- GRECHO V3 site scripts: mega menu, mobile nav, language switcher. -->
+
+
+<script src="assets/js/finder-data.js?v=20261020-other-1"></script><script src="assets/js/finder-retained.js?v=20261020-other-1"></script><script src="assets/js/finder-local.js?v=20261020-other-1"></script></body>
+</html>

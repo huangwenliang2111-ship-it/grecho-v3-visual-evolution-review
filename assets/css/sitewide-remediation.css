@@ -1,0 +1,21 @@
+/* Shared navigation CTA adapter; original tokens and gc-button geometry apply. */
+.grecho-existing .grecho-v1-review-cta-actions > .gc-button.is-primary:hover {background:var(--grecho-v3-brand-deep)}
+.grecho-existing .grecho-v1-review-cta-actions > .gc-button.is-secondary:hover {background:var(--grecho-v3-tint);border-color:var(--grecho-v3-brand);color:var(--grecho-v3-brand-deep)}
+.grecho-existing .grecho-v1-review-cta-actions > .gc-button:focus-visible {
+ outline:3px solid var(--grecho-v3-brand-deep);outline-offset:4px;
+ box-shadow:0 0 0 2px #fff;
+}
+.grecho-existing .grecho-v1-review-cta-actions > .gc-button:active {transform:translateY(1px)}
+/* Keep full descriptions next to the photo and readable labels over actual images. */
+.grecho-product-applications figcaption {
+ background:rgba(9,42,96,.94);padding:6px 10px;border-radius:4px;
+ right:auto;max-width:calc(100% - 40px);
+}
+.grecho-product-applications .grecho-caption-context {
+ color:var(--grecho-v3-ink);font-size:14px;line-height:1.6;margin:12px 0 0;
+}
+.grecho-public-preview-note {
+ margin:0;padding:5px 14px;background:#edf3fa;color:#17334b;
+ font:600 12px/18px Arial,sans-serif;text-align:center;
+}
+.grecho-demo-form-note {padding:12px 16px;border:1px solid #d4dfed;border-radius:6px;background:#f1f6fb;color:#17334b;font-size:14px;line-height:1.5}

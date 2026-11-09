@@ -1,0 +1,16 @@
+/* LOCAL CANDIDATE FAQ-NATIVE-26-01. Parents UIV3-12/15/16; native details and all26 answers retained. */
+main[data-local-candidate="28"] #faq-explorer .gfaq-group {border-radius:var(--grecho-v3-radius-md);border-color:var(--grecho-v3-border);box-shadow:none}
+main[data-local-candidate="28"] #faq-explorer .gfaq-group-head {padding:0 0 20px 58px}
+main[data-local-candidate="28"] #faq-explorer .gfaq-item {overflow:visible}
+main[data-local-candidate="28"] #faq-explorer summary:focus-visible {outline:3px solid #f8c44f;outline-offset:3px;border-radius:4px}
+main[data-local-candidate="28"] #faq-explorer .gfaq-question {font-size:16px;line-height:1.45}
+main[data-local-candidate="28"] #faq-explorer .gfaq-answer {font-size:15px;line-height:1.7}
+main[data-local-candidate="28"] #faq-explorer .gfaq-tab {min-height:46px}
+main[data-local-candidate="28"] #faq-explorer .r3-faq-number {border-radius:var(--grecho-v3-radius-sm)}
+@media(max-width:600px){
+main[data-local-candidate="28"] #faq-explorer .gfaq-group-head {padding:0 0 20px 48px;min-height:40px}
+main[data-local-candidate="28"] #faq-explorer .r3-faq-number {width:32px;height:32px;top:0}
+main[data-local-candidate="28"] #faq-explorer .gfaq-group-head h3 {font-size:21px}
+main[data-local-candidate="28"] #faq-explorer .gfaq-question {font-size:15px;gap:12px}
+main[data-local-candidate="28"] #faq-explorer .gfaq-search input {font-size:16px}
+}

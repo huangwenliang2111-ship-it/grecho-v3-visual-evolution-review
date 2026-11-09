@@ -1,0 +1,21 @@
+/* LOCAL CANDIDATE NARRATIVE-SUPPORT-01. Parents UIV3-07/13/15/16. Narrative, imagery and business boundaries unchanged. */
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-split {display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px 48px;align-items:start}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-split>div:first-child {display:contents}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gc-section-head {grid-column:1;grid-row:1;margin:0}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-position-box {grid-column:1;grid-row:2;gap:22px}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-image-card {grid-column:2;grid-row:1/3;margin:0;border-radius:var(--grecho-v3-radius-md);overflow:hidden;background:white}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-image-card img {aspect-ratio:4/3;object-fit:contain;border-radius:var(--grecho-v3-radius-md)}
+main[data-local-candidate="26"] .gab-scope-grid {gap:22px}
+main[data-local-candidate="26"] .gab-scope-card {padding:24px;background:white;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);box-shadow:none}
+main[data-local-candidate="26"] .gab-scope-card h3 {font-size:20px}
+main[data-local-candidate="26"] .gab-solutions-grid {gap:0 32px}
+main[data-local-candidate="26"] .gab-cap-strip .gab-cap-card {background:transparent}
+main[data-local-candidate="26"] .gab-global-list {border-left:2px solid var(--grecho-v3-border);padding-left:26px}
+main[data-local-candidate="26"] :is(a,button):focus-visible {outline:3px solid #f8c44f;outline-offset:3px}
+@media(max-width:960px){
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-split {grid-template-columns:1fr;gap:28px}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gc-section-head {grid-column:1;grid-row:1}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-image-card {grid-column:1;grid-row:2;max-width:600px}
+main[data-local-candidate="26"] #grecho-about-v2>div>section:nth-child(2) .gab-position-box {grid-column:1;grid-row:3}
+}
+@media(max-width:600px){main[data-local-candidate="26"] .gab-global-list {padding-left:18px}main[data-local-candidate="26"] .gab-scope-card {padding:22px}}

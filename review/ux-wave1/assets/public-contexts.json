@@ -1,0 +1,92 @@
+{
+  "CTDS-001": {
+    "title": "GCKF140–200gsm Plain White Coated Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-002": {
+    "title": "GCKF_SD Colored Fiberglass Coated Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-003": {
+    "title": "GCKF 600A / 700# / 900D Spray Dotted Fiberglass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-004": {
+    "title": "GCKF_QY 380gsm White Spray Sanded Fiberglass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-005": {
+    "title": "GCSD100–200gsm Fiberglass Black Coated Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-006": {
+    "title": "GCJR360 Fiberglass Satin Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-007": {
+    "title": "GCJR230 Fiberglass Plain Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-008": {
+    "title": "Fiberglass Wood Grain Fabric 360gsm",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-009": {
+    "title": "GCJR350 Fiberglass Jacquard Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-010": {
+    "title": "Wood Grain Series Glass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-011": {
+    "title": "Silent Land Series Glass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-012": {
+    "title": "Black Plain Fiberglass Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-013": {
+    "title": "120g–140g Acoustic Ceiling Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-014": {
+    "title": "Fluorine-Free Fiberglass Coated Facer",
+    "direction": "general",
+    "solution": "general",
+    "doc": "color-tds"
+  },
+  "CTDS-015": {
+    "title": "Acoustic Composite Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  }
+}

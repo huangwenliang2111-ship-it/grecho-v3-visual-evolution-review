@@ -1,0 +1,16 @@
+/* LOCAL LIMITED MODULE SAMPLE TECHNICAL-TABLE-01 / EDITORIAL-CONTINUOUS-01. Parents UIV3-15/16 (outer shell) +07/13 for support. No chapter/prose/table-content mutation. */
+main[data-local-candidate="2588"] #post-2588 .sample-editorial-toc {padding:0;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);background:var(--grecho-v3-tint);box-shadow:none;overflow:hidden}
+main[data-local-candidate="2588"] #post-2588 .sample-editorial-toc-toggle {padding:18px 20px;font-weight:800;min-height:46px;background:white;border-bottom:1px solid var(--grecho-v3-border)}
+main[data-local-candidate="2588"] #post-2588 .gia-toc {padding:14px 20px;background:transparent;border:0;border-radius:0;max-height:calc(100vh - 220px);overflow:auto}
+main[data-local-candidate="2588"] #post-2588 .gia-toc a {color:var(--grecho-v3-brand);line-height:1.5}
+main[data-local-candidate="2588"] #post-2588 .gc-table-wrap {border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);background:white;box-shadow:none;overflow-x:auto;max-width:100%}
+main[data-local-candidate="2588"] #post-2588 .gc-table-wrap table {border-collapse:collapse;margin:0}
+main[data-local-candidate="2588"] #post-2588 .gc-table-wrap th {background:var(--grecho-v3-tint-strong);color:var(--grecho-v3-text);font-weight:800;border-color:var(--grecho-v3-border);padding:16px}
+main[data-local-candidate="2588"] #post-2588 .gc-table-wrap td {padding:16px;border-color:var(--grecho-v3-border);vertical-align:top}
+main[data-local-candidate="2588"] #post-2588 .gc-table-wrap tbody tr:nth-child(even) td {background:var(--grecho-v3-tint)}
+main[data-local-candidate="2588"] #post-2588 .gc-table-wrap td:first-child {font-weight:650}
+main[data-local-candidate="2588"] #post-2588 .gia-route-card {border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);padding:26px;background:white;box-shadow:var(--grecho-v3-shadow-card)}
+main[data-local-candidate="2588"] #post-2588 .gia-final-panel {border-radius:var(--grecho-v3-radius-md);box-shadow:none}
+main[data-local-candidate="2588"] #post-2588 :is(.gc-table-wrap,.gia-toc a,.sample-editorial-toc-toggle,.gia-route-card,.gia-final-actions a):focus-visible {outline:3px solid #f8c44f;outline-offset:3px}
+@media(max-width:850px){main[data-local-candidate="2588"] #post-2588 .gia-toc {max-height:none}}
+@media(max-width:600px){main[data-local-candidate="2588"] #post-2588 .gia-route-card {padding:22px}main[data-local-candidate="2588"] #post-2588 .gc-table-wrap :is(th,td) {padding:14px}}

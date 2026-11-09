@@ -1,0 +1,38 @@
+/* Isolated REV03 review. Frozen GRECHO tokens and shared files remain unchanged. */
+.grecho-solutions-rev03 #solutions-applications .grecho-v3-solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grecho-solutions-rev03 .grecho-rev03-card{--assembly-progress:0;--layer-mix:0;--lighting-weight:1;display:flex;flex-direction:column;min-width:0}
+.grecho-solutions-rev03 .grecho-rev03-card:hover,.grecho-solutions-rev03 .grecho-rev03-card:focus-within{transform:none}
+.grecho-solutions-rev03 .grecho-rev03-card h3 a::after{content:none}
+.grecho-solutions-rev03 .grecho-rev03-card .grecho-v3-solution-card__body{flex:1;min-height:155px}
+.grecho-solutions-rev03 .grecho-rev03-card h3 a{padding-block:2px;text-underline-offset:4px}
+.grecho-solutions-rev03 .grecho-rev03-card h3 a:hover{text-decoration:underline}
+.grecho-solutions-rev03 .grecho-rev03-card h3 a:focus-visible{outline:3px solid #1b4aa1;outline-offset:4px}
+.grecho-solutions-rev03 .grecho-rev03-notice{margin:26px auto 24px;max-width:760px;text-align:center;color:var(--grecho-v3-muted);font-size:13px;line-height:1.6}
+.grecho-solutions-rev03 .grecho-rev03-trigger{display:block;position:relative;width:100%;padding:0;border:0;border-bottom:1px solid var(--grecho-v3-border);background:#f3f6fa;color:var(--grecho-v3-muted);font:inherit;text-align:left;isolation:isolate;touch-action:pan-y;cursor:default;border-radius:0;box-shadow:none;min-width:0;min-height:0;flex:0 0 auto;align-self:stretch}
+.grecho-solutions-rev03 .grecho-rev03-trigger:disabled{opacity:1;color:var(--grecho-v3-muted);background:#f3f6fa}
+.grecho-solutions-rev03 [data-rev03-enhanced] .grecho-rev03-trigger:not(:disabled){cursor:pointer}
+.grecho-solutions-rev03 .grecho-rev03-trigger:focus-visible{outline:3px solid #1b4aa1;outline-offset:-5px}
+.grecho-solutions-rev03 .grecho-rev03-scene{display:block;position:relative;aspect-ratio:4/3;overflow:hidden;background:#f3f6fa;perspective:none}
+.grecho-solutions-rev03 .grecho-rev03-assembly{position:absolute;inset:0 6px;transform:none;transform-style:flat;transition:none}
+.grecho-solutions-rev03 .grecho-rev03-assembly img{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;object-fit:contain;pointer-events:none;user-select:none;transition:none;transform-origin:0 0}
+.grecho-solutions-rev03 .grecho-rev03-source{z-index:4;opacity:calc(1 - var(--layer-mix))}
+.grecho-solutions-rev03 .grecho-rev03-layer{opacity:0}
+.grecho-solutions-rev03 .grecho-rev03-bottom{z-index:1}
+.grecho-solutions-rev03 .grecho-rev03-core{z-index:2}
+.grecho-solutions-rev03 .grecho-rev03-top{z-index:3}
+.grecho-solutions-rev03 .grecho-rev03-lighting{opacity:0}
+.grecho-solutions-rev03 .grecho-rev03-lighting-context{z-index:0}
+.grecho-solutions-rev03 .grecho-rev03-lighting-bottom{z-index:1}
+.grecho-solutions-rev03 .grecho-rev03-lighting-core{z-index:2}
+.grecho-solutions-rev03 .grecho-rev03-ready .grecho-rev03-layer{opacity:1}
+.grecho-solutions-rev03 .grecho-rev03-ready .grecho-rev03-lighting{opacity:var(--lighting-weight)}
+.grecho-solutions-rev03 [data-rev03-phase="fallback"] .grecho-rev03-layer,.grecho-solutions-rev03 [data-rev03-phase="fallback"] .grecho-rev03-lighting{display:none}
+.grecho-solutions-rev03 .grecho-rev03-cue{position:static;box-sizing:border-box;min-height:36px;padding:8px 18px;display:none;align-items:center;justify-content:space-between;gap:12px;font-size:12px;line-height:1.5;pointer-events:none;color:#526374}
+.grecho-solutions-rev03 [data-rev03-enhanced] .grecho-rev03-cue{display:flex}
+.grecho-solutions-rev03 .grecho-rev03-cue svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;flex-shrink:0}
+.grecho-solutions-rev03 .grecho-rev03-cue-action{display:inline-flex;align-items:center;gap:7px;min-width:0}
+.grecho-solutions-rev03 .grecho-rev03-state{font-size:11px;color:#607184;flex:0 1 auto;min-width:0;text-align:right;white-space:normal;overflow-wrap:anywhere}
+.grecho-solutions-rev03 [data-rev03-phase="assembled"] .grecho-rev03-state{color:#1b4aa1}
+.grecho-solutions-rev03 .grecho-rev03-sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.grecho-solutions-rev03 #solutions-applications .grecho-v3-solution-grid{grid-template-columns:minmax(0,1fr)}.grecho-solutions-rev03 .grecho-rev03-card .grecho-v3-solution-card__body{min-height:145px}.grecho-solutions-rev03 .grecho-rev03-cue{padding-inline:14px;font-size:11px}.grecho-solutions-rev03 .grecho-rev03-state{font-size:10px}.grecho-solutions-rev03 .grecho-rev03-notice{font-size:12px;text-align:left;margin-block:22px}}
+@media(prefers-reduced-motion:reduce){.grecho-solutions-rev03 .grecho-rev03-card,.grecho-solutions-rev03 .grecho-rev03-card *{transition:none!important;animation:none!important}}

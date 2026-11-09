@@ -1,0 +1,59 @@
+/* Finder-local adaptations; frozen shared styles and tokens remain unmodified. */
+html{scroll-behavior:smooth}
+body{font-family:"GRECHO Local Inter","Inter Tight","Inter","Noto Sans SC",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.gsf input,.gsf textarea,.gsf button,.gsf select{font-family:inherit}
+.gsf button{cursor:pointer}
+.gsf :focus-visible{outline:3px solid #8fb4ef;outline-offset:3px}
+.local-review{padding:14px 24px;background:#fff7e6;border-bottom:1px solid #e4c995;font-size:13px;line-height:1.7}
+.local-review strong,.local-review span{display:block}.local-review a{color:#123b7a}
+.draft-note{padding:12px 16px;border-left:3px solid var(--b);background:var(--tint);color:#33475d;font-size:13px}
+.gsf .gsf-recap dd.is-miss{color:#fff;font-weight:600}
+.gsf .gsf-recap__issues{max-height:230px;overflow-y:auto;overscroll-behavior:auto;margin:8px 0 0;padding-left:18px;font-size:12.5px;font-weight:500}
+.gsf-recap__issues li{padding:3px 0}
+.gsf-edit-links{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:18px}
+.gsf .gsf-edit-links a{color:#d7e9ff;text-decoration:underline;font-size:12.5px;min-height:32px;display:inline-flex;align-items:center}
+.gsf .gsf-form p{font-size:13px;line-height:1.6}
+.gsf .gsf-form__title{font-size:18px;line-height:1.4}
+.gsf .preview-note{padding:10px 12px;border:1px solid #e6cd9b;background:#fff7e6;color:#68470a;font-size:12.5px;line-height:1.6}
+.gsf .gsf-required-note{margin-bottom:14px;color:var(--mu);font-size:12px}
+.gsf textarea{width:100%;box-sizing:border-box;resize:vertical;border:1px solid var(--ln);border-radius:4px;padding:12px;font:inherit}
+.gsf details{margin-top:18px;border:1px solid var(--ln);border-radius:6px;padding:12px 14px}
+.gsf summary{cursor:pointer;font-weight:700;font-size:13px;min-height:24px;line-height:24px}
+.gsf details .gsf-f{margin-top:14px}
+.gsf .gsf-form__actions{gap:10px}
+.gsf .gsf-form__actions .grecho-v3-button{flex-basis:160px;min-height:48px;padding-inline:14px;font-size:13px}
+.gsf #privacyNote{font-size:11.5px;color:var(--mu);margin-bottom:0}
+.gsf #previewIntent{display:block;margin-top:4px}
+.gsf .gsf-intent-status{font-size:12px;margin:12px 0 0;color:var(--b);min-height:0}
+.gsf .gsf-form__msg:empty,.gsf .gsf-intent-status:empty{display:none}
+.gsf .gsf-sample-note{font-size:11.5px;color:var(--mu);margin:16px 0 0}
+.gsf #restartPreview{margin-top:12px}
+.gsf [hidden]{display:none}
+.gsf .gsf-app:focus-within,.gsf .gsf-issue:focus-within{outline:3px solid #8fb4ef;outline-offset:3px}
+.gsf .gsf-boards{align-items:stretch;grid-auto-rows:1fr}
+.gsf .gsf-board__body{flex:1;min-width:0}
+.gsf .gsf-board__title{white-space:normal;overflow-wrap:break-word;word-break:normal}
+.gsf .gsf-product>div:first-child{flex-basis:260px}
+/* Additional choices remain outside the four-card photo grids. */
+.gsf .gsf-other{position:relative;display:flex;align-items:center;gap:18px;width:100%;min-height:104px;margin:18px 0 0;padding:20px 24px;text-align:left;border:2px dashed var(--ln);border-radius:var(--r);background:linear-gradient(110deg,var(--tint),var(--tint2));color:var(--tx);cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s}
+.gsf .gsf-other:hover{border-color:var(--b);background:var(--tint2)}
+.gsf .gsf-other.is-on{border-style:solid;border-color:var(--b);background:var(--tint2);box-shadow:0 0 0 2px var(--tint2)}
+.gsf .gsf-other__icon{display:grid;place-items:center;flex-shrink:0;width:52px;height:52px;border-radius:12px;background:var(--tint2);color:var(--b);font-size:27px;font-weight:400;line-height:1}
+.gsf .gsf-other.is-on .gsf-other__icon{background:var(--b);color:#fff}
+.gsf .gsf-other__body{display:flex;flex:1;flex-direction:column;gap:4px;min-width:0;overflow-wrap:break-word}
+.gsf .gsf-other__body strong{font-size:17px;line-height:1.35;color:var(--tx)}
+.gsf .gsf-other__body small{font-size:13.5px;line-height:1.5;color:var(--mu)}
+.gsf .gsf-other__action{flex-shrink:0;color:var(--b);font-size:13px;font-weight:800;white-space:nowrap}
+.gsf .gsf-other--application>input{position:absolute;width:1px;height:1px;margin:0;opacity:0}
+.gsf .gsf-other:focus-visible,.gsf .gsf-other--application:focus-within{outline:3px solid #8fb4ef;outline-offset:3px}
+.gsf .gsf-other-details{margin-top:14px;padding:18px 20px;border:1px solid var(--ln);border-radius:var(--r);background:var(--tint)}
+.gsf .gsf-other-details label{display:block;margin-bottom:8px;color:var(--tx);font-size:14px;font-weight:750;line-height:1.5}
+.gsf .gsf-other-details input{width:100%;min-height:48px;margin:0;padding:12px 14px;border:1px solid var(--ln);border-radius:4px;background:#fff;color:var(--tx);font:inherit;line-height:1.4}
+.gsf .gsf-other-details input:focus{border-color:var(--b)}
+.gsf .gsf-other-details small{display:block;margin-top:8px;color:var(--mu);font-size:12px;line-height:1.5}
+@media(max-width:680px){.gsf .gsf-board__body{padding:14px 16px}.gsf .gsf-board__title{font-size:16px;line-height:1.35}.gsf .gsf-board__tick{left:10px;right:auto;top:10px}.gsf .gsf-board__badge{left:10px;right:auto;top:auto;bottom:10px}.gsf .gsf-product>div:first-child,.gsf .gsf-product__field{flex:0 1 auto}.gsf .gsf-other{align-items:flex-start;gap:12px;padding:16px}.gsf .gsf-other__icon{width:40px;height:40px;font-size:23px}.gsf .gsf-other__action{align-self:center}.gsf .gsf-other-details{padding:16px}}
+@media(max-width:480px){.gsf .gsf-other{display:grid;grid-template-columns:40px minmax(0,1fr);gap:8px 12px}.gsf .gsf-other__action{grid-column:2}.gsf .gsf-other__body strong{font-size:16px}}
+.gsf-mbar.is-show.is-inquiry{display:none}
+.nojs-fallback{padding:32px}
+@media(max-width:600px){.local-review{padding:12px 18px}.gsf .gsf-form__grid{grid-template-columns:1fr}.gsf .gsf-recap__issues{max-height:240px}.gsf .gsf-edit-links a{min-height:44px}.gsf .gsf-form__actions .grecho-v3-button{flex-basis:100%}.gsf summary{min-height:44px;line-height:1.5;padding-block:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gsf *,.gsf *::before,.gsf *::after{transition:none;animation:none;scroll-behavior:auto}}

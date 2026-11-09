@@ -1,0 +1,45 @@
+/* Cases-only application browsing. Frozen V3 tokens and original content. */
+.grecho-existing[data-source-route="/case-studies/"] .gcases-hero {padding-block:64px;background-position:center;background-size:cover}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-hero-inner {display:block}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-hero-inner>div {max-width:850px}
+.grecho-existing[data-source-route="/case-studies/"] h1 {max-width:850px;font-size:clamp(36px,4.4vw,56px);line-height:1.08}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-boundary-note {font-size:14px;max-width:730px;padding-left:16px;border-left:2px solid var(--grecho-v3-border)}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-heading {max-width:770px;text-align:left;margin-bottom:28px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-heading h2 {font-size:clamp(30px,3.3vw,44px);line-height:1.12}
+.grecho-existing[data-source-route="/case-studies/"] #application-examples {padding-block:64px 80px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-filter-row {padding-block:20px;margin:0 0 32px;gap:10px;border-block:1px solid var(--grecho-v3-border)}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-filter-btn {border-radius:var(--grecho-v3-radius-sm);padding-inline:20px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 28px;align-items:start}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-card {padding:0;box-shadow:none;overflow:visible;transform:none;transition:none}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-card img {display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:9px 9px 0 0;margin:0}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-body {padding:26px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-tag {display:block;color:var(--grecho-v3-brand);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-body h3 {font-size:25px;line-height:1.22;margin-bottom:20px;max-width:25ch}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-mini-list {display:grid;gap:12px;color:var(--grecho-v3-muted);font-size:14px;line-height:1.6}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-mini-list strong {color:var(--grecho-v3-text)}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-mini-list>span:first-child {font-size:16px;color:var(--grecho-v3-text);padding-bottom:14px;border-bottom:1px solid var(--grecho-v3-border)}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-card-actions {margin-top:24px}
+.grecho-existing[data-source-route="/case-studies/"] #review-path {padding-block:72px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-process-layout {grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-process-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-process-card {padding:20px;box-shadow:none}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-process-card>span,.grecho-existing[data-source-route="/case-studies/"] .gcases-number {display:block;color:var(--grecho-v3-brand);font-size:13px;font-weight:800;margin-bottom:12px}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-blue-card {margin-top:20px;box-shadow:none}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-support-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.grecho-existing[data-source-route="/case-studies/"] .gcases-support-grid .gc-card {box-shadow:none}
+@media(max-width:850px){
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-process-layout {grid-template-columns:1fr;gap:28px}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-process-visual {max-width:600px}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-body {padding:22px}
+}
+@media(max-width:600px){
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-hero {padding-block:42px}
+ .grecho-existing[data-source-route="/case-studies/"] h1 {font-size:clamp(32px,8.4vw,42px)}
+ .grecho-existing[data-source-route="/case-studies/"] #application-examples {padding-block:44px 56px}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-filter-row {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-block:16px}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-filter-btn {padding:11px 12px}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-grid,.grecho-existing[data-source-route="/case-studies/"] .gcases-support-grid,.grecho-existing[data-source-route="/case-studies/"] .gcases-process-grid {grid-template-columns:1fr}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-scenario-body h3 {font-size:24px}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-card-actions {align-items:stretch}
+ .grecho-existing[data-source-route="/case-studies/"] .gcases-card-actions a {flex:1 1 140px}
+}

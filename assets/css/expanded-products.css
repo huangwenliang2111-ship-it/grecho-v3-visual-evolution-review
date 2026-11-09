@@ -1,0 +1,218 @@
+/* Sample-only composition: Products (V03) and ordinary product S02 (V24).
+   No selector can affect another route. Source modules/copy are relocated, not removed. */
+.grecho-existing.unused-product-list-scope .sample-products-hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);align-items:center;gap:64px}
+.grecho-existing.unused-product-list-scope .gpl-hero{padding-block:64px;background:#edf3f8}
+.grecho-existing.unused-product-list-scope .gpl-hero .grecho-v1-hero-content{width:auto;min-height:0}
+.grecho-existing.unused-product-list-scope .gpl-hero h1{font-size:clamp(38px,4.1vw,56px);max-width:none;line-height:1.05;letter-spacing:-.045em;margin-bottom:24px}
+.grecho-existing.unused-product-list-scope .gpl-hero p{max-width:580px;line-height:1.7;margin-bottom:0}
+.grecho-existing.unused-product-list-scope .gpl-hero .gc-actions{margin-top:30px}
+.grecho-existing.unused-product-list-scope .gpl-hero .grecho-v1-hero-media{position:relative;inset:auto;width:100%;max-width:none;min-height:390px;align-self:stretch;overflow:hidden;border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing.unused-product-list-scope .gpl-hero .grecho-v1-hero-image{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.grecho-existing.unused-product-list-scope .gpl-series-nav-section.gc-section{padding-block:64px 36px}
+.grecho-existing.unused-product-list-scope .gpl-section-row{align-items:center;margin-bottom:28px}
+.grecho-existing.unused-product-list-scope .gpl-section-row h2{font-size:38px;margin-bottom:12px}
+.grecho-existing.unused-product-list-scope .gpl-section-row-note{max-width:760px;margin:0}
+.grecho-existing.unused-product-list-scope .gpl-series-nav{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.grecho-existing.unused-product-list-scope .gpl-series-button{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;padding:14px 12px;min-height:90px;border-radius:8px;text-align:left}
+.grecho-existing.unused-product-list-scope .gpl-family-media{display:flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:5px;overflow:hidden;background:#eef3f8}
+.grecho-existing.unused-product-list-scope .gpl-family-media img{width:40px;height:40px;border-radius:0;object-fit:cover}
+.grecho-existing.unused-product-list-scope .gpl-family-media.is-featured::before{content:'✦';font-size:24px;color:var(--grecho-v3-brand)}
+.grecho-existing.unused-product-list-scope .gpl-family-media.is-all::before{content:'▦';font-size:25px;color:var(--grecho-v3-brand)}
+.grecho-existing.unused-product-list-scope .gpl-series-button-label{font-size:13px;font-weight:750;line-height:1.35}
+.grecho-existing.unused-product-list-scope .gpl-series-button small{font-size:10px;margin-top:4px;line-height:1.25}
+.grecho-existing.unused-product-list-scope .gpl-series-button strong{font-size:15px;align-self:start;margin-top:2px}
+.grecho-existing.unused-product-list-scope .gpl-selector.gc-section{padding-block:20px 72px}
+.grecho-existing.unused-product-list-scope .gpl-selector-shell{grid-template-columns:220px minmax(0,1fr);gap:36px;align-items:start}
+.grecho-existing.unused-product-list-scope .gpl-filter-panel{padding:0;border:0;border-top:2px solid var(--grecho-v3-brand);border-radius:0;box-shadow:none;overflow:visible}
+.grecho-existing.unused-product-list-scope .gpl-mobile-filter{border:0;border-radius:0;margin:0;background:transparent;overflow:visible}
+.grecho-existing.unused-product-list-scope .gpl-mobile-filter>summary{padding:18px 0;font-size:14px}
+.grecho-existing.unused-product-list-scope .gpl-filter-inner{padding:0}
+.grecho-existing.unused-product-list-scope .gpl-filter-top{padding:20px 0 12px}
+.grecho-existing.unused-product-list-scope .gpl-filter-top h2{font-size:23px;margin:0}
+.grecho-existing.unused-product-list-scope .gpl-filter-group{padding:18px 0}
+.grecho-existing.unused-product-list-scope .gpl-filter-check{gap:9px;line-height:1.5}
+.grecho-existing.unused-product-list-scope .gpl-filter-check span{font-size:12px}
+.grecho-existing.unused-product-list-scope .gpl-results-panel.gc-card{padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;overflow:visible}
+.grecho-existing.unused-product-list-scope .gpl-results-toolbar{padding:0 0 24px;border-bottom:1px solid var(--grecho-v3-border);margin-bottom:24px;align-items:end}
+.grecho-existing.unused-product-list-scope .gpl-results-toolbar h2{font-size:29px;margin:0}
+.grecho-existing.unused-product-list-scope .gpl-results-toolbar p{font-size:13px;margin:0;white-space:nowrap}
+.grecho-existing.unused-product-list-scope .gpl-results-toolbar .gc-eyebrow{font-size:10px;letter-spacing:.14em;margin-bottom:8px}
+.grecho-existing.unused-product-list-scope .gpl-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+.grecho-existing.unused-product-list-scope .gpl-product-card.gc-card{padding:0;border:1px solid #d9e3eb;border-radius:10px;box-shadow:none;background:#fff;overflow:hidden}
+.grecho-existing.unused-product-list-scope .gpl-product-media{position:relative;padding:0;width:100%;aspect-ratio:1.6;background:#f1f4f6;overflow:hidden}
+.grecho-existing.unused-product-list-scope .gpl-product-media img{display:block;width:100%;height:100%;aspect-ratio:auto;margin:0;object-fit:cover;border-radius:0;transition:transform .2s ease}
+.grecho-existing.unused-product-list-scope .gpl-product-card:hover .gpl-product-media img{transform:scale(1.025)}
+.grecho-existing.unused-product-list-scope .gpl-product-card-body{padding:24px;display:flex;flex-direction:column;min-width:0}
+.grecho-existing.unused-product-list-scope .gpl-product-card h3{font-size:25px;line-height:1.18;letter-spacing:-.035em;margin:0 0 12px;overflow-wrap:normal}
+.grecho-existing.unused-product-list-scope .gpl-product-summary{font-size:15px;line-height:1.65;margin:0;min-height:5em}
+.grecho-existing.unused-product-list-scope .gpl-card-actions{margin-top:22px;gap:12px;align-items:center}
+.grecho-existing.unused-product-list-scope .gpl-card-action{font-size:12px;padding:10px 13px;min-height:42px;display:inline-flex;align-items:center;justify-content:center;line-height:1.35}
+.grecho-existing.unused-product-list-scope .gpl-card-action.is-secondary{border-color:transparent;background:transparent;padding-inline:0;color:var(--grecho-v3-brand);text-decoration:underline;text-underline-offset:4px}
+.grecho-existing.unused-product-list-scope .gpl-card-details{border:0;border-top:1px solid var(--grecho-v3-border);border-radius:0;margin:22px 0 0;background:transparent;order:4}
+.grecho-existing.unused-product-list-scope .gpl-card-details summary{padding:15px 0 0;font-size:13px}
+.grecho-existing.unused-product-list-scope .gpl-card-details[open]>summary{padding-bottom:15px;border-bottom:0}
+.grecho-existing.unused-product-list-scope .gpl-card-detail-panel.gc-card{border:0;box-shadow:none;border-radius:0;padding:0;background:transparent}
+.grecho-existing.unused-product-list-scope .sample-card-identity{padding:0 0 16px;border-bottom:1px solid var(--grecho-v3-border);margin-bottom:16px}
+.grecho-existing.unused-product-list-scope .gpl-product-card-kicker{display:flex;gap:10px;font-size:11px;margin-bottom:14px}
+.grecho-existing.unused-product-list-scope .gpl-product-facts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 16px}
+.grecho-existing.unused-product-list-scope .gpl-product-facts dt{font-size:11px;margin-bottom:4px;color:var(--grecho-v3-muted)}
+.grecho-existing.unused-product-list-scope .gpl-product-facts dd{font-size:13px;margin:0;font-weight:700;line-height:1.5}
+.grecho-existing.unused-product-list-scope .gpl-application-tags,.grecho-existing.unused-product-list-scope .gpl-attribute-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.grecho-existing.unused-product-list-scope .gpl-application-tags span,.grecho-existing.unused-product-list-scope .gpl-attribute-tags span{font-size:11px;line-height:1.4;padding:4px 7px;background:#f1f5f8;border-radius:3px}
+.grecho-existing.unused-product-list-scope .gpl-product-media-code,.grecho-existing.unused-product-list-scope .gpl-product-media-note{position:static;display:inline-block;background:transparent;color:var(--grecho-v3-muted);font-size:10px;margin:12px 8px 0 0;padding:0}
+.grecho-existing.unused-product-list-scope .gpl-product-card-body>a{font-size:13px;color:var(--grecho-v3-brand);font-weight:700;margin-top:16px;text-decoration:underline;text-underline-offset:4px}
+.grecho-existing.unused-product-list-scope .gpl-card-detail-panel p,.grecho-existing.unused-product-list-scope .gpl-card-detail-panel dd{font-size:13px;line-height:1.65}
+/* S02: recognition and action first; intact identity and document records in the body. */
+.grecho-existing.gc-expanded-product .gptv1-product-hero{padding-block:56px;background:#edf3f8}
+.grecho-existing.gc-expanded-product .gptv1-product-hero-layout{grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);align-items:center;gap:56px}
+.grecho-existing.gc-expanded-product .gptv1-hero-copy h1{font-size:clamp(38px,4.1vw,56px);line-height:1.06;max-width:none;margin-bottom:24px}
+.grecho-existing.gc-expanded-product .gptv1-hero-copy>p{font-size:18px;line-height:1.7;margin-bottom:28px}
+.grecho-existing.gc-expanded-product .gptv1-hero-actions{order:initial;margin:0;gap:12px}
+.grecho-existing.gc-expanded-product .sample-product-hero-image{padding:0;border:0;background:#e8ebf0;border-radius:10px;overflow:hidden;aspect-ratio:1}
+.grecho-existing.gc-expanded-product .gptv1-product-media-image{display:block;width:100%;height:100%;object-fit:cover;border-radius:0;background:transparent}
+.grecho-existing.gc-expanded-product .gptv1-product-snapshot.gc-section{padding-block:64px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-heading{margin-bottom:30px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-heading h2{font-size:38px}
+.grecho-existing.gc-expanded-product .sample-product-identity-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-block:0 36px;border-bottom:1px solid var(--grecho-v3-border);margin-bottom:32px}
+.grecho-existing.gc-expanded-product .gptv1-identity-panel.gc-card{border:0;border-radius:0;padding:0;box-shadow:none;overflow:visible}
+.grecho-existing.gc-expanded-product .gptv1-identity-panel h2{font-size:27px;line-height:1.25;letter-spacing:-.025em;margin:0 0 20px}
+.grecho-existing.gc-expanded-product .gptv1-identity-topline{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--grecho-v3-brand);margin-bottom:12px}
+.grecho-existing.gc-expanded-product .gptv1-identity-panel dl{display:grid;grid-template-columns:1fr auto;gap:24px;margin:0 0 20px}
+.grecho-existing.gc-expanded-product .gptv1-identity-panel dt{font-size:12px;color:var(--grecho-v3-muted);margin-bottom:5px}
+.grecho-existing.gc-expanded-product .gptv1-identity-panel dd{font-size:14px;margin:0;line-height:1.6}
+.grecho-existing.gc-expanded-product .gptv1-hero-facts{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.grecho-existing.gc-expanded-product .gptv1-hero-facts>div{padding-top:16px;border-top:1px solid var(--grecho-v3-border)}
+.grecho-existing.gc-expanded-product .gptv1-hero-facts>div:last-child{grid-column:1/-1}
+.grecho-existing.gc-expanded-product .gptv1-hero-facts span{font-size:12px}
+.grecho-existing.gc-expanded-product .gptv1-hero-facts strong{font-size:14px;line-height:1.6}
+.grecho-existing.gc-expanded-product .gptv1-hero-tag-list{margin:20px 0 0}
+.grecho-existing.gc-expanded-product .gptv1-hero-tag-list span{font-size:10px;padding:4px 7px;background:#f2f6f9}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 32px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div{padding:0;background:none;border:0}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div>span{display:block;font-size:11px;color:var(--grecho-v3-muted);margin-bottom:6px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div>strong{font-size:13px;line-height:1.6;display:block}
+.grecho-existing.gc-expanded-product .gptv1-document-mini{padding:24px 0 28px;border:0;border-top:2px solid var(--grecho-v3-brand);border-bottom:1px solid var(--grecho-v3-border);border-radius:0;box-shadow:none;margin:0 0 30px;background:transparent}
+.grecho-existing.gc-expanded-product .gptv1-document-mini h3{font-size:22px}
+.grecho-existing.gc-expanded-product .gptv1-document-mini-item{padding:12px 0;line-height:1.5}
+.grecho-existing.gc-expanded-product .gptv1-document-mini-note{margin-bottom:0;max-width:800px;font-size:14px}
+.grecho-existing.gc-expanded-product .gptv1-technical-brief .gc-card{box-shadow:none}
+.grecho-existing.gc-expanded-product .gptv1-technical-brief img{max-height:460px;width:100%;object-fit:cover;border-radius:10px;margin-top:30px}
+.grecho-existing.gc-expanded-product .gptv1-layer-stack img{max-height:520px;width:100%;object-fit:contain;background:#f4f6f8;border-radius:10px;margin-top:24px}
+@media(max-width:1024px){
+ .grecho-existing.unused-product-list-scope .gpl-selector-shell{grid-template-columns:1fr;gap:24px}
+ .grecho-existing.unused-product-list-scope .gpl-filter-panel{border:1px solid var(--grecho-v3-border);border-radius:6px}
+ .grecho-existing.unused-product-list-scope .gpl-mobile-filter>summary{padding:16px 20px}
+ .grecho-existing.unused-product-list-scope .gpl-filter-inner{padding:0 20px 20px}
+ .grecho-existing.unused-product-list-scope .gpl-series-nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .grecho-existing.unused-product-list-scope .sample-products-hero-grid,.grecho-existing.gc-expanded-product .gptv1-product-hero-layout{gap:32px}
+}
+@media(max-width:760px){
+ .grecho-existing.unused-product-list-scope .gpl-hero,.grecho-existing.gc-expanded-product .gptv1-product-hero{padding-block:38px}
+ .grecho-existing.unused-product-list-scope .sample-products-hero-grid,.grecho-existing.gc-expanded-product .gptv1-product-hero-layout{grid-template-columns:1fr;gap:30px}
+ .grecho-existing.unused-product-list-scope .gpl-hero h1,.grecho-existing.gc-expanded-product .gptv1-hero-copy h1{font-size:38px;line-height:1.08}
+ .grecho-existing.unused-product-list-scope .gpl-hero .grecho-v1-hero-media{position:relative;height:auto;min-height:0;aspect-ratio:16/9;width:100%;margin:0}
+ .grecho-existing.unused-product-list-scope .gpl-hero .gc-actions,.grecho-existing.gc-expanded-product .gptv1-hero-actions{margin-top:24px}
+ .grecho-existing.unused-product-list-scope .gpl-series-nav-section.gc-section{padding-block:44px 22px}
+ .grecho-existing.unused-product-list-scope .gpl-series-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .grecho-existing.unused-product-list-scope .gpl-series-button{grid-template-columns:32px minmax(0,1fr) auto;min-height:84px;gap:8px;padding:12px 10px}
+ .grecho-existing.unused-product-list-scope .gpl-family-media,.grecho-existing.unused-product-list-scope .gpl-family-media img{width:32px;height:36px}
+ .grecho-existing.unused-product-list-scope .gpl-series-button-label{font-size:12px}
+ .grecho-existing.unused-product-list-scope .gpl-section-row h2{font-size:32px}
+ .grecho-existing.unused-product-list-scope .gpl-clear-button{margin-top:16px}
+ .grecho-existing.unused-product-list-scope .gpl-selector.gc-section{padding-block:12px 48px}
+ .grecho-existing.unused-product-list-scope .gpl-product-grid{grid-template-columns:1fr;gap:24px}
+ .grecho-existing.unused-product-list-scope .gpl-product-card-body{padding:24px}
+ .grecho-existing.unused-product-list-scope .gpl-product-summary{min-height:0}
+ .grecho-existing.unused-product-list-scope .gpl-product-card h3{font-size:27px}
+ .grecho-existing.unused-product-list-scope .gpl-results-toolbar{align-items:start;gap:12px}
+ .grecho-existing.unused-product-list-scope .gpl-results-toolbar h2{font-size:25px}
+ .grecho-existing.unused-product-list-scope .gpl-results-toolbar p{font-size:12px;white-space:normal;text-align:right;padding-top:22px}
+ .grecho-existing.gc-expanded-product .sample-product-hero-image{max-width:520px;width:100%;margin-inline:auto;aspect-ratio:1.25}
+ .grecho-existing.gc-expanded-product .gptv1-hero-copy>p{font-size:16px;margin-bottom:0}
+ .grecho-existing.gc-expanded-product .sample-product-identity-layout{grid-template-columns:1fr;gap:24px}
+ .grecho-existing.gc-expanded-product .gptv1-product-snapshot.gc-section{padding-block:48px}
+ .grecho-existing.gc-expanded-product .gptv1-snapshot-heading h2{font-size:32px}
+ .grecho-existing.gc-expanded-product .gptv1-snapshot-grid{grid-template-columns:1fr 1fr;gap:22px}
+ .grecho-existing.gc-expanded-product .gptv1-identity-panel dl{grid-template-columns:1fr}
+}
+@media(max-width:400px){
+ .grecho-existing.unused-product-list-scope .gpl-hero h1,.grecho-existing.gc-expanded-product .gptv1-hero-copy h1{font-size:34px}
+ .grecho-existing.unused-product-list-scope .gpl-series-button{grid-template-columns:28px minmax(0,1fr);gap:7px;position:relative;padding-right:24px}
+ .grecho-existing.unused-product-list-scope .gpl-series-button strong{position:absolute;right:7px;top:9px;font-size:12px}
+ .grecho-existing.unused-product-list-scope .gpl-family-media,.grecho-existing.unused-product-list-scope .gpl-family-media img{width:28px;height:32px}
+ .grecho-existing.gc-expanded-product .gptv1-snapshot-grid{grid-template-columns:1fr}
+}
+/* Hosted-review refinement: technical content has a denser document rhythm. */
+.grecho-existing.gc-expanded-product .gptv1-section.gc-section{padding-block:68px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-tags>div{display:flex;flex-wrap:wrap;gap:6px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-tags em{display:inline-block;font-style:normal;font-size:11px;font-weight:600;line-height:1.45;padding:4px 7px;border-radius:3px;background:#edf3f8;color:var(--grecho-v3-brand-deep)}
+.grecho-existing.gc-expanded-product .gptv1-technical-brief-grid{align-items:start;gap:40px}
+.grecho-existing.gc-expanded-product .gptv1-brief-panel.gc-card{padding:24px 0 0;border:0;border-top:2px solid var(--grecho-v3-border);border-radius:0;box-shadow:none;overflow:visible}
+.grecho-existing.gc-expanded-product .gptv1-brief-panel h3{font-size:24px;margin-bottom:24px}
+.grecho-existing.gc-expanded-product .gptv1-brief-list>div{margin-top:20px}
+.grecho-existing.gc-expanded-product .gptv1-brief-list>div>span{display:block;margin-bottom:7px;font-size:12px;font-weight:700;color:var(--grecho-v3-brand)}
+.grecho-existing.gc-expanded-product .gptv1-brief-list>div>strong{display:block;font-size:15px;font-weight:500;line-height:1.75;color:var(--grecho-v3-text)}
+.grecho-existing.gc-expanded-product .gptv1-layer-stack>.gc-container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 52px;align-items:center}
+.grecho-existing.gc-expanded-product .gptv1-layer-stack .gc-section-head{grid-column:1/-1}
+.grecho-existing.gc-expanded-product .gptv1-stack-list>article{display:grid;grid-template-columns:28px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--grecho-v3-border)}
+.grecho-existing.gc-expanded-product .gptv1-stack-list>article>span{font-size:12px;font-weight:800;color:var(--grecho-v3-brand);padding-top:3px}
+.grecho-existing.gc-expanded-product .gptv1-stack-list h3{font-size:19px;margin-bottom:6px}
+.grecho-existing.gc-expanded-product .gptv1-stack-list p{font-size:14px;line-height:1.65;margin:0}
+.grecho-existing.gc-expanded-product .gptv1-layer-stack img{margin-top:0;height:auto;max-height:none}
+@media(max-width:760px){
+ .grecho-existing.gc-expanded-product .gptv1-section.gc-section{padding-block:48px}
+ .grecho-existing.gc-expanded-product .gptv1-technical-brief-grid{gap:24px}
+ .grecho-existing.gc-expanded-product .gptv1-layer-stack>.gc-container{grid-template-columns:1fr;gap:24px}
+ .grecho-existing.gc-expanded-product .gptv1-layer-stack .gc-section-head{margin-bottom:0}
+ .grecho-existing.gc-expanded-product .gptv1-layer-stack img{margin-top:0}
+}
+@media(max-width:760px){
+ .grecho-existing.unused-product-list-scope .gpl-results-toolbar{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+ .grecho-existing.unused-product-list-scope .gpl-results-toolbar>div{flex:1;min-width:0}
+ .grecho-existing.unused-product-list-scope .gpl-results-toolbar>p{flex:0 0 auto;max-width:76px;padding-top:0;margin:0;text-align:right;line-height:1.5}
+}
+
+/* Narrow review refinement: equal collapsed card rhythm, no text clipping. */
+.grecho-existing.unused-product-list-scope .gpl-product-grid{align-items:stretch}
+.grecho-existing.unused-product-list-scope .gpl-product-card.gc-card{display:flex;flex-direction:column}
+.grecho-existing.unused-product-list-scope .gpl-product-media{flex:none}
+.grecho-existing.unused-product-list-scope .gpl-product-card-body{flex:1}
+.grecho-existing.unused-product-list-scope .gpl-product-summary{min-height:0;margin-bottom:22px}
+.grecho-existing.unused-product-list-scope .gpl-card-actions{margin-top:auto}
+/* S02: one complete overview; intact duplicate source records in native details. */
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 40px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div:nth-child(3){grid-column:1/-1;grid-row:1;padding-bottom:22px;border-bottom:1px solid var(--grecho-v3-border)}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div:nth-child(3)>strong{font-size:24px;line-height:1.3;font-weight:700;max-width:750px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div:last-child{grid-column:1/-1;max-width:850px}
+.grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div>strong{font-size:15px;line-height:1.65}
+.grecho-existing.gc-expanded-product .sample-product-reference{margin-top:32px;border-block:1px solid var(--grecho-v3-border)}
+.grecho-existing.gc-expanded-product .sample-product-reference>summary{cursor:pointer;padding:20px 0;font-size:14px;font-weight:700;color:var(--grecho-v3-brand)}
+.grecho-existing.gc-expanded-product .sample-product-reference>summary:focus-visible{outline:2px solid var(--grecho-v3-brand);outline-offset:4px}
+.grecho-existing.gc-expanded-product .sample-product-reference-body{padding:8px 0 28px}
+.grecho-existing.gc-expanded-product .sample-product-reference .sample-product-identity-layout{margin-bottom:22px;padding-bottom:24px}
+.grecho-existing.gc-expanded-product .sample-product-reference .gptv1-snapshot-tags>span{display:block;font-size:12px;color:var(--grecho-v3-muted);margin-bottom:10px}
+@media(max-width:760px){
+ .grecho-existing.gc-expanded-product .gptv1-snapshot-grid{grid-template-columns:1fr 1fr;gap:24px}
+ .grecho-existing.gc-expanded-product .gptv1-snapshot-grid>div:nth-child(3)>strong{font-size:22px}
+}
+@media(max-width:400px){
+ .grecho-existing.gc-expanded-product .gptv1-snapshot-grid{grid-template-columns:1fr}
+}
+/* Desktop cards share intrinsic content tracks. Long route actions retain all
+   their text while CTA starts and collapsed bottom edges align within each row. */
+@supports (grid-template-rows:subgrid){
+ @media(min-width:761px){
+  .grecho-existing.unused-product-list-scope .gpl-product-card.gc-card{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0}
+  .grecho-existing.unused-product-list-scope .gpl-product-card-body{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
+  .grecho-existing.unused-product-list-scope .gpl-card-actions{margin-top:0;align-self:start}
+  .grecho-existing.unused-product-list-scope .gpl-card-details{align-self:start}
+ }
+}
+
+/* Long names, differing image ratios and optional fields size intrinsically. */
+.grecho-existing.gc-expanded-product :is(h1,h2,h3,p,dd,strong,a){overflow-wrap:anywhere}
+.grecho-existing.gc-expanded-product .sample-product-hero-image{aspect-ratio:auto;min-height:0}
+.grecho-existing.gc-expanded-product .gptv1-product-media-image{height:auto;max-height:none;object-fit:contain}
+.grecho-existing.gc-expanded-product .gptv1-product-hero-layout>*{min-width:0}
+.grecho-existing.gc-expanded-product .gptv1-identity-panel dl{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+@media(max-width:767px){.grecho-existing.gc-expanded-product .gptv1-identity-panel dl{grid-template-columns:1fr}}

@@ -1,0 +1,2205 @@
+{
+  "schema": "grecho-public-static-release/1",
+  "generation_id": "d77e3d51-b235-4915-afea-2710056578e2",
+  "source_generation_id": "9b0c2b79-6bc7-4a37-92cf-d73b629ae52d",
+  "created": "2026-10-07T08:34:33.089365+00:00",
+  "routes": 75,
+  "pages": 33,
+  "posts": 42,
+  "product_v2_count": 16,
+  "held_standard_ids": [
+    1412
+  ],
+  "base_path": "/grecho-v3-visual-evolution-review/",
+  "preview_only": true,
+  "production_writes": 0,
+  "files": [
+    {
+      "file": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "about/index.html",
+      "bytes": 59772,
+      "sha256": "175418929cdb3025cb8d07d210636a8784b6e4722289517765d07f5c44d5b1a6"
+    },
+    {
+      "file": "acoustic-facer-adhesive-layer-panel-sound-absorption-review/index.html",
+      "bytes": 64967,
+      "sha256": "df1d38ec3858d27b1b80ab9562e252163233541de115f683d8b67981de8a0df0"
+    },
+    {
+      "file": "acoustic-facer-airflow-panel-absorption-evidence/index.html",
+      "bytes": 65108,
+      "sha256": "113ceeab3b72fb69bb17b7f5f149a13aaf1a962a580e0bba09963ea435548197"
+    },
+    {
+      "file": "acoustic-facer-cleaning-trial-protocol-record/index.html",
+      "bytes": 66248,
+      "sha256": "47b39262bdf68ea018aea72da584f04e01129a719a05258c62a2cd243f3bcfa3"
+    },
+    {
+      "file": "acoustic-facer-cleaning-trial-surface-bond-review/index.html",
+      "bytes": 64754,
+      "sha256": "4e5520f5b0daad1f13a211443bdc93f9e547a45f837c61b1dcb6ed1ee39f84b1"
+    },
+    {
+      "file": "acoustic-facer-dark-spots-bleed-through-review/index.html",
+      "bytes": 66383,
+      "sha256": "37cf9e1b47e1c4e08ba3434c748d58450dc18d244a8d6a3ab735f70e089e2cc1"
+    },
+    {
+      "file": "acoustic-facer-lamination-cooling-cure-evaluation/index.html",
+      "bytes": 65908,
+      "sha256": "196d287056e5ab9fc0ee043b2361071a74693e0608975117a4a19ddcf7f3b1ed"
+    },
+    {
+      "file": "airflow-surface-hiding-fire-documents-acoustic-facer/index.html",
+      "bytes": 63055,
+      "sha256": "cd8e2b0145eacf22df6493c8e6328010f6df08abc554a638bdce6c6087b9cadb"
+    },
+    {
+      "file": "assets/css/article-table-overflow.css",
+      "bytes": 397,
+      "sha256": "a10281295801ab29ce6069a0b52c51f996f3cd394f6bd9acbdbe00f40e858715"
+    },
+    {
+      "file": "assets/css/expanded-editorial.css",
+      "bytes": 44099,
+      "sha256": "c9cb24c80c3b988d181315668ad91505108e011ccc0d8b6a244d14f56b86212f"
+    },
+    {
+      "file": "assets/css/expanded-hubs.css",
+      "bytes": 33126,
+      "sha256": "6e82ad7aaefcb8bb4266182c0fe54073781936008bd2aef469f77c2815a8c137"
+    },
+    {
+      "file": "assets/css/expanded-products.css",
+      "bytes": 24100,
+      "sha256": "b232e1a1f064bfc4530e58a31b95530f4330c68138dca44e6c4dfe221303a590"
+    },
+    {
+      "file": "assets/css/final-about.css",
+      "bytes": 8627,
+      "sha256": "19ce2eab6513aeccf46d8e6ac6314647e722e690c057fd4aec78760018034089"
+    },
+    {
+      "file": "assets/css/final-cases.css",
+      "bytes": 5338,
+      "sha256": "7fd4e53598d78a86bfb834534151e85da2fcb24f054a27247c3b9b3c7723bded"
+    },
+    {
+      "file": "assets/css/final-europe.css",
+      "bytes": 12050,
+      "sha256": "d1b7d92b04caf924398d3c47459c68cb2fd3bc7235d2174e507e186b07d409e6"
+    },
+    {
+      "file": "assets/css/final-insights.css",
+      "bytes": 7074,
+      "sha256": "38aeb55a35be24cddce75b4b3d8247cd03fd7f15345b3fac81fafd49dd5c54d0"
+    },
+    {
+      "file": "assets/css/grecho-existing-backgrounds.css",
+      "bytes": 867,
+      "sha256": "a723c2d58cfaf16aa872cd5e6216af18cd72e42ce42e3aac1f0c45c1c9e08d98"
+    },
+    {
+      "file": "assets/css/grecho-existing.css",
+      "bytes": 33586,
+      "sha256": "fb0b4b986c23dd85c63f19bd1582d65d15bdc73f201a6da654070bc69446c120"
+    },
+    {
+      "file": "assets/css/grecho-homepage-v3-pilot.css",
+      "bytes": 31133,
+      "sha256": "4626b591a6cdab04cf3c6c2785066e1d5348b1296e1d7e6e8881a494e67f28ba"
+    },
+    {
+      "file": "assets/css/grecho-navigation-phase1b0.css",
+      "bytes": 12456,
+      "sha256": "cb900313da8b15d1a706fa15f1dd0baf52a374306ffe5631783b4cd288f018ce"
+    },
+    {
+      "file": "assets/css/grecho-navigation-phase1b1.css",
+      "bytes": 11833,
+      "sha256": "0a31374ac56c419e024435d5448cbb40971e333101d6dc288cac21a4ae25bfa4"
+    },
+    {
+      "file": "assets/css/grecho-product.css",
+      "bytes": 17607,
+      "sha256": "cc706167fa1d4a6f690d1d6952560e6b3852a583811f85c02919218587ffeb30"
+    },
+    {
+      "file": "assets/css/grecho-solutions.css",
+      "bytes": 7228,
+      "sha256": "cceda16c8903e2744c34298f70f66c88343c571fab6145c8565355bf91d6646d"
+    },
+    {
+      "file": "assets/css/isolated-base.css",
+      "bytes": 174,
+      "sha256": "65f9d4c9dbf20f320293512563b652ab8348c1e7c299535597a50f955d7fa761"
+    },
+    {
+      "file": "assets/css/nojs-nav.css",
+      "bytes": 523,
+      "sha256": "3868fb8190b5c66a9f31333ac541c7de28d4af6b9f90f4870d694182b267cc3f"
+    },
+    {
+      "file": "assets/css/sample-contact-faq.css",
+      "bytes": 15326,
+      "sha256": "b8a62e9f96b5f98d08f9094c954d75064008c1d17416f11401c42567ebea3159"
+    },
+    {
+      "file": "assets/css/sample-editorial.css",
+      "bytes": 18985,
+      "sha256": "64b0fff4529ce33fdedd84dbe3dd53e1ca9aae2416daa342a87e8123217d6312"
+    },
+    {
+      "file": "assets/css/sample-products.css",
+      "bytes": 22470,
+      "sha256": "2da1c269df336890ec69411a4385041a38e70c20c3ac27c8f65118b015849054"
+    },
+    {
+      "file": "assets/css/sample-task-pages.css",
+      "bytes": 32178,
+      "sha256": "f87ce02f0917632e2072c0f2fa182b10321ea5bf008c2b196f99f963e0c458fa"
+    },
+    {
+      "file": "assets/css/secondary-full-bleed-hero-v1.css",
+      "bytes": 9006,
+      "sha256": "e368629f098a6106bf285a9d10cce1c1f87bf31e59a407c5000d3a5d86813c98"
+    },
+    {
+      "file": "assets/css/sitewide-remediation.css",
+      "bytes": 1323,
+      "sha256": "0917fa6efc807155c66eff5e5467f85d0dfae44c5bf9b8c5328e6a10c8dfcace"
+    },
+    {
+      "file": "assets/fonts/Inter-VariableFont_slnt,wght.woff2",
+      "bytes": 326628,
+      "sha256": "e931823ffd0b6cfd1624e3a7c1c49861ed3420297862e727f07e04c8be1cc89b"
+    },
+    {
+      "file": "assets/images/existing/03e3fcd932de-mineral-wool-facing-temperature-review-en.webp",
+      "bytes": 114280,
+      "sha256": "3760f86dfc8177a68678839e13e38306f806408d7047990d73e1578037c14133"
+    },
+    {
+      "file": "assets/images/existing/067584f06720-about-what-we-do-webp-v1.webp",
+      "bytes": 231606,
+      "sha256": "37972917262cba6d54116459a8e976cd0e1108daf0cd0c64a096480fb21eede8"
+    },
+    {
+      "file": "assets/images/existing/0944cab24895-grecho-europe-wide-width-facer-hero-20260818-v1.mp4",
+      "bytes": 5056709,
+      "sha256": "b4ecaa2f69fb993ef0bfd33e10f98fec0118535d4a20e1fc995b321bcd592bb5"
+    },
+    {
+      "file": "assets/images/existing/0b06e6206c92-p01-b-acoustic-module-v1.webp",
+      "bytes": 127834,
+      "sha256": "2db9e5f08a9524ce0b547afafdd23952f95d032fc8c0215027a7a286cd87d10b"
+    },
+    {
+      "file": "assets/images/existing/0df3fd21b9fc-ctds-009-gcjr350-fiberglass-jacquard-fabric-blur-768x1085-webp-v1.webp",
+      "bytes": 21748,
+      "sha256": "5fa418dc1d1485d34f9cc44e85f345a35e642f8387e111f89c49970e1447802e"
+    },
+    {
+      "file": "assets/images/existing/0f20c767646f-case-pir-pur-review-webp-v1.webp",
+      "bytes": 175738,
+      "sha256": "7690efdc867a5b12c11383daed033709d6ab48f36f61a496dfffe653f729904f"
+    },
+    {
+      "file": "assets/images/existing/0f2a78772eb4-wood-look-fiberglass-fabric-acoustic-facing-primary-square-v3.webp",
+      "bytes": 520944,
+      "sha256": "4a0c7c81f81344189d82d2ebc6163c3b9571ed8015623e2ad898353796904f30"
+    },
+    {
+      "file": "assets/images/existing/0ff184d66091-mineral-wool-technical-documents-webp-v1.webp",
+      "bytes": 196644,
+      "sha256": "aa8d68648524b9c2d14c806e93d5cae94d92dcd5219a50b1682c71bda5a9f38c"
+    },
+    {
+      "file": "assets/images/existing/119668fd46d0-request-tds-sds-test-reports-fiberglass-facers.webp",
+      "bytes": 120774,
+      "sha256": "6acd0b0601512c2529d8a1f3ce8ad06331cd195b52c637c466424802b33f70e8"
+    },
+    {
+      "file": "assets/images/existing/11a587e99009-grecho-p015-reinforced-pur-composite-facer-product-card-20260910.webp",
+      "bytes": 176296,
+      "sha256": "933369e87d84473a6e0413ecdf74d86a0ceb7c2120de17b66a322c3f4d2942f2"
+    },
+    {
+      "file": "assets/images/existing/11b8ab4f0225-ctds-011-silent-land-series-glass-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 21626,
+      "sha256": "5daba18545b23ee020a9d6215b7cd5c42936a7f7a48c2a0f91c42bb7923e5302"
+    },
+    {
+      "file": "assets/images/existing/13486977c853-grecho-s14-sanded-acoustic-texture-2.webp",
+      "bytes": 305136,
+      "sha256": "1f6c0e73b6d22dc58e1bbc864957df812ef097c09b2d5247b1af94ed6a9e9c0b"
+    },
+    {
+      "file": "assets/images/existing/159523489f6d-verify-the-project-640.webp",
+      "bytes": 11456,
+      "sha256": "44218cf42f0697b7f9b55b02055a1b315ec128c50224f42c8f956889df03fddd"
+    },
+    {
+      "file": "assets/images/existing/16b193226512-ctds-014-fluorine-free-fiberglass-coated-facer-blur-768x1085-webp-v1.webp",
+      "bytes": 20516,
+      "sha256": "9e6163adac76449709959cf19c1c2df75d8759dd008f3dd0370e15cca9f4a28b"
+    },
+    {
+      "file": "assets/images/existing/182b42792ec8-grecho-p005-high-hiding-white-acoustic-facing-detail-20260910.webp",
+      "bytes": 123256,
+      "sha256": "f7455eaa9c34e6cd8a54c5c96813532582073da6d158a588cc1836cf6df1cf52"
+    },
+    {
+      "file": "assets/images/existing/1a7806a74bfc-grecho-home-hero-banner-frame.jpg",
+      "bytes": 106565,
+      "sha256": "6853e24745ff2e2d03f2be332345d73fbce9c4d9ef172186f772f983e81886cb"
+    },
+    {
+      "file": "assets/images/existing/21a5975cf710-advance-qualified-work-640.webp",
+      "bytes": 67628,
+      "sha256": "f98f347225344e9febebf2a5b9529f48247a8e8d091a2eddd6d3b53414b4111d"
+    },
+    {
+      "file": "assets/images/existing/221790f26ee7-case-acoustic-ceiling-review-webp-v1.webp",
+      "bytes": 203636,
+      "sha256": "080ab50f1dcb381860ec2e2351011d6688dab0087e7eac71a0aa5f2daf0d5652"
+    },
+    {
+      "file": "assets/images/existing/233e7358c3bb-grecho-p007-cleanable-white-and-dotted-acoustic-facing-detail-20260821.webp",
+      "bytes": 84074,
+      "sha256": "a54ffb41edc3700b55ec1c06bcfbe768cf7cffa57b54ea15760e13d016fe62dd"
+    },
+    {
+      "file": "assets/images/existing/2575f4e4eb98-sample-review-checklist-board-manufacturers-fiberglass-facers.webp",
+      "bytes": 129568,
+      "sha256": "334cf20315beb8a39ecd10e46e5c94555d2f6fabfa7e57d835d6e1d5530089c5"
+    },
+    {
+      "file": "assets/images/existing/26d18d5fc1f8-p04-b-rigid-insulation-surface-v1.webp",
+      "bytes": 136070,
+      "sha256": "5441fb5156f89328d52eb070436453f3bf6c4c1f4d1b1fdddc6f4778b23e91da"
+    },
+    {
+      "file": "assets/images/existing/270cced3904f-product-card-gc-al-foil-composite-facer-test-v02-codex-webp-v1.webp",
+      "bytes": 128520,
+      "sha256": "6186ac8e1a92d25366b66cdf31cf9628900eb1b96a4eafc3022c2237b2025765"
+    },
+    {
+      "file": "assets/images/existing/2776a38d7a29-acoustic-document-support-webp-v1.webp",
+      "bytes": 183686,
+      "sha256": "f90a747dea5dc25033bbaec62052dd233266ed260960798aee9d59b3c7228b58"
+    },
+    {
+      "file": "assets/images/existing/28934606a1d4-ctds-015-acoustic-composite-fabric-blur-768x1085-webp-v1.webp",
+      "bytes": 22016,
+      "sha256": "ad06c0226e013069629518b31bb265da0bd5943704748dfa927d64dbd8f549d8"
+    },
+    {
+      "file": "assets/images/existing/2e5cc35f917b-ctds-004-gckf-qy-360gsm-white-spray-sanded-fiberglass-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 22910,
+      "sha256": "d8de29d241bd9402fb806954e8d718896217ee7764fd3b908a817ab09c3a3604"
+    },
+    {
+      "file": "assets/images/existing/3265f597b3d9-grecho-p014-ultra-low-airflow-glass-facer-for-pir-pur-foam-boards-primary-20260910.webp",
+      "bytes": 39348,
+      "sha256": "a8774da25c1cbb2e00049f1dd7be2267bf43962f9acf57a7abadc888364611f6"
+    },
+    {
+      "file": "assets/images/existing/32cf289dbdda-glass-facing-route-gypsum-board-applications.webp",
+      "bytes": 135004,
+      "sha256": "6a16a3bdb07da3b8a7d844ea5bbd1e0141d03573a27df08a94030a64d1665945"
+    },
+    {
+      "file": "assets/images/existing/33c501682a09-grecho-s17-silicone-coated-glass-fabric-texture-2.webp",
+      "bytes": 401234,
+      "sha256": "0fd496d3192fcff4d7d3ecac52c2c41d3afd10068dfa3b4992524afa120bf758"
+    },
+    {
+      "file": "assets/images/existing/33dcdbe3f58b-clarify-the-route-640.webp",
+      "bytes": 12892,
+      "sha256": "e8aa697efe05d17bb18d045d111bfb941d8c9000906543571b7303fe6d960ae1"
+    },
+    {
+      "file": "assets/images/existing/3704fabbbe6c-ctds-012-black-plain-fiberglass-fabric-blur-768x1085-webp-v1.webp",
+      "bytes": 23544,
+      "sha256": "a77328bf88ce69d1808d424bc078ba14635b47cf430b71472e0a5ab7a025e2c8"
+    },
+    {
+      "file": "assets/images/existing/38bb0830644e-acoustic-diagnostic-visual-webp-v1.webp",
+      "bytes": 256052,
+      "sha256": "a445649aa1147592e0a799eee4b117b6962b338bcbdf3a203feebcf9a7307124"
+    },
+    {
+      "file": "assets/images/existing/3bed894ced45-grecho-p016-glass-fabric-composite-acoustic-facing-application-20260910.webp",
+      "bytes": 137764,
+      "sha256": "03e1a57ce82215e073145a71d9384e1974e6fb756d866ed2ffdcfd33f5a35e46"
+    },
+    {
+      "file": "assets/images/existing/40a0cb77c49d-ctds-006-gcjr360-fiberglass-satin-fabric-blur-768x1085-webp-v1.webp",
+      "bytes": 22642,
+      "sha256": "9e3ea80a3985f790e486296bb6a5ed5a26bc39a464bc7b69a713eb5019f738de"
+    },
+    {
+      "file": "assets/images/existing/48fc5b11aeb1-acoustic-facer-visual-review-clean-reference-en.webp",
+      "bytes": 135358,
+      "sha256": "9bddb7702b560cca2504ad8c45f2dc9b2129942ad4a3a2572721dea2fa7b6ee7"
+    },
+    {
+      "file": "assets/images/existing/494fe75f2302-grecho-p017-silicone-coated-glass-fabric-product-card-20260821.webp",
+      "bytes": 66634,
+      "sha256": "cc915682b80c9b35b42430b32ece4c3954bda22aa66c6e55a1f6ec7b981df3e8"
+    },
+    {
+      "file": "assets/images/existing/495c84f8e153-insight-mineral-wool-webp-v1.webp",
+      "bytes": 289350,
+      "sha256": "53c4dffb719263c9eee4c2391488a0291ce7aa2e4d81205f05ba7875fe9e9069"
+    },
+    {
+      "file": "assets/images/existing/4a0b91052be0-gypsum-board-surface-total-water-review-en.webp",
+      "bytes": 90592,
+      "sha256": "81b57d7a8a1a29dc29dedc40e62a4604f20d46b3e4b36775219884b0a5f9b3a9"
+    },
+    {
+      "file": "assets/images/existing/4d86b0a99a21-foil-composite-insulation-facers-reflective-surface.webp",
+      "bytes": 257704,
+      "sha256": "6e94c637c9d344983137de4891a5b0389591a75033c5ee517cd95722952d26c6"
+    },
+    {
+      "file": "assets/images/existing/4e7be4fc7211-acoustic-facer-cooling-cure-checkpoints-en.webp",
+      "bytes": 45864,
+      "sha256": "1e78586005f0112d1801888ac2181badf29391157390d430b6becadcd22dc2cf"
+    },
+    {
+      "file": "assets/images/existing/4e7cbf96dd24-fiberglass-facer-review-acoustic-ceiling-panels.webp",
+      "bytes": 141932,
+      "sha256": "6f8911877082de7c2e322edd1726154d992e7a4dcda0f272f14eedf7f17a73c3"
+    },
+    {
+      "file": "assets/images/existing/4f1df83cfb28-grecho-s07-dotted-acoustic-texture-2.webp",
+      "bytes": 209564,
+      "sha256": "38874457c162d32ca8c826f017e3af20454fc8e5336e5ad0dde8ae8dbc06ddc7"
+    },
+    {
+      "file": "assets/images/existing/50e4da729bfc-grecho-p018-high-definition-wood-look-decorative-glass-facing-detail-20260821.webp",
+      "bytes": 144262,
+      "sha256": "e9bd8bf5ae1f63d26acc205a1f32cae490e121201f1fc2d20b3755a38c75ac24"
+    },
+    {
+      "file": "assets/images/existing/5206977abbaf-fluorine-free-thermal-insulation-facers-pfas-review.webp",
+      "bytes": 163696,
+      "sha256": "3cdf346b95708394a61f322b8c78765aeed985a821e281224e40e395a6446547"
+    },
+    {
+      "file": "assets/images/existing/571ef105085f-case-mineral-wool-review-webp-v1.webp",
+      "bytes": 251000,
+      "sha256": "4e5e7b312bf3ae80031c5be811beb3138f89d4a50c88a5a0547c347efa7673b2"
+    },
+    {
+      "file": "assets/images/existing/577cba8081de-s08-wood-look-fiberglass-fabric-acoustic-facing-application-wide-v1.webp",
+      "bytes": 276120,
+      "sha256": "2b957c795fa2cd928cce45edd2790d9981607a7287ef69ad5d4164836ecfaf98"
+    },
+    {
+      "file": "assets/images/existing/5971129ca00c-grecho-s15-reinforced-composite-texture-2.webp",
+      "bytes": 331988,
+      "sha256": "ac725769b4485bb8d327f36faa8dd2195fdcc3e2e132c59adade567b6a7b9fdf"
+    },
+    {
+      "file": "assets/images/existing/5a6ff7fe58a0-white-black-dotted-acoustic-facers-comparison.webp",
+      "bytes": 154658,
+      "sha256": "d0a8496f7afabdab1b51503e5b8f91360417578baf91ce7fda18f4afeceaec64"
+    },
+    {
+      "file": "assets/images/existing/5d74333c3b39-s09-fluorine-free-thermal-insulation-facing-application-wide-v1.webp",
+      "bytes": 158020,
+      "sha256": "5bf6cd00e725ac531fa4b710a39a276b1c387fe85f5a2ced666ca8dabd664d72"
+    },
+    {
+      "file": "assets/images/existing/603e769efa4f-ctds-007-gcjr230-fiberglass-plain-fabric-blur-768x1085-webp-v1.webp",
+      "bytes": 22080,
+      "sha256": "37c0f9b96e7db05869ce6ba9988d24cc6421f1e6d850c07ffef89b6f7827991e"
+    },
+    {
+      "file": "assets/images/existing/611a445afe10-share-what-you-know-640.webp",
+      "bytes": 12680,
+      "sha256": "cd81abc802b77c0f186e1ec7ba87497c6f1e70da056ad2bb9fcdc910523a274e"
+    },
+    {
+      "file": "assets/images/existing/61fdd570a77c-grecho-p001-glass-veil-product-card-20260910.webp",
+      "bytes": 72860,
+      "sha256": "de2dfe5220b29395d781a65dd7a67b12913e1be9494ab110277ebf17e4ae0a01"
+    },
+    {
+      "file": "assets/images/existing/658a22183ea7-gypsum-board-facers-720.webp",
+      "bytes": 51270,
+      "sha256": "59d3d98da28d089607dff58a7ccb7f0a5ffee64a6de1b8204faed4f4da00815f"
+    },
+    {
+      "file": "assets/images/existing/65d6b05d6ef0-grecho-p013-fluorine-free-thermal-insulation-facing-primary-20260910.webp",
+      "bytes": 123256,
+      "sha256": "f7455eaa9c34e6cd8a54c5c96813532582073da6d158a588cc1836cf6df1cf52"
+    },
+    {
+      "file": "assets/images/existing/67a036663be1-grecho-p012-standard-insulation-coated-facer-product-card-20260910.webp",
+      "bytes": 123256,
+      "sha256": "f7455eaa9c34e6cd8a54c5c96813532582073da6d158a588cc1836cf6df1cf52"
+    },
+    {
+      "file": "assets/images/existing/69077725f698-grecho-p018-high-definition-wood-look-decorative-glass-facing-primary-20260910.webp",
+      "bytes": 73590,
+      "sha256": "159755b78800d84f297ed2ae6fc9d5ecc463be27fc857713978ec001e02f8436"
+    },
+    {
+      "file": "assets/images/existing/6a5193a97bc7-ultra-low-airflow-glass-facer-pir-pur-boards.webp",
+      "bytes": 190618,
+      "sha256": "e50cedba18b06b1f73d43d04276a35bb4e68c09c67b6dbfb80c6a8705eac9073"
+    },
+    {
+      "file": "assets/images/existing/6b820ba077f9-grecho-p014-ultra-low-airflow-glass-facer-for-pir-pur-foam-boards-detail-20260821.webp",
+      "bytes": 74578,
+      "sha256": "129a6fd4427f51a4bbe7d8ad1c243a13fadaa6d0ac7ec4045ce138a2d96c770a"
+    },
+    {
+      "file": "assets/images/existing/706e79928ea7-grecho-mineral-wool-facers-hero-desktop.webp",
+      "bytes": 348900,
+      "sha256": "81f325f4a739a7cba66a4a438c069d492bc5c72327636f97a7f36ca0bf201e52"
+    },
+    {
+      "file": "assets/images/existing/7315317b2153-case-etics-review-webp-v1.webp",
+      "bytes": 231160,
+      "sha256": "29b0789bfb8d508b8257b4bcb40d7286a8b2d12dde49de0bc043b9ca9dd8e47a"
+    },
+    {
+      "file": "assets/images/existing/73f3d7a0d698-grecho-contact-sample-request-guidance-webp-v1.webp",
+      "bytes": 245750,
+      "sha256": "4fdaab396333f7cddc4fa3049fa54675d3c32725cb3f98019270a76d6e8c4c3f"
+    },
+    {
+      "file": "assets/images/existing/768b2b13449e-p02-a-mineral-wool-application-v1.webp",
+      "bytes": 70250,
+      "sha256": "0044a6dd8b12a5ba736f6cb89a988eb064754f45592fe3ecfacdd3b224ef9f55"
+    },
+    {
+      "file": "assets/images/existing/76cfd9e58fcd-pir-pur-etics-review-factors-webp-v1.webp",
+      "bytes": 210146,
+      "sha256": "1b58733e5ab2211afa7e1625524a54c7e1c9612494ecc5a4051e572619a29345"
+    },
+    {
+      "file": "assets/images/existing/7a41fd9c3d87-gypsum-technical-documents-webp-v1.webp",
+      "bytes": 172084,
+      "sha256": "4cb2f78dbcfd983b1b941c6f79a91dc9f1da2ae67d5594652c9c0c0c35153009"
+    },
+    {
+      "file": "assets/images/existing/7c19c4e0a392-grecho-s16-bitumen-heavyweight-composite-application-2.webp",
+      "bytes": 392056,
+      "sha256": "187dab3c98d23cc3628c1dc324b3d18868cb23c6e139456680cce5c47e7f0445"
+    },
+    {
+      "file": "assets/images/existing/8122492a1339-s12-foil-and-foil-composite-insulation-facers-primary-square-v1.webp",
+      "bytes": 167698,
+      "sha256": "4d68bc144ade9508318ca3b4fc416fcf4b553a7b16055038c43f7ddc981e6d24"
+    },
+    {
+      "file": "assets/images/existing/8317e02aa3a4-grecho-p011-glass-facing-route-for-gypsum-board-applications-detail-20260821.webp",
+      "bytes": 168180,
+      "sha256": "3ed2950f729ddfd647806576a4bb26da4d2ecef284d55e1e7b5743202b427d59"
+    },
+    {
+      "file": "assets/images/existing/835c8952a6cd-s05-black-matte-black-acoustic-facing-primary-square-v1.webp",
+      "bytes": 153354,
+      "sha256": "3629f6942334b60af905b1f9c218064048901d8df09e457fbfcf7124093031ae"
+    },
+    {
+      "file": "assets/images/existing/84befde79a5c-pir-pur-etics-technical-documents-webp-v1.webp",
+      "bytes": 180542,
+      "sha256": "6bb8bf3fe03580e94524d1dc67a7b6d37a9ff3534619f2a2592cc931c5ff5ff5"
+    },
+    {
+      "file": "assets/images/existing/84d69df0e7e5-compare-iso-fire-epd-reach-pfas-documents-fiberglass-facers.webp",
+      "bytes": 94914,
+      "sha256": "0f04f5add11da84f8084a583106a9c5f7af3d7539bce1d517c4bef159fa9ba61"
+    },
+    {
+      "file": "assets/images/existing/89bc37e052db-mineral-wool-review-factors-webp-v1.webp",
+      "bytes": 241548,
+      "sha256": "49cc960f5060e438178b9edb5a2bc58e5259b32590beceaca6a7bffea4474c8d"
+    },
+    {
+      "file": "assets/images/existing/8b31880803db-high-airflow-high-whiteness-fire-performance-acoustic-facing-application-wide-v2.webp",
+      "bytes": 182202,
+      "sha256": "0373c74976936d810b3bf3490e29b1904ddcf76d2f87721c6858a95850825b38"
+    },
+    {
+      "file": "assets/images/existing/8be4ad6f2fab-grecho-p009-color-acoustic-facer-product-card-20260910.webp",
+      "bytes": 92624,
+      "sha256": "08d64595f948516946e800f8d5d7c95e1c10c1e83eaa90be7e651e53dca9c1b5"
+    },
+    {
+      "file": "assets/images/existing/8e7d7f46cacc-grecho-s15-reinforced-composite-hero-2.webp",
+      "bytes": 267410,
+      "sha256": "86069d88c2bfdbc1545edcef7bb0bf89a7370f619064af5732fcead4962ae748"
+    },
+    {
+      "file": "assets/images/existing/900e2e30e558-about-global-support-webp-v1.webp",
+      "bytes": 154230,
+      "sha256": "d109898c2c2b4800bd5a35bba2467c55d72bfa81e4a0057161e21bdbfed6d515"
+    },
+    {
+      "file": "assets/images/existing/936a4382bc40-grecho-s14-sanded-acoustic-application-2.webp",
+      "bytes": 155144,
+      "sha256": "8f2fa80ce08a7b76d1fc4405bae640d70427c2f26de3eaa4abb549a2343ab9d8"
+    },
+    {
+      "file": "assets/images/existing/939fb4b58313-grecho-s17-silicone-coated-glass-fabric-hero-2.webp",
+      "bytes": 257920,
+      "sha256": "29ea2e8f1212fa9c8e13b9cc5e4e2ed9ab860506e90702cd602f39a6ce388275"
+    },
+    {
+      "file": "assets/images/existing/958e66e7ad87-ctds-008-fiberglass-wood-grain-fabric-360gsm-blur-768x1085-webp-v1.webp",
+      "bytes": 21308,
+      "sha256": "0eea6946858986ab4fd8f28a94896918cf25305f0787042f6160da3092d99201"
+    },
+    {
+      "file": "assets/images/existing/974a3839b653-grecho-p006-high-airflow-high-whiteness-fire-performance-acoustic-facing-detail-20260821.webp",
+      "bytes": 79454,
+      "sha256": "394abbea01315708930605dc1c21259918cc4e18fc6d2315ebdc6ff0ccb5354a"
+    },
+    {
+      "file": "assets/images/existing/988ecacd0d20-ctds-002-gckf-sd-colored-fiberglass-coated-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 22290,
+      "sha256": "9fc72f674cadc6dfae8a9cbebc51cf80e813373da6714955b3c0d374963d5a9c"
+    },
+    {
+      "file": "assets/images/existing/9b3138ab5694-grecho-gypsum-board-facers-hero-desktop.webp",
+      "bytes": 197976,
+      "sha256": "c8679042f617fda0df48cd753dd664cd304fa4af5fb1a9a81b659927956d9ab5"
+    },
+    {
+      "file": "assets/images/existing/9c37dd0879a3-grecho-europe-wide-width-facer-hero-poster-20260818-v1.webp",
+      "bytes": 64298,
+      "sha256": "4396383de74e9f2c2ead043f9dc13697aa7d9ab23cafb03b97c8a6ee0c2773b1"
+    },
+    {
+      "file": "assets/images/existing/9f0d9ca08e2d-moisture-resistant-fiberglass-facers-gypsum-board.webp",
+      "bytes": 124620,
+      "sha256": "9e8046a274d986981e1de62b5c359582569d220e5222af0100ab750a8ad077b9"
+    },
+    {
+      "file": "assets/images/existing/9f292183d30b-insight-document-review-webp-v1.webp",
+      "bytes": 210980,
+      "sha256": "9dfacd8a64bdb42c630d0b633ab1972c37ce471cd32a59d1ca9cfb8f0ee07e00"
+    },
+    {
+      "file": "assets/images/existing/a3af3ceec5b0-grecho-s14-sanded-acoustic-hero-2.webp",
+      "bytes": 294540,
+      "sha256": "86e20ead4400162217be4ec5c3f3653ae1ca772ad8d010992315d10c5eeb6430"
+    },
+    {
+      "file": "assets/images/existing/a6e55d73a74a-ctds-003-gckf-600a-700-900d-spray-dotted-fiberglass-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 20282,
+      "sha256": "403f7aad82c6b70dc2b4935c7b9fa50690ac0bd64f5ac9199df84cafc6821d06"
+    },
+    {
+      "file": "assets/images/existing/aa88d7aceaec-insulation-roofing-systems-720.webp",
+      "bytes": 50286,
+      "sha256": "1becdb3f02ab95b5586f8f38550d1539cb67771797330f0b2fcad38dc3c0aa1f"
+    },
+    {
+      "file": "assets/images/existing/ac24e5b39ebb-grecho-p011-glass-facing-route-for-gypsum-board-applications-primary-20260910.webp",
+      "bytes": 218648,
+      "sha256": "c2fe391adda9bdc9e290a8f29784c8f214238796088c93cc67198857b77f7031"
+    },
+    {
+      "file": "assets/images/existing/adce272aed65-grecho-s16-bitumen-heavyweight-composite-texture-2.webp",
+      "bytes": 515648,
+      "sha256": "19e2390dad046e2e22bffb29cf03778bc71dde1e7daf7db7dba2c703c05e15cf"
+    },
+    {
+      "file": "assets/images/existing/b1405495c516-grecho-p016-fiberglass-fabric-product-card-20260910.webp",
+      "bytes": 127046,
+      "sha256": "5c889b9f10c5add7039dca099d610cc91b683217da1f16b42bdda93e8f6303f1"
+    },
+    {
+      "file": "assets/images/existing/b1fa45f7958f-ctds-010-wood-grain-series-glass-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 23470,
+      "sha256": "2c13650220a6e551e1dfb54717f21a161707574cfee40bc1e3ddaf68fba0bd24"
+    },
+    {
+      "file": "assets/images/existing/b338d3fcb8b5-grecho-faq-hero-desktop.webp",
+      "bytes": 111162,
+      "sha256": "c51a21de5e0e8f7bb24cc1bd2369d68bae8122b834c4d941b5e4153dc5c18ea8"
+    },
+    {
+      "file": "assets/images/existing/b3743eb2239b-gypsum-review-factors-webp-v1.webp",
+      "bytes": 187840,
+      "sha256": "1831fc30609f7e6661eb21d6116419396c44d1dbfb3ae8638d572d6f0665f706"
+    },
+    {
+      "file": "assets/images/existing/b3c400db3515-airflow-surface-hiding-fire-documents-acoustic-facer.webp",
+      "bytes": 112626,
+      "sha256": "bc5fab6de23fd7a357402288b631f62c7a7e4c8005be7e9f54b3e70dbeb929cc"
+    },
+    {
+      "file": "assets/images/existing/b4e6d06c1d49-pir-board-facer-gas-diffusion-thermal-aging-en.webp",
+      "bytes": 97970,
+      "sha256": "8c3efb2faf8bccd34c83b414e4aff3174c07b1a02babb6cea15123d5fab514b7"
+    },
+    {
+      "file": "assets/images/existing/b6757e245c4e-pir-pur-etics-application-review-webp-v1.webp",
+      "bytes": 156602,
+      "sha256": "5885890b7b09851c4d2179eb6a1ee0be17598e8c6ce269ae5c1bf527dfdf839c"
+    },
+    {
+      "file": "assets/images/existing/bc36e0c1fced-grecho-p002-black-glass-veil-product-card-20260910.webp",
+      "bytes": 210530,
+      "sha256": "0b34638bd487ff708bcb77299b497db0c31e208049679015992e03efe2e67efe"
+    },
+    {
+      "file": "assets/images/existing/c2ca8019b2fa-grecho-p004-acoustic-glass-paper-product-card-20260821.webp",
+      "bytes": 42124,
+      "sha256": "52dc6713c1e29bc18e08516c105eb7dbad152904d73b0558f0570c49d1686805"
+    },
+    {
+      "file": "assets/images/existing/c366aa10d47e-grecho-p016-glass-fabric-composite-acoustic-facing-primary-20260910.webp",
+      "bytes": 139758,
+      "sha256": "fa7b38d79ca2fab69b725c450766ff5be949b4beeaa7005570028ed94e868482"
+    },
+    {
+      "file": "assets/images/existing/c4246e1a299a-s12-foil-and-foil-composite-insulation-facers-application-wide-v1.webp",
+      "bytes": 133176,
+      "sha256": "b1dbc817184190c8e4bd3c4ec3d02391228d8ef1edc745b2919ad8aa2b0f343f"
+    },
+    {
+      "file": "assets/images/existing/c5e39b5d7d7c-case-gypsum-board-review-webp-v1.webp",
+      "bytes": 155152,
+      "sha256": "e70bc0a8e8073e2b693477afffb4e6ebf57d77cef1d28f0e1ad36e49f1f4bbc4"
+    },
+    {
+      "file": "assets/images/existing/c782d688422b-grecho-p008-black-and-matte-black-acoustic-facing-application-20260910.webp",
+      "bytes": 152984,
+      "sha256": "c6083743e1e4851875b85cdba4e8b6d6a7eb2fd868bc2311b89547a7f90c90eb"
+    },
+    {
+      "file": "assets/images/existing/c844e28bdcd3-fiberglass-facer-material-identity-qualification-featured.webp",
+      "bytes": 115914,
+      "sha256": "0de819552b12c8f92ddb7402c00004ad3be79a513f8f91d61d8d1f4c1746e090"
+    },
+    {
+      "file": "assets/images/existing/ca42f3edce86-grecho-resource-center-hero-desktop.webp",
+      "bytes": 279954,
+      "sha256": "e89e857693994e1d2c22ff820c40b35faf20f4f6c66bb131470b8cbf42659c1d"
+    },
+    {
+      "file": "assets/images/existing/ca55fa773867-grecho-about-hero-desktop.webp",
+      "bytes": 140616,
+      "sha256": "8f94298af5c100f1b0c6f74f9d9ae9afca99e19cad4da36f0183d0c526149615"
+    },
+    {
+      "file": "assets/images/existing/cb5bd3282752-grecho-s13-colour-acoustic-hero-2.webp",
+      "bytes": 227234,
+      "sha256": "2eb08d1af74b863ce49d20776a55e2e62be24feb310f8f94522a9dc811d2bb3f"
+    },
+    {
+      "file": "assets/images/existing/cb60a28afe5b-grecho-p003-reinforced-veil-product-card-20260910.webp",
+      "bytes": 103312,
+      "sha256": "878ee524e621086231e47a41ef3f3962f3c7235538e112a4058d329c16747cec"
+    },
+    {
+      "file": "assets/images/existing/cb7e966df17f-s12-foil-and-foil-composite-insulation-facers-detail-content-v1.webp",
+      "bytes": 181318,
+      "sha256": "713039417210fdd1e789dbae6b1b810ccb47fba1cd5502488e521d799cfcdd1c"
+    },
+    {
+      "file": "assets/images/existing/ccd8ee1242e3-grecho-insights-listing-hero-desktop.webp",
+      "bytes": 328928,
+      "sha256": "f0844021b0dcdc52b06758f510035095f8f7974431e4551904ac47ad9a07d46e"
+    },
+    {
+      "file": "assets/images/existing/cf5f4d6b6e8c-p01-a-acoustic-hero-v1.webp",
+      "bytes": 128088,
+      "sha256": "4285c26025112de152848a8e61f785f0463248812cf17705319ffc38a5ba9fb6"
+    },
+    {
+      "file": "assets/images/existing/cfb276360f1a-ctds-005-gcsd100-200gsm-fiberglass-black-coated-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 21998,
+      "sha256": "6fb0671271d294936befd79ca142f73b65670d97d1c2a663943321ae97487e78"
+    },
+    {
+      "file": "assets/images/existing/d0003701f9d4-grecho-case-studies-hero-desktop.webp",
+      "bytes": 379948,
+      "sha256": "6f826b5558cf240cf9b95f07747e9b4e2a22074cfab3e67bb06615fc6c1a3ec6"
+    },
+    {
+      "file": "assets/images/existing/d4faf5a0e73c-grecho-s17-silicone-coated-glass-fabric-application-2.webp",
+      "bytes": 84288,
+      "sha256": "4b976e37a2295b0573aa0d651cb699bef3a210d1b530944e0b079e3ca192e4d9"
+    },
+    {
+      "file": "assets/images/existing/d53ca1d33e71-grecho-p013-fluorine-free-thermal-insulation-facing-detail-20260821.webp",
+      "bytes": 99546,
+      "sha256": "7fa18227a15ec34ff3ee56f61a61acf1f5f7c7067631cafcb8c71d9bdd49fce3"
+    },
+    {
+      "file": "assets/images/existing/d82bfb032f04-grecho-p007-cleanable-white-and-dotted-acoustic-facing-application-20260821.webp",
+      "bytes": 93648,
+      "sha256": "98a52070f6fe8ee79e747b5a07aa3eed2005e01d7b12030bf23d580299d60c3a"
+    },
+    {
+      "file": "assets/images/existing/da2c7f5360c1-grecho-s07-dotted-acoustic-application-2.webp",
+      "bytes": 223608,
+      "sha256": "50cc736d35eaf4682e431937c68b3ceb894e4573130133251ba2935dd27799ae"
+    },
+    {
+      "file": "assets/images/existing/dc2f0285ca14-p03-b-gypsum-surface-v1.webp",
+      "bytes": 46848,
+      "sha256": "c734a46b29dcbdb841eb3617c94d4009d91f0c1b0d0de9056634b05706dc8c03"
+    },
+    {
+      "file": "assets/images/existing/dfe84eb64439-d-acou-02-surface-options-v1.webp",
+      "bytes": 169648,
+      "sha256": "9288828072a08b2d191668e68e2bca7bb3c85a6583e9db1a8b6f44eedc0048ad"
+    },
+    {
+      "file": "assets/images/existing/e09266c48568-case-acoustic-wall-panel-review-webp-v1.webp",
+      "bytes": 257624,
+      "sha256": "8d5eafd4551d88bc6eb21b7b913bb4073ff92a9d69b1a631fada7e8d69d484e1"
+    },
+    {
+      "file": "assets/images/existing/e108bf0295cc-solution-mineral-wool-board-webp-v1.webp",
+      "bytes": 183166,
+      "sha256": "02c5b1227209cd3886e26558a66e1e1313ee5d6158703e5d3fd2b0879817f306"
+    },
+    {
+      "file": "assets/images/existing/e1550a9e2671-grecho-p018-high-definition-wood-look-decorative-glass-facing-application-20260821.webp",
+      "bytes": 57178,
+      "sha256": "aadd5a1ece461a7a125fb1cca7bf2984d123113fc9179ef7aceacfa8d8a76f24"
+    },
+    {
+      "file": "assets/images/existing/e19bf460e57c-grecho-contact-request-support-technical-review-webp-v1.webp",
+      "bytes": 208762,
+      "sha256": "d10bac2e42e4e59fc30b4a6a3dc2ce7bbc5648ba7e8482b5876c4cddfdad18d7"
+    },
+    {
+      "file": "assets/images/existing/e349446e1003-s10-ultra-low-airflow-glass-facer-for-pir-pur-foam-boards-application-wide-v1.webp",
+      "bytes": 119522,
+      "sha256": "faac9413aafee704eb0597cceaf99ffa240c1e2f1791f6cea6f27b571621c051"
+    },
+    {
+      "file": "assets/images/existing/e4157b673646-wood-look-fiberglass-fabric-acoustic-facing-detail-content-v2.webp",
+      "bytes": 433816,
+      "sha256": "dd240caaf301a3d3deccf34c8ab59303c28178ca50b294455e3a9cc311382a77"
+    },
+    {
+      "file": "assets/images/existing/e5099f9f9479-grecho-s16-bitumen-heavyweight-composite-hero-2.webp",
+      "bytes": 370168,
+      "sha256": "1c363982421c85e6de9b54abc84d3be795e17a19ab78fa0a49b348efccc48304"
+    },
+    {
+      "file": "assets/images/existing/e6c44769bd17-ctds-013-120g-140g-acoustic-ceiling-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 19958,
+      "sha256": "5fba973882af261a9a12bc54af8ee3f363a4198bb9e41026b29fd6434417237f"
+    },
+    {
+      "file": "assets/images/existing/e74a1ff1484d-s05-black-matte-black-acoustic-facing-detail-content-v1.webp",
+      "bytes": 107462,
+      "sha256": "bdd765c88b3a37b0f404c52e57cefc2528367af45d51cc8e627c369371e78743"
+    },
+    {
+      "file": "assets/images/existing/e78771f89310-acoustic-mineral-wool-panels-720.webp",
+      "bytes": 21302,
+      "sha256": "681a8b20928f16695712d8cce8dd2e2648089d3aae15c47ec9fcc456f2eaef9b"
+    },
+    {
+      "file": "assets/images/existing/e873906a72c0-grecho-p011-glass-facing-route-for-gypsum-board-applications-application-20260821.webp",
+      "bytes": 82748,
+      "sha256": "aa8f6fe7cb193fd8f53788b295d538c8f0e826b98b55924c87b0fca604c4478a"
+    },
+    {
+      "file": "assets/images/existing/e9e17613c2cc-grecho-s13-colour-acoustic-texture-2.webp",
+      "bytes": 194588,
+      "sha256": "cb93b93cc8c327aa25f431463bb7c6a2299e69b835cc778453b3aeab35f83f8b"
+    },
+    {
+      "file": "assets/images/existing/eaf3376c986a-selected-industrial-composites-720.webp",
+      "bytes": 52408,
+      "sha256": "289fca1533c614f34392ee7be5b57e32f3a982d789562d79caa5c89a83c81386"
+    },
+    {
+      "file": "assets/images/existing/eb5f7870d64f-grecho-s15-reinforced-composite-application-2.webp",
+      "bytes": 284546,
+      "sha256": "849e37512b840b0c3606b6e41ff66f56a96276c7dccc4575078d008101240133"
+    },
+    {
+      "file": "assets/images/existing/ebaacdc0adf4-grecho-s13-colour-acoustic-application-2.webp",
+      "bytes": 111612,
+      "sha256": "cfc7ce456a4e622e3e58c8118cc306a22196fa63b49b223f34487e75912eaea8"
+    },
+    {
+      "file": "assets/images/existing/ef4e10bc270b-insight-pir-pur-etics-webp-v1.webp",
+      "bytes": 271206,
+      "sha256": "a14b6e544151ab199487fc3585c9694021b2f690ad5f22b398b23dcc84bca7d4"
+    },
+    {
+      "file": "assets/images/existing/f019251945f5-acoustic-material-direction-webp-v1.webp",
+      "bytes": 231514,
+      "sha256": "d218f663fd7d068a794993e5bf116315ddf133563c0d677739c57cdfd418d189"
+    },
+    {
+      "file": "assets/images/existing/f1266a87684d-grecho-p016-glass-fabric-composite-acoustic-facing-detail-20260910.webp",
+      "bytes": 116792,
+      "sha256": "f6ab737455402533e196c90d405988f1da197512fc7af80cd36e8690cd558643"
+    },
+    {
+      "file": "assets/images/existing/f12ee22235bf-p03-a-gypsum-application-v1.webp",
+      "bytes": 45496,
+      "sha256": "402827b2534323db8e40e5243db42dae33637838deb3576fb6fe713e2f292f38"
+    },
+    {
+      "file": "assets/images/existing/f5d7d074818f-ctds-001-gckf140-200gsm-plain-white-coated-veil-blur-768x1085-webp-v1.webp",
+      "bytes": 19730,
+      "sha256": "993c6d184e8c9208eec0c10f24a39faf9d612f5d0fa2bc132aaf177381613d4d"
+    },
+    {
+      "file": "assets/images/existing/f6023a0de5d1-grecho-p006-high-airflow-high-whiteness-fire-performance-acoustic-facing-primary-20260910.webp",
+      "bytes": 123256,
+      "sha256": "f7455eaa9c34e6cd8a54c5c96813532582073da6d158a588cc1836cf6df1cf52"
+    },
+    {
+      "file": "assets/images/existing/f635ca77ddc7-mineral-wool-material-options-webp-v1.webp",
+      "bytes": 222536,
+      "sha256": "f81bf158d32e54c150a0c8ac6e3eec9cf2684d8d06229c5a54811d713e12f094"
+    },
+    {
+      "file": "assets/images/existing/f7c7268be4cf-grecho-p010-sanded-acoustic-facer-product-card-20260910.webp",
+      "bytes": 150112,
+      "sha256": "a08d8f3e6ad25b7b3eb2245b23da295a2df1eb7c9c997f1c0919cafa56ecd291"
+    },
+    {
+      "file": "assets/images/existing/f95d7f7cba6e-grecho-p007-cleanable-white-and-dotted-acoustic-facing-primary-20260910.webp",
+      "bytes": 121088,
+      "sha256": "e4683ffc2fc21171f0fab967762368ae03c1d02386ada0e323a85f51b0aca1d2"
+    },
+    {
+      "file": "assets/images/existing/f968e65a8369-about-how-we-work-webp-v1.webp",
+      "bytes": 166812,
+      "sha256": "81d625d90d0c179a8b1c1162a118fa78a8555a814943cbcea51c1a70a3888a0e"
+    },
+    {
+      "file": "assets/images/existing/fa16e55ef76b-case-studies-hero-webp-v1.webp",
+      "bytes": 147242,
+      "sha256": "a4ce39e052812db7c01076fc794ff34f5c8219e6a874e112377a442d019b4506"
+    },
+    {
+      "file": "assets/images/existing/fc89873bb939-grecho-s07-dotted-acoustic-hero-2.webp",
+      "bytes": 166360,
+      "sha256": "366a9a990e64ecf2d50ba77d443385db1b3c4b4e4946e7c3bcbe6ca8c97497e7"
+    },
+    {
+      "file": "assets/images/existing/fe7be1f618c0-d-pir-01-rigid-insulation-context-v1.webp",
+      "bytes": 66776,
+      "sha256": "e5091774d45e56dc21ec8e7556604095fc53d1ae1812df40ac4acbeacc6aa39b"
+    },
+    {
+      "file": "assets/images/existing/ff17678ac019-grecho-products-landing-hero-desktop.webp",
+      "bytes": 344182,
+      "sha256": "2d40e17638a06de6ec918f13b9e7c59cd2479c50189091d7a546fb43ac1cc52a"
+    },
+    {
+      "file": "assets/images/existing/ff58c6bf197d-gypsum-board-facer-surface-documentation-review.webp",
+      "bytes": 99384,
+      "sha256": "c64bee7e6e0f24e15201fdefbdb55ebd2d60155e0b50abbffd6e42141605cbd0"
+    },
+    {
+      "file": "assets/images/existing/grecho-contact-hero-desktop-attachment-1708.webp",
+      "bytes": 63434,
+      "sha256": "f893d19d21a02a38ed50086bbd5f48a547cca83e712cb838f5306619d85c68a7"
+    },
+    {
+      "file": "assets/images/navigation/featured-acoustic-solution.png",
+      "bytes": 618749,
+      "sha256": "f82ac3ba0941d62af9f0eb48d1bc1045abe4bbd112aec01442ef0fb75e3bb4ba"
+    },
+    {
+      "file": "assets/images/navigation/grecho-logo-blue-webp-v1.webp",
+      "bytes": 738,
+      "sha256": "291e4d3781e6c025e84ef21e55a8983e2eeb63ad6ed1bd00e80fa417b873e235"
+    },
+    {
+      "file": "assets/images/navigation/grecho-logo-white-webp-v1.webp",
+      "bytes": 738,
+      "sha256": "f1f1cc9ae18adfc65ba8f4aee2a8d4277d0bc5b69d03eb8f7eae78d836fccd94"
+    },
+    {
+      "file": "assets/images/optimized/applications/acoustic-ceiling-1100.webp",
+      "bytes": 96624,
+      "sha256": "6c6756d12e7698634a52e852ffbd5573e0053da727b5056f7fe9ccff3989e29e"
+    },
+    {
+      "file": "assets/images/optimized/applications/acoustic-ceiling-640.webp",
+      "bytes": 34770,
+      "sha256": "acc1f9ae257e8df602af23c03ff8b6cbe7a7ece6c82b29327d9c087cc62a59b9"
+    },
+    {
+      "file": "assets/images/optimized/applications/etics-1100.webp",
+      "bytes": 115980,
+      "sha256": "daf3efc0889bf59e21bf41817a16c4c1e9dcfc2520276fff81d35762ea33e06d"
+    },
+    {
+      "file": "assets/images/optimized/applications/etics-640.webp",
+      "bytes": 37224,
+      "sha256": "ac4dd2d809fc3ca4f4be34100f3d2da72ce1f4ce577e4b4e9b9c85b9eb7fc1dd"
+    },
+    {
+      "file": "assets/images/optimized/applications/gypsum-1100.webp",
+      "bytes": 85760,
+      "sha256": "4ce7e8b6942c78a20127f7cceedf2ba4139a211c314c647272da059e124f704b"
+    },
+    {
+      "file": "assets/images/optimized/applications/gypsum-640.webp",
+      "bytes": 37060,
+      "sha256": "bcb6bbdfb886ad0da1373dd8e0b32c228d6b2e848d927e94319211d496f7df25"
+    },
+    {
+      "file": "assets/images/optimized/applications/mineral-wool-1100.webp",
+      "bytes": 138958,
+      "sha256": "6094447f7d6180eeff8526afb73e191751b3fec1bd8a4b47a0737d05e469cbfa"
+    },
+    {
+      "file": "assets/images/optimized/applications/mineral-wool-640.webp",
+      "bytes": 61310,
+      "sha256": "db1b12530961629cb48f3377fc271201cab1ce27bcce4f3a36e6669cbe68738c"
+    },
+    {
+      "file": "assets/images/optimized/applications/public-space-1100.webp",
+      "bytes": 147974,
+      "sha256": "9bbcf1d6f78b34dce61024bd3ae20287edf293f3ead7e6c16ced5589f54f56a3"
+    },
+    {
+      "file": "assets/images/optimized/applications/public-space-640.webp",
+      "bytes": 46510,
+      "sha256": "5ba463ca9a197a0a7ca04e28fd2248e0cc7a2cd1b8c797af74b415d047cc0a75"
+    },
+    {
+      "file": "assets/images/optimized/applications/technical-document-1100.webp",
+      "bytes": 68178,
+      "sha256": "17489284da227a9a198a6a1a0f60b8b4ad1049332cdff62c414b28789c613eeb"
+    },
+    {
+      "file": "assets/images/optimized/applications/technical-document-640.webp",
+      "bytes": 34578,
+      "sha256": "548b568b5c59a824bbc1bd6e1d473eec71cf5be6b7e0804cee60433b45203c67"
+    },
+    {
+      "file": "assets/images/optimized/diagnostic/compliance-trim-192.webp",
+      "bytes": 13556,
+      "sha256": "a0ddab9ccb43226b02c23e6fe209e9b49a73604ffd3a5d85be74c8d475bc5056"
+    },
+    {
+      "file": "assets/images/optimized/diagnostic/durability-trim-192.webp",
+      "bytes": 15716,
+      "sha256": "02f92af87987fe09cb8caa6d66c949e5d9def4c061aa3d95f9dd237caccff2e0"
+    },
+    {
+      "file": "assets/images/optimized/diagnostic/process-fit-trim-192.webp",
+      "bytes": 18368,
+      "sha256": "76bb48668da9e59fa4c51e490d01f80afeee59fb182d015159dd564100c399e3"
+    },
+    {
+      "file": "assets/images/optimized/diagnostic/production-trim-192.webp",
+      "bytes": 16998,
+      "sha256": "1d3ddb5b7faf81a41f7939fb3d42dcd6a5c7e367415d53dba8f78fc79b4506b8"
+    },
+    {
+      "file": "assets/images/optimized/diagnostic/project-intake-trim-192.webp",
+      "bytes": 12902,
+      "sha256": "765f9e514799e0e67f2ead263db565a6705f1801525e92beb82b21ed25288c33"
+    },
+    {
+      "file": "assets/images/optimized/diagnostic/visible-surface-trim-192.webp",
+      "bytes": 16284,
+      "sha256": "c53b6fb28937645a1b04cb19805bc2472300490ec39817cf5d3cd1e3b2e40f08"
+    },
+    {
+      "file": "assets/images/optimized/resources/color-tds-192.webp",
+      "bytes": 3378,
+      "sha256": "943c4f352bf5012c5ec70feebdbc6674af0f612051d639b19efa9e1f2cc1db87"
+    },
+    {
+      "file": "assets/images/optimized/resources/compliance-192.webp",
+      "bytes": 3336,
+      "sha256": "275f3e6aac2f7e42a8e3657d689b27500b2b2b49df3740f8b44f64919a2de0bf"
+    },
+    {
+      "file": "assets/images/optimized/resources/fire-document-192.webp",
+      "bytes": 3720,
+      "sha256": "62e033c8aa8cf4de41a2d17b3b3623685da7d546a115279b3cfef1c4461676d3"
+    },
+    {
+      "file": "assets/images/optimized/resources/full-tds-192.webp",
+      "bytes": 3790,
+      "sha256": "3815fe529c39ed189ddc3c84933e3b56cf657c386100fd00ff25b1bf5a85275d"
+    },
+    {
+      "file": "assets/images/optimized/resources/product-brief-192.webp",
+      "bytes": 3378,
+      "sha256": "943c4f352bf5012c5ec70feebdbc6674af0f612051d639b19efa9e1f2cc1db87"
+    },
+    {
+      "file": "assets/images/optimized/resources/sds-msds-192.webp",
+      "bytes": 4644,
+      "sha256": "6c7e8daaad91d528fee7acc1514d7f774c97018d21fd387db3785622a686c1bd"
+    },
+    {
+      "file": "assets/images/optimized/solutions/acoustic-1000.webp",
+      "bytes": 39378,
+      "sha256": "ad93d9fcd9ac6d21f7287b36ab5571fdc4b07bb43d47b76de89bf45f7966271d"
+    },
+    {
+      "file": "assets/images/optimized/solutions/acoustic-640.webp",
+      "bytes": 18588,
+      "sha256": "01698842d5c0e0286745987cb860aa0b889aaa1f378e289c5a6cf8b4b829b1d9"
+    },
+    {
+      "file": "assets/images/optimized/solutions/gypsum-1000.webp",
+      "bytes": 37950,
+      "sha256": "3a9a7a13f77c1bdb0d31432a0bf57348ef2434db896c978134fac5392d7e1105"
+    },
+    {
+      "file": "assets/images/optimized/solutions/gypsum-640.webp",
+      "bytes": 17144,
+      "sha256": "a3c797548eec4cef1f68c1a30e7fec89854e38168b3eb35b5be22cb06d6444a5"
+    },
+    {
+      "file": "assets/images/optimized/solutions/mineral-wool-1000.webp",
+      "bytes": 49650,
+      "sha256": "4e64be6325858ecb8e40d930215b28f6bf8e235ab000d2dbce2aabe7b60ed02c"
+    },
+    {
+      "file": "assets/images/optimized/solutions/mineral-wool-640.webp",
+      "bytes": 21196,
+      "sha256": "826ac0a66a57d361d0b0eebd66c8a884e12ef47b1a5c638557836bc063db4724"
+    },
+    {
+      "file": "assets/images/optimized/solutions/pir-pur-etics-1000.webp",
+      "bytes": 52260,
+      "sha256": "e1b67638342d20bc86f8455266450282b069007d66887026bf3448a21d79b28e"
+    },
+    {
+      "file": "assets/images/optimized/solutions/pir-pur-etics-640.webp",
+      "bytes": 23382,
+      "sha256": "838f865fce41be5659788fa12a8e018c83729ce41bdf98907c29719f59a55097"
+    },
+    {
+      "file": "assets/images/product/application-acoustic-wall-552.webp",
+      "bytes": 68676,
+      "sha256": "8ce18652578f771aa34bd8c125029dc97751443d603e040264e8a860110acc44"
+    },
+    {
+      "file": "assets/images/product/application-glass-wool-551.webp",
+      "bytes": 65848,
+      "sha256": "1939da86f54f7d377bbead0ecf102bb4612d15dbbbda4df18ca21c3e02e4f97c"
+    },
+    {
+      "file": "assets/images/product/application-mineral-wool-551.webp",
+      "bytes": 88848,
+      "sha256": "6f132d00c45b4664a5c508353a1444e3977b3e7746c159e2036784d46301a4a8"
+    },
+    {
+      "file": "assets/images/product/cta-background-1448.webp",
+      "bytes": 177466,
+      "sha256": "f49e87e7c08361a6d817c2fe7fc9b8de2ee70d1b5d95f8c078689e0591742fe0"
+    },
+    {
+      "file": "assets/images/product/hero-background-1448.webp",
+      "bytes": 224930,
+      "sha256": "33b4419b0c8c0a10fe1f1378c36038407ce990f92c7815b1a0f959c7650723eb"
+    },
+    {
+      "file": "assets/images/product/hero-layered-board-516.webp",
+      "bytes": 24440,
+      "sha256": "8a80d5b7fcdbeb5e2d7b958e837ca401ada73863e55942bf7b9c0e5f03a5ba39"
+    },
+    {
+      "file": "assets/images/product/icon-airflow-balance-75.webp",
+      "bytes": 6486,
+      "sha256": "30d241dba27a755f1275270742a758eea968cc60a5d89eab25e8519ea9fd9077"
+    },
+    {
+      "file": "assets/images/product/icon-higher-hiding-63.webp",
+      "bytes": 6722,
+      "sha256": "ad258d74ec09a5b8d66f1b0307787e5b5d97a98a1de1458a684b51d20ccfb3c7"
+    },
+    {
+      "file": "assets/images/product/icon-process-stability-76.webp",
+      "bytes": 5888,
+      "sha256": "48f5528d0ecbba1bfd394c9f52069b585d13632a6cca8dca49fb59fbdafc39fc"
+    },
+    {
+      "file": "assets/images/product/icon-whiter-surface-69.webp",
+      "bytes": 6268,
+      "sha256": "afc71acff8026ffd53883177760c67f9db44ad4596001f23e4cf966fcc22881f"
+    },
+    {
+      "file": "assets/images/product/panel-layer-detail-892.webp",
+      "bytes": 58970,
+      "sha256": "93cf1345b811f74210a113de41979dd80f573313e84c11d29ee5a193da4014cf"
+    },
+    {
+      "file": "assets/images/product/proof-base-core-595.webp",
+      "bytes": 49538,
+      "sha256": "f4f7f8a0aa7bd55a486b0c33162eacf3bc4180e249ad77d0fa824b699992864d"
+    },
+    {
+      "file": "assets/images/product/proof-conventional-facing-616.webp",
+      "bytes": 57136,
+      "sha256": "48181d326a816e451dfc63437c3ce38447222ff71edb0a5bfce9d9aeeeeda2bd"
+    },
+    {
+      "file": "assets/images/product/proof-high-hiding-598.webp",
+      "bytes": 43170,
+      "sha256": "c525a3943a7a099a9886f415faf32de3f549af9b0c23d84cc33a9b8514b1bc66"
+    },
+    {
+      "file": "assets/images/product/surface-comparison-1120.webp",
+      "bytes": 107324,
+      "sha256": "ceeb21093c3c7b507548a4e81f0f4b0adeb2b6ec839a6f24ca6aa28d67061765"
+    },
+    {
+      "file": "assets/images/product/surface-comparison-1672.webp",
+      "bytes": 187690,
+      "sha256": "99d26cbc0004f44b10db50da6231851c0143f9ba506fe109e4e461e729b5d7b1"
+    },
+    {
+      "file": "assets/images/product/surface-comparison-640.webp",
+      "bytes": 42892,
+      "sha256": "bc64fe645a7121717dc723ac77015fb8c54a607375ba3f29c4f0fddbc3f8010d"
+    },
+    {
+      "file": "assets/images/solutions/application-acoustic-1000.webp",
+      "bytes": 84988,
+      "sha256": "6d37ce68c08272d3f60d7268e95947a30d9877abe189cdcee1cb00c21d9ace2f"
+    },
+    {
+      "file": "assets/images/solutions/application-acoustic-640.webp",
+      "bytes": 39180,
+      "sha256": "857f1fbccb63099985a77f56bf32173811d92b7c53f939b94b412c9bed18084f"
+    },
+    {
+      "file": "assets/images/solutions/application-gypsum-1000.webp",
+      "bytes": 84834,
+      "sha256": "6d5a1bcc4181aa4cde5392bf9196e3644eb91c4eea403309c52dacf225656ec2"
+    },
+    {
+      "file": "assets/images/solutions/application-gypsum-640.webp",
+      "bytes": 40178,
+      "sha256": "b56979a1c70be189704d3872318097d01f2cb8a511a07d5a0d645cdb95e4e64d"
+    },
+    {
+      "file": "assets/images/solutions/application-mineral-wool-1000.webp",
+      "bytes": 94890,
+      "sha256": "af6d8a14f1ee8086b83713ad322f07557ecb7c9e0a9ee3b7c079c96093be4676"
+    },
+    {
+      "file": "assets/images/solutions/application-mineral-wool-640.webp",
+      "bytes": 43190,
+      "sha256": "02422905f3710d11313f4e1830aedd30a01e5c23aa9802cf88034a71bb670f68"
+    },
+    {
+      "file": "assets/images/solutions/application-pir-pur-1000.webp",
+      "bytes": 90196,
+      "sha256": "39e91ff8aae80efa51bc968c5990a2a8d4d79b2676fc127c6e4400062c3994cf"
+    },
+    {
+      "file": "assets/images/solutions/application-pir-pur-640.webp",
+      "bytes": 41706,
+      "sha256": "5f4e9de4e96f44fe6eec2b27618a2063f0ada34cdb55e85744a911571a7a3f06"
+    },
+    {
+      "file": "assets/images/solutions/cta-background-1672.webp",
+      "bytes": 151518,
+      "sha256": "95cc72fa1842708b5173eafd610e6d95f978ea63447b7d2f7e882b3e6ec1d65a"
+    },
+    {
+      "file": "assets/images/solutions/detail-acoustic-1120.webp",
+      "bytes": 87668,
+      "sha256": "e660c726231e781e8d46d75572bf8302ebd1be8ff604479bb14522606e4fb690"
+    },
+    {
+      "file": "assets/images/solutions/detail-acoustic-640.webp",
+      "bytes": 26480,
+      "sha256": "9e2a3c4868d152f310d79cc6633cbfee387e470cc2fae39bdeda3947e454ab79"
+    },
+    {
+      "file": "assets/images/solutions/detail-gypsum-1120.webp",
+      "bytes": 100966,
+      "sha256": "b231062fc482c6e4caff491859291ee57cdd84b110cfd2c6d46448393c2aba22"
+    },
+    {
+      "file": "assets/images/solutions/detail-gypsum-640.webp",
+      "bytes": 40736,
+      "sha256": "d059aef5d7360cde3c4fb4b60d5925cf410329117bae4d1a5d0530562ccad350"
+    },
+    {
+      "file": "assets/images/solutions/detail-mineral-wool-1120.webp",
+      "bytes": 90048,
+      "sha256": "35ad35ff7c592144ab948d971d6930fb7f6b47d4e98ae1466eba7cd270a3c1b9"
+    },
+    {
+      "file": "assets/images/solutions/detail-mineral-wool-640.webp",
+      "bytes": 37948,
+      "sha256": "9a97ce780c2aaa2d39d0d01fc5a8eb6cf6e893421ae3c7dd512a212d57766f10"
+    },
+    {
+      "file": "assets/images/solutions/detail-pir-pur-1120.webp",
+      "bytes": 82596,
+      "sha256": "8f9dd94f67b5092515099fd549481bfb57a4dbfc9f868c03721c1546e8d04968"
+    },
+    {
+      "file": "assets/images/solutions/detail-pir-pur-640.webp",
+      "bytes": 37086,
+      "sha256": "f837cfaf9ac30575f0a0e5e2a4c1a3b8dc914c69fbb672d1a826eaa6db643a15"
+    },
+    {
+      "file": "assets/images/solutions/hero-background-1672.webp",
+      "bytes": 211328,
+      "sha256": "a74863b2c11164959ba915c885c5b3445e59898f5c750d312062f8c7fec1c43d"
+    },
+    {
+      "file": "assets/images/solutions/hero-layered-facer-611.webp",
+      "bytes": 24442,
+      "sha256": "5894665eabe5e7a906dc992bffed8a0192410ed0784866e0cbff7978521c100d"
+    },
+    {
+      "file": "assets/js/article-table-overflow.js",
+      "bytes": 2091,
+      "sha256": "575f00fb3ccc66579689dec76bdaf590787a6d6364dfa68295a99cb9f3468a3a"
+    },
+    {
+      "file": "assets/js/grecho-existing.js",
+      "bytes": 11299,
+      "sha256": "920fd33b516693a0b07310df959fd91a56ce9cbd61ccdfd5204aada56ad0bb5b"
+    },
+    {
+      "file": "assets/js/grecho-homepage-v3-pilot.js",
+      "bytes": 9339,
+      "sha256": "ce6f1ad5707c05eb2f8f366736a0f38330d1b57681949fb0d2d9bc4e9bbeab94"
+    },
+    {
+      "file": "assets/js/grecho-navigation-phase1b1.js",
+      "bytes": 13362,
+      "sha256": "de3dde9a8c697d84ac83552d7e4de1d2de361b7829dceec543396124b8e65dd4"
+    },
+    {
+      "file": "assets/js/sample-editorial.js",
+      "bytes": 922,
+      "sha256": "c7e5dea05670ddf809780286582a4a34a6291e9a488128c96e9ceae9dd1ca51c"
+    },
+    {
+      "file": "assets/media/hero-poster.webp",
+      "bytes": 6908,
+      "sha256": "2202da5d3c1ebb7f70f3363b66aab1a870bf80d4293a3354e589d0185e78141e"
+    },
+    {
+      "file": "assets/media/hero-video.mp4",
+      "bytes": 5745507,
+      "sha256": "545d598ed1337d37231bfde034182e25edf2702e78e6dde27768e284354f327c"
+    },
+    {
+      "file": "case-studies/index.html",
+      "bytes": 64016,
+      "sha256": "262682e669fc185931b3ba8d3acfcf8d34fcd6979e31b44be2f0b97db33aa820"
+    },
+    {
+      "file": "class-a-a2-s1-d0-noncombustible-facer-evidence/index.html",
+      "bytes": 75805,
+      "sha256": "be7be149d98f2dc3c8e5f83abf3b56197289a07bb4cf8c504dd1f656ae4b3a74"
+    },
+    {
+      "file": "compare-board-trials-facer-process-variables/index.html",
+      "bytes": 66122,
+      "sha256": "b79111c07b6eac9cacbe8bb1648ce0c1920472e951882965e845dfa86c78d330"
+    },
+    {
+      "file": "compare-glass-veil-air-permeability-methods-pressure-units/index.html",
+      "bytes": 61311,
+      "sha256": "4ee1e29301153204e61c5143809cb5f744a3713cf024388cf0cfed6595838f8d"
+    },
+    {
+      "file": "compare-iso-fire-epd-reach-pfas-documents-fiberglass-facers/index.html",
+      "bytes": 65696,
+      "sha256": "38cca6f9ed1593fb2accc98dc6d1895222d45328729273330fdc3c4b2d45070f"
+    },
+    {
+      "file": "contact/index.html",
+      "bytes": 82156,
+      "sha256": "be0abe10abce968e6a412d0c4275f99fd02ea4155b4b403275be1e3946a25340"
+    },
+    {
+      "file": "cookie-policy/index.html",
+      "bytes": 56837,
+      "sha256": "7993c04d6edf61258f69db87c40b0e64ec28f5db96f9843ec5ff00efeb3c765a"
+    },
+    {
+      "file": "diagnose-facer-foam-bonding-failures-pir-pur-board-trials/index.html",
+      "bytes": 60901,
+      "sha256": "caa5298c200d96b1ef16879276a905cdbc8ab8388a34c662f890de129b403ff1"
+    },
+    {
+      "file": "europe-wide-width-facer-initiative/index.html",
+      "bytes": 92740,
+      "sha256": "3005b50c1d793cd22215e3c42e9832ebca59195a07aa42c20e78be5423431b01"
+    },
+    {
+      "file": "facer-basis-weight-gsm-vs-thickness/index.html",
+      "bytes": 61796,
+      "sha256": "2b9fe7b4b885553262596200b036250183e9f4a99f1b5b99fe41141793d236d3"
+    },
+    {
+      "file": "facer-lot-roll-traceability-board-trials/index.html",
+      "bytes": 60221,
+      "sha256": "175b157bca308385f85f62cba84f211f5496b2cd8b57bf945b059b41030d3abb"
+    },
+    {
+      "file": "facer-roll-wrinkles-edge-damage-converting-review/index.html",
+      "bytes": 67481,
+      "sha256": "96af616e1d5cc38e18999309e1988477c1d0ba310db03b703b085b6ab6e3b622"
+    },
+    {
+      "file": "facer-technical-data-typical-values-specification-limits/index.html",
+      "bytes": 69507,
+      "sha256": "9b15b0e8d9c1cbfa651bcb871d1778126e1e6aa00859198ac06c6f5f90fe3c4f"
+    },
+    {
+      "file": "facer-test-report-finished-board-performance/index.html",
+      "bytes": 69463,
+      "sha256": "dd42740c1ff3cd276018beef9391f7833ca1f57e32483a83ee9f05722e726f8d"
+    },
+    {
+      "file": "faq/index.html",
+      "bytes": 77378,
+      "sha256": "cd72c377502ddc5e36128506bdaadbbb84357db87dde4ba76e2b9e9e8eb1c44c"
+    },
+    {
+      "file": "fiberglass-facer-material-identity-before-qualification/index.html",
+      "bytes": 73520,
+      "sha256": "9578bda31f46c5cd994072fa47e1827ca420502a20cd019f0b0da72ec9f03c8e"
+    },
+    {
+      "file": "fiberglass-facer-review-for-acoustic-ceiling-panels/index.html",
+      "bytes": 63858,
+      "sha256": "2719ee79c1f77bab44ea57474e92d096759ef5acd3afd3b0ea39f5cb73951279"
+    },
+    {
+      "file": "fluorine-free-thermal-insulation-facers-pfas-evidence-boundaries/index.html",
+      "bytes": 66614,
+      "sha256": "4cbf8437466a399e65a7686cdf3c8a548c4eef718df1e1138cd115a6d15456de"
+    },
+    {
+      "file": "foil-composite-insulation-facers-reflective-surface-directions/index.html",
+      "bytes": 66894,
+      "sha256": "00a6cbdcf8370275218fc4c9c07b351a06770bfb477b6757dd8c410d8591e959"
+    },
+    {
+      "file": "glass-facing-route-gypsum-board-applications-sample-review/index.html",
+      "bytes": 63039,
+      "sha256": "0ba28e47c88caafd2be663f5be234c8c0ab7412081702aeba7d6265d63590cc5"
+    },
+    {
+      "file": "glass-fibre-facer-tensile-data-md-cd-test-conditions/index.html",
+      "bytes": 61469,
+      "sha256": "e5f6bfc67fef84b7047b060150ea4dfae0c0c3fdbf3bfc494ccc679a7c6770e2"
+    },
+    {
+      "file": "gypsum-board-facer-surface-finish-documentation-questions/index.html",
+      "bytes": 62535,
+      "sha256": "23f8f330554bb44cc3f591c500fee029124742a978f1d111c44f83c121f0ba73"
+    },
+    {
+      "file": "gypsum-board-facer-surface-total-water-absorption/index.html",
+      "bytes": 66668,
+      "sha256": "ef723ab57f620ce7e91affc14ea35e5c6e184bf785fcb2fe351c056e9debf742"
+    },
+    {
+      "file": "incoming-facer-roll-inspection-board-line/index.html",
+      "bytes": 60538,
+      "sha256": "8e240a9778f4790b5f21f47a9310db9edd6098b672dbf3ba173971dd600c8859"
+    },
+    {
+      "file": "index.html",
+      "bytes": 77172,
+      "sha256": "aad4a5cdacc14688d077c385159fd37de45e124b85b0d07eb1027538865ec525"
+    },
+    {
+      "file": "insights/index.html",
+      "bytes": 79085,
+      "sha256": "556d30477864f27c13d984ab04830eaad9467b3948de30ffadaebed41fb2da41"
+    },
+    {
+      "file": "insulation-facer-air-permeability-vs-water-vapour-transmission/index.html",
+      "bytes": 62795,
+      "sha256": "6463c7ab4b6e126ea8ead9afde6b4133a80ecbf8fd1a2d9e709cf0e5f33428b1"
+    },
+    {
+      "file": "low-airflow-facer-pir-pur-trial-process-window/index.html",
+      "bytes": 64731,
+      "sha256": "f54d01b81ab80ae54eaa14649bbf40358c494f9d502381ff10f51ce345ef7c9b"
+    },
+    {
+      "file": "mineral-wool-board-facing-service-temperature-limits/index.html",
+      "bytes": 67165,
+      "sha256": "6f6a8940b3424216c002db51909aded1c489337567b545196bc3cf492b593788"
+    },
+    {
+      "file": "mineral-wool-facer-sample-qualification/index.html",
+      "bytes": 68053,
+      "sha256": "b4e8084469652953f64d3b89439ad749143142e0544901c7018dee555e386c6b"
+    },
+    {
+      "file": "moisture-resistant-fiberglass-facers-gypsum-board-checklist/index.html",
+      "bytes": 62994,
+      "sha256": "55214ee229f1b1ab0d2dd7a497b6196bedcd27d7b6686b3d15ec7ab9d8d1bf1a"
+    },
+    {
+      "file": "paper-to-glass-mat-gypsum-line-qualification/index.html",
+      "bytes": 74917,
+      "sha256": "44505f9a3da6c091bfdc6b004a4903643680b21a52fd3790e3bcd6df757a2a1b"
+    },
+    {
+      "file": "pir-board-facer-gas-diffusion-thermal-aging/index.html",
+      "bytes": 69416,
+      "sha256": "db8ce770ab2a88e1381d7003a1aa423baadd6643331b16d8885d928ab8d1f62b"
+    },
+    {
+      "file": "privacy-policy/index.html",
+      "bytes": 74556,
+      "sha256": "fa80119844ec5657f77dfe0bd86d619dd39c850864326e60491af8f720f52072"
+    },
+    {
+      "file": "products/bitumen-heavyweight-composite-facer-pir-pur-xps-polyiso/index.html",
+      "bytes": 57191,
+      "sha256": "d467d01bbc3b43fd83ce783159e68596f86f30e74396a65eb1c7e602ed958aac"
+    },
+    {
+      "file": "products/black-matte-black-acoustic-facing/index.html",
+      "bytes": 56766,
+      "sha256": "7e93f8024951a9d79948501c026f5f6978ea88b58006dea8da86f8fe943a335c"
+    },
+    {
+      "file": "products/cleanable-white-dotted-acoustic-facing/index.html",
+      "bytes": 58730,
+      "sha256": "e4cb0a7e05aac5beced3d2ebb63062b7b1fdfcf2ebe2f7f95ad8298bfca1edef"
+    },
+    {
+      "file": "products/color-acoustic-facing/index.html",
+      "bytes": 56723,
+      "sha256": "478f0f40fdeab8824b6c54f7489d9606c393d007deb077c596f90545e0915385"
+    },
+    {
+      "file": "products/dotted-acoustic-facing/index.html",
+      "bytes": 56726,
+      "sha256": "182ac1c3a057490f4442eb05e136c4f894b318d8c5412bce853ea0d3fceb4efa"
+    },
+    {
+      "file": "products/fluorine-free-thermal-insulation-facing/index.html",
+      "bytes": 57043,
+      "sha256": "d5f32e8a40a3add01785561bab491f64bc30e0d616d3a3dab29c68274a1a5149"
+    },
+    {
+      "file": "products/foil-composite-insulation-facers/index.html",
+      "bytes": 57028,
+      "sha256": "382293a0e940a05da60421ab6491be82738ad5977f41044afe6f18053fa717f8"
+    },
+    {
+      "file": "products/glass-fabric-composite-acoustic-facing/index.html",
+      "bytes": 56856,
+      "sha256": "85d18d8a73e9d93c180c44ac1382e388521beeb5fcb240515d149d2f39f32ce9"
+    },
+    {
+      "file": "products/glass-facing-route-for-gypsum-board-applications/index.html",
+      "bytes": 56878,
+      "sha256": "57f0e3d36c4c4a51e9d5001b3f67e7c161146495566351695295e407e3ac719e"
+    },
+    {
+      "file": "products/high-airflow-high-whiteness-acoustic-facing/index.html",
+      "bytes": 57112,
+      "sha256": "470a1565cd172d77df586d43e8e14d724ba462e38bd2bd2ea372741ac9ffe1de"
+    },
+    {
+      "file": "products/high-definition-wood-look-decorative-glass-facing/index.html",
+      "bytes": 57000,
+      "sha256": "df89c30e5b0e4c72e819243e9a90bc15d19ec583b986b9173ac6609853969340"
+    },
+    {
+      "file": "products/high-hiding-white-acoustic-facing/index.html",
+      "bytes": 68974,
+      "sha256": "27153ba671742e77267ad312bdccbb52eebfa8bf0115aaf4d47c7aca3e0a46bb"
+    },
+    {
+      "file": "products/index.html",
+      "bytes": 155044,
+      "sha256": "1b85674a6ba1f68b1bc079e1cbd6c607a602699ee8a1528b21ccd1abbbf28794"
+    },
+    {
+      "file": "products/reinforced-composite-facer-pir-pur-xps-polyiso/index.html",
+      "bytes": 56905,
+      "sha256": "c7c154fd1953d6c0ecc9221b9269e8834e06c3a82c44a34dd99ae19ce21d84c4"
+    },
+    {
+      "file": "products/sanded-acoustic-facing/index.html",
+      "bytes": 56530,
+      "sha256": "63d5514ba6e6af6109c5208a4281554aa9fdb9504d8b5b7b455d006e5c631ab8"
+    },
+    {
+      "file": "products/silicone-coated-glass-fabric-acoustic-wall-panels/index.html",
+      "bytes": 56942,
+      "sha256": "4d26d59be1e58a4a49bdc22a616c43bf8d98a0b2b87f8a1513fdbfb54943f769"
+    },
+    {
+      "file": "products/ultra-low-airflow-glass-facer-for-pir-pur-foam-boards/index.html",
+      "bytes": 69240,
+      "sha256": "93448f8eb7b28857f8b543e1ecc7a1b5bde5d49842477ba4422301d5b8afc625"
+    },
+    {
+      "file": "products/wood-look-fiberglass-fabric-acoustic-facing/index.html",
+      "bytes": 56793,
+      "sha256": "e7a869d5064f272a9add18f29b1812cdc87def79bc5b79992433f1f2a4ac0c7d"
+    },
+    {
+      "file": "README.md",
+      "bytes": 724,
+      "sha256": "38c56a746709e7845f853adfba24d1a503abd9eef62ba4c67138588e27cc8196"
+    },
+    {
+      "file": "request-tds-sds-test-reports-fiberglass-facers/index.html",
+      "bytes": 69204,
+      "sha256": "893a90ba6dca0b2638cb14c467ee43f828dc5ee83cb2fd32d9bb5c779bea4d74"
+    },
+    {
+      "file": "resource-center/index.html",
+      "bytes": 79251,
+      "sha256": "5f14ae4d9b39888c50b0c7f00362ed6e3a613be0f3514e26b460a115b9f48e7f"
+    },
+    {
+      "file": "robots.txt",
+      "bytes": 28,
+      "sha256": "a8f31103361fca68bef71fc69cff844b7c23bd3d64d2b872d74690cbda656bfc"
+    },
+    {
+      "file": "sample-approval-vs-supplier-qualification-fiberglass-facers/index.html",
+      "bytes": 72577,
+      "sha256": "a7eb3ba0576b9f9e5214a11b29d24a5a7ea63ce6ba63bab1eb1727c2f8d5519d"
+    },
+    {
+      "file": "sample-review-checklist-board-manufacturers-fiberglass-facers/index.html",
+      "bytes": 62756,
+      "sha256": "679b57f1e29f4ca3d33fb50be9ff7facc0d4580096b01c5045e3147067c8c52f"
+    },
+    {
+      "file": "solutions/acoustic-ceiling-wall-facers/index.html",
+      "bytes": 69164,
+      "sha256": "61ddc126fc168751d019b72c959d25e1f4428c2f7b3276f123fea25c2e36aff0"
+    },
+    {
+      "file": "solutions/gypsum-board-facers/index.html",
+      "bytes": 69663,
+      "sha256": "14dee65e77fd2838228ea9d962d586f233c30530463ef9d4c31e30f6483cea7a"
+    },
+    {
+      "file": "solutions/index.html",
+      "bytes": 58899,
+      "sha256": "4505e69368a92d6d6734fffec2e6b7a242abc78ee6f3db349d4d52180c774b2a"
+    },
+    {
+      "file": "solutions/mineral-wool-insulation/index.html",
+      "bytes": 73391,
+      "sha256": "48e87fe8a8cb87ca657f3fdfefa101b9b0b98d163544eecf34c499051307fc05"
+    },
+    {
+      "file": "solutions/pir-pur-etics-insulation-facers/index.html",
+      "bytes": 72768,
+      "sha256": "4a398f5daea98565317a750439a89286f39431199a4d8c4c18e430d2797f5303"
+    },
+    {
+      "file": "successful-facer-board-line-trial-evidence-scope/index.html",
+      "bytes": 76791,
+      "sha256": "e0e744f410ed84d4e093b91050bdee15683553acbdb990d8e7676e4bd09808dd"
+    },
+    {
+      "file": "ultra-low-airflow-glass-facer-pir-pur-review-criteria/index.html",
+      "bytes": 63261,
+      "sha256": "3a23df55b6b5dd2f44966b4148f89d2b7287337dc69c1d0da3ae6f6205bb6664"
+    },
+    {
+      "file": "visual-surface-acceptance-coloured-acoustic-facer-trials/index.html",
+      "bytes": 61327,
+      "sha256": "22d0c86459bdfaafaa223b28d081313ff372816e0213b59306c2b2ba00e696d6"
+    },
+    {
+      "file": "white-black-dotted-acoustic-facers-comparison/index.html",
+      "bytes": 63183,
+      "sha256": "46f588d4891251378d846f63f1d307ec636c3bef2e3731d42aad0cdec36ed461"
+    },
+    {
+      "file": "wide-facer-roll-usable-width-board-coverage/index.html",
+      "bytes": 66407,
+      "sha256": "ab09faaa844e292662ebcd9d895247f7f289060149c1ecce69e4b515312b5138"
+    },
+    {
+      "file": "wide-width-facer-trial-readiness-checklist/index.html",
+      "bytes": 70642,
+      "sha256": "28ecddaab6e8ecec5c22997bb8c081e8b8019c0d1467121e241430d3ae09cb0b"
+    }
+  ],
+  "page_list": [
+    {
+      "id": 166,
+      "route": "/",
+      "type": "page",
+      "file": "index.html",
+      "sha256": "aad4a5cdacc14688d077c385159fd37de45e124b85b0d07eb1027538865ec525"
+    },
+    {
+      "id": 16,
+      "route": "/solutions/",
+      "type": "page",
+      "file": "solutions/index.html",
+      "sha256": "4505e69368a92d6d6734fffec2e6b7a242abc78ee6f3db349d4d52180c774b2a"
+    },
+    {
+      "id": 18,
+      "route": "/products/",
+      "type": "page",
+      "file": "products/index.html",
+      "sha256": "1b85674a6ba1f68b1bc079e1cbd6c607a602699ee8a1528b21ccd1abbbf28794"
+    },
+    {
+      "id": 1323,
+      "route": "/products/high-hiding-white-acoustic-facing/",
+      "type": "page",
+      "file": "products/high-hiding-white-acoustic-facing/index.html",
+      "sha256": "27153ba671742e77267ad312bdccbb52eebfa8bf0115aaf4d47c7aca3e0a46bb"
+    },
+    {
+      "id": 1867,
+      "route": "/products/bitumen-heavyweight-composite-facer-pir-pur-xps-polyiso/",
+      "type": "page",
+      "file": "products/bitumen-heavyweight-composite-facer-pir-pur-xps-polyiso/index.html",
+      "sha256": "d467d01bbc3b43fd83ce783159e68596f86f30e74396a65eb1c7e602ed958aac"
+    },
+    {
+      "id": 171,
+      "route": "/solutions/acoustic-ceiling-wall-facers/",
+      "type": "page",
+      "file": "solutions/acoustic-ceiling-wall-facers/index.html",
+      "sha256": "61ddc126fc168751d019b72c959d25e1f4428c2f7b3276f123fea25c2e36aff0"
+    },
+    {
+      "id": 20,
+      "route": "/resource-center/",
+      "type": "page",
+      "file": "resource-center/index.html",
+      "sha256": "5f14ae4d9b39888c50b0c7f00362ed6e3a613be0f3514e26b460a115b9f48e7f"
+    },
+    {
+      "id": 28,
+      "route": "/faq/",
+      "type": "page",
+      "file": "faq/index.html",
+      "sha256": "cd72c377502ddc5e36128506bdaadbbb84357db87dde4ba76e2b9e9e8eb1c44c"
+    },
+    {
+      "id": 30,
+      "route": "/contact/",
+      "type": "page",
+      "file": "contact/index.html",
+      "sha256": "be0abe10abce968e6a412d0c4275f99fd02ea4155b4b403275be1e3946a25340"
+    },
+    {
+      "id": 1442,
+      "route": "/white-black-dotted-acoustic-facers-comparison/",
+      "type": "post",
+      "file": "white-black-dotted-acoustic-facers-comparison/index.html",
+      "sha256": "46f588d4891251378d846f63f1d307ec636c3bef2e3731d42aad0cdec36ed461"
+    },
+    {
+      "id": 2588,
+      "route": "/paper-to-glass-mat-gypsum-line-qualification/",
+      "type": "post",
+      "file": "paper-to-glass-mat-gypsum-line-qualification/index.html",
+      "sha256": "44505f9a3da6c091bfdc6b004a4903643680b21a52fd3790e3bcd6df757a2a1b"
+    },
+    {
+      "id": 3,
+      "route": "/privacy-policy/",
+      "type": "page",
+      "file": "privacy-policy/index.html",
+      "sha256": "fa80119844ec5657f77dfe0bd86d619dd39c850864326e60491af8f720f52072"
+    },
+    {
+      "id": 24,
+      "route": "/case-studies/",
+      "type": "page",
+      "file": "case-studies/index.html",
+      "sha256": "262682e669fc185931b3ba8d3acfcf8d34fcd6979e31b44be2f0b97db33aa820"
+    },
+    {
+      "id": 22,
+      "route": "/insights/",
+      "type": "page",
+      "file": "insights/index.html",
+      "sha256": "556d30477864f27c13d984ab04830eaad9467b3948de30ffadaebed41fb2da41"
+    },
+    {
+      "id": 26,
+      "route": "/about/",
+      "type": "page",
+      "file": "about/index.html",
+      "sha256": "175418929cdb3025cb8d07d210636a8784b6e4722289517765d07f5c44d5b1a6"
+    },
+    {
+      "id": 1960,
+      "route": "/europe-wide-width-facer-initiative/",
+      "type": "page",
+      "file": "europe-wide-width-facer-initiative/index.html",
+      "sha256": "3005b50c1d793cd22215e3c42e9832ebca59195a07aa42c20e78be5423431b01"
+    },
+    {
+      "id": 1409,
+      "route": "/products/black-matte-black-acoustic-facing/",
+      "type": "page",
+      "file": "products/black-matte-black-acoustic-facing/index.html",
+      "sha256": "7e93f8024951a9d79948501c026f5f6978ea88b58006dea8da86f8fe943a335c"
+    },
+    {
+      "id": 1327,
+      "route": "/products/cleanable-white-dotted-acoustic-facing/",
+      "type": "page",
+      "file": "products/cleanable-white-dotted-acoustic-facing/index.html",
+      "sha256": "e4cb0a7e05aac5beced3d2ebb63062b7b1fdfcf2ebe2f7f95ad8298bfca1edef"
+    },
+    {
+      "id": 1861,
+      "route": "/products/color-acoustic-facing/",
+      "type": "page",
+      "file": "products/color-acoustic-facing/index.html",
+      "sha256": "478f0f40fdeab8824b6c54f7489d9606c393d007deb077c596f90545e0915385"
+    },
+    {
+      "id": 1859,
+      "route": "/products/dotted-acoustic-facing/",
+      "type": "page",
+      "file": "products/dotted-acoustic-facing/index.html",
+      "sha256": "182ac1c3a057490f4442eb05e136c4f894b318d8c5412bce853ea0d3fceb4efa"
+    },
+    {
+      "id": 1417,
+      "route": "/products/fluorine-free-thermal-insulation-facing/",
+      "type": "page",
+      "file": "products/fluorine-free-thermal-insulation-facing/index.html",
+      "sha256": "d5f32e8a40a3add01785561bab491f64bc30e0d616d3a3dab29c68274a1a5149"
+    },
+    {
+      "id": 1419,
+      "route": "/products/foil-composite-insulation-facers/",
+      "type": "page",
+      "file": "products/foil-composite-insulation-facers/index.html",
+      "sha256": "382293a0e940a05da60421ab6491be82738ad5977f41044afe6f18053fa717f8"
+    },
+    {
+      "id": 1471,
+      "route": "/products/glass-fabric-composite-acoustic-facing/",
+      "type": "page",
+      "file": "products/glass-fabric-composite-acoustic-facing/index.html",
+      "sha256": "85d18d8a73e9d93c180c44ac1382e388521beeb5fcb240515d149d2f39f32ce9"
+    },
+    {
+      "id": 1414,
+      "route": "/products/glass-facing-route-for-gypsum-board-applications/",
+      "type": "page",
+      "file": "products/glass-facing-route-for-gypsum-board-applications/index.html",
+      "sha256": "57f0e3d36c4c4a51e9d5001b3f67e7c161146495566351695295e407e3ac719e"
+    },
+    {
+      "id": 1325,
+      "route": "/products/high-airflow-high-whiteness-acoustic-facing/",
+      "type": "page",
+      "file": "products/high-airflow-high-whiteness-acoustic-facing/index.html",
+      "sha256": "470a1565cd172d77df586d43e8e14d724ba462e38bd2bd2ea372741ac9ffe1de"
+    },
+    {
+      "id": 1475,
+      "route": "/products/high-definition-wood-look-decorative-glass-facing/",
+      "type": "page",
+      "file": "products/high-definition-wood-look-decorative-glass-facing/index.html",
+      "sha256": "df89c30e5b0e4c72e819243e9a90bc15d19ec583b986b9173ac6609853969340"
+    },
+    {
+      "id": 1865,
+      "route": "/products/reinforced-composite-facer-pir-pur-xps-polyiso/",
+      "type": "page",
+      "file": "products/reinforced-composite-facer-pir-pur-xps-polyiso/index.html",
+      "sha256": "c7c154fd1953d6c0ecc9221b9269e8834e06c3a82c44a34dd99ae19ce21d84c4"
+    },
+    {
+      "id": 1863,
+      "route": "/products/sanded-acoustic-facing/",
+      "type": "page",
+      "file": "products/sanded-acoustic-facing/index.html",
+      "sha256": "63d5514ba6e6af6109c5208a4281554aa9fdb9504d8b5b7b455d006e5c631ab8"
+    },
+    {
+      "id": 1869,
+      "route": "/products/silicone-coated-glass-fabric-acoustic-wall-panels/",
+      "type": "page",
+      "file": "products/silicone-coated-glass-fabric-acoustic-wall-panels/index.html",
+      "sha256": "4d26d59be1e58a4a49bdc22a616c43bf8d98a0b2b87f8a1513fdbfb54943f769"
+    },
+    {
+      "id": 1412,
+      "route": "/products/ultra-low-airflow-glass-facer-for-pir-pur-foam-boards/",
+      "type": "page",
+      "file": "products/ultra-low-airflow-glass-facer-for-pir-pur-foam-boards/index.html",
+      "sha256": "93448f8eb7b28857f8b543e1ecc7a1b5bde5d49842477ba4422301d5b8afc625"
+    },
+    {
+      "id": 1477,
+      "route": "/products/wood-look-fiberglass-fabric-acoustic-facing/",
+      "type": "page",
+      "file": "products/wood-look-fiberglass-fabric-acoustic-facing/index.html",
+      "sha256": "e7a869d5064f272a9add18f29b1812cdc87def79bc5b79992433f1f2a4ac0c7d"
+    },
+    {
+      "id": 189,
+      "route": "/solutions/gypsum-board-facers/",
+      "type": "page",
+      "file": "solutions/gypsum-board-facers/index.html",
+      "sha256": "14dee65e77fd2838228ea9d962d586f233c30530463ef9d4c31e30f6483cea7a"
+    },
+    {
+      "id": 181,
+      "route": "/solutions/mineral-wool-insulation/",
+      "type": "page",
+      "file": "solutions/mineral-wool-insulation/index.html",
+      "sha256": "48e87fe8a8cb87ca657f3fdfefa101b9b0b98d163544eecf34c499051307fc05"
+    },
+    {
+      "id": 209,
+      "route": "/solutions/pir-pur-etics-insulation-facers/",
+      "type": "page",
+      "file": "solutions/pir-pur-etics-insulation-facers/index.html",
+      "sha256": "4a398f5daea98565317a750439a89286f39431199a4d8c4c18e430d2797f5303"
+    },
+    {
+      "id": 2565,
+      "route": "/acoustic-facer-adhesive-layer-panel-sound-absorption-review/",
+      "type": "post",
+      "file": "acoustic-facer-adhesive-layer-panel-sound-absorption-review/index.html",
+      "sha256": "df1d38ec3858d27b1b80ab9562e252163233541de115f683d8b67981de8a0df0"
+    },
+    {
+      "id": 2591,
+      "route": "/acoustic-facer-airflow-panel-absorption-evidence/",
+      "type": "post",
+      "file": "acoustic-facer-airflow-panel-absorption-evidence/index.html",
+      "sha256": "113ceeab3b72fb69bb17b7f5f149a13aaf1a962a580e0bba09963ea435548197"
+    },
+    {
+      "id": 2590,
+      "route": "/acoustic-facer-cleaning-trial-protocol-record/",
+      "type": "post",
+      "file": "acoustic-facer-cleaning-trial-protocol-record/index.html",
+      "sha256": "47b39262bdf68ea018aea72da584f04e01129a719a05258c62a2cd243f3bcfa3"
+    },
+    {
+      "id": 2567,
+      "route": "/acoustic-facer-cleaning-trial-surface-bond-review/",
+      "type": "post",
+      "file": "acoustic-facer-cleaning-trial-surface-bond-review/index.html",
+      "sha256": "4e5520f5b0daad1f13a211443bdc93f9e547a45f837c61b1dcb6ed1ee39f84b1"
+    },
+    {
+      "id": 2762,
+      "route": "/acoustic-facer-dark-spots-bleed-through-review/",
+      "type": "post",
+      "file": "acoustic-facer-dark-spots-bleed-through-review/index.html",
+      "sha256": "37cf9e1b47e1c4e08ba3434c748d58450dc18d244a8d6a3ab735f70e089e2cc1"
+    },
+    {
+      "id": 2759,
+      "route": "/acoustic-facer-lamination-cooling-cure-evaluation/",
+      "type": "post",
+      "file": "acoustic-facer-lamination-cooling-cure-evaluation/index.html",
+      "sha256": "196d287056e5ab9fc0ee043b2361071a74693e0608975117a4a19ddcf7f3b1ed"
+    },
+    {
+      "id": 1443,
+      "route": "/airflow-surface-hiding-fire-documents-acoustic-facer/",
+      "type": "post",
+      "file": "airflow-surface-hiding-fire-documents-acoustic-facer/index.html",
+      "sha256": "cd8e2b0145eacf22df6493c8e6328010f6df08abc554a638bdce6c6087b9cadb"
+    },
+    {
+      "id": 2592,
+      "route": "/class-a-a2-s1-d0-noncombustible-facer-evidence/",
+      "type": "post",
+      "file": "class-a-a2-s1-d0-noncombustible-facer-evidence/index.html",
+      "sha256": "be7be149d98f2dc3c8e5f83abf3b56197289a07bb4cf8c504dd1f656ae4b3a74"
+    },
+    {
+      "id": 2587,
+      "route": "/compare-board-trials-facer-process-variables/",
+      "type": "post",
+      "file": "compare-board-trials-facer-process-variables/index.html",
+      "sha256": "b79111c07b6eac9cacbe8bb1648ce0c1920472e951882965e845dfa86c78d330"
+    },
+    {
+      "id": 2532,
+      "route": "/compare-glass-veil-air-permeability-methods-pressure-units/",
+      "type": "post",
+      "file": "compare-glass-veil-air-permeability-methods-pressure-units/index.html",
+      "sha256": "4ee1e29301153204e61c5143809cb5f744a3713cf024388cf0cfed6595838f8d"
+    },
+    {
+      "id": 1459,
+      "route": "/compare-iso-fire-epd-reach-pfas-documents-fiberglass-facers/",
+      "type": "post",
+      "file": "compare-iso-fire-epd-reach-pfas-documents-fiberglass-facers/index.html",
+      "sha256": "38cca6f9ed1593fb2accc98dc6d1895222d45328729273330fdc3c4b2d45070f"
+    },
+    {
+      "id": 2534,
+      "route": "/diagnose-facer-foam-bonding-failures-pir-pur-board-trials/",
+      "type": "post",
+      "file": "diagnose-facer-foam-bonding-failures-pir-pur-board-trials/index.html",
+      "sha256": "caa5298c200d96b1ef16879276a905cdbc8ab8388a34c662f890de129b403ff1"
+    },
+    {
+      "id": 2550,
+      "route": "/facer-basis-weight-gsm-vs-thickness/",
+      "type": "post",
+      "file": "facer-basis-weight-gsm-vs-thickness/index.html",
+      "sha256": "2b9fe7b4b885553262596200b036250183e9f4a99f1b5b99fe41141793d236d3"
+    },
+    {
+      "id": 2535,
+      "route": "/facer-lot-roll-traceability-board-trials/",
+      "type": "post",
+      "file": "facer-lot-roll-traceability-board-trials/index.html",
+      "sha256": "175b157bca308385f85f62cba84f211f5496b2cd8b57bf945b059b41030d3abb"
+    },
+    {
+      "id": 2548,
+      "route": "/facer-roll-wrinkles-edge-damage-converting-review/",
+      "type": "post",
+      "file": "facer-roll-wrinkles-edge-damage-converting-review/index.html",
+      "sha256": "96af616e1d5cc38e18999309e1988477c1d0ba310db03b703b085b6ab6e3b622"
+    },
+    {
+      "id": 2638,
+      "route": "/facer-technical-data-typical-values-specification-limits/",
+      "type": "post",
+      "file": "facer-technical-data-typical-values-specification-limits/index.html",
+      "sha256": "9b15b0e8d9c1cbfa651bcb871d1778126e1e6aa00859198ac06c6f5f90fe3c4f"
+    },
+    {
+      "id": 2646,
+      "route": "/facer-test-report-finished-board-performance/",
+      "type": "post",
+      "file": "facer-test-report-finished-board-performance/index.html",
+      "sha256": "dd42740c1ff3cd276018beef9391f7833ca1f57e32483a83ee9f05722e726f8d"
+    },
+    {
+      "id": 2753,
+      "route": "/fiberglass-facer-material-identity-before-qualification/",
+      "type": "post",
+      "file": "fiberglass-facer-material-identity-before-qualification/index.html",
+      "sha256": "9578bda31f46c5cd994072fa47e1827ca420502a20cd019f0b0da72ec9f03c8e"
+    },
+    {
+      "id": 1424,
+      "route": "/fiberglass-facer-review-for-acoustic-ceiling-panels/",
+      "type": "post",
+      "file": "fiberglass-facer-review-for-acoustic-ceiling-panels/index.html",
+      "sha256": "2719ee79c1f77bab44ea57474e92d096759ef5acd3afd3b0ea39f5cb73951279"
+    },
+    {
+      "id": 1458,
+      "route": "/fluorine-free-thermal-insulation-facers-pfas-evidence-boundaries/",
+      "type": "post",
+      "file": "fluorine-free-thermal-insulation-facers-pfas-evidence-boundaries/index.html",
+      "sha256": "4cbf8437466a399e65a7686cdf3c8a548c4eef718df1e1138cd115a6d15456de"
+    },
+    {
+      "id": 1457,
+      "route": "/foil-composite-insulation-facers-reflective-surface-directions/",
+      "type": "post",
+      "file": "foil-composite-insulation-facers-reflective-surface-directions/index.html",
+      "sha256": "00a6cbdcf8370275218fc4c9c07b351a06770bfb477b6757dd8c410d8591e959"
+    },
+    {
+      "id": 1454,
+      "route": "/glass-facing-route-gypsum-board-applications-sample-review/",
+      "type": "post",
+      "file": "glass-facing-route-gypsum-board-applications-sample-review/index.html",
+      "sha256": "0ba28e47c88caafd2be663f5be234c8c0ab7412081702aeba7d6265d63590cc5"
+    },
+    {
+      "id": 2549,
+      "route": "/glass-fibre-facer-tensile-data-md-cd-test-conditions/",
+      "type": "post",
+      "file": "glass-fibre-facer-tensile-data-md-cd-test-conditions/index.html",
+      "sha256": "e5f6bfc67fef84b7047b060150ea4dfae0c0c3fdbf3bfc494ccc679a7c6770e2"
+    },
+    {
+      "id": 1456,
+      "route": "/gypsum-board-facer-surface-finish-documentation-questions/",
+      "type": "post",
+      "file": "gypsum-board-facer-surface-finish-documentation-questions/index.html",
+      "sha256": "23f8f330554bb44cc3f591c500fee029124742a978f1d111c44f83c121f0ba73"
+    },
+    {
+      "id": 2768,
+      "route": "/gypsum-board-facer-surface-total-water-absorption/",
+      "type": "post",
+      "file": "gypsum-board-facer-surface-total-water-absorption/index.html",
+      "sha256": "ef723ab57f620ce7e91affc14ea35e5c6e184bf785fcb2fe351c056e9debf742"
+    },
+    {
+      "id": 2533,
+      "route": "/incoming-facer-roll-inspection-board-line/",
+      "type": "post",
+      "file": "incoming-facer-roll-inspection-board-line/index.html",
+      "sha256": "8e240a9778f4790b5f21f47a9310db9edd6098b672dbf3ba173971dd600c8859"
+    },
+    {
+      "id": 2551,
+      "route": "/insulation-facer-air-permeability-vs-water-vapour-transmission/",
+      "type": "post",
+      "file": "insulation-facer-air-permeability-vs-water-vapour-transmission/index.html",
+      "sha256": "6463c7ab4b6e126ea8ead9afde6b4133a80ecbf8fd1a2d9e709cf0e5f33428b1"
+    },
+    {
+      "id": 2589,
+      "route": "/low-airflow-facer-pir-pur-trial-process-window/",
+      "type": "post",
+      "file": "low-airflow-facer-pir-pur-trial-process-window/index.html",
+      "sha256": "f54d01b81ab80ae54eaa14649bbf40358c494f9d502381ff10f51ce345ef7c9b"
+    },
+    {
+      "id": 2771,
+      "route": "/mineral-wool-board-facing-service-temperature-limits/",
+      "type": "post",
+      "file": "mineral-wool-board-facing-service-temperature-limits/index.html",
+      "sha256": "6f6a8940b3424216c002db51909aded1c489337567b545196bc3cf492b593788"
+    },
+    {
+      "id": 2634,
+      "route": "/mineral-wool-facer-sample-qualification/",
+      "type": "post",
+      "file": "mineral-wool-facer-sample-qualification/index.html",
+      "sha256": "b4e8084469652953f64d3b89439ad749143142e0544901c7018dee555e386c6b"
+    },
+    {
+      "id": 1455,
+      "route": "/moisture-resistant-fiberglass-facers-gypsum-board-checklist/",
+      "type": "post",
+      "file": "moisture-resistant-fiberglass-facers-gypsum-board-checklist/index.html",
+      "sha256": "55214ee229f1b1ab0d2dd7a497b6196bedcd27d7b6686b3d15ec7ab9d8d1bf1a"
+    },
+    {
+      "id": 2765,
+      "route": "/pir-board-facer-gas-diffusion-thermal-aging/",
+      "type": "post",
+      "file": "pir-board-facer-gas-diffusion-thermal-aging/index.html",
+      "sha256": "db8ce770ab2a88e1381d7003a1aa423baadd6643331b16d8885d928ab8d1f62b"
+    },
+    {
+      "id": 1444,
+      "route": "/request-tds-sds-test-reports-fiberglass-facers/",
+      "type": "post",
+      "file": "request-tds-sds-test-reports-fiberglass-facers/index.html",
+      "sha256": "893a90ba6dca0b2638cb14c467ee43f828dc5ee83cb2fd32d9bb5c779bea4d74"
+    },
+    {
+      "id": 2735,
+      "route": "/sample-approval-vs-supplier-qualification-fiberglass-facers/",
+      "type": "post",
+      "file": "sample-approval-vs-supplier-qualification-fiberglass-facers/index.html",
+      "sha256": "a7eb3ba0576b9f9e5214a11b29d24a5a7ea63ce6ba63bab1eb1727c2f8d5519d"
+    },
+    {
+      "id": 1445,
+      "route": "/sample-review-checklist-board-manufacturers-fiberglass-facers/",
+      "type": "post",
+      "file": "sample-review-checklist-board-manufacturers-fiberglass-facers/index.html",
+      "sha256": "679b57f1e29f4ca3d33fb50be9ff7facc0d4580096b01c5045e3147067c8c52f"
+    },
+    {
+      "id": 2744,
+      "route": "/successful-facer-board-line-trial-evidence-scope/",
+      "type": "post",
+      "file": "successful-facer-board-line-trial-evidence-scope/index.html",
+      "sha256": "e0e744f410ed84d4e093b91050bdee15683553acbdb990d8e7676e4bd09808dd"
+    },
+    {
+      "id": 1446,
+      "route": "/ultra-low-airflow-glass-facer-pir-pur-review-criteria/",
+      "type": "post",
+      "file": "ultra-low-airflow-glass-facer-pir-pur-review-criteria/index.html",
+      "sha256": "3a23df55b6b5dd2f44966b4148f89d2b7287337dc69c1d0da3ae6f6205bb6664"
+    },
+    {
+      "id": 2536,
+      "route": "/visual-surface-acceptance-coloured-acoustic-facer-trials/",
+      "type": "post",
+      "file": "visual-surface-acceptance-coloured-acoustic-facer-trials/index.html",
+      "sha256": "22d0c86459bdfaafaa223b28d081313ff372816e0213b59306c2b2ba00e696d6"
+    },
+    {
+      "id": 2566,
+      "route": "/wide-facer-roll-usable-width-board-coverage/",
+      "type": "post",
+      "file": "wide-facer-roll-usable-width-board-coverage/index.html",
+      "sha256": "ab09faaa844e292662ebcd9d895247f7f289060149c1ecce69e4b515312b5138"
+    },
+    {
+      "id": 2624,
+      "route": "/wide-width-facer-trial-readiness-checklist/",
+      "type": "post",
+      "file": "wide-width-facer-trial-readiness-checklist/index.html",
+      "sha256": "28ecddaab6e8ecec5c22997bb8c081e8b8019c0d1467121e241430d3ae09cb0b"
+    },
+    {
+      "id": 1925,
+      "route": "/cookie-policy/",
+      "type": "page",
+      "file": "cookie-policy/index.html",
+      "sha256": "7993c04d6edf61258f69db87c40b0e64ec28f5db96f9843ec5ff00efeb3c765a"
+    }
+  ],
+  "static_review": {
+    "id": "1572a086-b71f-4f38-8c61-84d20f670bbe",
+    "source_commit": "a3adc22d8615530208d2e60e65b48bdf3e9f2ba1",
+    "scope": "SEVEN_PAGE_ORIGINAL_FULL_BLEED_HERO_ONLY",
+    "created_utc": "2026-10-07T08:34:33.089365+00:00",
+    "content_generation_unchanged": true,
+    "authority_label": "INTERIM_DESIGN_AND_CONTENT_REVIEW_CANDIDATE",
+    "hero_component": "SECONDARY_FULL_BLEED_HERO_V1",
+    "hero_authority_ids": [
+      20,
+      24,
+      22,
+      26,
+      30,
+      28,
+      18
+    ],
+    "business_content_changes": 0,
+    "html_line_endings": "PRESERVED_FROM_ACCEPTED_BASELINE"
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "CTDS-001": {
+    "title": "GCKF140–200gsm Plain White Coated Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-002": {
+    "title": "GCKF_SD Colored Fiberglass Coated Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-003": {
+    "title": "GCKF 600A / 700# / 900D Spray Dotted Fiberglass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-004": {
+    "title": "GCKF_QY 380gsm White Spray Sanded Fiberglass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-005": {
+    "title": "GCSD100–200gsm Fiberglass Black Coated Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-006": {
+    "title": "GCJR360 Fiberglass Satin Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-007": {
+    "title": "GCJR230 Fiberglass Plain Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-008": {
+    "title": "Fiberglass Wood Grain Fabric 360gsm",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-009": {
+    "title": "GCJR350 Fiberglass Jacquard Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-010": {
+    "title": "Wood Grain Series Glass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-011": {
+    "title": "Silent Land Series Glass Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-012": {
+    "title": "Black Plain Fiberglass Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-013": {
+    "title": "120g–140g Acoustic Ceiling Veil",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "CTDS-014": {
+    "title": "Fluorine-Free Fiberglass Coated Facer",
+    "direction": "general",
+    "solution": "general",
+    "doc": "color-tds"
+  },
+  "CTDS-015": {
+    "title": "Acoustic Composite Fabric",
+    "direction": "acoustic",
+    "solution": "acoustic",
+    "doc": "color-tds"
+  },
+  "r3_product_relationships": [
+    {
+      "id": "ux-product-1",
+      "public_code": "P001",
+      "title": "Glass Veil",
+      "family": "gc-v",
+      "sales_code": "GC-V-30/50/80/100W",
+      "model": "GC-V-30W",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=general&product_direction=glass-veil-tissue&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=general&product_direction=glass-veil-tissue&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-2",
+      "public_code": "P010-A",
+      "title": "Dotted Acoustic Facing",
+      "family": "gc-ac",
+      "sales_code": "GCAC-SP-250/400",
+      "model": "GCAC-SP-250/400",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=co-development&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=co-development&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-3",
+      "public_code": "P010-B",
+      "title": "Sanded Acoustic Facing",
+      "family": "gc-ac",
+      "sales_code": "GCDT-200W-FR",
+      "model": "GCDT-200W-FR",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=co-development&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=co-development&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-4",
+      "public_code": "P015-A",
+      "title": "Reinforced Composite Facer",
+      "family": "gc-pir",
+      "sales_code": "QCRP-R300-1000 Series",
+      "model": "QCRP-R300-1000 Series",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=pir-pur-etics&product_direction=pir-pur-etics&product_family=gc-pir&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=pir-pur-etics&product_direction=pir-pur-etics&product_family=gc-pir&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-5",
+      "public_code": "P015-B",
+      "title": "Bitumen & Heavyweight Composite Facer",
+      "family": "gc-pir",
+      "sales_code": "QCRP-R300-1000 Series",
+      "model": "QCRP-R300-1000 Series",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=pir-pur-etics&product_direction=pir-pur-etics&product_family=gc-pir&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=pir-pur-etics&product_direction=pir-pur-etics&product_family=gc-pir&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-6",
+      "public_code": "P002",
+      "title": "Glass Veil",
+      "family": "gc-v",
+      "sales_code": "GC-V-30/50/60B-FR",
+      "model": "GC-V-30B-FR",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=black-acoustic-backing&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=black-acoustic-backing&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-7",
+      "public_code": "P003",
+      "title": "Reinforced Veil",
+      "family": "gc-v",
+      "sales_code": "GC-V-R55/60",
+      "model": "GC-V-R55",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=general&product_direction=reinforced-veil&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=general&product_direction=reinforced-veil&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-8",
+      "public_code": "P004",
+      "title": "Acoustic Glass Paper",
+      "family": "gc-v",
+      "sales_code": "GC-VP-50/60B-FR/S",
+      "model": "GC-VP-50B-FR",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=acoustic-glass-paper&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=acoustic-glass-paper&product_family=gc-v&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-9",
+      "public_code": "P005",
+      "title": "White Acoustic Facer",
+      "family": "gc-ac",
+      "sales_code": "GC-AC-120W-FR",
+      "model": "GC-AC-120W-FR",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=acoustic-ceiling-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=acoustic-ceiling-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-10",
+      "public_code": "P006",
+      "title": "White Acoustic Facer",
+      "family": "gc-ac",
+      "sales_code": "GC-AC-140W-HP/FR",
+      "model": "GC-AC-140W-HP",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=acoustic-ceiling-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=acoustic-ceiling-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-11",
+      "public_code": "P007",
+      "title": "White Acoustic Facer",
+      "family": "gc-ac",
+      "sales_code": "GC-AC-200/260W-FR",
+      "model": "GC-AC-200W-FR",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=acoustic-ceiling-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=acoustic-ceiling-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-12",
+      "public_code": "P008",
+      "title": "Black Acoustic Facer",
+      "family": "gc-ac",
+      "sales_code": "GC-AC-200B-MT/GL",
+      "model": "GC-AC-200B-MT",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=black-acoustic-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=black-acoustic-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-13",
+      "public_code": "P009",
+      "title": "Color Acoustic Facer",
+      "family": "gc-ac",
+      "sales_code": "GC-AC-150C-RAL",
+      "model": "GC-AC-150C-RAL",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=color-acoustic-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=color-acoustic-facer&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-14",
+      "public_code": "P011",
+      "title": "Gypsum Facer",
+      "family": "gc-gy",
+      "sales_code": "GC-GY-350W/C-FR/HY",
+      "model": "GC-GY-350W-FR",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=gypsum&product_direction=gypsum-board-facer&product_family=gc-gy&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=gypsum&product_direction=gypsum-board-facer&product_family=gc-gy&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-15",
+      "public_code": "P012",
+      "title": "Standard Insulation Coated Facer",
+      "family": "gc-in",
+      "sales_code": "GC-IN-200/350W-UV/HY",
+      "model": "GC-IN-200W-UV",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=mineral-wool&product_direction=mineral-wool-insulation-facer&product_family=gc-in&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=mineral-wool&product_direction=mineral-wool-insulation-facer&product_family=gc-in&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-16",
+      "public_code": "P013",
+      "title": "PFAS-free Insulation Facer",
+      "family": "gc-in",
+      "sales_code": "GC-IN-FF230/240/250/300",
+      "model": "GC-IN-FF240",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=mineral-wool&product_direction=pfas-free-insulation-facer&product_family=gc-in&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=mineral-wool&product_direction=pfas-free-insulation-facer&product_family=gc-in&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-17",
+      "public_code": "P014",
+      "title": "PUR Coated Facer",
+      "family": "gc-pir",
+      "sales_code": "GC-PIR-280/380W/G-FR/HY",
+      "model": "GC-PIR-280W-FR",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=pir-pur-etics&product_direction=pir-pur-foam-board-facer&product_family=gc-pir&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=pir-pur-etics&product_direction=pir-pur-foam-board-facer&product_family=gc-pir&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-18",
+      "public_code": "P016",
+      "title": "Fiberglass Fabric",
+      "family": "gc-fb",
+      "sales_code": "GC-FB-220T/230P/430S/350J",
+      "model": "GC-FB-220T",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=general&product_direction=fiberglass-fabric&product_family=gc-fb&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=general&product_direction=fiberglass-fabric&product_family=gc-fb&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-19",
+      "public_code": "P017",
+      "title": "Silicone Coated Glass Fabric",
+      "family": "gc-fb-sl",
+      "sales_code": "GC-FB-SL460",
+      "model": "GC-FB-SL460",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=general&product_direction=silicone-coated-glass-fabric&product_family=gc-fb-sl&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=general&product_direction=silicone-coated-glass-fabric&product_family=gc-fb-sl&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-20",
+      "public_code": "P018",
+      "title": "Controlled Decorative-Facing Route",
+      "family": "gc-ac",
+      "sales_code": "GC-PT-WD95 / GC-PT-ST95",
+      "model": "GC-PT-WD95",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=acoustic&product_direction=controlled-decorative-facing&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=acoustic&product_direction=controlled-decorative-facing&product_family=gc-ac&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-21",
+      "public_code": "P019",
+      "title": "PE/PET Foil Composite Facer",
+      "family": "gc-al",
+      "sales_code": "GC-AL-33PE / 34PET / 65PET",
+      "model": "GC-AL-33PE",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=general&product_direction=foil-composite-facer&product_family=gc-al&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=general&product_direction=foil-composite-facer&product_family=gc-al&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-22",
+      "public_code": "P020",
+      "title": "Reinforced Foil Composite Facer",
+      "family": "gc-al",
+      "sales_code": "GC-AL-110EM / 110RF / 70RF",
+      "model": "GC-AL-110EM",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=pir-pur-etics&product_direction=foil-composite-facer&product_family=gc-al&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=pir-pur-etics&product_direction=foil-composite-facer&product_family=gc-al&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    },
+    {
+      "id": "ux-product-23",
+      "public_code": "P021",
+      "title": "Aluminium Film Composite Glass Facer",
+      "family": "gc-al",
+      "sales_code": "GC-AL-185MP-FB / 190T / 120DS-FB",
+      "model": "GC-AL-185MP-FB",
+      "approved_contact_destinations": [
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=technical-data&source=products&solution=pir-pur-etics&product_direction=foil-composite-facer&product_family=gc-al&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form",
+        "/grecho-v3-visual-evolution-review/review/ux-wave1-home-ui/contact/?request=sample&source=products&solution=pir-pur-etics&product_direction=foil-composite-facer&product_family=gc-al&cta_source=products&cta_location=product-card&source_page_type=products_landing#request-form"
+      ]
+    }
+  ]
+}

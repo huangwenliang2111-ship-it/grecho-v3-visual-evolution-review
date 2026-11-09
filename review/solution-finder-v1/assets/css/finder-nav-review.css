@@ -1,0 +1,95 @@
+/* Compact Finder review entry. Frozen shared navigation styles remain unchanged. */
+#grecho-nav-solutions .grecho-finder-nav-feature-stack {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+}
+
+:is(#grecho-nav-solutions, #grecho-mobile-solutions) a.grecho-finder-nav-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14px;
+  grid-template-rows: 18px 16px;
+  align-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 2px;
+  justify-self: end;
+  width: min(280px, 100%);
+  height: 62px;
+  padding: 10px 12px;
+  margin: 0;
+  border: 1px solid var(--nav-blue, #1b4aa1);
+  border-radius: 7px;
+  background: var(--nav-blue, #1b4aa1);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: none;
+  transition: background 140ms ease, border-color 140ms ease;
+}
+
+:is(#grecho-nav-solutions, #grecho-mobile-solutions) .grecho-finder-nav-entry strong {
+  grid-column: 1;
+  grid-row: 1;
+  display: block;
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 18px;
+}
+
+:is(#grecho-nav-solutions, #grecho-mobile-solutions) .grecho-finder-nav-entry small {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: block;
+  margin: 0;
+  color: #d7e9ff;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+:is(#grecho-nav-solutions, #grecho-mobile-solutions) .grecho-finder-nav-entry__arrow {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+:is(#grecho-nav-solutions, #grecho-mobile-solutions) a.grecho-finder-nav-entry:hover {
+  background: var(--nav-blue-deep, #123b7a);
+  border-color: var(--nav-blue-deep, #123b7a);
+}
+
+:is(#grecho-nav-solutions, #grecho-mobile-solutions) a.grecho-finder-nav-entry:focus-visible {
+  outline: 3px solid #8fb4ef;
+  outline-offset: 3px;
+}
+
+#grecho-mobile-solutions a.grecho-finder-nav-entry {
+  width: 100%;
+  min-height: 62px;
+  margin: 10px 0 12px;
+}
+
+@media (max-width: 430px) {
+  #grecho-mobile-solutions a.grecho-finder-nav-entry {
+    height: auto;
+    min-height: 64px;
+    grid-template-rows: 18px auto;
+  }
+
+  #grecho-mobile-solutions .grecho-finder-nav-entry small {
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(#grecho-nav-solutions, #grecho-mobile-solutions) a.grecho-finder-nav-entry {
+    transition: none;
+  }
+}

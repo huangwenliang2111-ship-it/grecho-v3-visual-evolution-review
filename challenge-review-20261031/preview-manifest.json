@@ -1,0 +1,148 @@
+{
+  "source_archive": "GRECHO_Native_Drafts_20261031_R2_evidence.zip",
+  "source_archive_sha256": "8d8389abe9ce94578ffe27b793c1f0f1bb4d88c1a2a257811cec039e989d83cf",
+  "preview_directory": "challenge-review-20261031/",
+  "status": "PUBLIC_STATIC_REVIEW_ONLY_NOT_WORDPRESS_PUBLISHED",
+  "product_links": "DISABLED_PENDING_BUSINESS_REVIEW",
+  "contact_forms": "DISABLED",
+  "published_pages": {
+    "C01": {
+      "title": "Surface Appearance & Finish Solutions",
+      "candidate_path": "/solutions/surface-appearance-finish/",
+      "source_post_content_sha256": "d1e0face756581f195a16b15d12a73f38a3405bd79216ab8755f7856360fb6a6",
+      "public_preview_sha256": "ee1c8c3685eec3f20df43525081301230ab14a9fe30e1d65ae43d4d9f37dd76c",
+      "file": "C01.html",
+      "source_hero": "full_bleed_image",
+      "image_count": 10,
+      "disabled_external_link_count": 4,
+      "preview_only_copy_replacements": [],
+      "input_preview_sha256": "c8428cb5f464680cd58f93dfdcf8d83c952ea99a44aabc1adfdc5ae5646387ff"
+    },
+    "C02": {
+      "title": "Bonding & Lamination Solutions",
+      "candidate_path": "/solutions/bonding-lamination/",
+      "source_post_content_sha256": "83709d69b33ec2fce90ff952b1dd6c2731f4cc57afdcac7766baf494d43589c4",
+      "public_preview_sha256": "1f0ebee2f2e67b46c9c71906a5441da7d673253aa8d9c5014847ee5798d0f7cd",
+      "file": "C02.html",
+      "source_hero": "full_bleed_image",
+      "image_count": 9,
+      "disabled_external_link_count": 1,
+      "preview_only_copy_replacements": [],
+      "input_preview_sha256": "b95c63ad9eab7868255afa6743b0e89c404ca506fd037cd92edff91fb9c7cebe"
+    },
+    "C03": {
+      "title": "Cleanability & Water Resistance Solutions",
+      "candidate_path": "/solutions/cleanability-water-resistance/",
+      "source_post_content_sha256": "809dcfcaa31b373aa7bb67d748937712188288b6e4f6f00a3c9d6cc0ec4cd39c",
+      "public_preview_sha256": "405a50374934ff6c0d9e9a60b679fa283e6aa9ea917aab624bfdadf0d79c9124",
+      "file": "C03.html",
+      "source_hero": "full_bleed_image",
+      "image_count": 8,
+      "disabled_external_link_count": 1,
+      "preview_only_copy_replacements": [],
+      "input_preview_sha256": "71630172f4cd196e8b33c090ea70f5463adcc2ccf497e554951902b243e215e8"
+    },
+    "C04": {
+      "title": "Fire Performance Solutions",
+      "candidate_path": "/solutions/fire-performance/",
+      "source_post_content_sha256": "5e7f6abb8125693a1af8a208a7d86a1ca943bace04ab3f64d5eae000eafd5515",
+      "public_preview_sha256": "ee941329942149c5d395e2a2bb4242ce10bdc64d8cd4bf9fe76804ad3a798735",
+      "file": "C04.html",
+      "source_hero": "approved_text_only",
+      "image_count": 10,
+      "disabled_external_link_count": 3,
+      "preview_only_copy_replacements": [
+        {
+          "source": "Below are the six customer issues identified in the source worksheet.",
+          "preview_only": "Below are six customer issues for technical evaluation."
+        },
+        {
+          "source": "The following recommended directions correspond one-to-one with the source table.",
+          "preview_only": "The following recommended directions relate to the six issues discussed above."
+        },
+        {
+          "source": "These six material directions reproduce the product associations in the worksheet.",
+          "preview_only": "These six material directions are options for application-specific discussion."
+        }
+      ],
+      "input_preview_sha256": "7238d2ca77ae6e97b0b0385f5c3ff64c00cf4ad26371261d0a489cbf8911ad5b"
+    },
+    "C05": {
+      "title": "Production Consistency & Converting Efficiency Solutions",
+      "candidate_path": "/solutions/production-consistency-converting-efficiency/",
+      "source_post_content_sha256": "8f170eeb5676d6a52a0f865d8ff5004b125c32e01355bbd1d4941be2eec3b47e",
+      "public_preview_sha256": "ef8886437f6c15ef74354977791b28746c080bf647ccdc1e5ba73e076a6ec0b2",
+      "file": "C05.html",
+      "source_hero": "approved_text_only",
+      "image_count": 10,
+      "disabled_external_link_count": 2,
+      "preview_only_copy_replacements": [],
+      "input_preview_sha256": "e9d0d1a82c84d78e71f5dd6b0a8f7ca88ba09b7f9aa064eea42e09872e04af6f"
+    },
+    "C06": {
+      "title": "Acoustic Performance Solutions",
+      "candidate_path": "/solutions/acoustic-performance/",
+      "source_post_content_sha256": "b75cec8f06d1cc63dd6a04143c8ca61d9b15d1c2243453b9928c3ac28fe22228",
+      "public_preview_sha256": "31d259961f9be29e056323b47b572a849de4b9ca745944ffe2d2a894acd810c8",
+      "file": "C06.html",
+      "source_hero": "full_bleed_image",
+      "image_count": 9,
+      "disabled_external_link_count": 2,
+      "preview_only_copy_replacements": [],
+      "input_preview_sha256": "54d2c00793df714f74e21ef91f0471b708d029f19e9b991f146b3e3ed028fbf2"
+    }
+  },
+  "media": "Original verified uploaded WordPress media URLs referenced; no image uploaded to GitHub",
+  "copy_note": "C04 preview-only attribution cleanup; source production draft preserved",
+  "wordpress_drafts_unchanged": true,
+  "navigation_integration": {
+    "scope": "GITHUB_PREVIEW_ONLY",
+    "mode": "SIX_DIRECT_LINKS",
+    "primary_labels": [
+      "Solutions",
+      "Products",
+      "Applications",
+      "Resources",
+      "About"
+    ],
+    "links": [
+      {
+        "code": "C01",
+        "label": "Surface Appearance",
+        "href": "/grecho-v3-visual-evolution-review/challenge-review-20261031/C01.html"
+      },
+      {
+        "code": "C02",
+        "label": "Bonding & Lamination",
+        "href": "/grecho-v3-visual-evolution-review/challenge-review-20261031/C02.html"
+      },
+      {
+        "code": "C03",
+        "label": "Cleanability & Water Resistance",
+        "href": "/grecho-v3-visual-evolution-review/challenge-review-20261031/C03.html"
+      },
+      {
+        "code": "C04",
+        "label": "Fire Performance",
+        "href": "/grecho-v3-visual-evolution-review/challenge-review-20261031/C04.html"
+      },
+      {
+        "code": "C05",
+        "label": "Production Consistency",
+        "href": "/grecho-v3-visual-evolution-review/challenge-review-20261031/C05.html"
+      },
+      {
+        "code": "C06",
+        "label": "Acoustic Performance",
+        "href": "/grecho-v3-visual-evolution-review/challenge-review-20261031/C06.html"
+      }
+    ],
+    "shared_files_modified": [
+      "assets/js/grecho-navigation-phase1b1.js",
+      "assets/css/grecho-navigation-phase1b1.css"
+    ],
+    "main_and_hero_unchanged": true,
+    "only_allowed_script_integrity": "sha256-6x66dOVdONE79ku4wxzXm0A7QHV/f0hVtrNsYJHueDg=",
+    "c04_preview_only_replacements_preserved": true
+  }
+}

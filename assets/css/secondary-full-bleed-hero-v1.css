@@ -1,0 +1,51 @@
+/* SECONDARY_FULL_BLEED_HERO_V1. Loaded only by the seven authorized pages. */
+html body .grecho-existing .secondary-full-bleed-hero.gc-hero {
+ position:relative;isolation:isolate;box-sizing:border-box;width:100%;max-width:none;
+ display:flex;align-items:center;min-height:var(--secondary-hero-min,640px);height:auto;
+ padding:88px 0 76px!important;margin:0;border:0;border-radius:0;box-shadow:none;
+ background-color:#081426!important;background-image:var(--secondary-hero-overlay),var(--secondary-hero-image)!important;
+ background-size:cover!important;background-position:var(--secondary-hero-desktop,center)!important;background-repeat:no-repeat!important;
+ color:#fff!important;overflow:hidden;
+}
+html body .grecho-existing .secondary-full-bleed-hero::before,
+html body .grecho-existing .secondary-full-bleed-hero::after {content:none!important;}
+html body .grecho-existing .secondary-full-bleed-hero :is(.gc-split,.grecho-v1-hero-layout,.sample-products-hero-grid,.gcases-hero-inner,.gfaq-hero-inner,.gcv2-hero-inner) {display:block!important;grid-template-columns:1fr!important;width:100%;gap:0!important;max-width:none;}
+html body .grecho-existing .secondary-full-bleed-hero > .gc-container {position:relative;z-index:1;width:min(1120px,calc(100% - 72px));max-width:none;margin:0 auto;padding:0;}
+html body .grecho-existing .secondary-full-bleed-hero :is(.grecho-v1-hero-content,.gcv2-hero-copy,.gcases-hero-inner > div,.gfaq-hero-inner > div) {width:100%!important;max-width:var(--secondary-hero-text,740px)!important;min-height:0!important;margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;text-align:left;}
+html body .grecho-existing .secondary-full-bleed-hero h1 {font-size:clamp(40px,4.4vw,60px)!important;line-height:1.08!important;letter-spacing:-.032em;font-weight:700;color:#fff!important;margin:0 0 24px;max-width:var(--secondary-hero-text,740px)!important;overflow-wrap:normal;word-break:normal;}
+html body .grecho-existing .secondary-full-bleed-hero :is(.gc-eyebrow,.grecho-v1-eyebrow,.gcases-eyebrow,.gfaq-eyebrow,.gcv2-eyebrow) {color:#c8dcff!important;font-size:12px!important;line-height:1.5!important;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:0 0 18px;}
+html body .grecho-existing .secondary-full-bleed-hero p:not([class*="eyebrow"]) {color:#fff!important;font-size:18px!important;line-height:1.65!important;max-width:660px;margin:0 0 24px;}
+html body .grecho-existing .secondary-full-bleed-hero :is(.grecho-v1-actions,.gcv2-actions,.gcases-hero-actions,.gc-actions) {display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:28px 0 0;}
+html body .grecho-existing .secondary-full-bleed-hero a {position:relative;}
+html body .grecho-existing .secondary-full-bleed-hero :is(.gc-button,.grecho-v1-btn,.gcv2-btn,.gcases-btn) {min-height:48px;border-radius:var(--grecho-v3-radius-sm,8px);padding:13px 20px;line-height:1.4;max-width:100%;white-space:normal;}
+html body .grecho-existing .secondary-full-bleed-hero :is(.is-primary,.grecho-v1-btn-primary,.gcv2-btn-primary,.gcases-btn-primary) {background:var(--grecho-v3-brand,#1b4aa1)!important;color:#fff!important;border:1px solid var(--grecho-v3-brand,#1b4aa1);}
+html body .grecho-existing .secondary-full-bleed-hero :is(.is-secondary,.grecho-v1-btn-secondary,.gcv2-btn-secondary,.gcases-btn-secondary) {background:rgba(8,20,38,.22)!important;color:#fff!important;border:1px solid rgba(255,255,255,.78)!important;box-shadow:none!important;}
+html body .grecho-existing .secondary-full-bleed-hero a:hover {filter:brightness(1.13);}
+html body .grecho-existing .secondary-full-bleed-hero a:focus-visible {outline:3px solid #fff!important;outline-offset:5px;box-shadow:0 0 0 2px #081426!important;}
+@media (max-width:960px) {
+ html body .grecho-existing .secondary-full-bleed-hero.gc-hero {min-height:600px;padding:76px 0 64px!important;background-image:var(--secondary-hero-mobile-overlay),var(--secondary-hero-image)!important;background-position:var(--secondary-hero-tablet,center)!important;}
+ html body .grecho-existing .secondary-full-bleed-hero > .gc-container {width:calc(100% - 48px);}
+ html body .grecho-existing .secondary-full-bleed-hero h1 {font-size:clamp(38px,5.3vw,48px)!important;}
+}
+@media (max-width:600px) {
+ html body .grecho-existing .secondary-full-bleed-hero.gc-hero {min-height:var(--secondary-hero-mobile-min,600px);padding:64px 0!important;background-image:var(--secondary-hero-mobile-overlay),var(--secondary-hero-image)!important;background-position:var(--secondary-hero-mobile,center)!important;}
+ html body .grecho-existing .secondary-full-bleed-hero > .gc-container {width:calc(100% - 36px);}
+ html body .grecho-existing .secondary-full-bleed-hero h1 {font-size:clamp(32px,8.9vw,40px)!important;line-height:1.12!important;letter-spacing:-.026em;margin-bottom:22px;}
+ html body .grecho-existing .secondary-full-bleed-hero p:not([class*="eyebrow"]) {font-size:16px!important;line-height:1.65!important;}
+ html body .grecho-existing .secondary-full-bleed-hero :is(.grecho-v1-actions,.gcv2-actions,.gcases-hero-actions,.gc-actions) {display:grid;grid-template-columns:1fr;gap:12px;margin-top:26px;}
+ html body .grecho-existing .secondary-full-bleed-hero :is(.gc-button,.grecho-v1-btn,.gcv2-btn,.gcases-btn) {width:100%;justify-content:center;text-align:center;}
+}
+
+.secondary-full-bleed-hero[data-secondary-hero="20"] {--secondary-hero-image:url("../images/existing/ca42f3edce86-grecho-resource-center-hero-desktop.webp");--secondary-hero-overlay:linear-gradient(90deg,rgba(8,20,38,0.88) 0%,rgba(8,20,38,0.8) 58%,rgba(8,20,38,0.2) 100%);--secondary-hero-mobile-overlay:linear-gradient(180deg,rgba(8,20,38,0.85) 0%,rgba(8,20,38,0.77) 100%);--secondary-hero-min:640px;--secondary-hero-text:740px;--secondary-hero-desktop:50% 50%;--secondary-hero-tablet:58% 50%;--secondary-hero-mobile:60% 50%;}
+
+.secondary-full-bleed-hero[data-secondary-hero="24"] {--secondary-hero-image:url("../images/existing/d0003701f9d4-grecho-case-studies-hero-desktop.webp");--secondary-hero-overlay:linear-gradient(90deg,rgba(8,20,38,0.87) 0%,rgba(8,20,38,0.8) 58%,rgba(8,20,38,0.18) 100%);--secondary-hero-mobile-overlay:linear-gradient(180deg,rgba(8,20,38,0.85) 0%,rgba(8,20,38,0.77) 100%);--secondary-hero-min:640px;--secondary-hero-text:740px;--secondary-hero-desktop:50% 50%;--secondary-hero-tablet:62% 50%;--secondary-hero-mobile:62% 50%;}
+
+.secondary-full-bleed-hero[data-secondary-hero="22"] {--secondary-hero-image:url("../images/existing/ccd8ee1242e3-grecho-insights-listing-hero-desktop.webp");--secondary-hero-overlay:linear-gradient(90deg,rgba(8,20,38,0.88) 0%,rgba(8,20,38,0.8) 58%,rgba(8,20,38,0.24) 100%);--secondary-hero-mobile-overlay:linear-gradient(180deg,rgba(8,20,38,0.85) 0%,rgba(8,20,38,0.77) 100%);--secondary-hero-min:640px;--secondary-hero-text:720px;--secondary-hero-desktop:50% 55%;--secondary-hero-tablet:62% 55%;--secondary-hero-mobile:61% 55%;}
+
+.secondary-full-bleed-hero[data-secondary-hero="26"] {--secondary-hero-image:url("../images/existing/ca55fa773867-grecho-about-hero-desktop.webp");--secondary-hero-overlay:linear-gradient(90deg,rgba(8,20,38,0.7) 0%,rgba(8,20,38,0.62) 58%,rgba(8,20,38,0.14) 100%);--secondary-hero-mobile-overlay:linear-gradient(180deg,rgba(8,20,38,0.83) 0%,rgba(8,20,38,0.74) 100%);--secondary-hero-min:640px;--secondary-hero-text:700px;--secondary-hero-desktop:50% 50%;--secondary-hero-tablet:66% 50%;--secondary-hero-mobile:73% 50%;}
+
+.secondary-full-bleed-hero[data-secondary-hero="30"] {--secondary-hero-image:url("../images/existing/grecho-contact-hero-desktop-attachment-1708.webp");--secondary-hero-overlay:linear-gradient(90deg,rgba(8,20,38,0.76) 0%,rgba(8,20,38,0.68) 58%,rgba(8,20,38,0.18) 100%);--secondary-hero-mobile-overlay:linear-gradient(180deg,rgba(8,20,38,0.84) 0%,rgba(8,20,38,0.76) 100%);--secondary-hero-min:660px;--secondary-hero-text:700px;--secondary-hero-desktop:50% 50%;--secondary-hero-tablet:66% 50%;--secondary-hero-mobile:68% 50%;}
+
+.secondary-full-bleed-hero[data-secondary-hero="28"] {--secondary-hero-image:url("../images/existing/b338d3fcb8b5-grecho-faq-hero-desktop.webp");--secondary-hero-overlay:linear-gradient(90deg,rgba(8,20,38,0.74) 0%,rgba(8,20,38,0.66) 58%,rgba(8,20,38,0.14) 100%);--secondary-hero-mobile-overlay:linear-gradient(180deg,rgba(8,20,38,0.84) 0%,rgba(8,20,38,0.76) 100%);--secondary-hero-min:600px;--secondary-hero-text:740px;--secondary-hero-desktop:50% 50%;--secondary-hero-tablet:66% 50%;--secondary-hero-mobile:68% 50%;}
+
+.secondary-full-bleed-hero[data-secondary-hero="18"] {--secondary-hero-image:url("../images/existing/ff17678ac019-grecho-products-landing-hero-desktop.webp");--secondary-hero-overlay:linear-gradient(90deg,rgba(8,20,38,0.78) 0%,rgba(8,20,38,0.7) 58%,rgba(8,20,38,0.18) 100%);--secondary-hero-mobile-overlay:linear-gradient(180deg,rgba(8,20,38,0.85) 0%,rgba(8,20,38,0.77) 100%);--secondary-hero-min:660px;--secondary-hero-text:740px;--secondary-hero-desktop:50% 50%;--secondary-hero-tablet:65% 50%;--secondary-hero-mobile:67% 50%;}

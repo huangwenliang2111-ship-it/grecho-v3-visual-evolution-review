@@ -1,0 +1,334 @@
+/* Homepage-derived layout adapter. Shared Homepage, hero, navigation and runtime assets remain unchanged. */
+main.home-ui .ux-section,main.home-ui .home-ui-support {padding-block:104px;color:var(--grecho-v3-text);font-family:"GRECHO Local Inter","Inter Tight","Inter","Noto Sans SC",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.56}
+main.home-ui .ux-wrap,main.home-ui .home-ui-support>.gc-container {width:min(1120px,calc(100% - 48px));margin-inline:auto}
+main.home-ui .ux-section h2,main.home-ui .home-ui-support h2 {color:#1e2a36;font-size:clamp(34px,3.3vw,48px);font-weight:700;letter-spacing:-.045em;line-height:1.02;margin:0 0 14px}
+main.home-ui .ux-section h3,main.home-ui .home-ui-support h3 {color:#22303d;font-size:20px;font-weight:700;line-height:1.2;margin:0 0 9px}
+main.home-ui .ux-section p,main.home-ui .home-ui-support p {color:var(--grecho-v3-muted);margin:0 0 14px;line-height:1.56}
+main.home-ui .ux-section .grecho-v3-eyebrow,main.home-ui .ux-section .grecho-v3-kicker {color:var(--grecho-v3-brand);font-size:11px;font-weight:800;letter-spacing:.14em;line-height:1.3;margin-bottom:10px}
+main.home-ui .home-ui-head {max-width:760px;margin-bottom:38px}
+main.home-ui .home-ui-head p:last-child {margin-bottom:0}
+main.home-ui :is(a,button,input,select,summary):focus-visible {outline:3px solid #f8c44f;outline-offset:3px}
+main.home-ui :is(button,input,select,textarea) {font-family:inherit}
+main.home-ui [hidden] {display:none!important}
+main.home-ui :is(#request-form,#request-paths,#unified-request-form,#product-directory,#color-tds-library,[data-gfaq-item]) {scroll-margin-top:145px}
+main.home-ui .ux-fallback {font-size:14px}
+main.home-ui[data-enhanced=true] .ux-fallback {display:none}
+main.home-ui .ux-section .grecho-v3-button {display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:11px 18px;border:1px solid var(--grecho-v3-brand);border-radius:var(--grecho-v3-radius-sm);color:var(--grecho-v3-white);background:var(--grecho-v3-brand);box-shadow:0 6px 16px rgba(8,62,101,.15);font-size:13px;font-weight:800;line-height:1.2;text-decoration:none;transition:background-color 160ms ease,border-color 160ms ease,transform 160ms ease}
+main.home-ui .ux-section .grecho-v3-button:hover {background:var(--grecho-v3-brand-deep);border-color:var(--grecho-v3-brand-deep);transform:translateY(-1px)}
+main.home-ui .ux-section .grecho-v3-text-link {color:var(--grecho-v3-brand);font-size:13px;font-weight:800;min-height:44px;line-height:1.4;text-decoration:none;display:inline-flex;align-items:center}
+main.home-ui .ux-section .grecho-v3-text-link:hover {text-decoration:underline;text-underline-offset:3px}
+main.home-ui .ux-reset,main.home-ui .ux-chip {min-height:46px;padding:11px 18px;border:1px solid var(--grecho-v3-brand);border-radius:var(--grecho-v3-radius-sm);color:var(--grecho-v3-brand);background:#fff;font-size:13px;font-weight:800;line-height:1.2;cursor:pointer;transition:background-color 160ms ease,border-color 160ms ease}
+main.home-ui .ux-reset:hover,main.home-ui .ux-chip:hover {background:var(--grecho-v3-tint-strong);border-color:var(--grecho-v3-brand-deep)}
+main.home-ui .ux-chip[aria-pressed=true] {background:var(--grecho-v3-brand);color:#fff}
+main.home-ui button:disabled {cursor:default;transform:none}
+main.home-ui .ux-family-select {display:block;width:min(450px,100%);font-size:14px;font-weight:700;margin:0 0 26px}
+main.home-ui :is(.ux-family-select select,.ux-resource-tools input,.ux-resource-tools select) {display:block;width:100%;margin-top:8px;min-height:46px;padding:11px 12px;background:#fff;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-sm);color:var(--grecho-v3-text);font-size:14px;line-height:1.4}
+main.home-ui .ux-product-workspace {display:grid;grid-template-columns:220px minmax(0,1fr);gap:22px;align-items:start}
+main.home-ui .ux-product-filters {padding:22px;border:1px solid #d8e3ee;border-radius:var(--grecho-v3-radius-lg);background:var(--grecho-v3-tint);min-width:0}
+main.home-ui .ux-product-filter-panel {border:0;background:transparent;border-radius:0;box-shadow:none;padding:0}
+main.home-ui .ux-product-filter-panel>summary {min-height:44px;font-size:15px;font-weight:700;color:var(--grecho-v3-brand);cursor:pointer}
+main.home-ui .ux-filters,main.home-ui .ux-advanced {display:grid;gap:22px;margin:14px 0 22px}
+main.home-ui .ux-filter-group {min-width:0;padding:0;margin:0;border:0}
+main.home-ui .ux-filter-group legend {font-size:14px;font-weight:700;margin-bottom:8px;color:var(--grecho-v3-text)}
+main.home-ui .gpl-filter-options {display:flex;flex-wrap:wrap;gap:4px 12px}
+main.home-ui .gpl-filter-check {display:flex;align-items:center;gap:8px;width:100%;min-height:44px;margin:0;padding:7px 0;font-size:13px;line-height:1.4;color:var(--grecho-v3-muted);background:transparent;border:0;border-radius:0}
+main.home-ui .gpl-filter-input {accent-color:var(--grecho-v3-brand);flex-shrink:0;width:17px;height:17px;margin:0}
+main.home-ui :is(.ux-more-filters,.ux-guidance,.ux-card-more) {border:0;border-top:1px solid var(--grecho-v3-border);border-radius:0;background:transparent;box-shadow:none;padding:14px 0;margin:0}
+main.home-ui :is(.ux-more-filters,.ux-guidance,.ux-card-more)>summary {display:flex;align-items:center;min-height:44px;color:var(--grecho-v3-brand);font-size:13px;font-weight:800;cursor:pointer}
+main.home-ui .ux-product-results {min-width:0}
+main.home-ui .ux-result-line {display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 22px;padding:0}
+main.home-ui .ux-result-line h3 {font-size:20px;margin:0}
+main.home-ui .ux-result-line p {flex:1;min-width:100px;margin:0;font-size:14px}
+main.home-ui .ux-product-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start}
+main.home-ui .ux-product-card {min-width:0}
+main.home-ui .ux-product-card .ux-product-image {display:block;width:100%;height:auto;aspect-ratio:1000/450;object-fit:cover;object-position:center}
+main.home-ui .ux-product-card .ux-product-copy {padding:22px}
+main.home-ui .ux-product-copy h3 {font-size:20px;line-height:1.2}
+main.home-ui .ux-product-copy .gpl-product-summary {font-size:14px;line-height:1.56}
+main.home-ui .ux-tags {display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+main.home-ui .ux-tags span {padding:5px 8px;background:var(--grecho-v3-tint-strong);color:#314353;font-size:12px;line-height:1.4;border-radius:var(--grecho-v3-radius-sm)}
+main.home-ui .ux-card-more {margin-top:16px;padding-bottom:0}
+main.home-ui .ux-card-more-body {padding-top:12px;font-size:14px}
+main.home-ui .ux-route-facts dl>div {display:grid;grid-template-columns:40% 1fr;gap:8px;padding:7px 0;border-bottom:1px solid var(--grecho-v3-border)}
+main.home-ui .ux-route-facts dd {margin:0;overflow-wrap:anywhere}
+main.home-ui .ux-route-facts dt {font-weight:700}
+main.home-ui .ux-route-facts :is(.gpl-product-media-note,.gpl-product-media-code) {display:none}
+main.home-ui .ux-text-links {display:flex;flex-wrap:wrap;gap:8px 20px;margin:14px 0}
+main.home-ui .ux-steps {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;list-style-position:inside;padding:0;margin:26px 0}
+main.home-ui .ux-steps li {padding:20px;border:1px solid #e0e7ed;border-radius:var(--grecho-v3-radius-md);background:#fbfcfe}
+main.home-ui .ux-steps h3 {font-size:15px;margin-top:9px}
+main.home-ui .ux-steps p {font-size:14px;margin:0}
+main.home-ui #route-help {background:var(--grecho-v3-tint)}
+main.home-ui .ux-empty {padding:22px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);background:var(--grecho-v3-tint)}
+main.home-ui .ux-resource-tools {display:grid;grid-template-columns:1.5fr 1fr auto;align-items:end;gap:22px;padding:28px;margin:0 0 26px}
+main.home-ui .ux-resource-tools label {font-size:14px;font-weight:700}
+main.home-ui .ux-document-list {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+main.home-ui .ux-document {display:grid;grid-template-columns:88px minmax(0,1fr);gap:20px;padding:22px;align-items:start;min-height:0}
+main.home-ui .ux-document .ux-document-image {width:88px;height:auto;aspect-ratio:768/1085;border:1px solid var(--grecho-v3-border);border-radius:4px;object-fit:cover}
+main.home-ui .ux-document-copy h3 {font-size:20px;line-height:1.2}
+main.home-ui .ux-document-copy p {font-size:14px;line-height:1.56}
+main.home-ui .ux-document-copy .ux-doc-id {font-size:11px;font-weight:800;line-height:1.4;letter-spacing:.09em;color:#476c89;text-transform:uppercase;margin-bottom:8px}
+main.home-ui .ux-status {color:var(--grecho-v3-brand)!important;font-weight:700}
+main.home-ui #document-requests {background:#eff5fd}
+main.home-ui .ux-request-types {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+main.home-ui .ux-doc-type {min-height:0;padding:22px}
+main.home-ui .ux-doc-type p {font-size:14px}
+main.home-ui .ux-doc-type .grc-v2-tag {display:block;font-size:11px;font-weight:800;letter-spacing:.1em;color:#476c89;margin-bottom:8px;background:transparent;padding:0}
+main.home-ui .ux-access-guide {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding:22px 0}
+main.home-ui .ux-access-guide h3 {font-size:16px}
+main.home-ui .ux-access-guide p {font-size:14px}
+main.home-ui .ux-final-cta {margin-top:26px}
+main.home-ui #request-form {background:linear-gradient(135deg,#f3f8ff 0%,#eaf2ff 100%)}
+main.home-ui .ux-request-choice {display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+main.home-ui [data-request-selected] {font-size:14px;font-weight:700}
+main.home-ui .ux-contact-layout {display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.8fr);gap:22px;align-items:start;margin-top:26px}
+main.home-ui .ux-preview-form {padding:40px;min-width:0}
+main.home-ui .ux-preview-form fieldset {display:block!important;min-width:0;margin:0;padding:0;border:0}
+main.home-ui .ux-preview-form .ff_screen_reader_title {clip:auto;position:static;width:auto;height:auto;overflow:visible;margin:0 0 16px;font-size:20px;font-weight:700}
+main.home-ui .ux-essential-fields {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-bottom:22px}
+main.home-ui .ux-essential-fields>.ff-el-group:first-child,main.home-ui .ux-essential-fields>.ff-el-group:last-child {grid-column:1/-1}
+main.home-ui .ux-preview-form .ff-el-group {min-width:0;margin:0 0 20px}
+main.home-ui .ux-essential-fields>.ff-el-group {margin:0}
+main.home-ui .ux-preview-form label {display:inline-block;margin-bottom:8px;font-size:14px;font-weight:700;line-height:1.5}
+main.home-ui .ux-preview-form :is(input:not([type=checkbox]),select,textarea) {width:100%;min-height:46px;padding:11px 12px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-sm);background:#fbfcfe;color:var(--grecho-v3-muted);opacity:1;font:inherit;font-size:14px;box-sizing:border-box}
+main.home-ui .ux-authority-field {padding:12px 16px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);background:var(--grecho-v3-tint);max-width:100%}
+main.home-ui .ux-authority-field select {max-width:380px}
+main.home-ui .ux-authority-field .ux-authority-note {font-size:12px;margin:8px 0 0}
+main.home-ui .ux-extra-fields {padding:20px 0}
+main.home-ui .ux-preview-form .ff-el-form-check-label {display:flex;align-items:baseline;gap:6px;font-weight:400}
+main.home-ui .ux-preview-form .grecho-demo-form-note {border:0;background:transparent;padding:0;font-size:14px;margin-bottom:22px}
+main.home-ui .grecho-form-privacy-notice p,main.home-ui .grecho-marketing-email-opt-in {font-size:12px;line-height:1.56}
+main.home-ui .ux-preview-form .ff-btn:disabled {min-height:46px;padding:11px 18px;background:var(--grecho-v3-border);color:var(--grecho-v3-muted);border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-sm);opacity:1;font-size:13px;font-weight:800;box-shadow:none}
+main.home-ui .ux-contact-help {padding:24px}
+main.home-ui .ux-contact-help h3 {font-size:16px}
+main.home-ui .ux-contact-help p {font-size:14px}
+main.home-ui .ux-help-copy {padding-block:20px}
+main.home-ui [data-ux-context] {padding:20px 22px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);background:#fff}
+main.home-ui [data-ux-context-text] {overflow-wrap:anywhere}
+main.home-ui #request-next .ux-steps {grid-template-columns:repeat(2,minmax(0,1fr))}
+main.home-ui .ux-shortcuts {display:flex;flex-wrap:wrap;gap:0 22px;margin-bottom:26px}
+main.home-ui .ux-shortcuts a {display:inline-flex;align-items:center;min-height:44px;font-size:13px;font-weight:800;color:var(--grecho-v3-brand);text-decoration:underline;text-underline-offset:3px}
+main.home-ui .ux-faq-heading {max-width:760px;margin-bottom:38px}
+main.home-ui #faq-explorer h2 {font-size:clamp(34px,3.3vw,48px);line-height:1.02;letter-spacing:-.045em}
+main.home-ui #faq-explorer .gfaq-filter-wrap {display:grid;grid-template-columns:1fr auto;gap:18px;padding:22px;border:1px solid #d8e3ed;border-radius:var(--grecho-v3-radius-md);background:#f0f6ff;margin:0 0 22px}
+main.home-ui #faq-explorer .gfaq-search {width:100%;max-width:none;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-sm);background:#fff;padding:11px 12px;min-height:46px}
+main.home-ui #faq-explorer .gfaq-search input {font-size:14px;min-width:0;width:100%;font-family:inherit}
+main.home-ui #faq-explorer .gfaq-topic-tabs {grid-column:1/-1;grid-row:2;display:flex;flex-wrap:wrap;gap:10px}
+main.home-ui #faq-explorer .gfaq-tab {flex:initial;width:auto;min-height:46px;padding:11px 18px;background:#fff;border:1px solid var(--grecho-v3-brand);border-radius:var(--grecho-v3-radius-sm);color:var(--grecho-v3-brand);font-size:13px;font-weight:800;line-height:1.3}
+main.home-ui #faq-explorer .gfaq-tab[aria-pressed=true] {color:#fff;background:var(--grecho-v3-brand)}
+main.home-ui #faq-explorer .gfaq-main {margin:26px 0 0}
+main.home-ui #faq-explorer .gfaq-group {margin:0 0 38px;scroll-margin-top:145px}
+main.home-ui #faq-explorer .gfaq-group-head {padding:0;margin-bottom:22px}
+main.home-ui #faq-explorer .gfaq-group-head .gfaq-section-kicker {font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--grecho-v3-brand);margin-bottom:10px}
+main.home-ui #faq-explorer .gfaq-group-head h3 {font-size:20px}
+main.home-ui #faq-explorer .gfaq-group-head p {font-size:14px}
+main.home-ui #faq-explorer .gfaq-item {border:1px solid #dce5ec;border-radius:var(--grecho-v3-radius-md);background:#fff;box-shadow:0 7px 22px rgba(23,59,89,.05);margin-bottom:12px;overflow:hidden}
+main.home-ui #faq-explorer .gfaq-question {display:grid;grid-template-columns:1fr 28px;gap:20px;align-items:center;min-height:64px;padding:17px 20px;color:#263746;font-size:14px;font-weight:700;line-height:1.3;text-align:left;background:transparent;border:0;cursor:pointer}
+main.home-ui #faq-explorer .gfaq-plus {display:grid;place-items:center;width:25px;height:25px;background:var(--grecho-v3-brand);color:#fff;border-radius:50%;font-size:16px;transition:transform 160ms ease}
+main.home-ui #faq-explorer .gfaq-item[open] .gfaq-plus {transform:rotate(45deg)}
+main.home-ui #faq-explorer .gfaq-answer {padding:0 20px 18px;color:var(--grecho-v3-muted);font-size:14px;line-height:1.56}
+main.home-ui #faq-explorer .gfaq-empty {padding:22px;background:var(--grecho-v3-tint);border-radius:var(--grecho-v3-radius-md)}
+main.home-ui .home-ui-support {background:linear-gradient(135deg,#f3f8ff 0%,#eaf2ff 100%)}
+main.home-ui .home-ui-support .ux-support-details {margin-bottom:26px;border:0;background:transparent}
+main.home-ui .home-ui-support .ux-support-details>summary {min-height:44px;color:var(--grecho-v3-brand);font-size:14px;font-weight:700;cursor:pointer}
+main.home-ui .home-ui-support .gc-container {width:100%;margin:0}
+main.home-ui .home-ui-support>div.ux-wrap {width:min(1120px,calc(100% - 48px));margin:auto}
+main.home-ui .home-ui-support :is(.sample-faq-support,.gfaq-section-dark) {padding:22px 0;background:transparent;color:var(--grecho-v3-text)}
+main.home-ui .home-ui-support :is(.gfaq-hero-panel,.gfaq-resource-card,.gfaq-next-card,.gfaq-final-card) {border:0;border-radius:0;box-shadow:none;background:transparent;min-height:0;padding:0;color:var(--grecho-v3-text)}
+main.home-ui .home-ui-support :is(.gfaq-hero-actions,.gfaq-resource-actions,.gfaq-next-grid) {display:flex;flex-wrap:wrap;gap:12px 22px;margin:20px 0}
+main.home-ui .home-ui-support .gfaq-next-card {flex:1;min-width:200px}
+main.home-ui .home-ui-support .gfaq-next-card h3 {font-size:16px}
+main.home-ui .home-ui-support :is(.gfaq-hero-actions,.gfaq-resource-actions,.gfaq-next-card) a {background:transparent;border:0;box-shadow:none;color:var(--grecho-v3-brand);font-size:13px;font-weight:800;padding:8px 0;min-height:44px}
+main.home-ui .home-ui-support .gfaq-final {padding:0;background:transparent}
+main.home-ui .home-ui-support .gfaq-final-card {padding:40px;border:1px solid #d8e3ee;border-radius:var(--grecho-v3-radius-lg);box-shadow:var(--grecho-v3-shadow-card);background:#fff;display:flex;align-items:center;gap:28px}
+main.home-ui .home-ui-support .gfaq-final-card>div:first-child {flex:1}
+main.home-ui .home-ui-support .gfaq-final-actions {display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+.home-ui-index {padding-block:104px}
+.home-ui-index .home-ui-review-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.home-ui-index .home-ui-review-card {padding:29px}
+.home-ui-index .home-ui-compare-links {display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:20px}
+@media(max-width:850px){
+ main.home-ui .ux-section,main.home-ui .home-ui-support {padding-block:68px}
+ main.home-ui .ux-wrap,main.home-ui .home-ui-support>div.ux-wrap {width:min(100% - 36px,720px)}
+ main.home-ui .ux-product-workspace,main.home-ui .ux-contact-layout {grid-template-columns:1fr}
+ main.home-ui .ux-filters,main.home-ui .ux-advanced {grid-template-columns:repeat(2,minmax(0,1fr))}
+ main.home-ui .gpl-filter-check {width:auto}
+ main.home-ui .ux-document-list {grid-template-columns:1fr}
+ main.home-ui .ux-preview-form {padding:28px}
+}
+@media(max-width:600px){
+ main.home-ui .ux-section,main.home-ui .home-ui-support {padding-block:64px}
+ main.home-ui .ux-wrap,main.home-ui .home-ui-support>div.ux-wrap {width:min(100% - 28px,540px)}
+ main.home-ui .home-ui-head,main.home-ui .ux-faq-heading {margin-bottom:28px}
+ main.home-ui .ux-section h2,main.home-ui .home-ui-support h2,main.home-ui #faq-explorer h2 {font-size:clamp(31px,9.2vw,39px)}
+ main.home-ui :is(.ux-product-grid,.ux-filters,.ux-advanced,.ux-steps,.ux-request-types,.ux-access-guide,.ux-essential-fields),main.home-ui #request-next .ux-steps {grid-template-columns:1fr}
+ main.home-ui .ux-product-filters,main.home-ui .ux-preview-form {padding:22px}
+ main.home-ui .ux-resource-tools {grid-template-columns:1fr;padding:28px 20px}
+ main.home-ui .ux-resource-tools button {justify-self:start}
+ main.home-ui .ux-document {grid-template-columns:65px minmax(0,1fr);padding:18px;gap:14px}
+ main.home-ui .ux-document .ux-document-image {width:65px}
+ main.home-ui .ux-document-copy h3 {font-size:20px}
+ main.home-ui .ux-result-line {gap:12px}
+ main.home-ui .ux-result-line p {flex-basis:100%}
+ main.home-ui #faq-explorer .gfaq-filter-wrap {grid-template-columns:1fr;padding:18px}
+ main.home-ui #faq-explorer .gfaq-topic-tabs {grid-row:auto;grid-column:auto}
+ main.home-ui #faq-explorer .gfaq-filter-wrap>.ux-reset {justify-self:start}
+ main.home-ui #faq-explorer .gfaq-question {min-height:66px;padding:15px 16px;gap:12px}
+ main.home-ui #faq-explorer .gfaq-answer {padding:0 16px 17px}
+ main.home-ui .home-ui-support .gfaq-final-card {flex-direction:column;align-items:stretch;padding:22px}
+ main.home-ui .home-ui-support .gfaq-final-actions a {width:100%}
+ .home-ui-index {padding-block:64px}
+ .home-ui-index .home-ui-review-grid {grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){main.home-ui * {scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+/* Explicit compatibility adapters for accepted page-specific selectors. */
+main.home-ui #request-form #fluentform_3.ux-preview-form {padding:40px;border:1px solid #d8e3ee;border-radius:var(--grecho-v3-radius-lg);background:#fff;box-shadow:var(--grecho-v3-shadow-card)}
+main.home-ui #request-form #fluentform_3 :is(input:not([type=checkbox]),select,textarea) {padding:11px 12px;font-size:14px;min-height:46px;background:#fbfcfe;color:var(--grecho-v3-muted);border-radius:var(--grecho-v3-radius-sm);border:1px solid var(--grecho-v3-border)}
+main.home-ui.sample-faq #faq-explorer .home-ui-head h2 {font-size:clamp(34px,3.3vw,48px);line-height:1.02;letter-spacing:-.045em}
+main.home-ui.sample-faq #faq-explorer .gfaq-question::after {content:none;display:none}
+main.home-ui.sample-faq #faq-explorer .gfaq-answer {background:transparent}
+@media(max-width:850px){main.home-ui #request-form #fluentform_3.ux-preview-form {padding:28px}}
+@media(max-width:600px){main.home-ui #request-form #fluentform_3.ux-preview-form {padding:22px}main.home-ui.sample-faq #faq-explorer .home-ui-head h2 {font-size:clamp(31px,9.2vw,39px)}}
+main.home-ui.sample-faq #faq-explorer .gfaq-search input {border:0;box-shadow:none;background:transparent;padding:0;margin:0;min-height:24px;height:auto;outline-offset:1px}
+
+/* Show identical access policy once; preserved hidden entry text keeps search semantics exact. */
+main.home-ui .ux-document .ux-shared-access-detail {display:none}
+main.home-ui .ux-resource-access-note {margin:16px 0 20px;color:var(--grecho-v3-muted);font-size:14px;line-height:1.56}
+
+/* R3: Production-informed composition. All rules are scoped to this review candidate. */
+main.home-ui[data-home-ui-revision=R3] .ux-section {padding-block:80px}
+main.home-ui[data-home-ui-revision=R3] .home-ui-head {max-width:850px;margin-bottom:32px}
+main.home-ui .r3-series-panel {border:0;border-radius:0;background:transparent;padding:0;margin:24px 0 34px;box-shadow:none}
+main.home-ui .r3-series-panel>summary {font-size:15px;font-weight:700;color:#123b7a;min-height:44px;cursor:pointer}
+main.home-ui .r3-series-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:14px}
+main.home-ui .r3-series-grid button {position:relative;display:grid;grid-template-columns:78px 1fr;grid-template-rows:1fr auto;column-gap:13px;align-items:center;text-align:left;padding:12px;background:#f6f9fd;border:1px solid #dce5ef;border-radius:10px;color:#22303d;cursor:pointer;min-height:98px;box-shadow:0 3px 10px #173b5908}
+main.home-ui .r3-series-grid img {grid-row:1/3;width:78px;height:74px;object-fit:contain;background:#f0f2f5;border-radius:6px}
+main.home-ui .r3-series-grid span {font-size:13px;font-weight:700;line-height:1.35}
+main.home-ui .r3-series-grid small {font-size:11px;color:#627486;margin-top:5px}
+main.home-ui .r3-series-grid button:is(:hover,[aria-pressed=true]) {border-color:#1b4aa1;background:#edf3ff}
+main.home-ui[data-enhanced=true] .r3-family-adapter {display:none}
+main.home-ui .r3-catalogue-scope {display:flex;gap:6px;padding:6px;border:1px solid #dce5ef;background:#f3f7fc;border-radius:8px;margin-bottom:24px;width:fit-content;max-width:100%}
+main.home-ui .r3-catalogue-scope button {border:0;background:transparent;color:#536577;padding:12px 18px;border-radius:5px;font-size:14px;font-weight:700;min-height:46px;cursor:pointer}
+main.home-ui .r3-catalogue-scope button[aria-pressed=true] {background:#1b4aa1;color:white;box-shadow:0 4px 10px #1b4aa120}
+main.home-ui .r3-catalogue-scope span {font-size:11px;margin-left:5px;opacity:.85}
+main.home-ui .r3-scope-recovery {padding:18px 20px;background:#eef4ff;border-left:3px solid #1b4aa1;margin-bottom:24px;border-radius:0 8px 8px 0}
+main.home-ui .r3-scope-recovery p {font-size:14px}
+main.home-ui .ux-product-workspace {grid-template-columns:230px minmax(0,1fr);gap:28px}
+main.home-ui .ux-product-filters {background:#f8fafd;border-radius:10px;padding:22px}
+main.home-ui .ux-product-grid {gap:24px}
+main.home-ui .ux-product-card {border:1px solid #dce4ed;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 10px 30px #173b590c}
+main.home-ui .ux-product-card .ux-product-image {aspect-ratio:4/3;width:100%;height:auto;object-fit:contain;background:#f1f3f6;border-bottom:1px solid #e2e8f0}
+main.home-ui .ux-product-card .ux-product-copy {padding:24px}
+main.home-ui .ux-product-copy h3 {font-size:23px;line-height:1.16;letter-spacing:-.03em;margin-bottom:10px}
+main.home-ui .ux-product-copy .grecho-v3-kicker {font-size:10px;letter-spacing:.08em;margin-bottom:12px}
+main.home-ui .ux-product-copy .gpl-product-summary {font-size:14px;line-height:1.6;color:#536577}
+main.home-ui .ux-tags {gap:6px;margin:16px 0 20px}
+main.home-ui .ux-tags span {background:#f2f6fc;border-radius:4px;line-height:1.5}
+main.home-ui #route-help .ux-steps {gap:26px;border-top:1px solid #c9d8ec;padding-top:26px}
+main.home-ui #route-help .ux-steps li {background:transparent;border:0;border-radius:0;padding:0 22px 0 0}
+main.home-ui .ux-document-list {gap:24px}
+main.home-ui .ux-document {grid-template-columns:140px minmax(0,1fr);gap:0;padding:0;overflow:hidden;border:1px solid #dce5ef;border-radius:12px;background:#fff;box-shadow:0 8px 25px #173b590c;align-items:stretch}
+main.home-ui .r3-doc-cover {padding:24px 14px;background:linear-gradient(145deg,#f2f6fc,#e8eef7);display:flex;align-items:center;justify-content:center;border-right:1px solid #dce5ef}
+main.home-ui .ux-document .ux-document-image {width:110px;height:auto;aspect-ratio:768/1085;object-fit:contain;border-radius:3px;box-shadow:0 8px 18px #173b5920}
+main.home-ui .ux-document-copy {padding:24px;min-width:0}
+main.home-ui .ux-document-copy h3 {font-size:20px;line-height:1.25;letter-spacing:-.025em}
+main.home-ui .ux-document-copy .ux-doc-id {font-size:11px;letter-spacing:.08em;margin-bottom:10px}
+main.home-ui .ux-document-copy .r3-document-type {font-size:12px;margin:0 0 14px;color:#61758c}
+main.home-ui .ux-status {display:inline-block;border:1px solid #d9e5f6;border-radius:4px;background:#edf3ff;padding:4px 7px;font-size:11px!important;margin-bottom:18px!important}
+main.home-ui .ux-document-copy .ux-primary-action {display:flex;width:fit-content}
+main.home-ui .ux-resource-tools {background:linear-gradient(125deg,#edf3fc,#e4eefb);padding:28px;border:1px solid #dce5ef;border-radius:10px;box-shadow:none}
+main.home-ui .ux-resource-access-note {font-size:13px;max-width:760px;border-left:3px solid #1b4aa1;padding:4px 0 4px 16px}
+main.home-ui .r3-resource-intent {padding:24px;background:#eef4ff;border-radius:10px;margin-bottom:28px}
+main.home-ui .ux-request-types {grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+main.home-ui .ux-doc-type {padding:26px;background:#fff;border:1px solid #d9e4f3;border-top:3px solid #1b4aa1;border-radius:8px;box-shadow:0 8px 24px #173b5908}
+main.home-ui .r3-document-number {display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;color:#1b4aa1;background:#edf3ff;border-radius:4px;padding:6px 9px;margin-bottom:18px}
+main.home-ui .ux-doc-type h3 {font-size:21px}
+main.home-ui .ux-doc-type a {margin-top:10px}
+main.home-ui #document-guide .ux-final-cta {display:flex;align-items:center;justify-content:space-between;gap:24px;padding:32px;background:#123b7a;color:#fff;border:0;border-radius:10px}
+main.home-ui #document-guide .ux-final-cta .grecho-v3-button {background:#fff;color:#1b4aa1;border-color:white}
+main.home-ui .ux-contact-layout {grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:32px;align-items:start}
+main.home-ui .ux-preview-form {padding:34px;border:1px solid #d8e4f3;border-radius:12px;box-shadow:0 18px 45px #173b5910;background:#fff}
+main.home-ui .r3-request-selector {margin:0 0 22px!important;padding:0!important;border:0!important}
+main.home-ui .r3-request-selector legend {font-size:18px;font-weight:700;margin-bottom:14px;color:#22303d}
+main.home-ui .r3-request-options {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+main.home-ui .r3-request-option {display:flex!important;gap:9px;align-items:center;margin:0!important;min-height:52px;padding:10px 12px;border:1px solid #dce5ef;border-radius:6px;background:#f8fafd;color:#394f66;font-size:12px!important;cursor:pointer}
+main.home-ui .r3-request-option:has(input:checked) {background:#edf3ff;border-color:#1b4aa1;color:#1b4aa1}
+main.home-ui .r3-request-option input {flex:0 0 16px;width:16px!important;height:16px!important;min-height:16px!important;margin:0;accent-color:#1b4aa1}
+main.home-ui[data-enhanced=true] .ux-authority-field {display:none}
+main.home-ui:not([data-enhanced=true]) .r3-request-selector {display:none!important}
+main.home-ui .ux-essential-fields>.ff-el-group:nth-child(2),main.home-ui .ux-essential-fields>.ff-el-group:nth-child(3) {grid-column:auto}
+main.home-ui .ux-contact-help {padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+main.home-ui .r3-review-image {margin:0 0 30px;border-radius:12px;overflow:hidden;background:#123b7a}
+main.home-ui .r3-review-image img {display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+main.home-ui .r3-review-image figcaption {padding:15px 20px;font-size:12px;font-weight:700;color:#fff;letter-spacing:.02em}
+main.home-ui .ux-contact-help>h3 {font-size:23px;margin-bottom:14px}
+main.home-ui .ux-contact-help .ux-help-copy {padding:22px 0;border-top:1px solid #cad8eb}
+main.home-ui .r3-contact-details {font-size:14px!important;font-weight:600;line-height:1.9!important;color:#123b7a!important;overflow-wrap:anywhere}
+main.home-ui #request-next .ux-steps li {border:0;border-left:2px solid #cad8eb;border-radius:0;padding:0 0 0 20px;background:transparent}
+main.home-ui #faq-explorer {background:#f6f9fd}
+main.home-ui #faq-explorer .ux-faq-heading {position:relative;padding-right:210px;max-width:none}
+main.home-ui .r3-popular-questions {position:absolute;right:0;top:5px;width:190px;background:#fff;border:1px solid #dce5ef;border-radius:7px;padding:12px 16px;z-index:2;box-shadow:0 5px 20px #173b5910}
+main.home-ui .r3-popular-questions>summary {font-size:13px;font-weight:700;color:#123b7a;cursor:pointer;min-height:24px}
+main.home-ui .r3-popular-questions .ux-shortcuts {display:grid;gap:8px;margin:14px 0 0}
+main.home-ui #faq-explorer .gfaq-filter-wrap {background:#fff;border:1px solid #dce5ef;border-radius:10px;padding:24px;box-shadow:0 9px 24px #173b5908}
+main.home-ui #faq-explorer .gfaq-topic-tabs {gap:8px}
+main.home-ui #faq-explorer .gfaq-tab {border-color:#d8e4f3;padding:10px 14px;font-size:12px}
+main.home-ui #faq-explorer .gfaq-main {margin-top:24px}
+main.home-ui #faq-explorer .gfaq-group {padding:28px;background:#fff;border:1px solid #dce5ef;border-radius:12px;margin-bottom:24px;box-shadow:0 10px 28px #173b5908}
+main.home-ui #faq-explorer .gfaq-group-head {position:relative;padding:0 0 24px 60px;border-bottom:1px solid #dce5ef;margin-bottom:12px;min-height:56px}
+main.home-ui .r3-faq-number {position:absolute;left:0;top:0;display:grid;place-items:center;width:40px;height:40px;border-radius:7px;background:#1b4aa1;color:white;font-size:12px;font-weight:800}
+main.home-ui #faq-explorer .gfaq-group-head h3 {font-size:25px;line-height:1.2;letter-spacing:-.03em}
+main.home-ui #faq-explorer .gfaq-group-head p {margin:0;font-size:14px}
+main.home-ui #faq-explorer .gfaq-item {box-shadow:none;border:0;border-bottom:1px solid #e5ebf3;border-radius:0;margin:0}
+main.home-ui #faq-explorer .gfaq-item:last-child {border-bottom:0}
+main.home-ui #faq-explorer .gfaq-question {padding:18px 0;font-size:15px;line-height:1.4;min-height:66px}
+main.home-ui #faq-explorer .gfaq-answer {padding:0 36px 20px 0;font-size:14px;line-height:1.7}
+main.home-ui #faq-explorer .gfaq-plus {width:24px;height:24px;background:#edf3ff;color:#1b4aa1}
+@media(max-width:850px){
+ main.home-ui[data-home-ui-revision=R3] .ux-section {padding-block:64px}
+ main.home-ui .r3-series-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+ main.home-ui .ux-product-workspace,main.home-ui .ux-contact-layout {grid-template-columns:1fr}
+ main.home-ui .ux-request-types {grid-template-columns:repeat(2,minmax(0,1fr))}
+ main.home-ui .ux-document-list {grid-template-columns:1fr}
+ main.home-ui .ux-contact-help {display:block}
+ main.home-ui .r3-review-image {max-width:720px}
+}
+@media(max-width:600px){
+ main.home-ui[data-home-ui-revision=R3] .ux-section {padding-block:54px}
+ main.home-ui .r3-series-grid {gap:8px}
+ main.home-ui .r3-series-grid button {grid-template-columns:52px 1fr;gap:8px;padding:9px;min-height:92px}
+ main.home-ui .r3-series-grid img {width:52px;height:60px}
+ main.home-ui .r3-series-grid span {font-size:11px}
+ main.home-ui .r3-series-grid small {font-size:10px}
+ main.home-ui .ux-product-grid,main.home-ui .ux-request-types {grid-template-columns:1fr}
+ main.home-ui .r3-catalogue-scope button {padding:11px 13px;font-size:13px}
+ main.home-ui .ux-product-card .ux-product-copy {padding:22px}
+ main.home-ui .ux-product-copy h3 {font-size:23px}
+ main.home-ui .ux-document {grid-template-columns:100px minmax(0,1fr)}
+ main.home-ui .r3-doc-cover {padding:20px 10px}
+ main.home-ui .ux-document .ux-document-image {width:80px}
+ main.home-ui .ux-document-copy {padding:20px 16px}
+ main.home-ui .ux-document-copy h3 {font-size:18px;line-height:1.3}
+ main.home-ui .ux-document-copy .ux-primary-action {font-size:11px;padding:11px 12px}
+ main.home-ui .ux-preview-form {padding:22px}
+ main.home-ui .r3-request-options {grid-template-columns:1fr}
+ main.home-ui .r3-request-option {font-size:13px!important;min-height:48px}
+ main.home-ui #faq-explorer .ux-faq-heading {padding-right:0}
+ main.home-ui .r3-popular-questions {position:static;width:auto;margin-top:20px;padding:10px 14px;box-shadow:none}
+ main.home-ui #faq-explorer .gfaq-filter-wrap {padding:18px}
+ main.home-ui #faq-explorer .gfaq-topic-tabs {gap:6px}
+ main.home-ui #faq-explorer .gfaq-tab {font-size:11px;padding:9px 10px;min-height:40px}
+ main.home-ui #faq-explorer .gfaq-group {padding:20px 16px}
+ main.home-ui #faq-explorer .gfaq-group-head {padding-left:0;padding-top:52px}
+ main.home-ui #faq-explorer .gfaq-group-head h3 {font-size:22px}
+ main.home-ui #faq-explorer .gfaq-answer {padding-right:0}
+ main.home-ui #faq-explorer .gfaq-question {font-size:14px;gap:12px}
+ main.home-ui #document-guide .ux-final-cta {align-items:flex-start;flex-direction:column;padding:24px}
+}
+@media(prefers-reduced-motion:reduce){main.home-ui * {scroll-behavior:auto!important;transition:none!important}}
+
+main.home-ui .r3-request-selector legend {display:block!important;visibility:visible!important}
+@media(max-width:360px){main.home-ui .ux-document {grid-template-columns:78px minmax(0,1fr)}main.home-ui .r3-doc-cover {padding:18px 8px}main.home-ui .ux-document .ux-document-image {width:60px}main.home-ui .ux-document-copy {padding:18px 14px}main.home-ui .ux-document-copy h3 {font-size:17px}}
+
+main.home-ui #route-help .r3-solutions-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}main.home-ui #route-help .r3-solutions-grid a {display:block;width:auto;min-width:0;margin:0;padding:22px;background:#fff;box-shadow:none;border:1px solid #dbe5f0;border-radius:8px}main.home-ui #route-help .r3-solutions-grid .grecho-v1-card-base-title {font-size:20px}main.home-ui #route-help .r3-solutions-grid .grecho-v1-card-base-description {font-size:14px;font-weight:400;line-height:1.6;margin-block:10px}main.home-ui #route-help .r3-product-final {align-items:center;margin:32px 0 0;gap:14px 24px}main.home-ui #route-help .r3-product-final .grecho-v3-button {color:white}main.home-ui #route-help .r3-product-final .grecho-v3-text-link span {color:inherit}@media(max-width:600px){main.home-ui #route-help .r3-solutions-grid {grid-template-columns:1fr}}
+main.home-ui .r3-request-selector legend {position:static!important;width:auto!important;height:auto!important;clip:auto!important;clip-path:none!important;overflow:visible!important;margin:0 0 14px!important;padding:0!important}

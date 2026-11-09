@@ -1,0 +1,10 @@
+/* Compact review safeguards. Family typography, widths, cards and breakpoints
+   remain supplied by the retained Product/Solution authority stylesheets. */
+.review-missing{height:auto;min-height:220px;position:relative;overflow:visible}
+.review-bound-media .review-media-caption{position:static;display:block;clear:both}
+.grecho-product-comparison .review-bound-media{overflow:visible}
+.grecho-product-specs__table{overflow-x:auto}
+.grecho-product-faq details[open] summary,.gac-v1-faq details[open] summary{cursor:pointer}
+.review-source nav a{white-space:nowrap}
+.review-qualification{margin-top:24px;border-top:1px solid currentColor;padding-top:16px;opacity:.9}
+.review-qualification p{font-size:14px;line-height:1.65;max-width:1000px}

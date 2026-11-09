@@ -1,0 +1,4 @@
+/* Existing official hero assets; shared V3 contrast treatment. */
+.grecho-existing[data-source-route="/case-studies/"] .gcases-hero{background-image:linear-gradient(90deg,rgba(242,247,252,.94),rgba(242,247,252,.86)),url("../images/existing/d0003701f9d4-grecho-case-studies-hero-desktop.webp");background-position:center;background-size:cover}
+.grecho-existing[data-source-route="/contact/"] .gcv2-hero{background-image:linear-gradient(90deg,rgba(242,247,252,.94),rgba(242,247,252,.86)),url("../images/existing/1a7806a74bfc-grecho-home-hero-banner-frame.jpg");background-position:center;background-size:cover}
+.grecho-existing[data-source-route="/faq/"] .gfaq-hero{background-image:linear-gradient(90deg,rgba(242,247,252,.94),rgba(242,247,252,.86)),url("../images/existing/b338d3fcb8b5-grecho-faq-hero-desktop.webp");background-position:center;background-size:cover}

@@ -1,0 +1,11 @@
+.gvi-index-links a{font-weight:700;color:#16479b;text-decoration:underline;text-underline-offset:3px}
+.gvi-index-links a:focus-visible{outline:3px solid #8a4300;outline-offset:3px}
+.gvi-index-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:16px}
+.gvi-index-links a{min-height:44px;display:inline-flex;align-items:center}
+
+/* Historical context has no pointer, focus target, action styling or hover motion. */
+.grecho-legacy-reference{cursor:default!important;text-decoration:none!important;color:inherit}
+.grecho-legacy-reference:hover{transform:none!important;box-shadow:none!important;text-decoration:none!important}
+.grecho-legacy-reference.gia-route-card,.grecho-legacy-reference.grecho-v1-card-base{display:block}
+.grecho-legacy-status{display:block;color:#58616c;font-size:13px;line-height:1.5;font-weight:600;padding:8px 0;background:transparent;border:0;border-radius:0;cursor:default}
+.grecho-legacy-reference .gia-route-link{color:#58616c;text-decoration:none}

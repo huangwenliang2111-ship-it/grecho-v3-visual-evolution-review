@@ -1,0 +1,45 @@
+/* LOCAL CANDIDATE CATALOGUE-STATIC-01. Parents UIV3-07/08/15/16. Frozen assets unchanged. */
+main[data-local-candidate="18"] .r3-scope-recovery[data-local-filtered="false"] {display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:0 0 16px;margin:0 0 18px;background:transparent;border:0;border-bottom:1px solid var(--grecho-v3-border);border-radius:0;box-shadow:none}
+main[data-local-candidate="18"] .r3-scope-recovery[data-local-filtered="false"] p {flex:1;margin:0;font-size:12px;line-height:1.5;color:var(--grecho-v3-muted)}
+main[data-local-candidate="18"] .r3-scope-recovery[data-local-filtered="false"] button {margin:0;background:white;color:var(--grecho-v3-brand);border-color:var(--grecho-v3-border);min-height:46px;padding:10px 14px}
+main[data-local-candidate="18"] .ux-product-card {border-radius:var(--grecho-v3-radius-md);box-shadow:var(--grecho-v3-shadow-card)}
+main[data-local-candidate="18"] .ux-product-card .ux-product-image {object-fit:cover;object-position:center;aspect-ratio:4/3;background:white}
+main[data-local-candidate="18"] .ux-product-copy .gpl-product-summary {color:var(--grecho-v3-muted)}
+main[data-local-candidate="18"] .ux-product-copy .grecho-v3-kicker {color:var(--grecho-v3-brand);font-size:11px;line-height:1.4}
+main[data-local-candidate="18"] .ux-product-copy .ux-primary-action {min-height:46px}
+@media(hover:hover) and (pointer:fine){main[data-local-candidate="18"] .ux-product-card:hover {border-color:var(--grecho-v3-brand)}}
+@media(max-width:600px){main[data-local-candidate="18"] .r3-scope-recovery[data-local-filtered="false"] {gap:10px;margin-bottom:20px}main[data-local-candidate="18"] .r3-scope-recovery[data-local-filtered="false"] p {flex-basis:100%}}
+@media(max-width:600px){main[data-local-candidate="18"] .r3-scope-recovery[data-local-filtered="false"] {display:grid;grid-template-columns:minmax(0,1fr) minmax(140px,.85fr);align-items:center;gap:10px}main[data-local-candidate="18"] .r3-scope-recovery[data-local-filtered="false"] button {padding-inline:10px;white-space:normal}}
+/* 2026-10-09 approved local refinement: UIV3-07 buttons, UIV3-08 restrained card hover. Route-help only. */
+main[data-local-candidate="18"] #route-help .r3-product-final {display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:32px}
+main[data-local-candidate="18"] #route-help .r3-product-final > a {display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:0 1 auto;min-height:46px;height:auto;width:auto;max-width:100%;margin:0;padding:11px 18px;border:1px solid var(--grecho-v3-brand);border-radius:var(--grecho-v3-radius-sm);font-size:13px;font-weight:800;line-height:1.2;text-align:center;text-decoration:none;transition:background-color 160ms ease,border-color 160ms ease,transform 160ms ease}
+main[data-local-candidate="18"] #route-help .r3-product-final > a:not(.grecho-v3-button) {background:white;color:var(--grecho-v3-brand);box-shadow:none}
+main[data-local-candidate="18"] #route-help .r3-product-final > a.grecho-v3-button {background:var(--grecho-v3-brand);color:white}
+main[data-local-candidate="18"] #route-help .r3-product-final > a > span {color:inherit}
+main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card,main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card span {text-decoration:none}
+main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card {transition:border-color 220ms cubic-bezier(.2,0,0,1),box-shadow 220ms cubic-bezier(.2,0,0,1),transform 220ms cubic-bezier(.2,0,0,1)}
+main[data-local-candidate="18"] #route-help :is(.r3-product-final > a,.gpl-hub-card):focus-visible {outline:3px solid #f8c44f;outline-offset:3px}
+main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card:focus-visible {border-color:var(--grecho-v3-brand)}
+@media(hover:hover) and (pointer:fine){
+ main[data-local-candidate="18"] #route-help .r3-product-final > a:hover {border-color:var(--grecho-v3-brand-deep);text-decoration:none;transform:translateY(-1px)}
+ main[data-local-candidate="18"] #route-help .r3-product-final > a.grecho-v3-button:hover {background:var(--grecho-v3-brand-deep)}
+ main[data-local-candidate="18"] #route-help .r3-product-final > a:not(.grecho-v3-button):hover {background:white;color:var(--grecho-v3-brand-deep)}
+ main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card:hover,main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card:hover span {text-decoration:none}
+ main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card:hover {border-color:var(--grecho-v3-brand);box-shadow:var(--grecho-v3-shadow-card);transform:translateY(-2px)}
+}
+@media(max-width:600px){main[data-local-candidate="18"] #route-help .r3-product-final {flex-direction:column;align-items:stretch}main[data-local-candidate="18"] #route-help .r3-product-final > a {flex:0 0 auto;width:100%}}
+@media(prefers-reduced-motion:reduce){main[data-local-candidate="18"] #route-help :is(.r3-product-final > a,.gpl-hub-card) {transition-duration:.01ms;transform:none}}
+
+/* Reduce uses matching hover specificity, after the capable-pointer rules. */
+@media(prefers-reduced-motion:reduce){
+ main[data-local-candidate="18"] #route-help .r3-product-final > a,
+ main[data-local-candidate="18"] #route-help .r3-product-final > a:hover,
+ main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card,
+ main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card:hover {transform:none;transition-duration:.01ms}
+}
+
+/* A coarse/touch pointer must not inherit the legacy unconditional Hub hover lift. */
+@media(hover:none),(pointer:coarse){
+ main[data-local-candidate="18"] #route-help .r3-solutions-grid .gpl-hub-card:hover,
+ main[data-local-candidate="18"] #route-help .r3-product-final > a:hover {transform:none}
+}

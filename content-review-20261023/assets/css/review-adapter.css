@@ -1,0 +1,45 @@
+/* Local review adapters only. All primary family layout values live in verbatim authority CSS. */
+html,body{margin:0;padding:0}body{font-family:Inter,Arial,"Helvetica Neue",sans-serif}
+/* Same shell reset as runtime/theme/assets/isolated-base.css. */
+.grecho-v3{padding-top:0}
+*,*::before,*::after{box-sizing:border-box}button{font:inherit}figure{margin:0}img{max-width:100%}
+.review-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 24px;padding:10px 18px;background:#102d50;color:white;font:12px/1.5 "Microsoft YaHei",sans-serif}
+.review-toolbar a{color:white;text-decoration:underline}.review-source{padding:12px 0;background:#f4f7fb;border-bottom:1px solid #dce4ee}
+.review-source>.grecho-v3-container{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.review-source-title{margin:0;font-size:12px}.review-source nav{display:flex;gap:12px;flex-wrap:wrap;font-size:12px}
+.review-section-label{font-size:11px!important;line-height:1.5!important;letter-spacing:.08em!important;margin:0 0 14px!important;font-weight:600!important;opacity:.76}
+.review-editorial{display:none}.review-delimiter{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.review-notes{background:#f1f5fa;padding:32px 0}.review-notes h2{font-size:18px}.review-notes p{font-size:13px;line-height:1.6;max-width:1000px}
+.review-copy-continuation{margin-top:32px}.review-bound-media{margin:0}.review-bound-media>img{display:block;width:100%;height:auto;object-fit:contain}
+.review-media-caption{font-size:11px!important;line-height:1.5!important;color:inherit!important;opacity:.72;margin:8px 0 0!important}
+.review-missing{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:220px;padding:24px;border:1px dashed #8b9bb2;background:#edf1f7;color:#34465c}
+.review-missing strong{font-size:17px}.review-missing p{color:inherit!important;font-size:13px!important;margin:9px 0 0!important}
+.grecho-v3 [aria-disabled="true"]{cursor:default}.grecho-v3 button:disabled{cursor:not-allowed;opacity:.68}.grecho-v3 a[aria-disabled=true]{pointer-events:none}
+.grecho-product p,.grecho-product h1,.grecho-product h2,.grecho-product h3,.grecho-product td,.grecho-product th{overflow-wrap:anywhere}
+.grecho-product-hero__copy .review-highlight-label{font-size:12px;color:white;margin:18px 0 8px}.grecho-product-hero__copy h3{color:white}
+.grecho-product-hero .review-section-label{color:#e0edff}
+.grecho-product-hero__copy .grecho-product-actions,.grecho-product-next__panel .grecho-product-actions{margin-top:24px}
+.grecho-product-next__panel .review-multi-source-actions>.grecho-product-actions{margin-top:0}
+.grecho-product-next__panel .review-multi-source-actions+p{margin-top:24px}
+.grecho-product-solution__points>.grecho-product-actions{grid-column:1/-1}
+.grecho-product-proof-card>img{object-fit:contain}.grecho-product-panel__copy h3:not(:first-child){margin-top:24px}
+.grecho-product-comparison figure img{aspect-ratio:auto;object-fit:contain}
+.grecho-product-specs__table table{border-collapse:collapse;width:100%;table-layout:fixed}.grecho-product-specs__table th,.grecho-product-specs__table td{white-space:normal}
+.grecho-product-applications figure .review-missing{height:100%;min-height:0;padding-bottom:70px}.grecho-product-applications figure:has(.review-missing){aspect-ratio:auto;min-height:300px}
+.grecho-product-applications figure h3{color:white;margin:0;font-size:inherit}.grecho-product-applications article>p{margin-top:16px}
+.grecho-product-faq details>p{white-space:normal}.grecho-product-next__panel h3{color:white}
+.grecho-existing.sample-task-page .review-hub-highlights{padding-left:18px;color:white;font-size:14px;line-height:1.65;margin:10px 0 0}
+.grecho-existing.sample-task-page .review-highlight-label{font-size:12px;margin-top:20px}
+.grecho-existing.sample-task-page .grecho-v1-hero-content>p+p{margin-top:16px}
+.grecho-existing.sample-task-page .gac-v1-section-dark .review-media-caption{color:white!important}
+/* Long source paragraphs added to the existing diagnostic band use its existing dark-CTA body colour. */
+.grecho-existing.sample-task-page .gac-v1-section-dark p{color:#dce7f3}
+.grecho-existing.sample-task-page .gac-v1-doc-card>.gc-actions{margin-top:auto;padding-top:20px}
+.grecho-existing.sample-task-page .gac-v1-doc-card button,.grecho-existing.sample-task-page .gac-v1-direction-card button{font-size:14px;text-align:left;padding:0;border:0;background:transparent;color:var(--grecho-v3-brand,#2462ac);height:auto;min-height:0}
+.grecho-existing.sample-task-page .grecho-v1-support-action-copy .gc-actions{margin-top:28px}
+.grecho-existing.sample-task-page .gac-v1-access-note{margin-top:32px}
+.grecho-existing.sample-task-page .gac-v1-material-layout figure>img{object-fit:contain}
+.grecho-existing.sample-task-page .sample-hub-doc-intro .review-bound-media>img{object-fit:contain}
+.grecho-existing.sample-task-page .gac-v1-doc-card{display:flex;flex-direction:column}
+.screen-reader-text{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+/* Only long-source-copy and table safety; no additional family breakpoint system. */
+@media(max-width:600px){.review-toolbar{justify-content:flex-start}.review-source nav{gap:10px}.grecho-product-specs__table th,.grecho-product-specs__table td{overflow-wrap:anywhere}.grecho-product-next__panel .review-multi-source-actions>.grecho-product-actions{width:100%}}

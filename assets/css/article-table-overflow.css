@@ -1,0 +1,10 @@
+/* Only the additive hint is styled. Existing table and scroll-region rules stay intact. */
+.grecho-existing.gc-article-page.sample-editorial-article .article-table-overflow-hint {
+  margin: 8px 0;
+  color: var(--editorial-muted, #526478);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.grecho-existing.gc-article-page.sample-editorial-article .article-table-overflow-hint[hidden] {
+  display: none;
+}

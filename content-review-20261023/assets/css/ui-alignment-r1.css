@@ -1,0 +1,425 @@
+/* Review-scoped integration of the existing V3 templates. Base family CSS stays
+   unchanged. The font uses the already-published root asset; no font is deployed.
+   Sources: grecho-homepage-v3-pilot.css, isolated-base.css, sitewide-remediation.css. */
+@font-face{font-family:"GRECHO Local Inter";src:url("../../../assets/fonts/Inter-VariableFont_slnt,wght.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+html,body{margin:0;padding:0}
+.grecho-isolated-v3 .grecho-v3{padding-top:0}
+.grecho-v3 img{max-width:100%}
+.grecho-v3 button.grecho-v3-button{font-family:inherit}
+.screen-reader-text{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);border:0}
+/* Same 28px review strip as the original reference. It remains outside main. */
+.grecho-public-preview-note{margin:0;padding:5px 14px;background:#edf3fa;color:#17334b;font:600 12px/18px Arial,sans-serif;text-align:center}
+.review-toolbar a{color:inherit;margin-left:12px;text-decoration:underline}
+.grecho-v3 [aria-disabled="true"]{cursor:not-allowed}
+.grecho-v3 a[aria-disabled="true"]{pointer-events:none}
+/* Disabled operational state is retained without dimming source text. */
+.grecho-v3 button:disabled{cursor:not-allowed;opacity:1}
+/* Added source fields use the existing component typography, not new copy. */
+.semantic-tagline{font-weight:400}
+.grecho-product p,.grecho-product h1,.grecho-product h2,.grecho-product h3,.grecho-existing h1,.grecho-existing h2{overflow-wrap:anywhere}
+.grecho-product-panel__copy h3:not(:first-child){margin-top:24px}
+.grecho-product-next__panel h3{color:#fff}
+/* Preserve full source illustration subjects. Ratios remain the template ratios. */
+.grecho-product-proof-card>img{object-fit:contain}
+.grecho-product-comparison figure img{object-fit:contain}
+.grecho-product-panel__figure img{display:block}
+.grecho-product-specs__table{overflow-x:auto}
+.grecho-product-specs__table table{min-width:600px}
+.grecho-product-applications figcaption{background:rgba(9,42,96,.94);padding:6px 10px;border-radius:4px;right:auto;max-width:calc(100% - 40px)}
+.grecho-product-applications figcaption h3{color:inherit;font-size:inherit;line-height:inherit;letter-spacing:inherit;margin:0}
+.grecho-product-applications article>p{margin:12px 0 0;font-size:14px;line-height:1.6}
+/* Qualifications are business content. Keep them legible and source-traceable. */
+.review-qualification{margin-top:24px;border-top:1px solid currentColor;padding-top:16px}
+.review-qualification p{font-size:14px;line-height:1.55;max-width:1000px}
+/* Hub fields retain H3/P semantics while reusing the reference span tokens. */
+.grecho-existing.sample-task-page .grecho-v1-hero-content>.gc-eyebrow{max-width:none}
+.grecho-existing.sample-task-page button.grecho-v3-button{font-size:13px;font-weight:800;line-height:1.2}
+.grecho-existing.sample-task-page .grecho-v1-actions button.grecho-v3-button{padding:11px 18px;border-radius:4px}
+.grecho-existing.sample-task-page h3.grecho-v1-card-base-title{font-family:inherit;letter-spacing:normal}
+.grecho-existing.sample-task-page .review-hub-highlights{padding-left:18px;color:#dce7f3;font-size:14px;line-height:1.65;margin:24px 0 0}
+.grecho-existing.sample-task-page .gac-v1-info-card h3,.grecho-existing.sample-task-page .gac-v1-material-card h3{margin-top:0}
+.grecho-existing.sample-task-page .gac-v1-section-dark p{color:#dce7f3}
+.grecho-existing.sample-task-page .gac-v1-challenge-item>div{min-width:0}
+.grecho-existing.sample-task-page .gac-v1-doc-card [data-field-role="DOCUMENT_SCOPE"]{overflow-wrap:anywhere}
+.grecho-existing.sample-task-page .gac-v1-doc-card:not(:has([data-field-role="DOCUMENT_SCOPE"])) .gac-v1-doc-link{margin-top:auto}
+.grecho-existing.sample-task-page .gac-v1-material-layout img,.grecho-existing.sample-task-page .sample-hub-doc-intro img{object-fit:contain}
+/* Accepted Low-Air background remains identical. The template's navy overlay is
+   strengthened only for its left text area; the verified foreground image stays. */
+[data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero{background-blend-mode:normal;position:relative}
+[data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(14,47,105,.86),rgba(14,47,105,.74) 52%,rgba(14,47,105,.12))}
+[data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero__grid{position:relative}
+@media(max-width:600px){
+ .grecho-product-specs tr>th:not(:first-child){width:auto}
+ .review-toolbar{padding-inline:5px;font-size:11px}
+ .review-toolbar a{margin-left:8px}
+ .grecho-product-specs__table th,.grecho-product-specs__table td{overflow-wrap:anywhere}
+ .grecho-existing.sample-task-page .grecho-v1-hero-content .grecho-v1-actions{max-width:100%}
+ .grecho-existing.sample-task-page .grecho-v1-hero-content .grecho-v1-actions button{white-space:normal;max-width:100%}
+ [data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero::before{background:rgba(14,47,105,.8)}
+}
+
+/* Bounded local visual candidate. Audit VIS-01..06 and TECH-01.
+   960px / 320px are tested candidates, pending Design Authority. */
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-proof-card > img {
+  display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; object-position:center;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure img {
+  display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; object-position:center;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure:has(img[data-media-binding="aluminum-foil-facers-for-thermal-insulation:b0031:rId6"]),
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure:has(img[data-media-binding="fiberglass-coated-veil-for-mineral-wool-roof-insulation:b0031:rId6"]),
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure:has(img[data-media-binding="fiberglass-coated-veil-for-pir-pur-insulation-boards:b0033:rId6"]),
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure:has(img[data-media-binding="acoustic-fiberglass-fabric:b0032:rId6"]),
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure:has(img[data-media-binding="wood-grain-acoustic-fiberglass-fabric:b0031:rId6"]),
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure:has(img[data-media-binding="fiberglass-coated-veil-for-gypsum-board:b0031:rId6"]),
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-comparison figure:has(img[data-media-binding="high-waterproof-fiberglass-coated-veil-for-gypsum-board:b0033:rId6"]) {
+  max-width:960px; margin-inline:auto;
+}
+
+.grecho-isolated-v3 [data-page-family="hub"].sample-acoustic-hub .sample-hub-doc-intro .gac-v1-media-card {
+  grid-template-columns:minmax(0,1fr); gap:0; width:100%; max-width:320px; justify-self:center;
+}
+
+.grecho-isolated-v3 [data-page-family="hub"].sample-acoustic-hub .sample-hub-doc-intro img[data-media-binding] {
+  display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; object-position:center;
+}
+
+.grecho-isolated-v3 [data-page-family="hub"].sample-acoustic-hub .gac-v1-final-cta .grecho-v1-review-cta-actions > button.grecho-v3-button {
+  min-height:46px; border-radius:4px; padding:11px 18px;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="acoustic-fiberglass-fabric:b0138:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="acoustic-fiberglass-fabric:b0143:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="acoustic-fiberglass-fabric:b0148:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="acoustic-fiberglass-fabric:b0153:rId14"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="aluminum-foil-facers-for-thermal-insulation:b0147:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="aluminum-foil-facers-for-thermal-insulation:b0152:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="aluminum-foil-facers-for-thermal-insulation:b0157:rId14"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="aluminum-foil-facers-for-thermal-insulation:b0162:rId15"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-gypsum-board:b0128:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-gypsum-board:b0133:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-gypsum-board:b0139:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-gypsum-board:b0144:rId14"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-mineral-wool-roof-insulation:b0144:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-mineral-wool-roof-insulation:b0151:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-mineral-wool-roof-insulation:b0157:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-mineral-wool-roof-insulation:b0164:rId14"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-pir-pur-insulation-boards:b0146:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-pir-pur-insulation-boards:b0152:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="fiberglass-coated-veil-for-pir-pur-insulation-boards:b0158:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-air-permeability-fiberglass-coated-veil:b0149:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-air-permeability-fiberglass-coated-veil:b0155:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-air-permeability-fiberglass-coated-veil:b0161:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-air-permeability-fiberglass-coated-veil:b0167:rId14"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-waterproof-fiberglass-coated-veil-for-gypsum-board:b0136:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-waterproof-fiberglass-coated-veil-for-gypsum-board:b0142:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-waterproof-fiberglass-coated-veil-for-gypsum-board:b0150:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="high-waterproof-fiberglass-coated-veil-for-gypsum-board:b0157:rId14"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="low-air-permeability-fiberglass-coated-veil:b0147:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="low-air-permeability-fiberglass-coated-veil:b0154:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="low-air-permeability-fiberglass-coated-veil:b0161:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="low-air-permeability-fiberglass-coated-veil:b0167:rId14"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="matte-black-fiberglass-coated-veil:b0133:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="matte-black-fiberglass-coated-veil:b0139:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="matte-black-fiberglass-coated-veil:b0145:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="uv-resistant-fiberglass-coated-veil:b0134:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="uv-resistant-fiberglass-coated-veil:b0141:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="uv-resistant-fiberglass-coated-veil:b0148:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="washable-fiberglass-coated-veil:b0134:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="washable-fiberglass-coated-veil:b0141:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="washable-fiberglass-coated-veil:b0148:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="white-acoustic-ceiling-facer:b0137:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="white-acoustic-ceiling-facer:b0141:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="white-acoustic-ceiling-facer:b0145:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="wood-grain-acoustic-fiberglass-fabric:b0146:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="wood-grain-acoustic-fiberglass-fabric:b0152:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="wood-grain-acoustic-fiberglass-fabric:b0158:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="wood-grain-fiberglass-coated-veil:b0136:rId11"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="wood-grain-fiberglass-coated-veil:b0142:rId12"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="wood-grain-fiberglass-coated-veil:b0149:rId13"] {
+  object-position:50% 85%;
+}
+
+.grecho-isolated-v3 [data-page-family="product"] .grecho-product-applications img[data-media-binding="wood-grain-fiberglass-coated-veil:b0156:rId14"] {
+  object-position:50% 85%;
+}
+
+@media (min-width:601px) and (max-width:760px) {
+.grecho-isolated-v3 [data-page-id="aluminum-foil-facers-for-thermal-insulation"] .grecho-product-proof .grecho-product-grid--four {
+  grid-template-columns:1fr; gap:22px;
+}
+}
+
+/* Image-viewer controls are UI only; these selectors never target business CTAs. */
+.grecho-v3 button.grecho-image-viewer-trigger {
+  display: block;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  min-height: 40px;
+  margin: 10px auto;
+  padding: 8px 14px;
+  border: 1px solid #16418b;
+  border-radius: 4px;
+  background: #fff;
+  color: #16418b;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  cursor: pointer;
+}
+.grecho-v3 button.grecho-image-viewer-trigger:hover { background: #edf3fa; }
+.grecho-v3 button.grecho-image-viewer-trigger:focus-visible,
+.grecho-image-viewer :focus-visible {
+  outline: 3px solid #2879cf;
+  outline-offset: 3px;
+}
+.grecho-image-viewer,
+.grecho-image-viewer * { box-sizing: border-box; }
+.grecho-image-viewer {
+  position: fixed;
+  inset: 0;
+  width: min(1280px, calc(100vw - 32px));
+  height: calc(100% - 32px);
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 16px;
+  border: 1px solid #b9c9db;
+  border-radius: 8px;
+  background: #fff;
+  color: #17334b;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+.grecho-image-viewer[open] {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  gap: 12px;
+}
+.grecho-image-viewer::backdrop { background: rgba(7, 24, 48, .8); }
+.grecho-image-viewer__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.grecho-image-viewer__heading { font-size: 18px; }
+.grecho-image-viewer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.grecho-image-viewer__control {
+  appearance: none;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #9daec2;
+  border-radius: 4px;
+  background: #fff;
+  color: #17334b;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.25;
+  cursor: pointer;
+}
+.grecho-image-viewer__control:hover:enabled { background: #edf3fa; }
+.grecho-image-viewer__control:disabled { opacity: .5; cursor: default; }
+.grecho-image-viewer__close {
+  border-color: #16418b;
+  background: #16418b;
+  color: #fff;
+  flex: none;
+}
+.grecho-image-viewer__close:hover:enabled { background: #0e2f69; }
+.grecho-image-viewer__status { margin-left: auto; white-space: nowrap; font-size: 13px; }
+.grecho-image-viewer__viewport {
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: #e8edf3;
+  border: 1px solid #c3cfdd;
+  border-radius: 4px;
+  touch-action: auto;
+}
+.grecho-image-viewer__canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+.grecho-image-viewer .grecho-image-viewer__image {
+  display: block;
+  flex: none;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  user-select: none;
+}
+.grecho-image-viewer__help { margin: 0; font-size: 12px; line-height: 1.4; }
+@media (max-width: 600px) {
+  .grecho-image-viewer {
+    width: calc(100vw - 16px);
+    height: calc(100% - 16px);
+    padding: 12px;
+  }
+  .grecho-image-viewer[open] { gap: 10px; }
+  .grecho-image-viewer__actions { gap: 6px; }
+  .grecho-image-viewer__control { padding-inline: 10px; font-size: 13px; }
+  .grecho-image-viewer__status { flex-basis: 100%; margin-left: 0; }
+}

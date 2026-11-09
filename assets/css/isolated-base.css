@@ -1,0 +1,3 @@
+/* Preserve the two approved layout resets when removing the preview review shell. */
+body.grecho-isolated-v3 { margin:0; }
+.grecho-isolated-v3 .grecho-v3 { padding-top:0; }

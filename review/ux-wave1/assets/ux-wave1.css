@@ -1,0 +1,157 @@
+/* UX_REVIEW_DRAFT. New styles are limited to candidate task areas. Approved hero rules remain inherited. */
+[data-ux-wave1] .ux-section {padding:56px 0; background:#fff; color:#17283b;}
+[data-ux-wave1] .ux-section:nth-of-type(odd){background:#f5f8fb}
+.ux-wrap{width:min(1160px,calc(100% - 64px));margin:0 auto}
+[data-ux-wave1] .ux-section h2{font-size:clamp(26px,3vw,38px);line-height:1.18;letter-spacing:-.025em;margin:0 0 12px;color:#13283d}
+[data-ux-wave1] .ux-section h3{font-size:22px;line-height:1.3;margin:0 0 10px;color:#17283b}
+[data-ux-wave1] .ux-section p{line-height:1.65;margin:0 0 14px;color:#425568}
+[data-ux-wave1] .ux-lead{max-width:800px;margin-bottom:26px!important}
+[data-ux-wave1] .ux-family,.ux-request-choice{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+[data-ux-wave1] .ux-chip{border:1px solid #9aabbb;border-radius:6px;background:#fff;color:#263c50;padding:10px 13px;min-height:44px;line-height:1.35;font:inherit;cursor:pointer}
+[data-ux-wave1] .ux-chip[aria-pressed=true]{background:#123e65;border-color:#123e65;color:#fff}
+[data-ux-wave1] button:disabled{cursor:default}
+[data-ux-wave1] .ux-filters{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;padding:20px 0;border-top:1px solid #d8e1e8}
+[data-ux-wave1] .ux-filter-group{padding:0;margin:0;border:0;min-width:0}
+[data-ux-wave1] .ux-filter-group legend{font-weight:650;margin-bottom:10px}
+[data-ux-wave1] .ux-filter-group .gpl-filter-options{display:flex;flex-wrap:wrap;gap:8px}
+[data-ux-wave1] .ux-filter-group .gpl-filter-check{display:flex;gap:6px;align-items:center;border:1px solid #d0dbe5;border-radius:5px;padding:7px 10px;background:#fff;min-height:40px;font-size:14px;line-height:1.35}
+[data-ux-wave1] .ux-filter-group input{accent-color:#145385;width:17px;height:17px;margin:0}
+[data-ux-wave1] .ux-more-filters,[data-ux-wave1] .ux-guidance{border-top:1px solid #d4dfe8;padding:14px 0}
+[data-ux-wave1] summary{cursor:pointer}
+[data-ux-wave1] .ux-more-filters>summary,[data-ux-wave1] .ux-guidance>summary{font-weight:650;color:#234662;min-height:32px}
+[data-ux-wave1] .ux-advanced{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:20px 0}
+[data-ux-wave1] .ux-result-line{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px;padding:24px 0 18px;border-top:1px solid #d8e1e8;margin:0}
+[data-ux-wave1] .ux-result-line h3{margin:0}
+[data-ux-wave1] .ux-result-line p{margin:0;flex:1}
+[data-ux-wave1] .ux-reset{border:1px solid #8396a8;background:#fff;color:#204c6d;padding:9px 14px;border-radius:4px;min-height:44px;font:inherit}
+[data-ux-wave1] .ux-fallback{font-size:14px}
+[data-ux-wave1][data-enhanced=true] .ux-fallback,[data-ux-wave1] [data-selector-ready=true] .ux-fallback{display:none}
+[data-ux-wave1] .ux-product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+[data-ux-wave1] .ux-product-card{border:1px solid #d3dfe7;border-radius:10px;background:#fff;overflow:hidden;box-shadow:none;min-width:0}
+[data-ux-wave1] .ux-product-image{display:block;width:100%;height:230px;object-fit:cover;object-position:center}
+[data-ux-wave1] .ux-product-copy{padding:24px}
+[data-ux-wave1] .ux-product-copy .gpl-product-summary{font-size:16px;line-height:1.55}
+[data-ux-wave1] .ux-tags{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0}
+[data-ux-wave1] .ux-tags span{font-size:13px;background:#eef3f7;color:#3c5266;border-radius:4px;padding:5px 8px}
+[data-ux-wave1] .ux-primary-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border-radius:5px;background:#126195;color:#fff!important;padding:10px 17px;text-decoration:none;font-weight:600;line-height:1.3}
+[data-ux-wave1] .ux-primary-action:hover{background:#0d456c}
+[data-ux-wave1] .ux-card-more{margin-top:19px;border-top:1px solid #d5dfe8;padding-top:14px;font-size:15px}
+[data-ux-wave1] .ux-card-more summary{color:#234662;font-weight:600;min-height:30px}
+[data-ux-wave1] .ux-card-more-body{padding-top:16px}
+[data-ux-wave1] .ux-route-facts .gpl-product-facts,[data-ux-wave1] .ux-route-facts .gpl-detail-meta{margin:12px 0;display:block}
+[data-ux-wave1] .ux-route-facts dl>div{display:grid;grid-template-columns:40% 1fr;gap:8px;padding:7px 0;border-top:1px solid #e3eaf0}
+[data-ux-wave1] .ux-route-facts dd{margin:0}
+[data-ux-wave1] .ux-route-facts dt{font-weight:600}
+[data-ux-wave1] .ux-route-facts .gpl-product-media-note,[data-ux-wave1] .ux-route-facts .gpl-product-media-code{display:none}
+[data-ux-wave1] .ux-text-links{display:flex;flex-wrap:wrap;gap:12px 20px;margin:16px 0}
+[data-ux-wave1] .ux-text-links a{color:#125989;text-decoration:underline;background:none;border:0;padding:0;line-height:1.6}
+[data-ux-wave1] .ux-steps{padding-left:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:24px 0}
+[data-ux-wave1] .ux-steps li{padding-left:5px}
+[data-ux-wave1] .ux-steps h3{font-size:19px}
+[data-ux-wave1] .ux-empty{padding:24px;background:#edf3f8;color:#173c57;border-radius:6px}
+[data-ux-wave1] [hidden]{display:none!important}
+[data-ux-wave1] .ux-resource-tools{display:grid;grid-template-columns:1.5fr 1fr auto;gap:20px;align-items:end;margin:24px 0}
+[data-ux-wave1] .ux-resource-tools label{font-weight:600}
+[data-ux-wave1] .ux-resource-tools input,[data-ux-wave1] .ux-resource-tools select{display:block;width:100%;height:46px;border:1px solid #8297aa;border-radius:4px;padding:10px 12px;margin-top:8px;background:#fff;color:#17324b;font:inherit}
+[data-ux-wave1] .ux-document-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+[data-ux-wave1] .ux-document{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:22px;border:1px solid #d5dfe8;border-radius:8px;background:#fff;align-items:start}
+[data-ux-wave1] .ux-document-image{width:100px;height:142px;object-fit:cover;border:1px solid #d7e1ea}
+[data-ux-wave1] .ux-doc-id{font-size:12px;color:#51687c;line-height:1.5}
+[data-ux-wave1] .ux-document-copy h3{font-size:19px}
+[data-ux-wave1] .ux-status{font-weight:650;color:#173e5c!important}
+[data-ux-wave1] .ux-document-copy>p:not(.ux-doc-id):not(.ux-status){font-size:14px}
+[data-ux-wave1] .ux-request-types{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px}
+[data-ux-wave1] .ux-doc-type{padding:22px 0;border-top:1px solid #d4dfe8;background:none;border-radius:0;box-shadow:none}
+[data-ux-wave1] .ux-doc-type h3{font-size:21px}
+[data-ux-wave1] .ux-doc-type a{display:inline-block;margin-top:8px;color:#125989;font-weight:650}
+[data-ux-wave1] .ux-access-guide{padding:20px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+[data-ux-wave1] .ux-contact-layout{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);gap:44px;margin-top:24px}
+[data-ux-wave1] .ux-preview-form{background:#fff;border:1px solid #d1dde7;border-radius:9px;padding:26px;min-width:0}
+[data-ux-wave1] .ux-preview-form fieldset{border:0;margin:0;padding:0;min-width:0}
+[data-ux-wave1] .ux-preview-form .ff_screen_reader_title{font-size:19px;clip:auto;position:static;height:auto;width:auto;overflow:visible;margin-bottom:20px}
+[data-ux-wave1] .ux-essential-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+[data-ux-wave1] .ux-essential-fields>.ff-el-group:first-child,[data-ux-wave1] .ux-essential-fields>.ff-el-group:last-child{grid-column:1/-1}
+[data-ux-wave1] .ux-preview-form .ff-el-group{margin:0 0 20px;min-width:0}
+[data-ux-wave1] .ux-preview-form label{display:inline-block;margin-bottom:8px;font-weight:600;font-size:15px;line-height:1.5}
+[data-ux-wave1] .ux-preview-form .ff-el-is-required label:after{content:" *";color:#744127}
+[data-ux-wave1] .ux-preview-form input:not([type=checkbox]),[data-ux-wave1] .ux-preview-form select,[data-ux-wave1] .ux-preview-form textarea{width:100%;border:1px solid #b6c5d1;border-radius:4px;background:#f4f7fa;color:#42596c;opacity:1;padding:11px 12px;font:inherit;box-sizing:border-box;min-height:46px}
+[data-ux-wave1] .ux-preview-form textarea{resize:none}
+[data-ux-wave1] .ux-extra-fields{padding:18px 0}
+[data-ux-wave1] .ux-preview-form input[type=checkbox]{margin-right:7px;flex-shrink:0}
+[data-ux-wave1] .ux-preview-form .ff-el-form-check-label{display:flex;align-items:baseline;gap:6px;font-weight:400}
+[data-ux-wave1] .ux-preview-form .grecho-demo-form-note{font-size:14px;border:0;background:transparent;padding:0;margin-bottom:22px}
+[data-ux-wave1] .grecho-form-privacy-notice p,[data-ux-wave1] .ux-preview-form .grecho-marketing-email-opt-in{font-size:13px;line-height:1.6}
+[data-ux-wave1] .ux-preview-form .ff-btn:disabled{background:#e2e9ef;color:#45586a;border:1px solid #bac9d6;padding:12px 20px;opacity:1}
+[data-ux-wave1] .ux-contact-help h3{font-size:20px;margin-top:22px}
+[data-ux-wave1] .ux-contact-help>.ux-guidance:first-of-type{margin-top:12px}
+[data-ux-wave1] .ux-help-copy{padding:15px 0;border-top:1px solid #d5dfe8}
+[data-ux-wave1] [data-ux-context]{padding:16px 0;border-top:1px solid #d4dfe8}
+[data-ux-wave1] [data-ux-context-text]{overflow-wrap:anywhere}
+[data-ux-wave1] .ux-shortcuts{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:26px;font-size:14px}
+[data-ux-wave1] .ux-shortcuts a{color:#165785;min-height:34px;text-decoration:underline}
+[data-ux-wave1] .ux-faq-heading{margin:0 0 20px}
+[data-ux-wave1] #faq-explorer .gfaq-filter-wrap{margin-bottom:20px}
+[data-ux-wave1] #faq-explorer .gfaq-main{margin-top:12px}
+[data-ux-wave1] #faq-explorer .gfaq-group{scroll-margin-top:140px}
+[data-ux-wave1] #faq-explorer .gfaq-item{scroll-margin-top:140px}
+[data-ux-wave1] #faq-explorer .gfaq-empty{padding:20px;margin:16px 0;background:#edf3f8}
+[data-ux-wave1] :where(a,button,input,select,summary):focus-visible{outline:3px solid #b96714;outline-offset:3px}
+[data-ux-wave1] :where(#request-form,#request-paths,#unified-request-form,#product-directory,#color-tds-library){scroll-margin-top:140px}
+.ux-index{font-family:Arial,sans-serif;background:#f7f9fc;color:#23394d;line-height:1.6;padding:48px 0}
+.ux-index h1{font-size:38px;line-height:1.15}.ux-index h2{font-size:25px}
+.ux-index table{border-collapse:collapse;width:100%;margin:28px 0;background:#fff}.ux-index th,.ux-index td{border:1px solid #d4dfe8;padding:16px;text-align:left}.ux-index a{color:#145b8c}
+@media(max-width:850px){
+ .ux-wrap{width:calc(100% - 40px)}
+ [data-ux-wave1] .ux-filters{grid-template-columns:1fr}
+ [data-ux-wave1] .ux-document-list{grid-template-columns:1fr}
+ [data-ux-wave1] .ux-contact-layout{grid-template-columns:1fr}
+ [data-ux-wave1] .ux-contact-help{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+}
+@media(max-width:600px){
+ .ux-wrap{width:calc(100% - 32px)}
+ [data-ux-wave1] .ux-section{padding:36px 0}
+ [data-ux-wave1] .ux-product-grid,[data-ux-wave1] .ux-advanced,[data-ux-wave1] .ux-steps,[data-ux-wave1] .ux-request-types,[data-ux-wave1] .ux-access-guide,[data-ux-wave1] .ux-contact-help,[data-ux-wave1] .ux-essential-fields{grid-template-columns:1fr}
+ [data-ux-wave1] .ux-product-image{height:205px}
+ [data-ux-wave1] .ux-product-copy{padding:20px}
+ [data-ux-wave1] .ux-chip{padding:9px 11px;font-size:14px}
+ [data-ux-wave1] .ux-resource-tools{grid-template-columns:1fr;gap:14px}
+ [data-ux-wave1] .ux-resource-tools button{justify-self:start}
+ [data-ux-wave1] .ux-document{grid-template-columns:65px 1fr;gap:14px;padding:16px}
+ [data-ux-wave1] .ux-document-image{width:65px;height:92px}
+ [data-ux-wave1] .ux-document-copy h3{font-size:18px}
+ [data-ux-wave1] .ux-preview-form{padding:20px}
+ [data-ux-wave1] .ux-result-line{gap:12px}
+ [data-ux-wave1] .ux-result-line h3,[data-ux-wave1] .ux-result-line p{width:100%;flex:auto}
+ [data-ux-wave1] #faq-explorer .gfaq-filter-wrap{display:block}
+ [data-ux-wave1] #faq-explorer .gfaq-topic-tabs{margin:14px 0}
+ [data-ux-wave1] #faq-explorer .gfaq-search{width:100%}
+ .ux-index{padding:24px 0}.ux-index h1{font-size:29px}.ux-index table,.ux-index tbody,.ux-index tr,.ux-index td,.ux-index th{display:block}.ux-index thead{display:none}.ux-index tr{margin-bottom:20px}
+}
+
+
+[data-ux-wave1] .ux-family-select{display:block;width:min(450px,100%);font-weight:650;margin:24px 0}
+[data-ux-wave1] .ux-family-select select{display:block;margin-top:9px;width:100%;height:48px;padding:9px 12px;border:1px solid #899eb0;border-radius:4px;background:#fff;font:inherit;color:#183b58}
+[data-ux-wave1] .ux-product-workspace{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;align-items:start}
+[data-ux-wave1] .ux-product-filter-panel{border-top:1px solid #cddae5;padding-top:14px}
+[data-ux-wave1] .ux-product-filter-panel>summary{font-weight:650;color:#204663;min-height:40px}
+[data-ux-wave1] .ux-product-filters .ux-filters{grid-template-columns:1fr;gap:22px;padding:14px 0;border:0}
+[data-ux-wave1] .ux-product-filters .ux-filter-group .gpl-filter-check{width:100%;margin:0;padding:9px 8px;background:#fff}
+[data-ux-wave1] .ux-product-filters .ux-advanced{grid-template-columns:1fr}
+[data-ux-wave1] .ux-product-results .ux-result-line{padding-top:12px}
+[data-ux-wave1] .ux-product-results .ux-product-copy{padding:20px}
+[data-ux-wave1] .ux-product-results .ux-product-image{height:210px}
+@media(max-width:850px){
+ [data-ux-wave1] .ux-product-workspace{grid-template-columns:1fr;gap:22px}
+ [data-ux-wave1] .ux-product-filters .ux-filter-group .gpl-filter-check{width:auto}
+ [data-ux-wave1] .ux-product-filters .ux-filters{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){[data-ux-wave1] .ux-product-filters .ux-filters{grid-template-columns:1fr}}
+
+[data-ux-wave1] .ux-preview-form fieldset{display:block!important}
+[data-ux-wave1] .ux-preview-form .ux-essential-fields>.ff-el-group{margin-bottom:0}
+[data-ux-wave1] .ux-preview-form .ux-essential-fields{margin-bottom:22px}
+[data-ux-wave1] .ux-guidance,[data-ux-wave1] .ux-more-filters,[data-ux-wave1] .ux-product-filter-panel,[data-ux-wave1] .ux-card-more{border:0;border-top:1px solid #d1dee8;border-radius:0;background:transparent;box-shadow:none;padding:14px 0}
+[data-ux-wave1] #faq-explorer .gfaq-topic-tabs{display:flex;flex-wrap:wrap;gap:8px}
+[data-ux-wave1] #faq-explorer .gfaq-tab{width:auto;flex:initial;min-height:44px;padding:9px 12px;font-size:14px}
+[data-ux-wave1] #faq-explorer .gfaq-filter-wrap{gap:14px}
+[data-ux-wave1] #faq-explorer .gfaq-group-head{margin-bottom:18px}

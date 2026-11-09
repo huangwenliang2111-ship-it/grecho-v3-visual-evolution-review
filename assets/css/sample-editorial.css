@@ -1,0 +1,279 @@
+/* Selected editorial samples only: V39, V48 and V66.
+   Reuse the frozen home palette, typography and containers. No shared overrides. */
+.grecho-existing.sample-editorial-page {
+  --editorial-rule: #d7e2ec;
+  --editorial-ink: #24354a;
+  --editorial-muted: #536a82;
+  overflow-wrap: break-word;
+}
+.grecho-existing.sample-editorial-page .gc-container { width: min(1120px, calc(100% - 48px)); }
+.grecho-existing.sample-editorial-page .sample-editorial-header {
+  background: var(--grecho-v3-tint);
+  padding: 36px 0 42px;
+  border-bottom: 1px solid var(--editorial-rule);
+}
+.grecho-existing.sample-editorial-page .sample-editorial-header h1 {
+  max-width: 1100px;
+  margin: 0 0 24px;
+  font-size: clamp(38px, 3.65vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -.04em;
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-heading,
+.grecho-existing.sample-editorial-page .sample-editorial-heading-copy { display: block; width: 100%; }
+.grecho-existing.sample-editorial-page .gia-breadcrumb {
+  display: block;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--editorial-muted);
+  padding-bottom: 22px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--editorial-rule);
+}
+.grecho-existing.sample-editorial-page .gia-breadcrumb > span[aria-hidden] { padding-inline: 6px; }
+.grecho-existing.sample-editorial-page .gia-breadcrumb a { color: var(--grecho-v3-brand); }
+.grecho-existing.sample-editorial-page .sample-editorial-header .gc-eyebrow {
+  margin: 0 0 14px;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: .13em;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-header .gia-summary,
+.grecho-existing.sample-editorial-page .sample-editorial-header .grecho-v1-hero-content > p {
+  max-width: 920px;
+  font-size: 18px;
+  line-height: 1.65;
+  margin: 0;
+  color: var(--editorial-muted);
+}
+.grecho-existing.sample-editorial-page .sample-editorial-byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 0;
+  margin: 28px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--editorial-rule);
+  color: var(--editorial-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-byline > * { padding-inline: 16px; border-left: 1px solid #b9cbdc; }
+.grecho-existing.sample-editorial-page .sample-editorial-byline > :first-child { padding-left: 0; border-left: 0; }
+.grecho-existing.sample-editorial-page .sample-editorial-byline a { color: var(--grecho-v3-brand); font-weight: 650; }
+.grecho-existing.sample-editorial-page .gia-content-section.gc-section { padding-block: 48px 56px; }
+.grecho-existing.sample-editorial-page .gia-content-layout,
+.grecho-existing.sample-editorial-page .sample-editorial-policy-layout {
+  display: grid;
+  grid-template-columns: 224px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+.grecho-existing.sample-editorial-page .gia-content { max-width: none; }
+.grecho-existing.sample-editorial-page .gia-sidebar,
+.grecho-existing.sample-editorial-page .gpp-v1-toc {
+  position: sticky;
+  top: max(145px, var(--grecho-v3-sticky-header-offset, 145px));
+  min-width: 0;
+}
+/* The disclosure replaces the long mobile contents wall, without removing links. */
+.grecho-existing.sample-editorial-page .sample-editorial-toc {
+  border: 0;
+  border-top: 3px solid var(--grecho-v3-brand);
+  border-radius: 0;
+  background: transparent;
+  margin: 0;
+  overflow: visible;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-toc-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 750;
+  color: var(--grecho-v3-text);
+  border: 0;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-toc-toggle::after { flex: 0 0 auto; margin: 0; font-size: 19px; font-weight: 400; }
+.grecho-existing.sample-editorial-page .gia-toc {
+  padding: 0 12px 10px 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-toc > nav { max-height: calc(100dvh - max(145px, var(--grecho-v3-sticky-header-offset, 145px)) - 80px); overflow: auto; scrollbar-width: thin; scrollbar-color: #c1d0df transparent; }
+.grecho-existing.sample-editorial-page .sample-editorial-toc ol { list-style: none; margin: 0; padding: 0; }
+.grecho-existing.sample-editorial-page .sample-editorial-toc li { margin: 0; padding: 0; }
+.grecho-existing.sample-editorial-page .sample-editorial-toc a {
+  display: block;
+  margin: 0;
+  padding: 9px 0;
+  border-bottom: 1px solid #e6ecf2;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--editorial-muted);
+  text-decoration: none;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-toc .is-h2 > a { font-weight: 650; color: var(--editorial-ink); }
+.grecho-existing.sample-editorial-page .sample-editorial-toc .is-h3 { border-left: 2px solid var(--editorial-rule); padding-left: 12px; margin-left: 2px; }
+.grecho-existing.sample-editorial-page .sample-editorial-toc a:hover,
+.grecho-existing.sample-editorial-page .sample-editorial-toc a:focus-visible { color: var(--grecho-v3-brand); text-decoration: underline; text-underline-offset: 3px; }
+.grecho-existing.sample-editorial-page :is(a,summary,[tabindex]):focus-visible { outline: 3px solid #4b83ba; outline-offset: 4px; }
+.grecho-existing.sample-editorial-page .gia-content p,
+.grecho-existing.sample-editorial-page .gpp-v1-content p,
+.grecho-existing.sample-editorial-page .gpp-v1-content li { color: var(--editorial-muted); font-size: 16px; line-height: 1.8; }
+.grecho-existing.sample-editorial-page .gia-content p,
+.grecho-existing.sample-editorial-page .gpp-v1-content p { margin: 0 0 20px; }
+.grecho-existing.sample-editorial-page .gia-content strong,
+.grecho-existing.sample-editorial-page .gpp-v1-content strong { color: var(--editorial-ink); }
+.grecho-existing.sample-editorial-page .sample-editorial-introduction {
+  margin-bottom: 38px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--editorial-rule);
+}
+.grecho-existing.sample-editorial-page .sample-editorial-introduction > p:first-child {
+  padding-left: 20px;
+  border-left: 3px solid var(--grecho-v3-brand);
+  font-size: 18px;
+  line-height: 1.65;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-introduction > p:first-child strong { font-weight: 600; }
+.grecho-existing.sample-editorial-page .gia-content .sample-editorial-chapter { margin: 0 0 40px; }
+.grecho-existing.sample-editorial-page .gia-content h2 {
+  margin: 0 0 20px;
+  max-width: 790px;
+  font-size: clamp(25px, 2.15vw, 31px);
+  line-height: 1.23;
+  letter-spacing: -.025em;
+  text-wrap: pretty;
+}
+.grecho-existing.sample-editorial-page .gia-content h3 { margin: 30px 0 14px; font-size: 21px; line-height: 1.4; letter-spacing: -.015em; }
+.grecho-existing.sample-editorial-page .gia-content ul,
+.grecho-existing.sample-editorial-page .gia-content ol { color: var(--editorial-muted); line-height: 1.75; }
+.grecho-existing.sample-editorial-page .gia-content figure { margin: 24px 0; }
+.grecho-existing.sample-editorial-page blockquote { margin: 24px 0; padding: 24px; border-left-width: 3px; }
+.grecho-existing.sample-editorial-page blockquote p:last-child { margin-bottom: 0; }
+/* Explicit column models keep long evidence cells readable and overflow local. */
+.grecho-existing.sample-editorial-page .sample-editorial-table {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  margin: 24px 0;
+  border: 1px solid var(--editorial-rule);
+  border-radius: 4px;
+  scrollbar-width: auto;
+  scrollbar-color: #a0b6cc #ecf1f6;
+}
+.grecho-existing.sample-editorial-page .sample-editorial-table::-webkit-scrollbar { height: 10px; }
+.grecho-existing.sample-editorial-page .sample-editorial-table::-webkit-scrollbar-track { background: #ecf1f6; }
+.grecho-existing.sample-editorial-page .sample-editorial-table::-webkit-scrollbar-thumb { background: #a0b6cc; border: 2px solid #ecf1f6; border-radius: 8px; }
+.grecho-existing.sample-editorial-page .sample-editorial-table table { table-layout: fixed; font-size: 14px; line-height: 1.65; width: 100%; }
+.grecho-existing.sample-editorial-page .sample-editorial-table-3cols { min-width: 650px; }
+.grecho-existing.sample-editorial-page .sample-editorial-table-3cols tr > :first-child { width: 24%; }
+.grecho-existing.sample-editorial-page .sample-editorial-table-3cols tr > :nth-child(2),
+.grecho-existing.sample-editorial-page .sample-editorial-table-3cols tr > :nth-child(3) { width: 38%; }
+/* Fit the complete five-column comparison within the 840px desktop reading rail;
+   below 800px, keep the existing local horizontal-scroll boundary. */
+.grecho-existing.sample-editorial-page .sample-editorial-table table.sample-editorial-table-5cols { min-width: 800px; }
+.grecho-existing.sample-editorial-page .sample-editorial-table .sample-editorial-table-5cols th,
+.grecho-existing.sample-editorial-page .sample-editorial-table .sample-editorial-table-5cols td { padding: 14px; }
+.grecho-existing.sample-editorial-page .sample-editorial-table-5cols tr > :first-child { width: 16%; }
+.grecho-existing.sample-editorial-page .sample-editorial-table-5cols tr > :not(:first-child) { width: 21%; }
+.grecho-existing.sample-editorial-page .sample-editorial-table th,
+.grecho-existing.sample-editorial-page .sample-editorial-table td { padding: 16px 18px; overflow-wrap: normal; word-break: normal; vertical-align: top; border-bottom: 1px solid var(--editorial-rule); }
+.grecho-existing.sample-editorial-page .sample-editorial-table th { color: var(--grecho-v3-brand-deep); font-size: 13px; line-height: 1.5; background: #eaf1f8; }
+.grecho-existing.sample-editorial-page .sample-editorial-table tbody tr:nth-child(even) td { background: #f8fafc; }
+.grecho-existing.sample-editorial-page .sample-editorial-table tr:last-child td { border-bottom: 0; }
+.grecho-existing.sample-editorial-page .sample-editorial-table caption { padding: 14px 18px; background: #f8fafc; color: var(--editorial-muted); text-align: left; font-size: 12px; line-height: 1.6; border-bottom: 1px solid var(--editorial-rule); }
+.grecho-existing.sample-editorial-page .gia-related-section.gc-section { padding-block: 48px; border-top: 1px solid var(--editorial-rule); background: #f8fafc; }
+.grecho-existing.sample-editorial-page .gia-related-section .gc-section-head { margin-bottom: 26px; }
+.grecho-existing.sample-editorial-page .gia-related-section .gc-section-head > span,
+.grecho-existing.sample-editorial-page .gia-final-panel > div > span { display: block; margin-bottom: 10px; color: var(--editorial-muted); font-size: 12px; }
+.grecho-existing.sample-editorial-page .gia-related-section .gc-section-head h2 { font-size: 32px; line-height: 1.17; letter-spacing: -.025em; margin-bottom: 16px; }
+.grecho-existing.sample-editorial-page .gia-route-card { box-shadow: none; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; }
+.grecho-existing.sample-editorial-page .gia-route-card h3 { font-size: 19px; line-height: 1.4; }
+.grecho-existing.sample-editorial-page .gia-route-card p { font-size: 14px; }
+.grecho-existing.sample-editorial-page .gia-route-card__cta { margin-top: auto; font-size: 12px; color: var(--grecho-v3-brand); }
+.grecho-existing.sample-editorial-page .gia-final-cta.gc-section { padding-block: 40px 56px; }
+.grecho-existing.sample-editorial-page .gia-final-panel { border: 0; border-left: 3px solid var(--grecho-v3-brand); border-radius: 0; box-shadow: none; background: var(--grecho-v3-tint); padding: 30px 34px; }
+.grecho-existing.sample-editorial-page .gia-final-panel h2 { font-size: 27px; line-height: 1.25; }
+/* Privacy is a continuous document rather than eighteen landing-page sections. */
+.grecho-existing.sample-editorial-policy .sample-editorial-header { padding-block: 48px; }
+.grecho-existing.sample-editorial-policy .sample-editorial-header h1 { font-size: clamp(38px, 3.65vw, 52px); }
+.grecho-existing.sample-editorial-policy .gpp-v1-main { padding: 48px 0 64px; }
+.grecho-existing.sample-editorial-policy .sample-editorial-policy-summary { padding: 24px 28px; margin: 0 0 36px; background: var(--grecho-v3-tint); border-top: 3px solid var(--grecho-v3-brand); }
+.grecho-existing.sample-editorial-policy .sample-editorial-policy-summary > span { display: block; margin-bottom: 12px; color: var(--grecho-v3-brand); font-size: 12px; font-weight: 700; }
+.grecho-existing.sample-editorial-policy .sample-editorial-policy-summary h2 { font-size: 27px; line-height: 1.3; letter-spacing: -.025em; margin-bottom: 18px; }
+.grecho-existing.sample-editorial-policy .gpp-v1-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; padding-top: 18px; margin-top: 22px; border-top: 1px solid var(--editorial-rule); font-size: 12px; line-height: 1.65; color: var(--editorial-muted); }
+.grecho-existing.sample-editorial-policy .gpp-v1-meta > :last-child { grid-column: 1 / -1; }
+.grecho-existing.sample-editorial-policy .gpp-v1-meta strong { margin-right: 4px; }
+.grecho-existing.sample-editorial-policy .gpp-v1-section { padding: 28px 0; margin: 0; border-top: 1px solid var(--editorial-rule); }
+.grecho-existing.sample-editorial-policy .gpp-v1-section h2 { font-size: 27px; line-height: 1.3; margin: 0 0 20px; letter-spacing: -.025em; }
+.grecho-existing.sample-editorial-policy .gpp-v1-section h3 { font-size: 19px; line-height: 1.45; margin: 25px 0 12px; }
+.grecho-existing.sample-editorial-policy .gpp-v1-section p:last-child { margin-bottom: 0; }
+.grecho-existing.sample-editorial-policy .gpp-v1-content ul { margin-block: 4px 20px; padding-left: 23px; }
+.grecho-existing.sample-editorial-policy .gpp-v1-content li { margin-block: 5px; }
+.grecho-existing.sample-editorial-policy .gpp-v1-card { margin: 24px 0; padding: 24px; border: 0; border-left: 2px solid #b3c6da; background: #f8fafc; border-radius: 0; box-shadow: none; }
+.grecho-existing.sample-editorial-policy .gpp-v1-content a { color: var(--grecho-v3-brand); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 1050px) {
+  .grecho-existing.sample-editorial-page .gia-content-layout,
+  .grecho-existing.sample-editorial-page .sample-editorial-policy-layout { grid-template-columns: 200px minmax(0,1fr); gap: 32px; }
+}
+@media (max-width: 850px) {
+  .grecho-existing.sample-editorial-page .gc-container { width: calc(100% - 40px); }
+  .grecho-existing.sample-editorial-page .gia-content-layout,
+  .grecho-existing.sample-editorial-page .sample-editorial-policy-layout { grid-template-columns: minmax(0,1fr); gap: 28px; }
+  .grecho-existing.sample-editorial-page .gia-sidebar,
+  .grecho-existing.sample-editorial-page .gpp-v1-toc { position: static; }
+  .grecho-existing.sample-editorial-page .sample-editorial-toc { border: 1px solid var(--editorial-rule); border-radius: 4px; background: #f8fafc; }
+  .grecho-existing.sample-editorial-page .sample-editorial-toc-toggle { padding: 16px 18px; }
+  .grecho-existing.sample-editorial-page .sample-editorial-toc > nav { padding: 0 18px 16px; max-height: 48dvh; }
+  .grecho-existing.sample-editorial-page .sample-editorial-toc a { font-size: 13px; padding-block: 11px; }
+  .grecho-existing.sample-editorial-page .gia-content-section.gc-section { padding-block: 28px 40px; }
+  .grecho-existing.sample-editorial-policy .gpp-v1-main { padding-block: 28px 48px; }
+}
+@media (max-width: 600px) {
+  .grecho-existing.sample-editorial-page .gc-container { width: calc(100% - 32px); }
+  .grecho-existing.sample-editorial-page .sample-editorial-header { padding-block: 24px 28px; }
+  .grecho-existing.sample-editorial-page .gia-breadcrumb { padding-bottom: 14px; margin-bottom: 22px; font-size: 12px; }
+  .grecho-existing.sample-editorial-page .sample-editorial-breadcrumb-current,
+  .grecho-existing.sample-editorial-page .sample-editorial-breadcrumb-current-separator { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .grecho-existing.sample-editorial-page .sample-editorial-header h1 { font-size: clamp(32px, 8vw, 37px); line-height: 1.16; letter-spacing: -.035em; margin-bottom: 22px; text-wrap: pretty; }
+  .grecho-existing.sample-editorial-page .sample-editorial-header .gc-eyebrow { font-size: 10px; margin-bottom: 12px; }
+  .grecho-existing.sample-editorial-page .sample-editorial-header .gia-summary,
+  .grecho-existing.sample-editorial-page .sample-editorial-header .grecho-v1-hero-content > p { font-size: 16px; line-height: 1.7; }
+  .grecho-existing.sample-editorial-page .sample-editorial-byline { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; margin-top: 24px; padding-top: 16px; font-size: 11px; }
+  .grecho-existing.sample-editorial-page .sample-editorial-byline > * { padding: 0; border: 0; }
+  .grecho-existing.sample-editorial-page .sample-editorial-byline > :nth-child(even) { padding-left: 12px; border-left: 1px solid #b9cbdc; }
+  .grecho-existing.sample-editorial-page .sample-editorial-introduction { margin-bottom: 30px; }
+  .grecho-existing.sample-editorial-page .sample-editorial-introduction > p:first-child { padding-left: 16px; font-size: 17px; line-height: 1.75; }
+  .grecho-existing.sample-editorial-page .gia-content h2 { font-size: 25px; line-height: 1.3; margin-bottom: 18px; }
+  .grecho-existing.sample-editorial-page .gia-content h3 { font-size: 20px; }
+  .grecho-existing.sample-editorial-page .gia-content .sample-editorial-chapter { margin-bottom: 32px; }
+  .grecho-existing.sample-editorial-page .sample-editorial-table th,
+  .grecho-existing.sample-editorial-page .sample-editorial-table td { padding: 14px 16px; }
+  .grecho-existing.sample-editorial-page .gia-related-section.gc-section { padding-block: 36px; }
+  .grecho-existing.sample-editorial-page .gia-related-section .gc-section-head h2 { font-size: 28px; }
+  .grecho-existing.sample-editorial-page .gia-related-grid { gap: 14px; }
+  .grecho-existing.sample-editorial-page .gia-final-cta.gc-section { padding-block: 28px 40px; }
+  .grecho-existing.sample-editorial-page .gia-final-panel { padding: 24px; }
+  .grecho-existing.sample-editorial-page .gia-final-panel h2 { font-size: 25px; }
+  .grecho-existing.sample-editorial-policy .sample-editorial-header { padding-block: 36px; }
+  .grecho-existing.sample-editorial-policy .sample-editorial-header h1 { font-size: 36px; }
+  .grecho-existing.sample-editorial-policy .sample-editorial-policy-summary { padding: 22px; margin-bottom: 30px; }
+  .grecho-existing.sample-editorial-policy .sample-editorial-policy-summary h2 { font-size: 24px; }
+  .grecho-existing.sample-editorial-policy .gpp-v1-meta { grid-template-columns: minmax(0,1fr); }
+  .grecho-existing.sample-editorial-policy .gpp-v1-section { padding-block: 24px; }
+  .grecho-existing.sample-editorial-policy .gpp-v1-section h2 { font-size: 25px; }
+}
+.grecho-existing.sample-editorial-page .sample-editorial-token { white-space: nowrap; }

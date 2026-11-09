@@ -1,0 +1,65 @@
+/* LOCAL CANDIDATE EDITORIAL-LIST-01. Parents UIV3-07/08/15/16; Featured13 + Latest6 intact. */
+main[data-local-candidate="22"] #featured-insights {background:var(--grecho-v3-tint);padding-block:64px 80px}
+main[data-local-candidate="22"] #featured-insights .ginsights-article-grid {gap:22px;align-items:stretch}
+main[data-local-candidate="22"] #featured-insights .ginsights-article-card {border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);overflow:hidden;box-shadow:var(--grecho-v3-shadow-card);background:white;display:flex;flex-direction:column}
+main[data-local-candidate="22"] .ginsights-article-card>img {object-fit:contain;background:white;border-radius:0}
+main[data-local-candidate="22"] .ginsights-article-body {padding:27px 29px 30px;display:flex;flex-direction:column;flex:1;align-items:flex-start}
+main[data-local-candidate="22"] .ginsights-article-body>a {margin-top:auto;min-height:44px;display:inline-flex;align-items:center;text-decoration:underline;text-underline-offset:3px}
+main[data-local-candidate="22"] .local-editorial-type {display:inline-flex;font-size:11px;line-height:1.4;font-weight:800;color:var(--grecho-v3-muted);border:1px solid var(--grecho-v3-border);border-radius:4px;padding:4px 7px;margin:0 0 12px}
+main[data-local-candidate="22"] [data-local-content-type="Solution Hub"] .local-editorial-type {background:var(--grecho-v3-tint-strong);color:var(--grecho-v3-brand);border-color:var(--grecho-v3-brand)}
+main[data-local-candidate="22"] #featured-insights .ginsights-article-card:first-child:not([hidden]) {grid-column:1/-1;display:grid;grid-template-columns:1.1fr 1fr}
+main[data-local-candidate="22"] #featured-insights .ginsights-article-card:first-child>img {height:100%;aspect-ratio:auto;object-fit:contain;background:#fff}
+main[data-local-candidate="22"] #featured-insights .ginsights-article-card:first-child h3 {font-size:30px;line-height:1.16}
+main[data-local-candidate="22"] #latest-insights .ginsights-article-grid {grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+main[data-local-candidate="22"] #latest-insights .ginsights-article-card {display:flex;flex-direction:column}
+main[data-local-candidate="22"] #latest-insights .ginsights-article-body {padding:22px 0 0}
+main[data-local-candidate="22"] #latest-insights .ginsights-article-body h3 {font-size:21px;line-height:1.25}
+main[data-local-candidate="22"] #topics {border-block:1px solid var(--grecho-v3-border);background:var(--grecho-v3-tint);padding-block:48px}
+main[data-local-candidate="22"] :is(a,button):focus-visible {outline:3px solid #f8c44f;outline-offset:3px}
+@media(max-width:850px){main[data-local-candidate="22"] #latest-insights .ginsights-article-grid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){main[data-local-candidate="22"] #featured-insights {padding-block:48px 56px}main[data-local-candidate="22"] #featured-insights .ginsights-article-card:first-child:not([hidden]) {display:flex;grid-column:auto}main[data-local-candidate="22"] #featured-insights .ginsights-article-card:first-child>img {height:auto;aspect-ratio:16/9}main[data-local-candidate="22"] #featured-insights .ginsights-article-card:first-child h3 {font-size:25px}main[data-local-candidate="22"] .ginsights-article-body {padding:22px}main[data-local-candidate="22"] #latest-insights .ginsights-article-grid {grid-template-columns:1fr}main[data-local-candidate="22"] #topics {padding-block:36px}}
+
+/* 2026-10-09 local refinement F/G. UIV3-08 lift/easing, UIV3-09 hover
+   shadow reused. Focus emphasis intentionally has no motion.
+   Latest selectors include .gc-card to override final-insights' local
+   list reset without changing shared CSS or adding !important. */
+main[data-local-candidate="22"] #latest-insights .ginsights-article-card.gc-card {
+  padding:0;
+  border:1px solid var(--grecho-v3-border);
+  border-radius:var(--grecho-v3-radius-md);
+  background:var(--grecho-v3-white);
+  box-shadow:var(--grecho-v3-shadow-card);
+  overflow:hidden;
+}
+main[data-local-candidate="22"] #latest-insights .ginsights-article-card.gc-card>img {
+  border-radius:0;
+  margin:0;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  background:var(--grecho-v3-white);
+}
+main[data-local-candidate="22"] #latest-insights .ginsights-article-card .ginsights-article-body {
+  padding:22px;
+}
+main[data-local-candidate="22"] :is(#featured-insights,#latest-insights) .ginsights-article-card.gc-card {
+  transition:transform 0.22s cubic-bezier(0.2,0,0,1),border-color 0.22s cubic-bezier(0.2,0,0,1),box-shadow 0.22s cubic-bezier(0.2,0,0,1);
+}
+main[data-local-candidate="22"] :is(#featured-insights,#latest-insights) .ginsights-article-card.gc-card:focus-within {
+  border-color:var(--grecho-v3-brand);
+  box-shadow:0 18px 34px rgba(29,65,95,0.13);
+}
+@media (hover:hover) and (pointer:fine) {
+  main[data-local-candidate="22"] :is(#featured-insights,#latest-insights) .ginsights-article-card.gc-card:hover {
+    transform:translateY(-2px);
+    border-color:var(--grecho-v3-brand);
+    box-shadow:0 18px 34px rgba(29,65,95,0.13);
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  main[data-local-candidate="22"] :is(#featured-insights,#latest-insights) .ginsights-article-card.gc-card,
+  main[data-local-candidate="22"] :is(#featured-insights,#latest-insights) .ginsights-article-card.gc-card:hover,
+  main[data-local-candidate="22"] :is(#featured-insights,#latest-insights) .ginsights-article-card.gc-card:focus-within {
+    transform:none;
+    transition:none;
+  }
+}

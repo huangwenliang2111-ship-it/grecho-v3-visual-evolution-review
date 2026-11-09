@@ -1,0 +1,6 @@
+/* Native navigation is displayed only by the renderer's noscript branch. */
+.grecho-v3-nojs-nav { display:grid; gap:0.75rem; max-width:1200px; margin:1rem auto; padding:0 1rem; font:inherit; color:inherit; }
+.grecho-v3-nojs-nav details { border:1px solid #d8dde5; border-radius:6px; padding:0.75rem 1rem; background:#fff; }
+.grecho-v3-nojs-nav summary { cursor:pointer; font-weight:600; }
+.grecho-v3-nojs-nav details > div { display:grid; gap:0.65rem; padding-top:0.75rem; }
+.grecho-v3-nojs-nav .is-held { opacity:0.65; }

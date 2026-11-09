@@ -1,0 +1,90 @@
+/* Application R1 local review. Scope does not alter the accepted site shell. */
+.application-review{--app-ink:#123b7a;--app-copy:#233f60;color:var(--app-copy);font-size:16px;line-height:26px}
+.application-review *{box-sizing:border-box}
+.application-review .wrap{width:calc(100% - 40px);max-width:var(--grecho-ui-r1-width,1200px);margin-inline:auto}
+.application-review .section{padding:80px 0;scroll-margin-top:100px}
+.application-review a{color:#164a9a;text-decoration:none}
+.application-review a:hover{text-decoration:underline}
+.application-review :is(a,button,input,select,textarea):focus-visible{outline:3px solid #1b4aa1;outline-offset:4px}
+.application-review :is(h1,h2,h3){color:var(--app-ink);margin:0 0 20px;font-weight:700;overflow-wrap:anywhere}
+.application-review p{margin:0 0 20px;font-size:16px;line-height:26px}
+.application-review h1 em{font:inherit}
+.application-review .kicker,.application-review .number,.application-review .solution-label{font-size:12px;line-height:20px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#123b7a}
+.application-review .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#1b4aa1;color:#fff;border:1px solid #1b4aa1;border-radius:5px;padding:12px 18px;font-family:inherit;font-size:14px;line-height:22px;font-weight:700;min-height:48px;cursor:pointer;text-align:center}
+.application-review .btn-light{background:#fff;color:#123b7a}
+.application-review .btn:disabled{cursor:default;opacity:.65}
+.application-review-note{background:#f0f6fc;padding:12px 20px;text-align:center;font-size:14px}
+.application-review .hero{background:linear-gradient(90deg,rgba(231,242,255,.96),rgba(231,242,255,.9)),var(--application-hero-image) center/cover;padding:64px 0;position:relative}
+.application-review .hero::before,.application-review .hero::after{content:none}
+.application-review .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.application-review .hero .kicker{margin:20px 0}
+.application-review .mini-breadcrumb{font-size:12px;line-height:20px;color:#233f60}
+.application-review .hero p{font-size:18px;line-height:28px}
+.application-review .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.application-review .hero-actions .btn:nth-child(2){background:#fff;color:#123b7a}
+.application-review .hero-figure{margin:0;min-width:0}
+.application-review .hero-figure img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:12px;display:block}
+.application-review .section-top{text-align:center;max-width:var(--grecho-ui-r1-reading,736px);margin:0 auto 40px}
+.application-review .section-top h2{margin-top:12px}
+.application-review .app-grid,.application-review .product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.application-review .app-card,.application-review .product-card{display:flex;flex-direction:column;border:1px solid #dbe5f0;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 8px 24px #16334d0a}
+.application-review .app-card-media{aspect-ratio:16/10;overflow:hidden}
+.application-review .app-card-media img{display:block;width:100%;height:100%;object-fit:cover}
+.application-review .app-card-details,.application-review .product-copy{padding:24px;flex:1}
+.application-review .app-card-details h3,.application-review .product-copy h3{margin-top:12px}
+.application-review .app-link{font-size:14px;font-weight:700}
+.application-review .solutions,.application-review .custom{background:#f0f6fc}
+.application-review .solution-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:24px}
+.application-review .solution-tab{display:flex;align-items:center;gap:14px;min-height:78px;min-width:0;padding:15px 18px;border:1px solid #ccdbea;background:#fff;border-radius:10px;box-shadow:0 8px 24px #16334d0a;font-size:14px;line-height:22px;font-weight:700}
+.application-review .solution-tab[aria-selected=true]{border-color:#1b4aa1;box-shadow:0 0 0 1px #1b4aa1,0 8px 24px #16334d0a;color:#123b7a}
+.application-review .solutions-layout{display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid #dbe5f0;border-radius:12px;overflow:hidden;margin-bottom:24px;scroll-margin-top:110px}
+.application-review [hidden]{display:none!important}
+.application-review .solution-photo{position:relative;min-width:0;background:#e7eef5;display:flex;flex-direction:column;justify-content:center}
+.application-review .solution-photo img{width:100%;height:auto;max-height:680px;object-fit:contain;display:block}
+.application-review .photo-tag{padding:16px;background:#fff;font-size:12px;line-height:20px;font-weight:700}
+.application-review .solution-copy{padding:36px;min-width:0}
+.application-review .solution-head{display:flex;gap:15px;justify-content:space-between;margin-bottom:20px}
+.application-review .count{white-space:nowrap;font-size:12px}
+.application-review .solution-products{border-top:1px solid #dbe5f0;padding-top:20px}
+.application-review .product-tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 24px}
+.application-review .tag{background:#e7f2ff;color:#123b7a;padding:8px 10px;border-radius:5px;font-size:14px;line-height:22px}
+.application-review .group-heading{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #dbe5f0;margin:40px 0 24px;padding-bottom:12px}
+.application-review .group-heading span{white-space:nowrap;font-size:12px}
+.application-review .product-image{height:270px;background:#f5f8fb}
+.application-review .product-image img{height:100%;width:100%;object-fit:contain;display:block}
+.application-review .custom-layout{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px}
+.application-review .custom-visual img{width:100%;height:auto;border-radius:12px;display:block}
+.application-review .custom-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+.application-review .custom-item{display:grid;grid-template-columns:32px minmax(0,1fr);gap:0 12px;align-content:start;padding:18px;background:#fff;border:1px solid #dbe5f0;border-radius:10px}
+.application-review .custom-icon{display:grid;place-items:center;grid-row:1/3;width:32px;height:32px;border-radius:6px;background:#e7f2ff;color:#1b4aa1}
+.application-review .cta{background:#fff}
+.application-review .cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:48px;border-radius:14px;background:linear-gradient(100deg,rgba(9,42,96,.96),rgba(36,71,131,.92)),url('../content-review-20261023/assets/images/product/cta-background-1448.webp') center/cover;color:#fff}
+.application-review .cta-inner>div :is(h2,p,.kicker){color:#fff}
+.application-review .application-contacts{margin-top:28px}
+.application-review .application-contacts p{display:flex;gap:10px;flex-wrap:wrap;font-size:15px}
+.application-review .sr-label{position:absolute;clip-path:inset(50%);height:1px;width:1px;overflow:hidden}
+.application-review .form{padding:30px;background:white;color:#233f60;border-radius:10px;min-width:0}
+.application-review .field{margin:0 0 20px}
+.application-review .field label,.application-review #inquiryResult label{display:block;font-size:14px;font-weight:700;margin-bottom:8px}
+.application-review input,.application-review select,.application-review textarea{font:inherit;width:100%;min-width:0;border:1px solid #afc2da;border-radius:4px;background:#f7faff;padding:11px;min-height:46px;color:#233f60}
+.application-review textarea{min-height:120px;resize:vertical}
+.application-review .form-note{font-size:14px;line-height:22px;margin-top:20px}
+.application-review #inquiryResult{margin-top:24px}
+@media(max-width:1000px){.application-review .hero-inner,.application-review .custom-layout,.application-review .cta-inner{gap:28px}.application-review .app-grid,.application-review .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.application-review .solution-copy{padding:24px}.application-review .cta-inner{padding:32px}}
+@media(max-width:760px){.application-review .section{padding:48px 0}.application-review .hero{padding:40px 0;min-height:0}.application-review .hero-inner,.application-review .solutions-layout,.application-review .custom-layout,.application-review .cta-inner,.application-review .app-grid,.application-review .product-grid{grid-template-columns:1fr}.application-review .hero p{font-size:16px;line-height:26px}.application-review .hero-actions{display:grid}.application-review .solution-photo img{max-height:none}.application-review .cta-inner{padding:24px}.application-review .form{padding:20px}.application-review .custom-grid{grid-template-columns:1fr}.application-review .solution-tabs{gap:8px}.application-review .solution-tab{padding:12px}.application-review .section-top{text-align:left}}
+
+/* Application UI alignment: decorative source SVGs and scoped inquiry presentation. */
+.application-review .solution-tabs--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.application-review .solution-icon{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border-radius:8px;background:#e7f2ff;color:#1b4aa1}
+.application-review .solution-tab[aria-selected=true] .solution-icon{background:#1b4aa1;color:#fff}
+.application-review .solution-tab-label{min-width:0;overflow-wrap:anywhere}
+.application-review .solution-icon svg,.application-review .custom-icon svg{width:22px;height:22px;display:block}
+.application-review .custom-item h3{grid-column:2;margin:0 0 8px}
+.application-review .custom-item p{grid-column:2;margin:0}
+.application-review .application-support{margin-top:28px;padding:22px;border:1px solid rgba(239,247,255,.3);border-radius:10px;background:rgba(255,255,255,.12)}
+.application-review #contact .application-support-heading{display:block;margin:0 0 14px;font-size:12px;line-height:20px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#fff}
+.application-review #contact .application-support p{margin:0;color:#fff}
+.application-review .application-contacts svg{display:block;flex:0 0 20px;width:20px;height:20px;margin-top:3px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.application-review .application-field-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media(max-width:1000px){.application-review .solution-tabs,.application-review .solution-tabs--4{grid-template-columns:repeat(2,minmax(0,1fr))}.application-review .custom-grid{grid-template-columns:1fr}.application-review .application-field-row{grid-template-columns:1fr;gap:0}}
+@media(max-width:680px){.application-review .solution-tabs,.application-review .solution-tabs--4{grid-template-columns:1fr}.application-review .solution-tab{min-height:64px}.application-review .application-support{padding:18px}}

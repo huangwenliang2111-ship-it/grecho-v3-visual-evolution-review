@@ -1,0 +1,320 @@
+/* Existing-page UI adapter. The frozen Homepage V3 file owns all design tokens.
+   All selectors remain scoped to imported content; copy and module order are source-preserved. */
+.grecho-existing{color:var(--grecho-v3-text);background:#fff;font:inherit;overflow-wrap:anywhere}
+.grecho-existing *, .grecho-existing *::before,.grecho-existing *::after{box-sizing:border-box;min-width:0}
+.grecho-existing [hidden]{display:none!important}
+.grecho-existing .gc-container{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+.grecho-existing .gc-container .gc-container{width:100%}
+.grecho-existing .gc-section{padding:64px 0;scroll-margin-top:140px}
+.grecho-existing .gc-section .gc-section{padding:0}
+.grecho-existing h1{max-width:900px;font-size:clamp(34px,4vw,52px);font-weight:750;line-height:1.08;letter-spacing:-.04em;margin:0 0 24px;color:var(--grecho-v3-text)}
+.grecho-existing h2{font-size:clamp(27px,2.8vw,38px);line-height:1.18;letter-spacing:-.03em;font-weight:720;color:var(--grecho-v3-text);margin:0 0 20px}
+.grecho-existing h3{font-size:20px;line-height:1.3;letter-spacing:-.02em;font-weight:720;margin:0 0 12px;color:var(--grecho-v3-text)}
+.grecho-existing h4{font-size:17px;line-height:1.4;margin:0 0 10px}
+.grecho-existing p{margin:0 0 18px;color:var(--grecho-v3-muted);font-size:16px;line-height:1.65}
+.grecho-existing ul,.grecho-existing ol{padding-left:22px;margin:0 0 20px}
+.grecho-existing li{margin:7px 0}
+.grecho-existing small{font-size:12px;color:var(--grecho-v3-muted)}
+.grecho-existing a:not(.grecho-v3-button):hover{color:var(--grecho-v3-brand)}
+.grecho-existing .gc-eyebrow{display:block;color:var(--grecho-v3-brand);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 14px}
+.grecho-existing .gc-section-head{max-width:820px;margin-bottom:32px}
+.grecho-existing .gc-section-head p{max-width:780px}
+.grecho-existing .gc-tint,.grecho-existing .gc-deep{background:var(--grecho-v3-tint)}
+.grecho-existing .gc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(245px,100%),1fr));gap:24px;align-items:stretch}
+.grecho-existing .gc-split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:start}
+.grecho-existing .gc-card{border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg);background:var(--grecho-v3-white);padding:26px;box-shadow:var(--grecho-v3-shadow-card);overflow:hidden}
+.grecho-existing a.gc-card{display:block;transition:box-shadow 180ms ease,border-color 180ms ease,transform 180ms ease}
+.grecho-existing a.gc-card:hover{border-color:#92b5dc;box-shadow:0 14px 32px rgba(26,65,96,.13);transform:translateY(-2px)}
+.grecho-existing .gc-card p:last-child{margin-bottom:0}
+.grecho-existing .gc-card h2{font-size:26px}
+.grecho-existing .gc-card>img,.grecho-existing figure>img{width:100%;height:auto;border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing figure{margin:0}
+.grecho-existing figcaption{color:var(--grecho-v3-muted);font-size:13px;line-height:1.5;margin-top:12px}
+.grecho-existing .gc-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:24px}
+.grecho-existing .gc-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 20px;border:1px solid var(--grecho-v3-brand);border-radius:var(--grecho-v3-radius-sm);background:var(--grecho-v3-brand);color:#fff;font-size:14px;font-weight:750;line-height:1.35;text-align:center;max-width:100%;white-space:normal}
+.grecho-existing .gc-button:hover{background:var(--grecho-v3-brand-deep);color:#fff}
+.grecho-existing .gc-button:has(+.gc-button),.grecho-existing .gc-actions .gc-button:first-child{background:var(--grecho-v3-brand);color:#fff}
+.grecho-existing .gc-actions .gc-button+.gc-button{background:#fff;color:var(--grecho-v3-brand);border-color:var(--grecho-v3-border)}
+.grecho-existing .gc-hero{padding:64px 0;background:var(--grecho-v3-tint);position:relative;overflow:hidden}
+.grecho-existing .gc-hero p{font-size:18px;max-width:780px}
+.grecho-existing .gc-hero .gc-eyebrow{font-size:12px}
+.grecho-existing .gc-hero .gc-card p{font-size:15px}
+.grecho-existing .grecho-v1-hero>.grecho-v1-hero-media{position:absolute;inset:44px max(24px,calc((100vw - 1120px)/2)) 44px auto;width:44%;max-width:500px;border-radius:var(--grecho-v3-radius-lg);overflow:hidden}
+.grecho-existing .grecho-v1-hero>.grecho-v1-hero-media img{width:100%;height:100%;object-fit:cover}
+.grecho-existing .grecho-v1-hero:has(>.grecho-v1-hero-media)>.gc-container{position:relative}
+.grecho-existing .grecho-v1-hero:has(>.grecho-v1-hero-media) .grecho-v1-hero-content{width:49%;min-height:340px;display:flex;flex-direction:column;justify-content:center}
+.grecho-existing .grecho-v1-hero:has(>.grecho-v1-hero-media) h1{font-size:clamp(34px,3.5vw,48px)}
+.grecho-existing .grecho-v1-hero-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+.grecho-existing .grecho-v1-hero-side-panel{padding:26px;background:#fff;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg)}
+.grecho-existing .grecho-v1-hero-side-panel-item{border-bottom:1px solid var(--grecho-v3-border);padding:15px 0}
+.grecho-existing .grecho-v1-hero-side-panel-item:last-child{border:0}
+.grecho-existing .grecho-v1-hero-side-panel-index{color:var(--grecho-v3-brand);font-weight:800;margin-right:10px}
+.grecho-existing .grecho-v1-card-base{display:flex;flex-direction:column}
+.grecho-existing .grecho-v1-card-base img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--grecho-v3-radius-md);margin-bottom:20px}
+.grecho-existing .grecho-v1-card-base-body{flex:1;padding:0}
+.grecho-existing .grecho-v1-card-base-eyebrow{color:var(--grecho-v3-brand);font-size:12px;font-weight:800;text-transform:uppercase}
+.grecho-existing .grecho-v1-card-base-title{display:block;font-size:21px;line-height:1.3;font-weight:750;margin:10px 0}
+.grecho-existing .grecho-v1-card-base-description{display:block;font-size:15px;color:var(--grecho-v3-muted)}
+.grecho-existing .grecho-v1-card-base-link{display:block;margin-top:20px;color:var(--grecho-v3-brand);font-weight:750}
+.grecho-existing .gc-table-wrap{max-width:100%;overflow-x:auto;margin:22px 0;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.55;text-align:left;margin:0;background:#fff}
+.grecho-existing td,.grecho-existing th{padding:15px 18px;border-bottom:1px solid var(--grecho-v3-border);vertical-align:top;min-width:100px}
+.grecho-existing th{background:var(--grecho-v3-tint);font-weight:750;color:var(--grecho-v3-brand-deep)}
+.grecho-existing tr:last-child td,.grecho-existing tr:last-child th{border-bottom:0}
+.grecho-existing details{border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);background:#fff;padding:0;margin:12px 0;overflow:hidden}
+.grecho-existing summary{cursor:pointer;font-size:16px;font-weight:750;line-height:1.45;padding:19px 22px;color:var(--grecho-v3-text);list-style:none}
+.grecho-existing summary::-webkit-details-marker{display:none}
+.grecho-existing summary::after{content:'+';float:right;color:var(--grecho-v3-brand);font-size:20px;margin-left:14px}
+.grecho-existing details[open]>summary::after{content:'−'}
+.grecho-existing details[open]>summary{border-bottom:1px solid var(--grecho-v3-border)}
+.grecho-existing details>div,.grecho-existing details>p{padding:20px 22px;margin:0}
+.grecho-existing details .gfaq-plus{display:none}
+.grecho-existing button,.grecho-existing input,.grecho-existing select,.grecho-existing textarea{font:inherit}
+.grecho-existing button{cursor:pointer}
+.grecho-existing button:not(.gfaq-question){border:1px solid var(--grecho-v3-border);background:#fff;color:var(--grecho-v3-brand-deep);border-radius:var(--grecho-v3-radius-md);min-height:44px;padding:11px 16px;font-size:14px;font-weight:700;line-height:1.4}
+.grecho-existing button.is-active,.grecho-existing button[aria-pressed=true]{background:var(--grecho-v3-brand);color:#fff;border-color:var(--grecho-v3-brand)}
+.grecho-existing input:not([type=checkbox]):not([type=radio]):not([type=hidden]),.grecho-existing select,.grecho-existing textarea{display:block;width:100%;max-width:100%;min-height:46px;padding:12px 14px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-sm);background:#fff;color:var(--grecho-v3-text);font-size:15px}
+.grecho-existing textarea{min-height:125px;resize:vertical}
+.grecho-existing :disabled{cursor:not-allowed;opacity:.8}
+.grecho-existing [data-preview-form]{padding:26px;background:#fff;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg)}
+.grecho-existing .ff-el-group{margin:0 0 20px}
+.grecho-existing .ff-el-input--label{font-size:14px;font-weight:750;margin-bottom:8px}
+.grecho-existing .ff-el-form-check{display:flex;gap:9px;margin-bottom:9px;font-size:14px;line-height:1.5}
+.grecho-existing .ff-el-form-check label{display:flex;align-items:start;gap:8px}
+.grecho-existing .ff-t-container,.grecho-existing .ff-t-cell{display:block;width:100%}
+.grecho-existing .ff-el-input--content{min-width:0}
+.grecho-existing .ff-el-is-error,.grecho-existing .ff-form-loading,.grecho-existing .ff-message-success,.grecho-existing [class$=_errors]{display:none}
+.grecho-existing .grecho-form-privacy-notice{font-size:13px;padding-top:12px}
+.grecho-existing .grecho-form-privacy-notice a{text-decoration:underline;color:var(--grecho-v3-brand)}
+/* Existing product route identity, comparison and technical data remain distinct. */
+.grecho-existing .gptv1-product-hero-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:start}
+.grecho-existing .gptv1-product-hero-layout>.gptv1-document-mini{grid-column:1/-1}
+.grecho-existing .gptv1-hero-side-stack{display:flex;flex-direction:column;gap:20px}
+.grecho-existing .gptv1-hero-actions{margin-top:0;order:2}
+.grecho-existing .gptv1-hero-panel{padding:18px}
+.grecho-existing .gptv1-product-media-image{width:100%;height:280px;object-fit:contain;background:#f5f7fa;border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing .gptv1-identity-panel{padding:20px 6px 4px}
+.grecho-existing .gptv1-identity-panel h2{font-size:22px;margin-top:10px}
+.grecho-existing .gptv1-identity-topline,.grecho-existing .gptv1-hero-tag-list,.grecho-existing .gptv1-model-chip-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.grecho-existing .gptv1-hero-tag-list span,.grecho-existing .gptv1-model-chip-list span{background:#fff;border:1px solid var(--grecho-v3-border);border-radius:4px;padding:6px 9px;font-size:12px;font-weight:700}
+.grecho-existing dl{margin:16px 0}
+.grecho-existing dt{font-size:12px;color:var(--grecho-v3-muted);font-weight:700}
+.grecho-existing dd{margin:4px 0 12px;font-size:15px}
+.grecho-existing .gptv1-hero-facts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+.grecho-existing .gptv1-hero-facts>div{padding-top:16px;border-top:1px solid var(--grecho-v3-border)}
+.grecho-existing .gptv1-hero-facts span{display:block;font-size:12px;color:var(--grecho-v3-muted);margin-bottom:5px}
+.grecho-existing .gptv1-hero-facts strong{font-size:14px;line-height:1.5;display:block}
+.grecho-existing .gptv1-document-mini{padding:24px;background:#fff;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing .gptv1-document-mini-item{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--grecho-v3-border);padding:9px 0;font-size:14px}
+.grecho-existing .gptv1-document-mini-item-status{color:var(--grecho-v3-brand-deep);font-weight:600}
+.grecho-existing .gptv1-document-mini-shared-status{margin:14px 0 0;font-size:13px}
+.grecho-existing .gptv1-snapshot-grid,.grecho-existing .gptv1-technical-brief-grid{grid-template-columns:repeat(auto-fit,minmax(min(310px,100%),1fr))}
+.grecho-existing .gptv1-layer-stack-row,.grecho-existing .gptv1-review-logic-item{padding:24px;margin:14px 0;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md);background:#fff}
+.grecho-existing .gptv1-layer-stack-row h3{font-size:18px}
+/* Landing selectors are visual-only local filters and preserve their source data attributes. */
+.grecho-existing .gpl-series-nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:12px}
+.grecho-existing .gpl-series-button{display:flex;align-items:center;gap:10px;text-align:left}
+.grecho-existing .gpl-series-button img{width:45px;height:45px;object-fit:cover;border-radius:4px}
+.grecho-existing .gpl-series-button strong,.grecho-existing .gpl-series-button span{display:block}
+.grecho-existing .gpl-series-button small{font-size:11px;color:inherit}
+.grecho-existing .gpl-selector-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:30px}
+.grecho-existing .gpl-filter-panel{padding:0;border:0;box-shadow:none;background:transparent}
+.grecho-existing .gpl-filter-group{border-bottom:1px solid var(--grecho-v3-border);padding:14px 0}
+.grecho-existing .gpl-filter-group h3{font-size:14px}
+.grecho-existing .gpl-filter-check{display:flex;align-items:flex-start;gap:7px;font-size:13px;margin:7px 0}
+.grecho-existing .gpl-filter-check input{margin-top:4px}
+.grecho-existing .gpl-product-grid{grid-template-columns:repeat(auto-fit,minmax(min(245px,100%),1fr))}
+.grecho-existing .gpl-card-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.grecho-existing .gpl-card-action{display:inline-flex;font-size:12px;font-weight:750;border:1px solid var(--grecho-v3-border);padding:9px 12px;border-radius:4px;color:var(--grecho-v3-brand)}
+.grecho-existing .gpl-card-action:first-child{background:var(--grecho-v3-brand);color:#fff}
+.grecho-existing .gpl-section-row{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:26px}
+.grecho-existing .gpl-filter-top,.grecho-existing .gpl-filter-inner{padding:14px}
+.grecho-existing .gpl-card-details{margin-top:16px}
+.grecho-existing .gpl-card-details summary{font-size:13px;padding:12px}
+.grecho-existing .gpl-card-details>div{padding:14px;font-size:13px}
+/* FAQ / cases / insights topic navigation. */
+.grecho-existing .gfaq-hero-inner,.grecho-existing .gcv2-hero-inner,.grecho-existing .gcases-hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+.grecho-existing .gfaq-topic-tabs,.grecho-existing .gcases-filter-row,.grecho-existing .ginsights-filter{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 30px}
+.grecho-existing .gfaq-explorer{display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px;align-items:start}
+.grecho-existing .gfaq-side{padding:20px;background:var(--grecho-v3-tint);border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing .gfaq-side a{display:block;margin:12px 0;font-size:14px;color:var(--grecho-v3-brand)}
+.grecho-existing .gfaq-group{margin-bottom:36px}
+.grecho-existing .gfaq-group-head{margin:0 0 18px}
+.grecho-existing .gfaq-group-head h3{font-size:25px}
+.grecho-existing .gfaq-question{font-size:16px}
+.grecho-existing .gfaq-panel-item{border-top:1px solid var(--grecho-v3-border);padding:14px 0}
+.grecho-existing .gfaq-search{margin:20px 0}
+.grecho-existing .grecho-v1-faq-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px}
+.grecho-existing .grecho-v1-faq-item{margin-top:0;margin-bottom:12px}
+.grecho-existing .gcases-scenario-grid{grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr))}
+.grecho-existing .gcases-card-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.grecho-existing .gcases-scenario-card img{width:100%;height:220px;object-fit:cover;border-radius:var(--grecho-v3-radius-md);margin-bottom:20px}
+.grecho-existing .ginsights-article-card img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--grecho-v3-radius-md);margin-bottom:18px}
+.grecho-existing .grecho-resource-documents__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:24px}
+.grecho-existing .grecho-resource-card__image{width:100%;height:210px;object-fit:contain;background:var(--grecho-v3-tint);margin-bottom:20px}
+.grecho-existing .grecho-resource-card__tag{font-size:12px;color:var(--grecho-v3-brand);font-weight:800}
+.grecho-existing .grecho-resource-card__meta{font-size:13px;color:var(--grecho-v3-muted);margin:10px 0}
+/* Article typography, evidence tables and related routes. */
+.grecho-existing .gia-hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:36px;align-items:center}
+.grecho-existing .gia-hero h1{font-size:clamp(32px,3.3vw,46px)}
+.grecho-existing .gia-hero img{width:100%;border-radius:var(--grecho-v3-radius-lg);max-height:350px;object-fit:cover}
+.grecho-existing .gia-content-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:42px}
+.grecho-existing .gia-content{max-width:820px}
+.grecho-existing .gia-content h2{font-size:30px;margin:38px 0 18px}
+.grecho-existing .gia-content h3{margin-top:28px;font-size:22px}
+.grecho-existing .gia-content p{line-height:1.8;margin-bottom:20px}
+.grecho-existing .gia-content a{text-decoration:underline;text-underline-offset:3px;color:var(--grecho-v3-brand)}
+.grecho-existing .gia-toc{padding:24px;background:var(--grecho-v3-tint);border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing .gia-toc a{display:block;font-size:13px;line-height:1.5;margin:12px 0}
+.grecho-existing blockquote{margin:26px 0;border-left:4px solid var(--grecho-v3-brand);background:var(--grecho-v3-tint);padding:24px}
+.grecho-existing .gia-meta{font-size:13px;color:var(--grecho-v3-muted);margin:20px 0}
+/* Existing campaign, with no autoplay/parallax or real submission. */
+.grecho-existing .campaign-hero__inner{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.grecho-existing .campaign-hero__media{width:100%;border-radius:var(--grecho-v3-radius-lg);overflow:hidden}
+.grecho-existing .campaign-hero__video,.grecho-existing .campaign-hero__poster{width:100%;height:auto}
+.grecho-existing .campaign-hero__poster:has(+video){display:none}
+.grecho-existing .campaign-hero__markets{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;font-weight:700;margin:20px 0}
+.grecho-existing .campaign-card-pictogram,.grecho-existing .campaign-process-card__pictogram{width:40px;height:40px;color:var(--grecho-v3-brand);margin-bottom:16px}
+.grecho-existing .campaign-application-card__image,.grecho-existing .campaign-process-card__image{width:100%;aspect-ratio:16/10;object-fit:cover;margin-bottom:18px;border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing .campaign-requirement__layout{grid-template-columns:.85fr 1.15fr}
+.grecho-existing .campaign-closing{background:var(--grecho-v3-brand-deep);color:#fff;text-align:center}
+.grecho-existing .campaign-closing h2,.grecho-existing .campaign-closing p{color:#fff}
+.grecho-existing .campaign-hero__nowrap{white-space:normal}
+/* Existing policy prose retains its content, with a readable measure. */
+.grecho-existing .grecho-policy-v1,.grecho-existing .grecho-privacy-policy,.grecho-existing .grecho-cookie-policy{max-width:1120px;margin:auto}
+.grecho-existing .grecho-v1-review-cta-card{padding:32px;display:flex;gap:30px;justify-content:space-between;align-items:center;background:#fff;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg)}
+.grecho-existing .grecho-v1-review-cta-card h2{font-size:30px}
+.grecho-existing .grecho-v1-review-cta-card .gc-actions{flex-shrink:0}
+.grecho-existing svg{max-width:100%;width:24px;height:24px}
+.grecho-existing .screen-reader-text,.grecho-existing .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:900px){
+.grecho-existing .gc-section,.grecho-existing .gc-hero{padding:48px 0}
+.grecho-existing .gc-split,.grecho-existing .gptv1-product-hero-layout,.grecho-existing .gfaq-hero-inner,.grecho-existing .gcv2-hero-inner,.grecho-existing .gcases-hero-inner,.grecho-existing .grecho-v1-hero-layout,.grecho-existing .gia-hero-grid,.grecho-existing .campaign-hero__inner{grid-template-columns:1fr;gap:28px}
+.grecho-existing .gpl-selector-layout{grid-template-columns:210px minmax(0,1fr);gap:20px}
+.grecho-existing .gia-content-layout,.grecho-existing .gfaq-explorer{grid-template-columns:1fr;gap:28px}
+.grecho-existing .gfaq-side{display:flex;gap:16px;flex-wrap:wrap}
+.grecho-existing .grecho-v1-faq-layout{grid-template-columns:1fr;gap:26px}
+.grecho-existing .grecho-v1-hero>.grecho-v1-hero-media{position:static;width:min(1120px,calc(100% - 48px));max-width:none;margin:0 auto 28px;height:280px}
+.grecho-existing .grecho-v1-hero:has(>.grecho-v1-hero-media) .grecho-v1-hero-content{width:100%;min-height:0}
+.grecho-existing .grecho-v1-review-cta-card{display:block}
+.grecho-existing .gptv1-hero-side-stack{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.grecho-existing .gptv1-hero-actions{order:0}
+}
+@media(max-width:600px){
+.grecho-existing .gc-container{width:calc(100% - 32px)}
+.grecho-existing .gc-section,.grecho-existing .gc-hero{padding:38px 0}
+.grecho-existing h1,.grecho-existing .grecho-v1-hero:has(>.grecho-v1-hero-media) h1{font-size:34px;line-height:1.12}
+.grecho-existing h2{font-size:28px}
+.grecho-existing h3{font-size:19px}
+.grecho-existing p,.grecho-existing .gc-hero p{font-size:16px}
+.grecho-existing .gc-grid,.grecho-existing .gpl-selector-layout,.grecho-existing .gptv1-hero-side-stack,.grecho-existing .gia-hero-grid,.grecho-existing .campaign-requirement__layout{grid-template-columns:1fr;gap:18px}
+.grecho-existing .gc-card{padding:21px}
+.grecho-existing .gc-actions{align-items:stretch}
+.grecho-existing .gc-actions>.gc-button{width:100%}
+.grecho-existing .grecho-v1-hero>.grecho-v1-hero-media{width:calc(100% - 32px);height:220px}
+.grecho-existing .gptv1-hero-facts{gap:14px}
+.grecho-existing .gptv1-document-mini-item{display:block}
+.grecho-existing .gptv1-document-mini-item>span,.grecho-existing .gptv1-document-mini-item>strong{display:block;margin:4px 0}
+.grecho-existing .gpl-series-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.grecho-existing .gpl-series-button{padding:10px;font-size:12px}
+.grecho-existing .gpl-series-button img{width:32px;height:32px}
+.grecho-existing .gpl-section-row{display:block}
+.grecho-existing .gfaq-topic-tabs,.grecho-existing .gcases-filter-row,.grecho-existing .ginsights-filter{gap:7px}
+.grecho-existing summary{padding:17px 18px;font-size:15px}
+.grecho-existing [data-preview-form]{padding:18px}
+.grecho-existing td,.grecho-existing th{padding:12px;font-size:13px}
+.grecho-existing .gc-table-wrap table{min-width:460px}
+.grecho-existing .grecho-v1-review-cta-card{padding:24px}
+.grecho-existing .gia-content h2{font-size:26px}
+.grecho-existing .gia-hero h1{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){.grecho-existing *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+/* Geometry recovered from the exact source modules, using the same frozen tokens. */
+.grecho-existing .gpl-selector-shell{display:grid;grid-template-columns:240px minmax(0,1fr);gap:30px}
+.grecho-existing .gpl-filter-group{margin:0;border:0;border-bottom:1px solid var(--grecho-v3-border);min-inline-size:0}
+.grecho-existing .gpl-filter-group legend{font-size:13px;font-weight:800;margin-bottom:10px}
+.grecho-existing .gac-v1-capability-strip>.gc-container,.grecho-existing .gmw-v1-capability-strip>.gc-container,.grecho-existing .ggy-v1-capability-strip>.gc-container,.grecho-existing .gpp-v1-capability-strip>.gc-container{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.grecho-existing [class$="-two-col"]{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:start}
+.grecho-existing .gac-v1-visual-caption{margin-top:18px;font-size:15px;line-height:1.55}
+.grecho-existing .gac-v1-visual-caption span{display:block;font-size:12px;color:var(--grecho-v3-brand);margin-bottom:8px;font-weight:800}
+.grecho-existing .grecho-v1-dark-cta{padding:38px;background:var(--grecho-v3-brand-deep);border-radius:var(--grecho-v3-radius-lg);color:#fff}
+.grecho-existing .grecho-v1-dark-cta h2,.grecho-existing .grecho-v1-dark-cta p{color:#fff}
+.grecho-existing .gcases-resource-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:22px;margin-top:24px}
+.grecho-existing .gab-resource-band{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px;margin-top:28px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg);background:#fff}
+.grecho-existing .campaign-hero__media{position:absolute;top:44px;bottom:44px;right:max(24px,calc((100vw - 1120px)/2));width:43%;max-width:480px}
+.grecho-existing .campaign-hero__poster{display:block!important;width:100%;height:100%}
+.grecho-existing .campaign-hero__poster img{width:100%;height:100%;object-fit:cover}
+.grecho-existing .campaign-hero__video{display:none}
+.grecho-existing .campaign-hero__inner{display:block}
+.grecho-existing .campaign-hero__copy{width:51%}
+.grecho-existing .campaign-support-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:22px}
+.grecho-existing .campaign-support-item{padding:24px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg);background:#fff}
+.grecho-existing .gc-anchor-alias{display:block;position:relative;width:0;height:0}
+@media(max-width:900px){.grecho-existing .gpl-selector-shell{grid-template-columns:210px minmax(0,1fr);gap:20px}.grecho-existing [class$="-two-col"]{grid-template-columns:1fr}.grecho-existing .campaign-hero__media{position:static;width:calc(100% - 48px);max-width:none;height:280px;margin:0 auto 28px}.grecho-existing .campaign-hero__copy{width:100%}.grecho-existing [class$="-capability-strip"]>.gc-container{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.grecho-existing .gpl-selector-shell{grid-template-columns:1fr}.grecho-existing [class$="-capability-strip"]>.gc-container{grid-template-columns:1fr}.grecho-existing .gab-resource-band{display:block;padding:24px}.grecho-existing .campaign-hero__media{width:calc(100% - 32px);height:220px}.grecho-existing .grecho-v1-dark-cta{padding:25px}}
+.grecho-existing [class*="-capability-strip"]>.gc-container{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.grecho-existing .is-resource-side-panel>.grecho-v1-hero-media{position:static;width:min(1120px,calc(100% - 48px));max-width:none;height:230px;margin:0 auto 28px}
+.grecho-existing .is-resource-side-panel:has(>.grecho-v1-hero-media) .grecho-v1-hero-content{width:100%;min-height:0}
+@media(max-width:900px){.grecho-existing [class*="-capability-strip"]>.gc-container{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.grecho-existing [class*="-capability-strip"]>.gc-container{grid-template-columns:1fr}.grecho-existing .is-resource-side-panel>.grecho-v1-hero-media{width:calc(100% - 32px);height:190px}}
+/* Exact frozen component dimensions; page-specific hero/reading layouts stay distinct. */
+.grecho-existing .gc-button{gap:10px;padding:11px 18px;font-size:13px;font-weight:800;line-height:1.2}
+.grecho-existing .gc-section:not(.gc-hero){padding-block:104px}
+.grecho-existing .gc-section .gc-section{padding-block:0}
+.grecho-existing .gc-section-head h2{font-size:clamp(34px,3.3vw,48px);font-weight:700;letter-spacing:-.045em;line-height:1.02}
+.grecho-existing .gc-section-head{margin-bottom:38px}
+@media(max-width:960px){.grecho-existing .gc-section:not(.gc-hero){padding-block:68px}}
+@media(max-width:600px){.grecho-existing .gc-container{width:min(100% - 28px,540px)}.grecho-existing .gc-section:not(.gc-hero){padding-block:64px}.grecho-existing .gc-section-head{margin-bottom:28px}.grecho-existing .gc-section-head h2{font-size:32px}.grecho-existing .grecho-v1-hero>.grecho-v1-hero-media,.grecho-existing .campaign-hero__media,.grecho-existing .is-resource-side-panel>.grecho-v1-hero-media{width:calc(100% - 28px)}}
+/* Keep shared typography/card/container values on the frozen V3 component contract. */
+.grecho-existing h1,.grecho-existing h2,.grecho-existing h3,.grecho-existing .grecho-v1-card-base-title{font-weight:700}
+.grecho-existing .gc-card{border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing .gc-card[class*="-panel"],.grecho-existing .gc-card[class*="-box"]{border-radius:var(--grecho-v3-radius-lg)}
+.grecho-existing .gc-section-head{max-width:760px}
+@media(max-width:850px){.grecho-existing .gc-container{width:min(100% - 36px,720px)}.grecho-existing .gc-container .gc-container{width:100%}}
+@media(max-width:600px){.grecho-existing .gc-container{width:min(100% - 28px,540px)}.grecho-existing .gc-section-head h2{font-size:clamp(31px,9.2vw,39px)}.grecho-existing .gc-section-head h2 br{display:none}}
+/* Source plugin loading state is replaced by a visibly disabled static form. */
+.grecho-existing [data-preview-form]{display:block!important}
+.grecho-existing [data-preview-form] fieldset{border:0;padding:0;margin:0;min-inline-size:0}
+.grecho-existing .ff_screen_reader_title{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.grecho-existing .gcv2-context-notice{margin-bottom:20px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-sm);background:var(--grecho-v3-tint);padding:12px 14px;font-size:13px;line-height:1.5;overflow-wrap:anywhere;color:var(--grecho-v3-brand-deep)}
+/* Preserve readable technical column labels; narrow screens scroll the table only. */
+.grecho-existing .gc-table-wrap th,.grecho-existing .gc-table-wrap td{word-break:normal;overflow-wrap:normal}
+.grecho-existing .gc-table-wrap:has(tr>:nth-child(4)) table{min-width:680px}
+/* Shared dark CTA: source markup uses h3; keep all its text legible on brand-deep. */
+.grecho-existing .grecho-v1-dark-cta h2,.grecho-existing .grecho-v1-dark-cta h3,.grecho-existing .grecho-v1-dark-cta h4,.grecho-existing .grecho-v1-dark-cta>div strong{color:var(--grecho-v3-white)}
+.grecho-existing .grecho-v1-dark-cta>a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 18px;margin:12px 12px 0 0;border:1px solid rgba(255,255,255,.92);border-radius:var(--grecho-v3-radius-sm);background:rgba(255,255,255,.96);color:#17334b;font-size:13px;font-weight:800;line-height:1.2;text-align:center;box-shadow:0 6px 16px rgba(8,62,101,.15)}
+.grecho-existing .grecho-v1-dark-cta>a:hover{background:var(--grecho-v3-white);color:#0f2f49}
+@media(max-width:600px){.grecho-existing .grecho-v1-dark-cta>a{width:100%;margin-right:0}}
+
+/* Incremental review 2026-10-02: imported content only; frozen design pages excluded.
+   Match every preserved fragment ID, including H3/reference targets. The shared
+   navigation already supplies its live bottom+16px offset; 145px is the no-JS floor. */
+.grecho-existing [id]{scroll-margin-top:max(145px,var(--grecho-v3-sticky-header-offset,145px))}
+/* Auxiliary modules have their own density, independent of main section spacing. */
+.grecho-existing .gc-section:is(.gac-v1-capability-strip,.gab-cap-strip){padding-block:28px}
+.grecho-existing .gac-v1-capability-strip .gac-v1-capability-card,
+.grecho-existing .gab-cap-strip .gc-card{padding:16px 18px;box-shadow:none}
+.grecho-existing .gc-section:is(.grecho-v1-review-cta-strip,.gac-v1-review-cta,.gia-final-cta,.gpl-final-cta,.gfaq-final,.gcases-final,.ginsights-final-cta-global,.campaign-closing){padding-block:52px}
+/* Keep the complete breadcrumb labels in inline reading order with natural wrapping. */
+.grecho-existing .gptv1-breadcrumb-strip.gc-section{padding-block:16px;border-bottom:1px solid var(--grecho-v3-border);background:#fff}
+.grecho-existing .gptv1-breadcrumb{display:block;font-size:13px;line-height:1.65;color:var(--grecho-v3-muted)}
+.grecho-existing .gptv1-breadcrumb a{display:inline;color:var(--grecho-v3-brand)}
+.grecho-existing .gptv1-breadcrumb-separator{display:inline-block;padding-inline:.55em;color:var(--grecho-v3-muted)}
+.grecho-existing .gptv1-breadcrumb-current{display:inline;white-space:normal;overflow-wrap:anywhere;color:var(--grecho-v3-text)}
+.grecho-existing .gpl-fallback-note,.grecho-existing .ginsights-filter-note{font-size:13px;line-height:1.55;margin:0 0 18px}
+.grecho-existing [data-products-selector] button:disabled,
+.grecho-existing [data-products-selector] input:disabled{cursor:default;opacity:.62}
+.grecho-existing [data-selector-ready] .gpl-fallback-note{display:none}
+.grecho-existing .gc-table-wrap{min-width:0;width:100%;overscroll-behavior-x:contain}
+@media(max-width:960px){
+ .grecho-existing .gc-section:is(.gac-v1-capability-strip,.gab-cap-strip){padding-block:24px}
+ .grecho-existing .gc-section:is(.grecho-v1-review-cta-strip,.gac-v1-review-cta,.gia-final-cta,.gpl-final-cta,.gfaq-final,.gcases-final,.ginsights-final-cta-global,.campaign-closing){padding-block:40px}
+}
+@media(max-width:600px){
+ .grecho-existing .gptv1-breadcrumb-strip.gc-section{padding-block:12px}
+ .grecho-existing .gc-section:is(.gac-v1-capability-strip,.gab-cap-strip){padding-block:20px}
+ .grecho-existing .gac-v1-capability-strip>.gc-container{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .grecho-existing .gac-v1-capability-strip .gac-v1-capability-card,
+ .grecho-existing .gab-cap-strip .gc-card{padding:14px;font-size:14px;line-height:1.45}
+ .grecho-existing .gc-section:is(.grecho-v1-review-cta-strip,.gac-v1-review-cta,.gia-final-cta,.gpl-final-cta,.gfaq-final,.gcases-final,.ginsights-final-cta-global,.campaign-closing){padding-block:32px}
+}

@@ -1,0 +1,135 @@
+/* Europe 2026 demand-discovery layout; no runtime or form changes. */
+.grecho-existing.final-europe{--eu-ink:#12394e;--eu-line:#d0dfe7}
+.final-europe .gc-section{padding-block:76px}
+.final-europe h2{font-size:clamp(29px,3.35vw,43px);line-height:1.14}
+.final-europe h2 em{display:block;font-style:normal;color:var(--grecho-v3-brand)}
+.final-europe .gc-section-head{max-width:760px;margin-bottom:34px}
+.final-europe .campaign-hero{background:#edf4f7;padding-block:62px;isolation:isolate}
+.final-europe .campaign-hero__inner{display:block}
+.final-europe .campaign-hero__copy{width:65%;padding-right:38px;position:relative;z-index:1}
+.final-europe .campaign-hero__copy h1{font-size:clamp(37px,4.4vw,55px);line-height:1.09;letter-spacing:-.043em;text-wrap:balance;max-width:730px}
+.final-europe .campaign-hero__media{position:absolute;inset:0 0 0 auto;width:33%;max-width:none;border-radius:0;margin:0}
+.final-europe .campaign-hero__poster img{object-position:62% center}
+.final-europe .campaign-hero__copy .campaign-eyebrow{max-width:560px;font-size:11px;line-height:1.6;letter-spacing:.095em}
+.final-europe .campaign-hero__copy .campaign-hero__lede{font-size:17px;line-height:1.65;max-width:650px;margin-bottom:18px}
+.final-europe .campaign-hero__copy .campaign-hero__markets{font-size:13px;line-height:1.7;display:block;padding-left:15px;border-left:3px solid #5797b1;margin:18px 0}
+.final-europe .campaign-hero__copy .campaign-hero__caption{font-size:12px;line-height:1.6;margin:20px 0 0;max-width:560px}
+.final-europe .campaign-actions{gap:14px 24px}
+.final-europe .campaign-text-link{font-size:14px;font-weight:750;line-height:1.5;color:var(--grecho-v3-brand);text-decoration:underline;text-underline-offset:4px}
+.final-europe .campaign-scope.gc-section{padding-block:36px;background:#fff}
+.final-europe .campaign-scope__inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:50px;position:relative;border-bottom:1px solid var(--eu-line);padding-bottom:34px}
+.final-europe .campaign-scope__inner .campaign-eyebrow{grid-column:1/-1}
+.final-europe .campaign-scope h2{font-size:27px;margin:0}
+.final-europe .campaign-scope p:not(.campaign-eyebrow){font-size:15px;margin:0;align-self:center}
+.final-europe .campaign-scope__icon{display:none}
+.final-europe .final-europe-invitation.gc-section{padding-block:0 52px}
+.final-europe .campaign-form-promise{display:grid;gap:17px;border-top:1px solid var(--eu-line);padding-top:22px;margin-top:28px}
+.final-europe .campaign-form-promise strong{font-size:17px;color:var(--eu-ink);line-height:1.5}
+.final-europe .campaign-form-promise span{font-size:14px;line-height:1.65;color:var(--grecho-v3-muted)}
+.final-europe .campaign-form-promise span b{color:var(--eu-ink);font-weight:700}
+.final-europe .final-europe-invitation .campaign-form-promise{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 32px;margin:0;padding:0;border:0}
+.final-europe .final-europe-invitation .campaign-form-promise strong{grid-column:1/-1;font-size:20px}
+.final-europe .campaign-why__layout{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:60px;align-items:center}
+.final-europe .campaign-why__visual img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.final-europe .campaign-why__heading{margin-bottom:0}
+.final-europe .campaign-why__indicators{display:grid;grid-template-columns:1fr;gap:15px;margin-top:25px}
+.final-europe .campaign-why__indicator{display:flex;gap:12px;align-items:center}
+.final-europe .campaign-why__indicator>span{width:28px;flex-shrink:0;color:var(--grecho-v3-brand)}
+.final-europe .campaign-why__indicator strong{font-size:14px;margin-right:14px;color:var(--eu-ink)}
+.final-europe .campaign-why__indicator small{font-size:13px}
+.final-europe svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.4}
+.final-europe .campaign-value-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:42px}
+.final-europe .campaign-value-card.gc-card{padding:24px 0 0;border:0;border-top:1px solid #bfD2dd;border-radius:0;box-shadow:none;background:transparent;position:relative}
+.final-europe .campaign-card-pictogram{display:none}
+.final-europe .campaign-card-number{display:block;color:var(--grecho-v3-brand);font-size:12px;line-height:1.4;font-weight:750;margin-bottom:16px}
+.final-europe .campaign-value-card h3{font-size:20px}
+.final-europe .campaign-value-card p{font-size:14px}
+.final-europe .campaign-application-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.final-europe .campaign-application-card.gc-card{padding:0;border:0;border-radius:0;box-shadow:none;overflow:visible;background:transparent}
+.final-europe .campaign-application-card__image{margin-bottom:20px;aspect-ratio:16/9;border-radius:4px;overflow:hidden}
+.final-europe .campaign-application-card__image picture,.final-europe .campaign-application-card__image img{display:block;width:100%;height:100%;object-fit:cover}
+.final-europe .campaign-application-card__body{position:relative;padding-left:0}
+.final-europe .campaign-application-card__badge{display:none}
+.final-europe .campaign-application-card .campaign-card-kicker{font-size:10px;margin-bottom:8px}
+.final-europe .campaign-application-card h3{font-size:24px;margin-bottom:16px}
+.final-europe .campaign-inline-cta{display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap;padding-top:26px;border-top:1px solid var(--eu-line);margin-top:32px;color:var(--eu-ink);font-weight:650}
+.final-europe .campaign-pill-link{font-size:14px;color:var(--grecho-v3-brand);border:1px solid #a6c3d1;border-radius:5px;padding:12px 18px}
+.final-europe .campaign-process{background:var(--eu-ink);color:#fff}
+.final-europe .campaign-process h2,.final-europe .campaign-process h3{color:#fff}
+.final-europe .campaign-process h2 em,.final-europe .campaign-process .gc-eyebrow{color:#a9d6e8}
+.final-europe .campaign-process p{color:#d0e1e9}
+.final-europe .campaign-process-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}
+.final-europe .campaign-process-card.gc-card{background:none;border:0;border-radius:0;padding:0;box-shadow:none}
+.final-europe .campaign-process-card__image{aspect-ratio:4/3;overflow:hidden;border-radius:3px;margin-bottom:20px}
+.final-europe .campaign-process-card__image picture,.final-europe .campaign-process-card__image img{display:block;width:100%;height:100%;object-fit:cover}
+.final-europe .campaign-process-card__pictogram{display:none}
+.final-europe .campaign-process-card__number{display:block;font-size:26px;font-weight:500;color:#93c9de;margin-bottom:16px}
+.final-europe .campaign-process-card h3{font-size:20px}
+.final-europe .campaign-process-card p{font-size:14px}
+.final-europe .campaign-support__layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:72px}
+.final-europe .campaign-support-list{display:block}
+.final-europe .campaign-support-item{position:relative;padding:25px 0 25px 35px;border:0;border-top:1px solid var(--eu-line);border-radius:0;background:transparent}
+.final-europe .campaign-support-icon{position:absolute;left:0;top:23px;color:var(--grecho-v3-brand);font-size:22px}
+.final-europe .campaign-support-item h3{font-size:21px}
+.final-europe .campaign-support-item p{font-size:15px;margin:0}
+.final-europe .campaign-support-item--blue{border-top:2px solid #8eb4c6}
+.final-europe .campaign-requirement__layout{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:56px;align-items:start}
+.final-europe .campaign-requirement__form{padding:30px;border-radius:8px;background:#fff;border:1px solid var(--eu-line)}
+.final-europe fieldset{border:0;margin:0;padding:0;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 22px}
+.final-europe fieldset>legend{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.final-europe fieldset>.ff-el-group{margin:0;min-width:0}
+.final-europe fieldset>.ff-el-group:has(textarea),.final-europe fieldset>.ff-el-group:has(.ff-el-form-check),.final-europe fieldset>.ff_submit_btn_wrapper{grid-column:1/-1}
+.final-europe .ff-el-input--label{margin-bottom:7px;line-height:1.5;font-size:13px;color:var(--eu-ink);font-weight:650}
+.final-europe input:not([type=checkbox]):not([type=hidden]),.final-europe select,.final-europe textarea{font-size:13px;line-height:1.5}
+.final-europe .ff-el-form-check label{font-size:13px;line-height:1.6;align-items:flex-start}
+.final-europe .ff-el-form-check input{flex:0 0 auto;margin-top:4px}
+.final-europe .ff-el-form-check{margin:8px 0}
+.final-europe .campaign-faq__layout{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:56px}
+.final-europe .campaign-faq-item{border:0;border-top:1px solid var(--eu-line);border-radius:0;margin:0}
+.final-europe .campaign-faq-item summary{padding:22px 30px 22px 0;font-size:17px;position:relative}
+.final-europe .campaign-faq-item summary>span{display:none}
+.final-europe .campaign-faq-item summary::after{position:absolute;right:0;top:19px}
+.final-europe .campaign-faq-answer{padding:20px 0!important}
+.final-europe .campaign-closing.gc-section{padding-block:64px;background:var(--eu-ink);text-align:left}
+.final-europe .campaign-closing__inner{max-width:850px;margin:auto}
+.final-europe .campaign-closing .gc-eyebrow,.final-europe .campaign-closing h2 em{color:#a9d6e8}
+.final-europe .campaign-closing .campaign-button{background:#fff;color:var(--eu-ink);margin-top:12px}
+@media(max-width:960px){
+.final-europe .gc-section{padding-block:54px}
+.final-europe .campaign-hero{display:flex;flex-direction:column;padding-top:48px;padding-bottom:0}
+.final-europe .campaign-hero__copy{width:100%;padding:0}
+.final-europe .campaign-hero__media{position:static;order:2;width:100%;height:270px;margin:32px 0 0}
+.final-europe .campaign-hero__inner{order:1}
+.final-europe .campaign-why__layout,.final-europe .campaign-support__layout,.final-europe .campaign-requirement__layout,.final-europe .campaign-faq__layout{grid-template-columns:1fr;gap:28px}
+.final-europe .campaign-value-grid,.final-europe .campaign-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.final-europe .campaign-why__visual img{aspect-ratio:16/8}
+.final-europe .campaign-requirement__intro{max-width:700px;margin:0}
+}
+@media(max-width:600px){
+.grecho-existing.final-europe .gc-section:not(.gc-hero){padding-block:44px}
+.final-europe .campaign-hero__copy h1{font-size:37px;line-height:1.12;letter-spacing:-.036em}
+.final-europe .campaign-hero__media{height:230px}
+.final-europe .campaign-hero__copy .campaign-hero__lede{font-size:16px}
+.final-europe .campaign-scope__inner{grid-template-columns:1fr;gap:14px;padding-bottom:0;border-bottom:0}
+.final-europe .campaign-scope h2{font-size:26px}
+.grecho-existing.final-europe .final-europe-invitation{padding-top:0!important}
+.final-europe .final-europe-invitation .campaign-form-promise{grid-template-columns:1fr;gap:18px;padding-top:24px;border-top:1px solid var(--eu-line)}
+.final-europe .campaign-why__indicators{gap:17px}
+.final-europe .campaign-why__indicator strong,.final-europe .campaign-why__indicator small{display:block}
+.final-europe .campaign-value-grid{gap:25px}
+.final-europe .campaign-value-card h3{font-size:18px}
+.final-europe .campaign-application-grid,.final-europe .campaign-process-grid{grid-template-columns:1fr;gap:34px}
+.final-europe .campaign-process-card{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1fr);gap:22px}
+.final-europe .campaign-process-card__image{aspect-ratio:3/4;margin:0}
+.final-europe .campaign-process-card__number{font-size:23px;margin-bottom:10px}
+.final-europe .campaign-process-card h3{font-size:19px}
+.final-europe .campaign-process-card p{font-size:13px}
+.final-europe .campaign-requirement__form{padding:22px 18px}
+.final-europe fieldset{grid-template-columns:1fr;gap:20px}
+.final-europe .campaign-faq__layout{gap:8px}
+.final-europe .campaign-closing h2{font-size:35px}
+}
+@media(max-width:360px){
+.final-europe .campaign-value-grid,.final-europe .campaign-process-card{grid-template-columns:1fr}
+.final-europe .campaign-process-card__image{aspect-ratio:16/9}
+}
