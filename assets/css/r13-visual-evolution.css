@@ -48,6 +48,13 @@ body.r13-home .grecho-v3-diagnostic-card img{background:transparent;}
 body.r13-home .grecho-v3-application-grid{gap:40px 28px;}
 body.r13-home .grecho-v3-application-card{border:0;}
 body.r13-home .grecho-v3-application-card__body{padding:22px 0;}
+body.r13-home main .grecho-v3-application-card__body{background:#fff!important;box-shadow:none!important;border-radius:0!important;}
+body.r13-home main :is(.grecho-v3-inline-cta,.grecho-v3-faq-note__icon){background:#f4f5f5!important;box-shadow:none!important;color:#596066!important;}
+body.r13-home main .grecho-v3-request-checklist li{color:#596066!important;}
+body.r13-home main .grecho-v3-support-card li{color:#596066!important;}
+body.r13-home main .grecho-v3-card-arrow{background:#f4f5f5!important;}
+body.r13-c02 .grecho-challenge :is(.gc-count,.gc-solves a){background:#f4f5f5!important;}
+body.r13-c02 .grecho-challenge .gc-solves a:hover{background:var(--r13-blue)!important;color:#fff!important;}
 body.r13-home .grecho-v3-application-card__media{aspect-ratio:4/3;border-radius:4px;}
 body.r13-home .grecho-v3-resource-panel{background:#fff!important;color:var(--r13-ink);border:0;padding:0;box-shadow:none;}
 body.r13-home .grecho-v3-resource-panel::after{content:none;}
