@@ -1,0 +1,304 @@
+/* R13 R5: gallery widths are independent of the inherited technical reading widths. */
+body.r13-pilot{--r5-nav-inset:20px;--r5-gallery-inset:24px;--r5-gallery-gap:24px;}
+@media(min-width:1680px){body.r13-pilot{--r5-nav-inset:24px;--r5-gallery-inset:32px;--r5-gallery-gap:32px;}}
+@media(max-width:1099px){body.r13-pilot{--r5-nav-inset:16px;--r5-gallery-inset:20px;--r5-gallery-gap:20px;}}
+@media(max-width:767px){body.r13-pilot{--r5-gallery-inset:16px;--r5-gallery-gap:16px;}}
+body.r13-pilot header.grecho-v3-nav .grecho-v3-nav__inner{
+  width:calc(100% - 2 * var(--r5-nav-inset));max-width:none;margin-inline:auto;
+}
+@media(min-width:1100px){
+  body.r13-pilot header.grecho-v3-nav .grecho-v3-nav__brand{margin-right:24px;}
+  body.r13-pilot header.grecho-v3-nav .grecho-v3-nav__desktop{position:relative;justify-content:center;gap:clamp(8px,1.1vw,20px);padding-right:52px;}
+  body.r13-pilot header.grecho-v3-nav .grecho-v3-nav__search{position:absolute;right:0;top:0;height:100%;}
+  body.r13-pilot header.grecho-v3-nav .grecho-v3-nav__actions{margin-left:16px;}
+  body.r13-pilot header.grecho-v3-nav .grecho-v3-mega{max-width:calc(100vw - 2 * var(--r5-nav-inset) - 16px);}
+}
+body.r13-home main :is(#solution-hubs,#application-examples)>.grecho-v3-container{
+  width:calc(100% - 2 * var(--r5-gallery-inset));max-width:none;margin-inline:auto;
+}
+body.r13-home main .grecho-v3-solution-grid{column-gap:var(--r5-gallery-gap);row-gap:48px;}
+body.r13-home main .grecho-v3-application-grid{column-gap:var(--r5-gallery-gap);row-gap:40px;}
+body.r13-home main :is(.grecho-v3-solution-card,.grecho-v3-application-card){border:0!important;border-radius:0!important;box-shadow:none!important;}
+/* Proportional media preserves the existing paired hover expansion without
+   leaving a fixed 220px strip on wide screens. */
+body.r13-home main .grecho-v3-application-card{container-type:inline-size;--grecho-v3-application-image-normal:66.6667cqw;--grecho-v3-application-image-expanded:75cqw;--grecho-v3-application-image-compressed:58.3333cqw;}
+body.r13-home main .grecho-v3-application-card__media{height:var(--grecho-v3-application-image-normal);border-radius:0;}
+@media(min-width:851px) and (hover:hover) and (pointer:fine){
+body.r13-home main .grecho-v3-application-grid[data-application-active="1"] .grecho-v3-application-card--1 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="2"] .grecho-v3-application-card--2 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="3"] .grecho-v3-application-card--3 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="4"] .grecho-v3-application-card--4 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="5"] .grecho-v3-application-card--5 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="6"] .grecho-v3-application-card--6 .grecho-v3-application-card__media{height:var(--grecho-v3-application-image-expanded);}
+body.r13-home main .grecho-v3-application-grid[data-application-active="1"] .grecho-v3-application-card--4 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="4"] .grecho-v3-application-card--1 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="2"] .grecho-v3-application-card--5 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="5"] .grecho-v3-application-card--2 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="3"] .grecho-v3-application-card--6 .grecho-v3-application-card__media,
+body.r13-home main .grecho-v3-application-grid[data-application-active="6"] .grecho-v3-application-card--3 .grecho-v3-application-card__media{height:var(--grecho-v3-application-image-compressed);}
+}
+/* Reduce only the oversized Application → Resource boundary; retain R4 section rhythm elsewhere. */
+@media(min-width:1100px){body.r13-home main #resource-preview.r13-r4-section{padding-top:64px;}}
+@media(min-width:768px) and (max-width:1099px){body.r13-home main #resource-preview.r13-r4-section{padding-top:64px;}}
+@media(max-width:767px){body.r13-home main .grecho-v3-solution-grid{row-gap:36px;}}
+
+/* R5 original local line icons; existing card semantics and arrows are retained. */
+body.r13-home :is(.r13-r4-icon,.grecho-v3-resource-card__icon){
+  display:inline-flex;align-items:center;justify-content:center;flex:none;
+  width:48px;height:48px;padding:0;border:0;border-radius:6px;
+  background:transparent;color:#303638;box-shadow:none;filter:none;mix-blend-mode:normal;
+}
+body.r13-home .r13-r4-icon{margin-bottom:20px;}
+body.r13-home :is(.r13-r4-icon,.grecho-v3-resource-card__icon)>.r13-r5-icon{
+  display:block;flex:none;width:32px;height:32px;max-width:none;margin:0;
+  fill:none;stroke:currentColor;stroke-width:1.7;filter:none;mix-blend-mode:normal;
+  background:transparent;box-shadow:none;pointer-events:none;
+}
+body.r13-home :is(.grecho-v3-diagnostic-card,.grecho-v3-resource-card):is(:hover,:focus-visible) :is(.r13-r4-icon,.grecho-v3-resource-card__icon){
+  background:#1b4aa1;color:#fff;box-shadow:none;filter:none;
+}
+@media(max-width:767px){
+  body.r13-home :is(.r13-r4-icon,.grecho-v3-resource-card__icon){width:44px;height:44px;}
+}
+
+/* R5 technical-page galleries. Prepared separately until the homepage
+   foundation passes. The shared R5 sheet owns gallery inset/gap tokens.
+   No Hero, typography, vertical section spacing, filters or runtime changes. */
+
+/* PRODUCTS: the family and catalog belong to one wide browsing surface.
+   Reading sections retain their original containers. */
+body.r13-products #grecho-v3-main :is(.gpl-series-nav-section,.gpl-selector) > .gc-container {
+  width:calc(100% - 2 * var(--r5-gallery-inset,24px));
+  max-width:none;
+  margin-inline:auto;
+}
+body.r13-products #grecho-v3-main .gpl-series-nav {
+  column-gap:var(--r5-gallery-gap,24px);
+  row-gap:12px;
+}
+body.r13-products #grecho-v3-main .gpl-family-media {
+  background:transparent!important;
+  border-radius:0!important;
+}
+body.r13-products #grecho-v3-main .gpl-family-media img {
+  width:100%;height:100%;object-fit:contain;border-radius:0;
+}
+body.r13-products #grecho-v3-main .gpl-selector-shell {
+  column-gap:var(--r5-gallery-gap,24px);
+}
+body.r13-products #grecho-v3-main .gpl-product-grid {
+  grid-template-columns:minmax(0,1fr);
+  column-gap:var(--r5-gallery-gap,24px);
+  row-gap:var(--r5-gallery-gap,24px);
+}
+body.r13-products #grecho-v3-main .gpl-product-card.gc-card {
+  border:0!important;border-radius:0!important;box-shadow:none!important;
+}
+body.r13-products #grecho-v3-main .gpl-product-media {
+  background:#f4f5f5!important;
+}
+body.r13-products #grecho-v3-main .gpl-product-media img,
+body.r13-products #grecho-v3-main .gpl-product-card:hover .gpl-product-media img {
+  object-fit:contain;transform:none;transition:none;
+}
+/* Preserve the existing card body inset and action/subgrid relationships. */
+body.r13-products #grecho-v3-main .gpl-product-card-body {padding:24px;}
+
+/* P01: only the real finish gallery and application photographs use the
+   wide tier. Diagrams, comparisons, tables, process and FAQ stay readable. */
+body.r13-p01 #grecho-v3-main :is(#section-04,#section-09) > .grecho-v3-container {
+  width:calc(100% - 2 * var(--r5-gallery-inset,24px));
+  max-width:none;margin-inline:auto;
+}
+body.r13-p01 #grecho-v3-main :is(#section-04,#section-09) .grecho-product-grid {
+  gap:var(--r5-gallery-gap,24px);
+}
+body.r13-p01 #section-04 .grecho-product-proof-card {
+  display:block;padding:0;border:0;box-shadow:none;
+}
+body.r13-p01 #section-04 .grecho-product-proof-card > img {
+  display:block;width:100%;height:auto;aspect-ratio:auto;
+  object-fit:contain;object-position:center;border-radius:0;
+}
+body.r13-p01 #section-04 .grecho-product-proof-card > div {padding:22px 24px 0;}
+body.r13-p01 #section-09 article {min-width:0;}
+body.r13-p01 #section-09 article figure > img {
+  display:block;width:100%;height:auto;aspect-ratio:3/2;
+  object-fit:cover;border-radius:0;
+}
+body.r13-p01 #section-09 article figcaption {
+  max-width:none;padding-inline:24px!important;
+}
+body.r13-p01 #section-09 article > p {padding-inline:24px;}
+
+/* C02: widen only the two surrounding image showcases. The diagnostic
+   selectors, comparison, mappings, controls and reading widths are untouched. */
+body.r13-c02 #main .grecho-challenge :is(#products,#applications) {
+  width:calc(100% - 2 * var(--r5-gallery-inset,24px));
+  max-width:none;margin-inline:auto;
+}
+body.r13-c02 #main .grecho-challenge :is(.gc-products,.gc-applications) {
+  gap:var(--r5-gallery-gap,24px);
+}
+body.r13-c02 #main .grecho-challenge :is(.gc-material,.gc-application) {
+  border:0!important;border-radius:0!important;
+  box-shadow:none!important;background:#fff!important;
+}
+body.r13-c02 #main .grecho-challenge .gc-material .gc-image {
+  aspect-ratio:3/2;min-height:0;border:0;background:#fff!important;
+}
+body.r13-c02 #main .grecho-challenge .gc-material .gc-image img {
+  object-fit:contain;
+}
+body.r13-c02 #main .grecho-challenge .gc-application .gc-image {aspect-ratio:4/3;}
+body.r13-c02 #main .grecho-challenge :is(.gc-material,.gc-application) .gc-card-body {
+  padding:24px;
+}
+
+@media(min-width:768px) {
+  body.r13-products #grecho-v3-main .gpl-product-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(min-width:1100px) {
+  body.r13-products #grecho-v3-main .gpl-selector-shell {grid-template-columns:220px minmax(0,1fr);}
+}
+@media(min-width:1280px) {
+  body.r13-products #grecho-v3-main .gpl-product-grid {grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media(min-width:1760px) {
+  body.r13-products #grecho-v3-main .gpl-product-grid {grid-template-columns:repeat(4,minmax(0,1fr));}
+}
+@media(min-width:768px) and (max-width:1099px) {
+  body.r13-c02 #main .grecho-challenge .gc-applications {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:767px) {
+  body.r13-products #grecho-v3-main .gpl-series-nav {column-gap:12px;row-gap:12px;}
+  body.r13-p01 #grecho-v3-main :is(#section-04,#section-09) .grecho-product-grid {grid-template-columns:minmax(0,1fr);}
+  body.r13-p01 #section-04 .grecho-product-proof-card > div {padding:20px 22px 0;}
+  body.r13-p01 #section-09 article figcaption {padding-inline:22px!important;}
+  body.r13-p01 #section-09 article > p {padding-inline:22px;}
+  body.r13-c02 #main .grecho-challenge :is(.gc-products,.gc-applications) {grid-template-columns:minmax(0,1fr);}
+  body.r13-c02 #main .grecho-challenge :is(.gc-material,.gc-application) .gc-card-body {padding:22px;}
+}
+
+/* R5 prepared fragment. Merge only after the Home visual-foundation gate.
+   Page-scoped image collections expand; Hero, navigation, typography, routes,
+   existing interaction states and R4 section spacing are not changed here. */
+
+/* Solutions: four distinct application directions in a near-edge gallery. */
+body.r13-solutions #grecho-v3-main #solutions-applications > .grecho-v3-container,
+body.r13-solutions #grecho-v3-main .grecho-solutions-details__stack {
+  width:calc(100% - var(--r5-gallery-inset,24px) - var(--r5-gallery-inset,24px));
+  max-width:none;margin-inline:auto;
+}
+body.r13-solutions #grecho-v3-main #solutions-applications .grecho-v3-solution-grid {
+  grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--r5-gallery-gap,24px);
+}
+body.r13-solutions #grecho-v3-main .grecho-solutions-direction-card {
+  display:block;border:0;border-radius:0;box-shadow:none;
+}
+body.r13-solutions #grecho-v3-main .grecho-solutions-direction-card > img {
+  display:block;width:100%;max-width:1200px;height:auto;
+  aspect-ratio:4/3;object-fit:contain;
+}
+body.r13-solutions #grecho-v3-main #solutions-applications .grecho-v3-solution-card__body {
+  padding:24px;min-height:0;text-align:left;
+}
+
+/* The photograph grows, while each technical explanation keeps a reading
+   width. Separate detailed sections retain the already approved R4 gap. */
+body.r13-solutions #grecho-v3-main .grecho-solutions-detail {
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  column-gap:clamp(32px,3vw,56px);align-items:center;
+}
+body.r13-solutions #grecho-v3-main .grecho-solutions-detail > img {
+  max-width:1120px;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;
+}
+body.r13-solutions #grecho-v3-main #mineral-wool-facing > img {
+  aspect-ratio:auto;object-fit:contain;
+}
+body.r13-solutions #grecho-v3-main .grecho-solutions-comparison {
+  width:100%;max-width:640px;justify-self:center;text-align:left;
+}
+body.r13-solutions #grecho-v3-main .grecho-solutions-comparison__panel {
+  border-radius:0;
+}
+
+/* Acoustic: widen image-led contexts, never the six-document/FAQ/request
+   reading regions. These IDs/classes intentionally exclude the full Hero. */
+body.r13-acoustic #grecho-v3-main #applications > .gc-container,
+body.r13-acoustic #grecho-v3-main .gac-v1-section-dark > .gc-container,
+body.r13-acoustic #grecho-v3-main #directions > .gc-container,
+body.r13-acoustic #grecho-v3-main #materials > .gc-container {
+  width:calc(100% - var(--r5-gallery-inset,24px) - var(--r5-gallery-inset,24px));
+  max-width:none;margin-inline:auto;
+}
+body.r13-acoustic #grecho-v3-main #applications .gac-v1-two-col,
+body.r13-acoustic #grecho-v3-main .gac-v1-challenge-layout,
+body.r13-acoustic #grecho-v3-main .gac-v1-material-layout {
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:clamp(32px,3vw,56px);align-items:center;
+}
+body.r13-acoustic #grecho-v3-main .sample-hub-direction-intro {
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  gap:clamp(32px,3vw,56px);align-items:center;
+}
+body.r13-acoustic #grecho-v3-main #applications .gac-v1-card-grid,
+body.r13-acoustic #grecho-v3-main .gac-v1-material-grid,
+body.r13-acoustic #grecho-v3-main .gac-v1-challenge-layout > div:not(.gac-v1-media-card),
+body.r13-acoustic #grecho-v3-main .sample-hub-direction-intro > .gc-section-head {
+  width:100%;max-width:640px;justify-self:center;text-align:left;
+}
+body.r13-acoustic #grecho-v3-main #applications .gac-v1-media-card > img {
+  width:100%;max-width:1200px;height:auto;aspect-ratio:3/2;object-fit:cover;
+}
+body.r13-acoustic #grecho-v3-main .gac-v1-challenge-layout .gac-v1-media-card > img,
+body.r13-acoustic #grecho-v3-main .sample-hub-direction-intro .gac-v1-media-card > img {
+  width:100%;max-width:1448px;height:auto;max-height:none;
+  aspect-ratio:auto;object-fit:contain;
+}
+body.r13-acoustic #grecho-v3-main .gac-v1-material-layout .gac-v1-media-card > img {
+  width:100%;max-width:1200px;height:auto;max-height:none;
+  aspect-ratio:auto;object-fit:contain;
+}
+body.r13-acoustic #grecho-v3-main .gac-v1-direction-layout {
+  width:100%;max-width:1120px;margin-inline:auto;
+}
+
+/* Directory grouping stays visible without enclosing every document in a
+   box. The important radius override counters an existing R13 !important;
+   dimensions, CTA roles, status badges and access rules are untouched. */
+body.r13-acoustic #grecho-v3-main .gac-v1-doc-card {
+  border:0;border-top:1px solid var(--r13-line,#d9dddf);
+  border-radius:0!important;
+}
+body.r13-acoustic #grecho-v3-main .gac-v1-direction-card {
+  border-top:1px solid var(--r13-line,#d9dddf);
+}
+
+@media(max-width:1000px) {
+  body.r13-acoustic #grecho-v3-main #applications .gac-v1-two-col,
+  body.r13-acoustic #grecho-v3-main .gac-v1-challenge-layout,
+  body.r13-acoustic #grecho-v3-main .gac-v1-material-layout,
+  body.r13-acoustic #grecho-v3-main .sample-hub-direction-intro {
+    grid-template-columns:minmax(0,1fr);gap:28px;
+  }
+  body.r13-acoustic #grecho-v3-main .gac-v1-challenge-layout .gac-v1-media-card,
+  body.r13-acoustic #grecho-v3-main .sample-hub-direction-intro .gac-v1-media-card {
+    width:100%;max-width:none;
+  }
+  body.r13-acoustic #grecho-v3-main .sample-hub-direction-intro > .gc-section-head {
+    justify-self:start;
+  }
+}
+@media(max-width:767px) {
+  body.r13-solutions #grecho-v3-main #solutions-applications .grecho-v3-solution-grid,
+  body.r13-solutions #grecho-v3-main .grecho-solutions-detail {
+    grid-template-columns:minmax(0,1fr);
+  }
+  body.r13-solutions #grecho-v3-main #solutions-applications .grecho-v3-solution-card__body {
+    padding:22px;
+  }
+  body.r13-solutions #grecho-v3-main .grecho-solutions-detail {
+    gap:24px;
+  }
+}
