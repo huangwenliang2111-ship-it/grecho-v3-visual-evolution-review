@@ -1,0 +1,236 @@
+/* R13 R4: loaded by the six approved pilot pages only. Typography and Hero
+   composition inherit the approved R3 styles. */
+/* Override only the inherited disabled-control chrome, retaining its geometry. */
+body.r13-pilot header.grecho-v3-nav button:is(.grecho-v3-nav__search,.grecho-v3-nav__mobile-search)[disabled][aria-disabled="true"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;}
+body.r13-pilot :is(.grecho-v3-nav__search,.grecho-v3-nav__mobile-search):focus-visible{outline:2px solid #1b4aa1;outline-offset:3px;}
+body.r13-pilot main .r13-r4-heading{width:100%;max-width:none;text-align:center;margin-inline:auto;}
+body.r13-pilot main .r13-r4-heading>p{margin-inline:auto;}
+body.r13-home main .grecho-v3-section-head.r13-r4-heading{width:100%;max-width:none;text-align:center;margin-inline:auto;}
+body.r13-solutions main #solutions-applications .grecho-v3-section-head{width:100%;max-width:none;text-align:center;margin-inline:auto;}
+body.r13-solutions main #solutions-applications .grecho-v3-section-head>p{margin-inline:auto;}
+body.r13-pilot main a.r13-r4-textlink{color:#303638!important;}
+body.r13-pilot main a.r13-r4-textlink:is(:hover,:focus-visible){color:#1b4aa1!important;}
+body.r13-pilot main .r13-r4-arrow{display:inline-block;color:inherit;transform:rotate(0);transition:transform 200ms ease;transform-origin:center;}
+body.r13-pilot main a.r13-r4-textlink:is(:hover,:focus-visible)>.r13-r4-arrow{color:inherit;transform:rotate(-45deg);}
+body.r13-home main .grecho-v3-application-card__body{padding:28px;}
+body.r13-home main .grecho-v3-application-card:is(:hover,:focus-within) .r13-r4-textlink{color:#1b4aa1!important;}
+body.r13-home main .grecho-v3-application-card:is(:hover,:focus-within) .r13-r4-arrow{transform:rotate(-45deg);}
+/* R was clipped at the inherited 16px rounded overflow corner after R3
+   removed the panel inset. Remove that obsolete clipping geometry. */
+body.r13-home .grecho-v3-resource-panel{overflow:visible;border-radius:0;}
+body.r13-home .r13-r4-icon{display:block;isolation:isolate;flex:none;width:76px;height:76px;margin-bottom:20px;border-radius:12px;}
+body.r13-home .grecho-v3-diagnostic-card .r13-r4-icon>img{display:block;width:100%;height:100%;margin:0;}
+body.r13-home .grecho-v3-resource-card__icon{isolation:isolate;width:48px;height:48px;border-radius:12px;}
+/* Original decorative raster glyphs have opaque pale tiles. A monochrome
+   screen blend removes those pale tiles on feedback, retaining each glyph. */
+body.r13-home :is(.grecho-v3-diagnostic-card,.grecho-v3-resource-card):is(:hover,:focus-visible) :is(.r13-r4-icon,.grecho-v3-resource-card__icon){background:#1b4aa1;}
+body.r13-home :is(.grecho-v3-diagnostic-card,.grecho-v3-resource-card):is(:hover,:focus-visible) :is(.r13-r4-icon,.grecho-v3-resource-card__icon)>img{filter:grayscale(1) contrast(6) invert(1);mix-blend-mode:screen;}
+body.r13-home main :is(.grecho-v3-diagnostic-card,.grecho-v3-resource-card):is(:hover,:focus-visible)>.grecho-v3-card-arrow{background:#1b4aa1!important;color:#fff!important;transform:none;}
+@media(max-width:767px){body.r13-home main .grecho-v3-application-card__body{padding:22px;}}
+@media(prefers-reduced-motion:reduce){body.r13-pilot main .r13-r4-arrow,body.r13-pilot main a.r13-r4-textlink:is(:hover,:focus-visible)>.r13-r4-arrow,body.r13-home main .grecho-v3-application-card:is(:hover,:focus-within) .r13-r4-arrow{transition:none;transform:none;}}
+
+/* R4 Solutions: independent headers span their section; comparison bodies and
+   the Beyond Materials editorial split retain their existing left alignment. */
+body.r13-solutions .grecho-solutions-detail__title.r13-r4-heading {
+  width:100%;max-width:none;text-align:center;
+}
+body.r13-solutions .grecho-solutions-cta .r13-r4-heading {
+  max-width:none;text-align:center;
+}
+body.r13-solutions .grecho-solutions-cta .r13-r4-heading p {
+  margin-inline:auto;
+}
+body.r13-solutions .grecho-solutions-cta__actions {justify-content:center;}
+
+/* R4 Acoustic: the document heading becomes a full-width header, with the
+   unchanged thumbnail and its caption as a compact supporting row below it. */
+body.r13-acoustic .sample-acoustic-hub .sample-hub-doc-intro {
+  grid-template-columns:minmax(0,1fr);gap:28px;
+}
+body.r13-acoustic #grecho-v3-main .gc-section-head.r13-r4-heading{width:100%;max-width:none;text-align:center;margin-inline:auto;}
+body.r13-acoustic .sample-acoustic-hub .sample-hub-doc-intro .gac-v1-media-card {
+  width:min(560px,100%);margin-inline:auto;
+}
+body.r13-acoustic .sample-acoustic-hub .sample-hub-doc-intro .r13-r4-heading {
+  margin-bottom:0;
+}
+/* The original direction link is a lightweight navigation action, independent
+   from the six secondary document-request buttons and noninteractive cards. */
+body.r13-acoustic .sample-acoustic-hub .gac-v1-direction-link.r13-r4-textlink {
+  color:#303638;
+}
+body.r13-acoustic .sample-acoustic-hub .gac-v1-direction-link.r13-r4-textlink:is(:hover,:focus-visible) {
+  color:#1B4AA1;
+}
+
+/* R4 technical pages: complete standalone heading groups, keeping all
+   selectors, technical bodies, intentional split layouts and cards left. */
+body.r13-c02 #main .grecho-challenge .gc-section-head.r13-r4-heading,
+body.r13-products main .grecho-v1-section-heading.r13-r4-heading,
+body.r13-p01 #grecho-v3-main .grecho-product-section-head.r13-r4-heading {
+  width:100%;max-width:none;text-align:center;margin-inline:auto;
+}
+body.r13-c02 #main .grecho-challenge .r13-r4-heading .gc-section-intro,
+body.r13-products main .r13-r4-heading .gpl-section-row-note,
+body.r13-p01 #grecho-v3-main .grecho-product-section-head.r13-r4-heading>p {
+  margin-inline:auto;
+}
+/* Clear filters remains a control, in its own row below the centered intro. */
+body.r13-products .grecho-existing.gc-sample-products .gpl-section-row {
+  display:grid;grid-template-columns:minmax(0,1fr);gap:20px;
+}
+body.r13-products .gpl-section-row>.gpl-clear-button {justify-self:end;}
+body.r13-products .gpl-final-cta-strip {text-align:center;}
+body.r13-products .gpl-final-cta-strip>.r13-r4-heading p {margin-inline:auto;}
+/* Genuine navigation links only: no filter, accordion or viewer controls. */
+body.r13-c02 .grecho-challenge :is(.gc-card-link,.gc-related-links) a.r13-r4-textlink {
+  color:#303638;gap:8px;
+}
+body.r13-c02 .grecho-challenge :is(.gc-card-link,.gc-related-links) a.r13-r4-textlink:is(:hover,:focus-visible) {
+  color:#1b4aa1;background:transparent;
+}
+body.r13-products .gpl-hub-card .r13-r4-textlink {color:#303638;}
+body.r13-products .gpl-hub-card:is(:hover,:focus-visible) .r13-r4-textlink {color:#1b4aa1;}
+body.r13-products .gpl-hub-card:is(:hover,:focus-visible) .r13-r4-arrow {transform:rotate(-45deg);}
+/* P01 application illustrations remain informational. Consistent text
+   insets do not give them a navigation-card affordance. */
+body.r13-p01 .grecho-product-applications article figcaption {padding-inline:24px!important;}
+body.r13-p01 .grecho-product-applications article>p {padding-inline:24px;}
+body.r13-p01 .grecho-product-next__panel>.r13-r4-heading h2 {margin-inline:auto;}
+body.r13-p01 .grecho-product-next__panel>.r13-r4-heading>p:not(.grecho-product-eyebrow) {
+  max-width:800px;margin:0 auto 28px;font-size:15px;line-height:1.55;
+}
+body.r13-p01 .grecho-product-next__panel>.grecho-product-actions {justify-content:center;}
+@media(max-width:767px) {
+  body.r13-p01 .grecho-product-applications article figcaption {padding-inline:20px!important;}
+  body.r13-p01 .grecho-product-applications article>p {padding-inline:20px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  body.r13-products .gpl-hub-card:is(:hover,:focus-visible) .r13-r4-arrow {transform:none;transition:none;}
+}
+
+/* Only the next major section owns the additional boundary space. */
+@media (min-width:1100px){
+body.r13-home main #diagnostic.r13-r4-section{padding-top:120px;}
+body.r13-home main #application-examples.r13-r4-section{padding-top:120px;}
+body.r13-home main #resource-preview.r13-r4-section{padding-top:120px;}
+body.r13-home main #faq-preview.r13-r4-section{padding-top:120px;}
+body.r13-home main #technical-request.r13-r4-section{padding-top:120px;}
+body.r13-solutions main #solutions-applications.r13-r4-section{padding-top:120px;}
+body.r13-solutions main .grecho-v3-section.grecho-solutions-partner.r13-r4-section{padding-top:120px;}
+body.r13-solutions main .grecho-solutions-cta.r13-r4-section{padding-top:120px;}
+body.r13-acoustic main #applications.r13-r4-section{padding-top:112px;}
+body.r13-acoustic main .gac-v1-section.gac-v1-section-dark.gc-deep.gc-section.r13-r4-section{padding-top:112px;}
+body.r13-acoustic main #directions.r13-r4-section{padding-top:112px;}
+body.r13-acoustic main #materials.r13-r4-section{padding-top:112px;}
+body.r13-acoustic main #support.r13-r4-section{padding-top:112px;}
+body.r13-acoustic main #documents.r13-r4-section{padding-top:112px;}
+body.r13-acoustic main .gac-v1-section.gac-v1-section-white.gc-section.r13-r4-section{padding-top:112px;}
+body.r13-c02 main #problems.r13-r4-section{padding-top:120px;}
+body.r13-c02 main #solutions.r13-r4-section{padding-top:120px;}
+body.r13-c02 main #products.r13-r4-section{padding-top:120px;}
+body.r13-c02 main #applications.r13-r4-section{padding-top:120px;}
+body.r13-c02 main #technical-discussion.r13-r4-section{padding-top:90px;}
+body.r13-products main .gpl-section.gpl-series-nav-section.gc-section.r13-r4-section{padding-top:96px;}
+body.r13-products main .gpl-section.gpl-how-to-choose.gc-section.r13-r4-section{padding-top:136px;}
+body.r13-products main .gpl-section.gpl-document-boundary.gc-section.r13-r4-section{padding-top:136px;}
+body.r13-products main .gpl-section.gpl-related-hubs.gc-section.r13-r4-section{padding-top:136px;}
+body.r13-products main #products-faq-preview.r13-r4-section{padding-top:136px;}
+body.r13-products main .gpl-section.gpl-final-cta.gc-section.r13-r4-section{padding-top:84px;}
+body.r13-p01 main #section-04.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-02.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-03.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-06.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-07.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #specifications.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-09.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-10.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-11.r13-r4-section{padding-top:120px;}
+body.r13-p01 main #section-12.r13-r4-section{padding-top:120px;}
+}
+@media (min-width:768px) and (max-width:1099px){
+body.r13-home main #diagnostic.r13-r4-section{padding-top:108px;}
+body.r13-home main #application-examples.r13-r4-section{padding-top:108px;}
+body.r13-home main #resource-preview.r13-r4-section{padding-top:108px;}
+body.r13-home main #faq-preview.r13-r4-section{padding-top:108px;}
+body.r13-home main #technical-request.r13-r4-section{padding-top:108px;}
+body.r13-solutions main #solutions-applications.r13-r4-section{padding-top:108px;}
+body.r13-solutions main .grecho-v3-section.grecho-solutions-partner.r13-r4-section{padding-top:108px;}
+body.r13-solutions main .grecho-solutions-cta.r13-r4-section{padding-top:108px;}
+body.r13-acoustic main #applications.r13-r4-section{padding-top:100px;}
+body.r13-acoustic main .gac-v1-section.gac-v1-section-dark.gc-deep.gc-section.r13-r4-section{padding-top:100px;}
+body.r13-acoustic main #directions.r13-r4-section{padding-top:100px;}
+body.r13-acoustic main #materials.r13-r4-section{padding-top:100px;}
+body.r13-acoustic main #support.r13-r4-section{padding-top:100px;}
+body.r13-acoustic main #documents.r13-r4-section{padding-top:100px;}
+body.r13-acoustic main .gac-v1-section.gac-v1-section-white.gc-section.r13-r4-section{padding-top:100px;}
+body.r13-c02 main #problems.r13-r4-section{padding-top:108px;}
+body.r13-c02 main #solutions.r13-r4-section{padding-top:108px;}
+body.r13-c02 main #products.r13-r4-section{padding-top:108px;}
+body.r13-c02 main #applications.r13-r4-section{padding-top:108px;}
+body.r13-c02 main #technical-discussion.r13-r4-section{padding-top:78px;}
+body.r13-products main .gpl-section.gpl-series-nav-section.gc-section.r13-r4-section{padding-top:84px;}
+body.r13-products main .gpl-section.gpl-how-to-choose.gc-section.r13-r4-section{padding-top:88px;}
+body.r13-products main .gpl-section.gpl-document-boundary.gc-section.r13-r4-section{padding-top:88px;}
+body.r13-products main .gpl-section.gpl-related-hubs.gc-section.r13-r4-section{padding-top:88px;}
+body.r13-products main #products-faq-preview.r13-r4-section{padding-top:88px;}
+body.r13-products main .gpl-section.gpl-final-cta.gc-section.r13-r4-section{padding-top:60px;}
+body.r13-p01 main #section-04.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-02.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-03.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-06.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-07.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #specifications.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-09.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-10.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-11.r13-r4-section{padding-top:108px;}
+body.r13-p01 main #section-12.r13-r4-section{padding-top:108px;}
+}
+@media (max-width:767px){
+body.r13-home main #diagnostic.r13-r4-section{padding-top:66px;}
+body.r13-home main #application-examples.r13-r4-section{padding-top:66px;}
+body.r13-home main #resource-preview.r13-r4-section{padding-top:66px;}
+body.r13-home main #faq-preview.r13-r4-section{padding-top:66px;}
+body.r13-home main #technical-request.r13-r4-section{padding-top:66px;}
+body.r13-solutions main #solutions-applications.r13-r4-section{padding-top:66px;}
+body.r13-solutions main .grecho-v3-section.grecho-solutions-partner.r13-r4-section{padding-top:66px;}
+body.r13-solutions main .grecho-solutions-cta.r13-r4-section{padding-top:66px;}
+body.r13-acoustic main #applications.r13-r4-section{padding-top:64px;}
+body.r13-acoustic main .gac-v1-section.gac-v1-section-dark.gc-deep.gc-section.r13-r4-section{padding-top:64px;}
+body.r13-acoustic main #directions.r13-r4-section{padding-top:64px;}
+body.r13-acoustic main #materials.r13-r4-section{padding-top:64px;}
+body.r13-acoustic main #support.r13-r4-section{padding-top:64px;}
+body.r13-acoustic main #documents.r13-r4-section{padding-top:64px;}
+body.r13-acoustic main .gac-v1-section.gac-v1-section-white.gc-section.r13-r4-section{padding-top:64px;}
+body.r13-c02 main #problems.r13-r4-section{padding-top:66px;}
+body.r13-c02 main #solutions.r13-r4-section{padding-top:66px;}
+body.r13-c02 main #products.r13-r4-section{padding-top:66px;}
+body.r13-c02 main #applications.r13-r4-section{padding-top:66px;}
+body.r13-c02 main #technical-discussion.r13-r4-section{padding-top:44px;}
+body.r13-products main .gpl-section.gpl-series-nav-section.gc-section.r13-r4-section{padding-top:56px;}
+body.r13-products main .gpl-section.gpl-how-to-choose.gc-section.r13-r4-section{padding-top:76px;}
+body.r13-products main .gpl-section.gpl-document-boundary.gc-section.r13-r4-section{padding-top:76px;}
+body.r13-products main .gpl-section.gpl-related-hubs.gc-section.r13-r4-section{padding-top:76px;}
+body.r13-products main #products-faq-preview.r13-r4-section{padding-top:76px;}
+body.r13-products main .gpl-section.gpl-final-cta.gc-section.r13-r4-section{padding-top:44px;}
+body.r13-p01 main #section-04.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-02.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-03.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-06.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-07.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #specifications.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-09.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-10.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-11.r13-r4-section{padding-top:66px;}
+body.r13-p01 main #section-12.r13-r4-section{padding-top:66px;}
+}
+
+/* Owner's later video amendment: same full-bleed Hero, unchanged copy/crops.
+   Reuse the existing controller: pause, reduced motion, offscreen and mobile
+   poster fallback. The supplied MP4 is copied byte-for-byte. */
+body.r13-home .r13-r3-hero .r13-owner-video{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;z-index:0;opacity:1;filter:none;}
+body.r13-home .r13-r3-hero .r13-owner-video.is-poster-only{display:none;}
+body.r13-home .r13-r3-hero .r13-owner-video-toggle{z-index:2;bottom:16px;right:24px;background:#fff;color:#303638;border:1px solid #cbd0d3;box-shadow:none;}
+body.r13-home .r13-r3-hero .r13-owner-video-toggle:focus-visible{outline:2px solid #1b4aa1;outline-offset:3px;}
+@media(max-width:767px){body.r13-home .r13-r3-hero .r13-owner-video{display:none;}}
+@media(prefers-reduced-motion:reduce){body.r13-home .r13-r3-hero .r13-owner-video{display:none;}}
