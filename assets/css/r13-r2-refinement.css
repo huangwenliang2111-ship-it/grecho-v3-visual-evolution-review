@@ -1,0 +1,113 @@
+/* R13 R2. Explicit CTA roles only; filters, navigation triggers and viewers are controls.
+   The :is() scope matches existing legacy ID specificity without changing global tokens. */
+body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta][data-r13-cta] {
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  min-height:46px;padding:12px 18px!important;border:1px solid #899095!important;
+  border-radius:4px!important;background:#fff!important;color:#303638!important;
+  box-shadow:none!important;text-decoration:none;white-space:normal;text-align:center;
+  transition:background-color 140ms ease,color 140ms ease,border-color 140ms ease!important;
+}
+body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta="primary"][data-r13-cta] {
+  background:#1b4aa1!important;border-color:#1b4aa1!important;color:#fff!important;
+}
+body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta][data-r13-cta]:not(:disabled):not([aria-disabled="true"]):hover {
+  background:#1b4aa1!important;border-color:#1b4aa1!important;color:#fff!important;
+}
+body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta="primary"][data-r13-cta]:not(:disabled):not([aria-disabled="true"]):hover {
+  background:#153b82!important;border-color:#153b82!important;
+}
+body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta][data-r13-cta]:not(:disabled):not([aria-disabled="true"]):active {
+  background:#102e65!important;border-color:#102e65!important;color:#fff!important;transform:none!important;
+}
+body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta][data-r13-cta]:focus-visible {
+  outline:3px solid #1b4aa1!important;outline-offset:4px!important;
+}
+body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta][data-r13-cta]:is(:disabled,[aria-disabled="true"]) {
+  background:#e9ebec!important;border-color:#cbd0d3!important;color:#6c7276!important;
+  cursor:not-allowed!important;transform:none!important;opacity:1!important;
+}
+/* Adjacent video-led composition. No video overlay; all frames retain original colour. */
+body.r13-home .grecho-v3-hero {
+  display:grid;grid-template-columns:minmax(330px,1fr) minmax(0,2fr);
+  width:min(1440px,100%);margin-inline:auto;align-items:stretch;
+}
+body.r13-home .grecho-v3-hero__content {
+  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  gap:32px;width:100%;max-width:none;margin:0;padding:48px 40px;z-index:auto;
+}
+body.r13-home .grecho-v3-hero h1 {max-width:9.5ch;text-wrap:balance;}
+body.r13-home .grecho-v3-hero .grecho-v3-actions {
+  flex-direction:column;align-items:stretch;justify-content:flex-start;gap:12px;
+}
+body.r13-home .r13-home-film {width:100%;margin:0;border-radius:0;min-height:540px;}
+body.r13-home .grecho-v3-hero__media {
+  display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center;
+  filter:none;opacity:1;
+}
+body.r13-home .r13-home-poster {width:100%;height:100%;object-fit:cover;object-position:center;}
+body.r13-home .r13-intro {padding-top:32px;}
+@media(max-width:1000px) {
+  body.r13-home .grecho-v3-hero {grid-template-columns:1fr;}
+  body.r13-home .r13-home-film {grid-row:1;min-height:0;height:400px;}
+  body.r13-home .grecho-v3-hero__content {display:grid;grid-template-columns:1fr 1fr;padding:28px 32px;gap:32px;align-items:center;}
+  body.r13-home .grecho-v3-hero h1 {max-width:14ch;}
+  body.r13-home .grecho-v3-hero .grecho-v3-actions {align-items:flex-start;}
+  body.r13-home .r13-intro {padding-top:16px;}
+}
+@media(max-width:767px) {
+  body.r13-pilot :is(header,#hero) .grecho-v3-nav__cta[data-r13-cta][data-r13-cta] {padding-inline:12px!important;}
+  body.r13-home .grecho-v3-hero__media {display:none!important;}
+  body.r13-home .r13-home-film {height:230px;}
+  body.r13-home .grecho-v3-hero__content {display:flex;gap:24px;padding:24px 20px 16px;}
+  body.r13-home .grecho-v3-hero h1 {max-width:15ch;}
+  body.r13-home .grecho-v3-hero .grecho-v3-actions {width:100%;align-items:stretch;gap:10px;}
+  body.r13-home .r13-home-poster {display:block;height:230px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  body.r13-home .r13-home-poster {display:block;position:absolute;inset:0;height:100%;}
+  body.r13-home .grecho-v3-hero__media {display:none!important;}
+  body.r13-pilot :is(main,header,#hero,#products-landing) [data-r13-cta][data-r13-cta] {transition:none!important;}
+}
+/* Documents remain secondary access actions; consultation remains primary. */
+body.r13-acoustic .gac-v1-doc-card {display:flex;flex-direction:column;align-items:flex-start;gap:14px;}
+body.r13-acoustic .gac-v1-doc-card :is(h3,p) {margin-block:0;}
+body.r13-acoustic .gac-v1-doc-card .gac-v1-doc-cta {
+  margin-top:auto!important;min-height:48px;width:100%;justify-content:space-between!important;
+  padding:12px 16px!important;text-align:left!important;line-height:1.5;
+}
+body.r13-acoustic .gac-v1-doc-cta::after {flex:0 0 auto;position:static!important;margin-left:auto;}
+body.r13-acoustic .grecho-v1-support-action-buttons {gap:12px;}
+/* Restore direct problem-to-solution reading; never impose empty panel height. */
+body.r13-c02 .grecho-challenge .gc-pair-grid {
+  grid-template-columns:minmax(0,0.9fr) 24px minmax(0,1.1fr)!important;gap:14px!important;align-items:start;
+}
+body.r13-c02 .grecho-challenge :is(.gc-problem-context,.gc-solution-copy) {min-height:0;padding:20px;}
+body.r13-c02 .grecho-challenge .gc-arrow {transform:none;align-self:center;justify-self:center;background:#f4f5f5!important;color:#596066!important;box-shadow:none;}
+body.r13-c02 .grecho-challenge .gc-pair {padding:24px;margin-bottom:12px;}
+body.r13-c02 .grecho-challenge .gc-related {margin-top:20px;}
+/* Genuine existing texture plus an explicitly labelled existing layer illustration.
+   No fabricated edges, thickness, perspective transform or new product photograph. */
+body.r13-p01 .grecho-product-hero__visual.r13-r2-material {
+  display:grid;grid-template-columns:1fr;gap:22px;aspect-ratio:auto;overflow:visible;
+  border:0;border-radius:0;background:transparent;box-shadow:none;padding:0;
+}
+body.r13-p01 .r13-r2-material figure {margin:0;}
+body.r13-p01 .r13-r2-material .r13-r2-surface img {
+  display:block;width:100%;height:auto;aspect-ratio:1672/940;object-fit:contain;
+  border:1px solid #d9dddf;border-radius:3px;
+}
+body.r13-p01 .r13-r2-material figcaption {color:#596066;margin-top:10px;}
+body.r13-p01 .r13-r2-material .r13-r2-layer {
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center;gap:20px;
+  padding-top:18px;border-top:1px solid #d9dddf;
+}
+body.r13-p01 .r13-r2-material .r13-r2-layer img {width:100%;height:auto;object-fit:contain;}
+body.r13-p01 .r13-r2-material .r13-r2-layer figcaption {margin:0;}
+@media(max-width:767px) {
+  body.r13-c02 .grecho-challenge .gc-pair-grid {grid-template-columns:1fr!important;gap:12px!important;}
+  body.r13-c02 .grecho-challenge .gc-arrow {transform:rotate(90deg);}
+  body.r13-c02 .grecho-challenge .gc-pair {padding:18px;}
+  body.r13-acoustic .sample-acoustic-hub #hero .grecho-v1-actions {gap:10px;}
+  body.r13-acoustic .sample-acoustic-hub #hero .gac-v1-hero-tertiary-cta {width:auto;flex-basis:auto;}
+  body.r13-p01 .r13-r2-material .r13-r2-layer {grid-template-columns:1.15fr 1fr;gap:16px;}
+}
