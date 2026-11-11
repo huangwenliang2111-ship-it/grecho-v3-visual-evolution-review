@@ -37,16 +37,13 @@
 
     home.querySelectorAll('#solution-hubs [data-r6-gallery], #application-examples [data-r6-gallery]').forEach(track => {
       const cards = [...track.children].filter(node => node.matches('article'));
-      const controls = track.nextElementSibling;
+      const controls = track.previousElementSibling;
       if (!cards.length || !track.id || !controls?.matches('[data-r6-gallery-controls]')) return;
       const previous = controls.querySelector('[data-gallery-prev]');
       const next = controls.querySelector('[data-gallery-next]');
       const progress = controls.querySelector('[data-gallery-progress]');
       if (!previous || !next || !progress || previous.getAttribute('aria-controls') !== track.id || next.getAttribute('aria-controls') !== track.id) return;
       controls.hidden = false;
-      // The horizontal preview uses the approved static composites. Keep the
-      // source-disabled layer toggles disabled after the legacy engine initializes.
-      track.querySelectorAll('.grecho-rev03-trigger').forEach(button => { button.disabled = true; });
 
       let pointer = null;
       let suppressClick = false;
@@ -114,6 +111,7 @@
         pointer = null;
         if (finished.dragging) suppressClick = true;
         track.removeAttribute('data-r6-dragging');
+        if (finished.dragging) track.dispatchEvent(new CustomEvent('grecho:r61-drag-state', { detail: { active: false } }));
         if (track.hasPointerCapture(finished.id)) track.releasePointerCapture(finished.id);
         scheduleUpdate();
       };
@@ -135,6 +133,7 @@
           if (Math.abs(dx) < 8 || Math.abs(dx) < Math.abs(dy)) return;
           pointer.dragging = true;
           track.setAttribute('data-r6-dragging', 'true');
+          track.dispatchEvent(new CustomEvent('grecho:r61-drag-state', { detail: { active: true } }));
           // Stop a pending native smooth scroll before applying pointer deltas.
           track.scrollTo({ left: track.scrollLeft, behavior: 'instant' });
           track.setPointerCapture(pointer.id);
@@ -172,7 +171,12 @@
         else if (target.right > right) delta = target.right - right;
         // Horizontal inline-nearest equivalent of scrollIntoView. Scrolling only
         // this track cannot unexpectedly move the page or another ancestor.
-        if (Math.abs(delta) > epsilon) scrollTo(position() + delta);
+        if (Math.abs(delta) > epsilon) {
+          // A full-width layer button needs a card snap point; a nearest-edge
+          // delta can snap back and leave part of the focused button clipped.
+          const index = cards.indexOf(card);
+          scrollTo(index >= 0 && target.width <= track.clientWidth ? cardStarts()[index] : position() + delta);
+        }
       });
       track.addEventListener('scroll', scheduleUpdate, { passive: true });
       track.addEventListener('wheel', () => { arrowTarget = null; }, { passive: true });

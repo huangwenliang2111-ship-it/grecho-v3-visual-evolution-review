@@ -18,14 +18,17 @@ body.r13-home main [data-r6-gallery] a{cursor:pointer;}
 body.r13-home main [data-r6-gallery] img{-webkit-user-drag:none;user-select:none;}
 body.r13-home main [data-r6-gallery][data-r6-dragging="true"]{cursor:grabbing;scroll-snap-type:none;user-select:none;}
 body.r13-home main [data-r6-gallery][data-r6-dragging="true"] a{cursor:grabbing;}
-body.r13-home main [data-r6-gallery] .grecho-rev03-trigger[disabled]{pointer-events:none;touch-action:auto;}
+body.r13-home main [data-r6-gallery] .grecho-rev03-trigger{touch-action:auto;}
+body.r13-home main [data-r6-gallery][data-r6-dragging="true"] .grecho-rev03-trigger{pointer-events:none;}
 body.r13-home main [data-r6-gallery] .grecho-v3-solution-card__body{
   display:block;flex:none;height:auto;min-height:0;padding:22px 0 0!important;
 }
 body.r13-home main [data-r6-gallery] .grecho-v3-solution-card h3{font-size:26px;line-height:1.2;margin-bottom:12px;}
 body.r13-home main [data-r6-gallery] .grecho-v3-solution-card ul{margin-bottom:12px;}
 body.r13-home main [data-r6-gallery] .grecho-v3-solution-card .grecho-v3-text-link{margin-top:0;}
-body.r13-home main [data-r6-gallery-controls]{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:24px;min-height:44px;}
+/* R6.1 controls precede the track in both reading and keyboard order. */
+body.r13-home main :is(#solution-hubs,#application-examples) .grecho-v3-section-head{margin-bottom:24px;}
+body.r13-home main [data-r6-gallery-controls]{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin:0 0 20px;min-height:44px;}
 body.r13-home main [data-r6-gallery-controls][hidden]{display:none;}
 body.r13-home main [data-gallery-progress]{color:#5b646a;font-size:14px;font-variant-numeric:tabular-nums;margin-right:10px;}
 body.r13-home main [data-r6-gallery-controls] button{
@@ -41,7 +44,6 @@ body.r13-home main [data-r6-gallery-controls] button:disabled{background:#fff!im
 @media(max-width:767px){
   body.r13-home main [data-r6-gallery]{--r6-card-width:calc(100vw - 88px);}
   body.r13-home main [data-r6-gallery] .grecho-v3-solution-card h3{font-size:24px;}
-  body.r13-home main [data-r6-gallery-controls]{margin-top:20px;}
 }
 @media(prefers-reduced-motion:reduce){body.r13-home main [data-r6-gallery]{scroll-behavior:auto;}body.r13-home main [data-r6-gallery-controls] button{transition:none;}}
 
@@ -66,7 +68,6 @@ body.r13-home main #application-examples [data-r6-gallery] .grecho-v3-applicatio
   body.r13-home main :is(#solution-hubs,#application-examples){
     box-sizing:border-box;min-height:calc(100svh - 78px);padding-top:64px;padding-bottom:64px;
   }
-  body.r13-home main :is(#solution-hubs,#application-examples) .grecho-v3-section-head{margin-bottom:36px;}
 }
 @media(min-width:768px) and (max-width:1099px){
   body.r13-home main #application-examples [data-r6-gallery]{--r6-card-width:min(600px,70vw);}
