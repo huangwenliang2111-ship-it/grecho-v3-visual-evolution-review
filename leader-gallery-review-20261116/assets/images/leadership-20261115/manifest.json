@@ -1,0 +1,170 @@
+[
+  {
+    "slot": "resource-color",
+    "file": "assets/images/leadership-20261115/resource-color.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "aebb876db55cebe5165d0b8c0008031235cafa5663ca3f9df49c552ba6709bd8",
+    "bytes": 230786,
+    "alt": "AI concept: Thin white facer and separate colorful paper swatches on a sunlit oak desk",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "resource-brief",
+    "file": "assets/images/leadership-20261115/resource-brief.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "4205886b4efbea12e83605ee47ce5ff0b3b6f0575eb3ff36ef1844b6355e51b3",
+    "bytes": 199800,
+    "alt": "AI concept: Thin white facer and a blank leaflet on a yellow material library table",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "resource-full",
+    "file": "assets/images/leadership-20261115/resource-full.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "0a18496c3f0e3c08a7a013c71837b6cee6d44696ecb22273fe40e101586c3862",
+    "bytes": 215112,
+    "alt": "AI concept: Blank papers in a navy review folder beside a thin white facer sample",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "resource-fire",
+    "file": "assets/images/leadership-20261115/resource-fire.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "2f036c11835e81b02686d1aa4065148e2c8b6f3112310e0bbbd8d0e02c195699",
+    "bytes": 309030,
+    "alt": "AI concept: Blank request papers and thin white facer beside a terracotta folder",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "resource-compliance",
+    "file": "assets/images/leadership-20261115/resource-compliance.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "aed928803ca23f337fbb9eb29ed297aa950504776f96feb03230b41ced0d485f",
+    "bytes": 236158,
+    "alt": "AI concept: Blank folder and thin white facer in a green sunlit review workspace",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "resource-safety",
+    "file": "assets/images/leadership-20261115/resource-safety.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "6a661d581e25716c1ad975d7029010170fa184b5a32027ffe38a8b352d4a94c7",
+    "bytes": 208950,
+    "alt": "AI concept: Blank notebook, clear goggles and gloves beside a thin white facer sample",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "faq-compare",
+    "file": "assets/images/leadership-20261115/faq-compare.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "3ff81f661909ddcf4ac54e3169c7bfe8e5f45f7045f1e12dc0b88966be68ac0d",
+    "bytes": 343034,
+    "alt": "AI concept: three thin white fiberglass facer samples on a terracotta surface for comparing material options",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "faq-samples",
+    "file": "assets/images/leadership-20261115/faq-samples.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "71658a568e7d92d3ab1e660e93e43e0bda5088a8ba8cc986b53707388ba21c21",
+    "bytes": 304488,
+    "alt": "AI concept: thin translucent white facer samples in an unmarked kraft sample box on a warm yellow table",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "faq-documents",
+    "file": "assets/images/leadership-20261115/faq-documents.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "8fcddd2582f9f3f9b73f3ae60e813a44ad995c70c64dbd394baed3725151a50f",
+    "bytes": 170730,
+    "alt": "AI concept: blank papers and notebook with a thin white facer sample in a colorful document preparation setting",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "faq-application",
+    "file": "assets/images/leadership-20261115/faq-application.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "7530b04bb2779214011e68219a417948b0e02113aa9321229484f3d7979bbecf",
+    "bytes": 187472,
+    "alt": "AI concept: a thin white facer sample and blank notes in a contemporary acoustic meeting-room setting",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "faq-custom",
+    "file": "assets/images/leadership-20261115/faq-custom.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "c55db43d42cfbc668f1b050e4640ab7fcad01359c8cc5c6daf844d5486a1ab49",
+    "bytes": 280152,
+    "alt": "AI concept: thin white facer strips of different widths with neutral surface samples and colorful ceramic surroundings",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  },
+  {
+    "slot": "faq-review",
+    "file": "assets/images/leadership-20261115/faq-review.webp",
+    "native_dimensions": [
+      1484,
+      1060
+    ],
+    "sha256": "bd7eae0fd7a08c6be6bd87789b56ece2f07d94aa0dbd09ec9ad7625d033e73d5",
+    "bytes": 340440,
+    "alt": "AI concept: two empty teal chairs around a table with blank notes and a thin white facer sample for project discussion",
+    "source": "OpenAI builtin image_gen",
+    "concept_status": "AI_CONCEPT",
+    "disclosure": "Owner-authorized internal leadership comparison artwork; not actual products, customer projects or test evidence."
+  }
+]

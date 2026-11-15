@@ -1,0 +1,11 @@
+/* Leadership subpath only: preserve every approved typography rule. */
+body.r61-closeout main #solution-hubs [data-r6-gallery] .grecho-v3-solution-card__body{padding:22px 24px 20px!important;}
+body.r61-closeout main #diagnostic .r61-diagnostic-link>.grecho-v3-card-arrow{display:grid;place-items:center;padding:0;}
+body.r61-closeout main #diagnostic .grecho-v3-card-arrow svg{display:block;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+body.r61-closeout main [data-r6-gallery-controls]:not([hidden]){display:flex;}
+body.r61-closeout .leadership-concept-disclosure{margin:24px 0 16px;color:inherit;}
+@media(max-width:767px){body.r61-closeout main #solution-hubs [data-r6-gallery] .grecho-v3-solution-card__body{padding:22px 20px 20px!important;}}
+
+body.r61-closeout main #r61-faq-gallery .r61-faq-support-card{background-image:url('../images/leadership-20261115/faq-review.webp');background-size:cover;background-position:center;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-support-card .grecho-v3-faq-note{background:rgb(255 255 255 / .97);padding:18px;border:0;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-support-card>.grecho-v3-text-link{background:rgb(255 255 255 / .97);padding:12px 16px;align-self:flex-start;}
