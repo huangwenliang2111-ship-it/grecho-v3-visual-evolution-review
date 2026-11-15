@@ -1,0 +1,37 @@
+/* Scoped original-Gallery refinements. Existing typography and rail metrics stay inherited. */
+body.r13-home main :is(#solution-hubs,#application-examples) .r61-editorial-heading{
+  text-align:left;
+}
+body.r13-home main :is(#solution-hubs,#application-examples) details>summary{
+  cursor:pointer;
+}
+body.r13-home main :is(#solution-hubs,#application-examples) details>summary:focus-visible{
+  outline:2px solid #1b4aa1;
+  outline-offset:4px;
+}
+body.r13-home main #solution-hubs .r61-solution-priorities{
+  border:0;
+  box-shadow:none;
+}
+body.r13-home main #solution-hubs .r61-resource-support>.grecho-v3-inline-cta{
+  flex-direction:column;
+  align-items:flex-start;
+  background:#f8fafb;
+  border-color:#e4e8eb;
+  box-shadow:none;
+}
+body.r13-home main #application-examples .r61-document-support .grecho-v3-application-card__media{
+  outline:1px solid #e8ebee;
+  outline-offset:-1px;
+}
+body.r13-home main #application-examples .r61-accessible-identity{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip-path:inset(50%);
+  white-space:nowrap;
+  border:0;
+}

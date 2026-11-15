@@ -1,0 +1,72 @@
+/* R6.1 lower-section composition only. Original text classes own typography. */
+body.r13-home main .r61-editorial-lower .r61-lower-heading{max-width:none;text-align:left;margin-inline:0;margin-bottom:28px;position:static;}
+body.r13-home main .r61-editorial-lower .r61-lower-heading h2{text-align:left;max-width:none;margin-inline:0;}
+
+/* A material strip and an actual resource directory, never document covers. */
+body.r13-home main .r61-resource-materials{display:grid;grid-template-columns:1.4fr 1fr .8fr;gap:12px;min-width:0;margin-bottom:20px;}
+body.r13-home main .r61-resource-materials img{display:block;width:100%;height:220px;min-width:0;object-fit:cover;}
+body.r13-home main .r61-resource-directory{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px;}
+body.r13-home main .r61-resource-directory .grecho-v3-resource-card{display:grid;grid-template-columns:48px minmax(0,1fr) 30px;align-items:center;gap:14px;min-height:116px;padding:20px 0;border-radius:0!important;}
+body.r13-home main .r61-resource-directory .grecho-v3-card-arrow{position:static;}
+body.r13-home main .r61-resource-directory .grecho-v3-resource-card__copy{min-width:0;}
+body.r13-home main .r61-resource-access{max-width:920px;margin-top:24px;}
+body.r13-home main .r61-resource-access p{margin-bottom:0;}
+
+/* Original FAQ button and hidden-panel behavior remain the only disclosure. */
+body.r13-home main .r61-faq-editorial{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:44px;align-items:start;}
+body.r13-home main .r61-faq-editorial .grecho-v3-faq{min-width:0;}
+body.r13-home main .r61-faq-editorial .grecho-v3-faq-panel p{max-width:72ch;}
+body.r13-home main .r61-faq-editorial .grecho-v3-faq-item button>span:nth-child(2){max-width:64ch;}
+body.r13-home main .r61-faq-support{min-width:0;background:#f4f5f5;padding-bottom:24px;}
+body.r13-home main .r61-faq-support>img{display:block;width:100%;height:248px;object-fit:cover;}
+body.r13-home main .r61-faq-support .grecho-v3-faq-note{margin:0;padding:24px;border:0;background:transparent;}
+body.r13-home main .r61-faq-support>.grecho-v3-text-link{margin-inline:24px;}
+body.r13-home main .r61-faq-editorial .grecho-v3-faq-item{border-radius:0;border-inline:0;border-top:0;box-shadow:none;}
+body.r13-home main .r61-faq-editorial .grecho-v3-faq-item:first-child{border-top:1px solid #dadddf;}
+body.r13-home main .r61-faq-editorial .grecho-v3-faq-item button:focus-visible{outline:2px solid #1b4aa1;outline-offset:-3px;}
+body.r13-home main .r61-faq-context{margin-top:24px;max-width:72ch;}
+body.r13-home main .r61-faq-context>summary{cursor:pointer;}
+body.r13-home main .r61-faq-context>summary:focus-visible{outline:2px solid #1b4aa1;outline-offset:4px;}
+body.r13-home main .r61-faq-context .grecho-v3-faq-intro{position:static;margin-top:14px;}
+
+/* Offset material photographs form the poster; all technical copy stays live. */
+body.r13-home main .r61-request-poster{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:52px;align-items:start;}
+body.r13-home main .r61-request-materials{display:grid;grid-template-columns:1fr .48fr;grid-template-rows:auto auto;align-items:start;min-width:0;margin:0;padding-bottom:28px;}
+body.r13-home main .r61-request-materials__main{display:block;grid-column:1/-1;grid-row:1;width:100%;height:460px;object-fit:cover;object-position:48% center;}
+body.r13-home main .r61-request-materials__detail{display:block;grid-column:2;grid-row:2;z-index:1;width:100%;height:170px;margin-top:-56px;object-fit:cover;border:10px solid #fff;box-sizing:border-box;}
+body.r13-home main .r61-request-copy.grecho-v3-request-checklist{min-width:0;padding:4px 0 0;border:0!important;border-radius:0!important;}
+body.r13-home main .r61-request-copy>p{max-width:70ch;}
+body.r13-home main .r61-request-copy>.grecho-v3-button{margin-top:6px;margin-bottom:28px;}
+body.r13-home main .r61-request-copy>.grecho-v3-support-card{padding:22px 0;border-radius:0;border:0;border-top:1px solid #dadddf;}
+body.r13-home main .r61-request-details{margin-top:14px;border-block:1px solid #dadddf;}
+body.r13-home main .r61-request-details>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:52px;padding-block:14px;cursor:pointer;list-style:none;}
+body.r13-home main .r61-request-details>summary::-webkit-details-marker{display:none;}
+body.r13-home main .r61-request-details>summary:focus-visible{outline:2px solid #1b4aa1;outline-offset:4px;}
+body.r13-home main .r61-request-details[open]>summary>span{transform:rotate(45deg);}
+body.r13-home main .r61-request-details .r61-request-original-intro{text-align:left;max-width:none;margin:8px 0 0;}
+body.r13-home main .r61-request-details .grecho-v3-check-grid{margin-block:20px;}
+body.r13-home main .r61-request-details .grecho-v3-check-card{min-height:0;}
+body.r13-home main .r61-request-details .grecho-v3-support-stack{margin-bottom:20px;}
+body.r13-home main .r61-request-details .grecho-v3-support-card{border:0;border-top:1px solid #dadddf;border-radius:0;padding:20px 0 0;}
+
+@media(max-width:1099px){
+ body.r13-home main .r61-resource-directory{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;}
+ body.r13-home main .r61-faq-editorial{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:28px;}
+ body.r13-home main .r61-request-poster{gap:28px;}
+ body.r13-home main .r61-request-materials__main{height:400px;}
+ body.r13-home main .r61-request-materials__detail{height:140px;}
+}
+@media(max-width:767px){
+ body.r13-home main .r61-resource-materials{grid-template-columns:1.25fr 1fr;gap:8px;}
+ body.r13-home main .r61-resource-materials img{height:164px;}
+ body.r13-home main .r61-resource-materials img:last-child{display:none;}
+ body.r13-home main .r61-resource-directory{grid-template-columns:minmax(0,1fr);}
+ body.r13-home main .r61-resource-directory .grecho-v3-resource-card{min-height:96px;}
+ body.r13-home main .r61-faq-editorial{grid-template-columns:minmax(0,1fr);gap:28px;}
+ body.r13-home main .r61-faq-support>img{height:208px;}
+ body.r13-home main .r61-request-poster{grid-template-columns:minmax(0,1fr);gap:12px;}
+ body.r13-home main .r61-request-materials{grid-template-columns:1fr .55fr;padding-bottom:0;}
+ body.r13-home main .r61-request-materials__main{height:300px;}
+ body.r13-home main .r61-request-materials__detail{height:120px;margin-top:-48px;border-width:7px;}
+ body.r13-home main .r61-request-copy.grecho-v3-request-checklist{padding-top:8px;}
+}

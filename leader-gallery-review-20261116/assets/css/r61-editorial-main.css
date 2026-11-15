@@ -1,0 +1,46 @@
+/* Homepage-only additions. Existing type tokens, weights and section rhythm are authority. */
+body.r61-editorial main :is(#solution-hubs,#diagnostic,#application-examples,#resource-preview,#faq-preview,#technical-request)>.grecho-v3-container{width:calc(100% - 2 * var(--r5-gallery-inset));max-width:none;margin-inline:auto}
+body.r61-editorial main .grecho-v3-section-head{text-align:left;max-width:none;margin-left:0;margin-right:0}
+body.r61-editorial main .grecho-v3-section-head h2{margin-left:0;margin-right:0}
+body.r61-editorial main :is(#solution-hubs,#diagnostic,#application-examples,#resource-preview,#faq-preview,#technical-request) .grecho-v3-section-head{text-align:left;max-width:none;margin-left:0;margin-right:0}
+body.r61-editorial main :is(#solution-hubs,#diagnostic,#application-examples,#resource-preview,#faq-preview,#technical-request) .grecho-v3-section-head h2{text-align:left;margin-left:0;margin-right:0}
+body.r61-editorial main #solution-hubs [data-r6-gallery]>.grecho-v3-solution-card{outline:1px solid #e8edf0;outline-offset:-1px;box-shadow:0 3px 12px #1b325208!important}
+body.r61-editorial main .r61-section-details{margin-top:24px;max-width:900px}
+body.r61-editorial main .r61-section-details summary{cursor:pointer;padding-block:12px;color:#52606b}
+body.r61-editorial main .r61-section-details .grecho-v3-section-head{margin-top:16px}
+body.r61-editorial main .r61-section-details :is(h2,.grecho-v3-eyebrow){display:none}
+body.r61-editorial main .r61-support-card{display:flex;flex-direction:column;justify-content:space-between;gap:32px;padding:32px;background:#eef2f7;min-height:360px;border:1px solid #dbe1e8!important;box-shadow:0 3px 12px #1b325208!important}
+body.r61-editorial main .r61-support-card>div{display:flex;flex-direction:column;gap:20px}
+body.r61-editorial main .r61-support-card .grecho-v3-button{align-self:flex-start}
+body.r61-editorial main #diagnostic [data-r6-gallery]>.r61-diagnostic-item{border:1px solid #e0e4e8!important;box-shadow:0 3px 12px #1b325208!important}
+body.r61-editorial main #diagnostic .r61-diagnostic-link{display:block;height:auto;min-height:0;padding:0;background:#fff;border:0;border-radius:0;box-shadow:none;transform:none}
+body.r61-editorial main #diagnostic .r61-diagnostic-link>div{padding:24px}
+body.r61-editorial main #diagnostic .r61-diagnostic-link>.grecho-v3-card-arrow{display:block;position:static;margin:0 24px 24px}
+body.r61-editorial main .r61-diagnostic-media{position:relative;margin:0;aspect-ratio:3/2;overflow:hidden}
+body.r61-editorial main .r61-diagnostic-media img{width:100%;height:100%;object-fit:cover}
+body.r61-editorial main .r61-diagnostic-media figcaption{position:absolute;bottom:12px;left:12px;background:#ffffffed;padding:4px 8px;color:#414b52}
+/* Only the approved Hero headline changes its typography. */
+body.r61-editorial main .r13-r3-hero #grecho-v3-hero-title{position:relative;color:#fff!important;font-size:clamp(36px,calc(23.61905px + 3.174603vw),48px)!important;line-height:calc(1em + 6px)!important;letter-spacing:-.8px!important}
+body.r61-editorial main .r13-r3-hero #grecho-v3-hero-title::before{content:none!important}
+body.r61-editorial main .grecho-v3-hero.r13-r3-hero::after{content:""!important;position:absolute;inset:0;z-index:0;pointer-events:none;background:rgba(0,0,0,var(--r61-hero-overlay,.41))!important;filter:none!important}
+@media(min-width:768px){body.r61-editorial main .r13-r3-hero #grecho-v3-hero-title{font-size:clamp(48px,calc(29.714286px + 2.380952vw),64px)!important;letter-spacing:-1.2px!important}}
+@media(min-width:1440px){body.r61-editorial main .r13-r3-hero #grecho-v3-hero-title{font-size:clamp(64px,calc(40px + 1.666667vw),72px)!important}}
+/* Existing sticky navigation stays in flow with an equal Hero overlap. */
+body.r61-editorial header.grecho-v3-nav{margin-bottom:calc(-1 * var(--r61-nav-height,78px));background:#fff}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck){background:transparent!important;box-shadow:none!important;border-color:transparent!important;backdrop-filter:none}
+body.r61-editorial header.grecho-v3-nav .r61-white-logo{display:none}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck) .grecho-v3-nav__brand>img:first-child{display:none}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck) .r61-white-logo{display:block}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck) :is(.grecho-v3-nav__trigger,.grecho-v3-nav__search,.grecho-v3-nav__mobile-search,.grecho-v3-nav__language){color:#fff!important;text-shadow:0 1px 3px #0006}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck) .grecho-v3-nav__language{background:transparent;border-color:#ffffff70}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck) .grecho-v3-nav__mobile-toggle span:not(.screen-reader-text){background:#fff}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck) .grecho-v3-nav__mobile-toggle{background:transparent!important;border-color:#ffffff70;color:#fff}
+body.r61-editorial header.grecho-v3-nav:not(.is-stuck) .grecho-v3-nav__chevron{border-color:#fff}
+body.r61-editorial main .grecho-v3-hero [data-grecho-v3-hero-toggle]{color:#fff;background:transparent;border-color:#ffffffb3}
+body.r61-editorial main .grecho-v3-hero [data-grecho-v3-hero-toggle]:hover{background:#ffffff20;border-color:#fff}
+body.r61-editorial #grecho-v3-footer{background:#f2f3f4!important;color:#4f5961}
+body.r61-editorial #grecho-v3-footer :is(h2,a,p,span){color:inherit}
+body.r61-editorial #grecho-v3-footer h2{color:#262d33}
+body.r61-editorial #grecho-v3-footer .grecho-v3-footer-bottom{border-color:#d8dde1;color:#59646c}
+body.r61-editorial #grecho-v3-footer a:hover{color:#1b4aa1}
+@media(max-width:767px){body.r61-editorial main :is(#hero,#products-landing,#section-01,.r13-r3-hero).r13-r3-hero .r13-r3-content{padding-top:calc(var(--r61-nav-height,72px) + 32px)!important}body.r61-editorial main .r61-support-card{padding:24px}}

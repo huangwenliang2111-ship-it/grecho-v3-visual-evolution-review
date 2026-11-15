@@ -1,0 +1,44 @@
+/* Targeted R6.1 closeout. Existing rules remain the sole typography authority. */
+body.r61-closeout main #solution-hubs{min-height:0;}
+body.r61-closeout main #solution-hubs .r61-resource-support,
+body.r61-closeout main #diagnostic .r61-support-card{align-self:stretch;display:flex;flex-direction:column;min-height:0;background:#eef2f7;}
+body.r61-closeout main #solution-hubs .r61-resource-support>.grecho-v3-inline-cta{display:flex;flex:1;justify-content:space-between;gap:32px;margin:0;padding:32px;background:transparent;border:1px solid #dbe1e8;border-radius:0;}
+body.r61-closeout main #solution-hubs .r61-resource-support>.grecho-v3-inline-cta>div{display:flex;flex-direction:column;gap:24px;width:100%;border-top:1px solid #a6b5c5;padding-top:28px;}
+body.r61-closeout main #diagnostic .r61-support-card>div{border-top:1px solid #a6b5c5;padding-top:28px;}
+body.r61-closeout main :is(#r61-resource-gallery,#r61-faq-gallery){align-items:stretch;}
+body.r61-closeout main :is(#r61-resource-gallery,#r61-faq-gallery)>article{align-self:stretch;}
+body.r61-closeout main .r61-closeout-media{display:block;position:relative;margin:0;aspect-ratio:7/5;overflow:hidden;background:#e8ecee;}
+body.r61-closeout main .r61-closeout-media img{display:block;width:100%;height:100%;object-fit:contain;}
+body.r61-closeout main .r61-closeout-media :is(figcaption,.r61-closeout-caption){position:absolute;bottom:12px;left:16px;padding:3px 8px;background:#ffffffed;color:#52606b;}
+body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card{display:flex;flex-direction:column;align-items:stretch;gap:0;height:100%;min-height:0;padding:0;border-radius:0!important;background:#fff;transform:none;}
+body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card__copy{padding:24px 24px 16px;}
+body.r61-closeout main #r61-resource-gallery .r61-access-state{display:block;margin:auto 24px 0;padding:16px 0;border-top:1px solid #e0e5e9;color:#52606b;}
+body.r61-closeout main #r61-resource-gallery .grecho-v3-card-arrow{position:static;margin:0 24px 24px;}
+body.r61-closeout main #r61-resource-gallery a:focus-visible{outline:3px solid #1b4aa1;outline-offset:-4px;}
+body.r61-closeout main #r61-faq-gallery{gap:24px;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-card{border:1px solid #dadddf;border-radius:0;box-shadow:none;background:#fff;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-card>h3{height:100%;margin:0;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-open{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:0;width:100%;height:100%;border:0;border-radius:0;background:transparent;color:inherit;text-align:left;cursor:pointer;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-question-row{display:flex;align-items:flex-start;gap:14px;padding:28px 24px;min-height:112px;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-question-row>span:nth-child(2){flex:1;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-open:is(:hover,:focus-visible) .r61-faq-question-row{background:#eef2f7;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-open:focus-visible{outline:3px solid #1b4aa1;outline-offset:-4px;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-support-card{display:flex;flex-direction:column;justify-content:space-between;background:#eef2f7 url('../images/r61-closeout/faq-review.svg') center 60%/100% auto no-repeat;padding:32px;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-support-card .grecho-v3-faq-note{padding:28px 0 0;border-top:1px solid #a6b5c5;align-items:flex-start;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-support-card>.grecho-v3-text-link{margin:28px 0 0;}
+body.r61-closeout main .r61-faq-answer{box-sizing:border-box;width:min(620px,calc(100vw - 32px));max-height:calc(100dvh - 48px);padding:64px 32px 32px;border:1px solid #a6b5c5;background:#fff;color:#303638;overflow:auto;}
+body.r61-closeout main .r61-faq-answer::backdrop{background:rgb(0 0 0 / .36);}
+body.r61-closeout main .r61-faq-answer .grecho-v3-faq-panel{display:block;padding:0;}
+body.r61-closeout main .r61-faq-answer .grecho-v3-faq-panel p{margin:0;}
+body.r61-closeout main .r61-faq-answer .r61-faq-close{position:absolute;right:12px;top:12px;display:grid;place-items:center;width:44px;height:44px;min-height:44px;padding:0;border:1px solid #a6b5c5;background:#fff;cursor:pointer;}
+body.r61-closeout main .r61-faq-answer .r61-faq-close:focus-visible{outline:3px solid #1b4aa1;outline-offset:2px;}
+body.r61-closeout main .r61-request-materials{display:block;padding:0;}
+body.r61-closeout main .r61-request-materials__main{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;}
+body.r61-closeout main .r61-request-materials figcaption{padding-top:12px;color:#52606b;}
+@media(max-width:767px){
+ body.r61-closeout main #solution-hubs .r61-resource-support>.grecho-v3-inline-cta,
+ body.r61-closeout main #diagnostic .r61-support-card,
+ body.r61-closeout main #r61-faq-gallery .r61-faq-support-card{padding:24px;}
+ body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card__copy{padding:22px 22px 16px;}
+ body.r61-closeout main #r61-faq-gallery .r61-faq-question-row{padding:24px 20px;min-height:144px;}
+}

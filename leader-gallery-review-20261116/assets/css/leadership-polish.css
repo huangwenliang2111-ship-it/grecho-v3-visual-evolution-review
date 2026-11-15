@@ -1,0 +1,98 @@
+/* GRECHO Gallery — leadership review, 2026-11-16.
+   Only resource/FAQ information hierarchy. Never alter the approved type scale,
+   Hero, brand navigation, Solutions, Diagnostic, Applications or Footer. */
+body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card,
+body.r61-closeout main #r61-faq-gallery .r61-faq-card {
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+  border-color: #d7dde2;
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card:hover,
+  body.r61-closeout main #r61-faq-gallery .r61-faq-card:hover {
+    border-color: #b6c4d1;
+    box-shadow: 0 10px 26px rgb(31 46 60 / .10);
+  }
+}
+/* Resource: category and document name belong to the same material image,
+   instead of appearing as unrelated fine print below a large illustration. */
+body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card {
+  position:relative;
+  display:grid;
+  grid-template-rows: auto auto auto;
+  overflow:hidden;
+  border:1px solid #d7dde2;
+}
+body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card > .r61-closeout-media {
+  grid-column:1;
+  grid-row:1;
+  aspect-ratio:7 / 5;
+}
+body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card__copy {
+  grid-column:1;
+  grid-row:1;
+  z-index:1;
+  align-self:end;
+  margin:0;
+  padding:15px 22px 16px;
+  background:rgb(255 255 255 / .97);
+  border-top:1px solid #d7dde2;
+}
+body.r61-closeout main #r61-resource-gallery .r61-access-state {
+  grid-column:1;
+  grid-row:2;
+  margin:0 22px;
+  padding:18px 0;
+  border-top:0;
+}
+body.r61-closeout main #r61-resource-gallery .grecho-v3-card-arrow {
+  grid-column:1;
+  grid-row:3;
+  margin:0 22px 20px;
+}
+/* Concept imagery is explicitly labeled, but the label must not compete with
+   the actual document category or the frequently asked question. */
+body.r61-closeout main #r61-resource-gallery .r61-closeout-media figcaption,
+body.r61-closeout main #r61-faq-gallery .r61-closeout-caption {
+  top:12px;
+  bottom:auto;
+}
+/* FAQ: show the actual question as an integrated image caption instead of a
+   remote text strip underneath an oversized generic document illustration. */
+body.r61-closeout main #r61-faq-gallery .r61-faq-open {
+  position:relative;
+  overflow:hidden;
+}
+body.r61-closeout main #r61-faq-gallery .r61-faq-question-row {
+  position:absolute;
+  z-index:1;
+  left:0;
+  right:0;
+  bottom:0;
+  box-sizing:border-box;
+  min-height:112px;
+  padding:22px 24px;
+  background:rgb(255 255 255 / .97);
+  border-top:1px solid #d7dde2;
+}
+body.r61-closeout main #r61-faq-gallery .r61-faq-open:is(:hover,:focus-visible) .r61-faq-question-row {
+  background:#fff;
+}
+@media (max-width:767px) {
+  body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card__copy {
+    padding:15px 19px;
+  }
+  body.r61-closeout main #r61-resource-gallery .r61-access-state {
+    margin:0 19px;
+  }
+  body.r61-closeout main #r61-resource-gallery .grecho-v3-card-arrow {
+    margin:0 19px 18px;
+  }
+  body.r61-closeout main #r61-faq-gallery .r61-faq-question-row {
+    min-height:124px;
+    padding:21px 19px;
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  body.r61-closeout main #r61-resource-gallery .grecho-v3-resource-card,
+  body.r61-closeout main #r61-faq-gallery .r61-faq-card { transition:none; }
+}
