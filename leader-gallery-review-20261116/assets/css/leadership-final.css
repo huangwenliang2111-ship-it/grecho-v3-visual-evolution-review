@@ -1,0 +1,32 @@
+/* Leadership homepage content only. Typography and fixed sections stay inherited. */
+body.r61-closeout {
+  --leadership-content-max:1440px;
+  --leadership-content-gutter:clamp(20px,calc(7.619048px + 3.174603vw),32px);
+}
+@media(min-width:768px){body.r61-closeout{--leadership-content-gutter:clamp(32px,calc(-13.714286px + 5.952381vw),72px);}}
+body.r61-closeout.r61-editorial main :is(#solution-hubs,#diagnostic,#application-examples,#resource-preview,#faq-preview,#technical-request)>.grecho-v3-container,
+body.r61-closeout.r61-editorial #grecho-v3-footer>.grecho-v3-container {
+  box-sizing:border-box;
+  width:calc(100% - 2 * var(--leadership-content-gutter));
+  max-width:var(--leadership-content-max);
+  margin-inline:auto;
+  padding-inline:0;
+}
+/* Let the image retain its ratio and let the caption's real text define its height. */
+body.r61-closeout main #r61-faq-gallery .r61-faq-open>.r61-closeout-media{flex:none;}
+body.r61-closeout main #r61-faq-gallery .r61-faq-question-row {
+  position:relative;
+  inset:auto;
+  flex:1 0 auto;
+  width:100%;
+  height:auto;
+}
+body.r61-closeout main #r61-faq-gallery .r61-faq-question-row>span:nth-child(2){min-width:0;}
+/* Visual displacement never changes the valid native scroll range. */
+body.r61-closeout main [data-r6-gallery][data-r6-edge] {
+  transform:translateX(var(--leadership-edge-x,0px));
+}
+body.r61-closeout main [data-r6-gallery][data-r6-edge="returning"] {
+  transition:transform 180ms cubic-bezier(.2,.7,.3,1);
+}
+@media(prefers-reduced-motion:reduce){body.r61-closeout main [data-r6-gallery][data-r6-edge]{transform:none;transition:none;}}

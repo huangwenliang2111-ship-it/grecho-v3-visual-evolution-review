@@ -93,7 +93,33 @@
         track.scrollTo({ left: clamp(left), behavior });
         scheduleUpdate();
       };
+      // One edge visual state belongs to the existing pointer controller.
+      let edgeOffset = 0;
+      let edgeTimer = 0;
+      const clearEdge = () => {
+        window.clearTimeout(edgeTimer);
+        edgeTimer = 0;
+        edgeOffset = 0;
+        track.removeAttribute('data-r6-edge');
+        track.style.removeProperty('--leadership-edge-x');
+      };
+      const moveEdge = overflow => {
+        if (reducedMotion.matches || Math.abs(overflow) < epsilon) { clearEdge(); return; }
+        window.clearTimeout(edgeTimer);
+        // Exponential resistance approaches, but never exceeds, 20 CSS pixels.
+        edgeOffset = -Math.sign(overflow) * 20 * (1 - Math.exp(-Math.abs(overflow) / 90));
+        track.setAttribute('data-r6-edge', 'dragging');
+        track.style.setProperty('--leadership-edge-x', `${edgeOffset}px`);
+      };
+      const releaseEdge = animate => {
+        if (!animate || reducedMotion.matches || !edgeOffset) { clearEdge(); return; }
+        track.setAttribute('data-r6-edge', 'returning');
+        track.style.setProperty('--leadership-edge-x', '0px');
+        edgeOffset = 0;
+        edgeTimer = window.setTimeout(clearEdge, 200);
+      };
       const advance = direction => {
+        clearEdge();
         const from = arrowTarget ?? position();
         const starts = cardStarts();
         const destination = direction > 0
@@ -109,6 +135,7 @@
         if (!pointer || (event?.pointerId !== undefined && event.pointerId !== pointer.id)) return;
         const finished = pointer;
         pointer = null;
+        releaseEdge(event?.type === 'pointerup');
         if (finished.dragging) suppressClick = true;
         track.removeAttribute('data-r6-dragging');
         if (finished.dragging) track.dispatchEvent(new CustomEvent('grecho:r61-drag-state', { detail: { active: false } }));
@@ -118,6 +145,7 @@
       track.addEventListener('pointerdown', event => {
         // Touch/pen and trackpads retain native scrolling and click behavior.
         finishPointer();
+        clearEdge();
         suppressClick = false;
         arrowTarget = null;
         if (event.pointerType !== 'mouse' || event.button !== 0 || !event.isPrimary) return;
@@ -139,12 +167,15 @@
           track.setPointerCapture(pointer.id);
         }
         event.preventDefault();
-        scrollTo(pointer.left - dx);
+        const desired = pointer.left - dx;
+        scrollTo(desired);
+        moveEdge(desired - clamp(desired));
       }, { passive: false });
       window.addEventListener('pointerup', finishPointer);
       window.addEventListener('pointercancel', finishPointer);
       track.addEventListener('lostpointercapture', finishPointer);
-      window.addEventListener('blur', () => finishPointer());
+      window.addEventListener('blur', () => { finishPointer(); clearEdge(); });
+      window.addEventListener('pagehide', () => { finishPointer(); clearEdge(); });
       track.addEventListener('dragstart', event => {
         if (pointer) event.preventDefault(); // No native image/link ghost drag.
       });
@@ -159,6 +190,7 @@
         // A mouse press focuses its link before click. Keep that target still
         // through the whole gesture; keyboard focus has no pending pointer.
         if (pointer) return;
+        clearEdge();
         arrowTarget = null;
         const viewport = track.getBoundingClientRect();
         const left = viewport.left + track.clientLeft;
@@ -179,9 +211,9 @@
         }
       });
       track.addEventListener('scroll', scheduleUpdate, { passive: true });
-      track.addEventListener('wheel', () => { arrowTarget = null; }, { passive: true });
-      track.addEventListener('keydown', () => { arrowTarget = null; });
-      const resized = () => { arrowTarget = null; finishPointer(); scheduleUpdate(); };
+      track.addEventListener('wheel', () => { arrowTarget = null; clearEdge(); }, { passive: true });
+      track.addEventListener('keydown', () => { arrowTarget = null; clearEdge(); });
+      const resized = () => { arrowTarget = null; finishPointer(); clearEdge(); scheduleUpdate(); };
       window.addEventListener('resize', resized, { passive: true });
       if ('ResizeObserver' in window) {
         const observer = new ResizeObserver(resized);
@@ -189,6 +221,7 @@
         cards.forEach(card => observer.observe(card));
       }
       reducedMotion.addEventListener('change', () => {
+        finishPointer(); clearEdge();
         if (reducedMotion.matches && arrowTarget !== null) scrollTo(arrowTarget);
       });
       update();
