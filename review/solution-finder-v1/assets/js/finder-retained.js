@@ -26,10 +26,22 @@ function validateBoardState(board){
 }
 
 /* ---------- Step 1 ---------- */
+const boardPhotos = {
+  acoustic: 'application-acoustic-concept.webp',
+  mineral: 'application-mineral-wool-concept.webp',
+  pir: 'application-pir-pur-concept.webp',
+  gypsum: 'application-gypsum-concept.webp'
+};
+const boardPhotoBase = '/grecho-v3-visual-evolution-review/assets/media/r13-r3/';
+const applicationPhotoEdits = {
+  'acoustic-1.webp': 'assets/images/r1/acoustic-1.webp',
+  'acoustic-3.webp': 'assets/images/r1/acoustic-3.webp'
+};
+
 function drawBoards(){
   $('boardGrid').innerHTML=keys.filter(k=>k!=='other').map(k=>{const b=BOARDS[k],on=k===current,n=selected[k].size;
     return `<button type="button" class="gsf-board ${on?'is-on':''}" data-id="${k}" role="radio" tabindex="${on?0:-1}" aria-checked="${on}" aria-labelledby="board-title-${k}" aria-describedby="board-description-${k}">
-      <span class="gsf-board__media"><img alt="${esc(b.name)}" loading="lazy" src="${IMG_BASE}${b.img}-1000.webp" srcset="${IMG_BASE}${b.img}-640.webp 640w, ${IMG_BASE}${b.img}-1000.webp 1000w" sizes="(max-width:680px) 120px, (max-width:1080px) 50vw, 25vw"></span>
+      <span class="gsf-board__media"><img alt="${esc(b.name)}" loading="lazy" src="${boardPhotoBase}${boardPhotos[k]}"></span>
       <span class="gsf-board__tick" aria-hidden="true">✓</span>
       ${n&&!on?`<span class="gsf-board__badge">${n} selected</span>`:''}
       <span class="gsf-board__body"><span class="gsf-board__title" id="board-title-${k}">${esc(b.short)}</span><span class="gsf-board__desc" id="board-description-${k}">${esc(b.desc)}</span></span>
@@ -95,10 +107,10 @@ $('clearBtn').onclick=()=>{selected[current].clear();drawCategories();drawProble
 function drawApps(){
   $('appGrid').hidden=DATA[current].apps.length===0;
   $('appGrid').innerHTML=DATA[current].apps.map((s,i)=>{const on=applications[current].has(s),v=APP_VISUALS[current][i];
-    return `<label class="gsf-app ${on?'is-on':''}">
+    return `<label data-photo="${v.img}" class="gsf-app ${on?'is-on':''}">
       <input type="checkbox" data-index="${i}" ${on?'checked':''}>
       <span class="gsf-app__check" aria-hidden="true">✓</span>
-      <span class="gsf-app__media"><img alt="${esc(s)}" loading="lazy" width="1100" height="825" src="${APP_IMG_BASE}${v.img}"></span>
+      <span class="gsf-app__media"><img alt="${esc(s)}" loading="lazy" width="1100" height="825" src="${applicationPhotoEdits[v.img] || APP_IMG_BASE + v.img}"></span>
       <span class="gsf-app__body"><span class="grecho-v3-kicker">${esc(v.k)}</span><span class="gsf-app__title">${esc(s)}</span>${APP_DESC[s]?`<small>${esc(APP_DESC[s])}</small>`:''}<span class="gsf-app__pick">${on?'✓ Selected':'Select application +'}</span></span>
     </label>`}).join('');
   $('appGrid').querySelectorAll('input').forEach(inp=>inp.onchange=()=>{

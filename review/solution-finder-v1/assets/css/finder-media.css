@@ -1,0 +1,32 @@
+/* Finder's image framing is local to the four board and sixteen application choices. */
+.gsf :is(.gsf-board__media, .gsf-app__media) { height: clamp(116px, 11.9vw, 172px); }
+.gsf :is(.gsf-board__media, .gsf-app__media) img { object-position: 50% var(--photo-y, 50%); }
+.gsf-board[data-id="acoustic"] { --photo-y: 85%; --photo-x: 57%; }
+.gsf-board[data-id="mineral"] { --photo-y: 66%; --photo-x: 64%; }
+.gsf-board[data-id="pir"] { --photo-y: 67%; --photo-x: 54%; }
+.gsf-board[data-id="gypsum"] { --photo-y: 81%; --photo-x: 45%; }
+.gsf-app[data-photo="acoustic-1.webp"] { --photo-y: 88%; --photo-x: 28%; }
+.gsf-app[data-photo="acoustic-2.webp"] { --photo-y: 74%; --photo-x: 22%; }
+.gsf-app[data-photo="acoustic-3.webp"] { --photo-y: 91%; --photo-x: 36%; }
+.gsf-app[data-photo="acoustic-4.webp"] { --photo-y: 87%; --photo-x: 71%; }
+.gsf-app[data-photo="mineral-wool-2.webp"] { --photo-y: 46%; --photo-x: 37%; }
+.gsf-app[data-photo="mineral-wool-1.webp"] { --photo-y: 61%; --photo-x: 26%; }
+.gsf-app[data-photo="mineral-wool-3.webp"] { --photo-y: 48%; --photo-x: 52%; }
+.gsf-app[data-photo="mineral-wool-4.webp"] { --photo-y: 60%; --photo-x: 61%; }
+.gsf-app[data-photo="pir-pur-1.webp"] { --photo-y: 69%; --photo-x: 49%; }
+.gsf-app[data-photo="pir-pur-2.webp"] { --photo-y: 54%; --photo-x: 33%; }
+.gsf-app[data-photo="pir-pur-3.webp"] { --photo-y: 44%; --photo-x: 61%; }
+.gsf-app[data-photo="pir-pur-4.webp"] { --photo-y: 46%; --photo-x: 73%; }
+.gsf-app[data-photo="gypsum-1.webp"] { --photo-y: 54%; --photo-x: 44%; }
+.gsf-app[data-photo="gypsum-2.webp"] { --photo-y: 52%; --photo-x: 48%; }
+.gsf-app[data-photo="gypsum-3.webp"] { --photo-y: 40%; --photo-x: 20%; }
+.gsf-app[data-photo="gypsum-4.webp"] { --photo-y: 59%; --photo-x: 41%; }
+
+@media (max-width: 680px) {
+  .gsf :is(.gsf-board,.gsf-app) { grid-template-columns: minmax(0, 34%) minmax(0, 1fr); }
+  .gsf :is(.gsf-board__media, .gsf-app__media) { min-height: 110px; height: 100%; }
+  .gsf :is(.gsf-board__media, .gsf-app__media) img { object-position: var(--photo-x, 50%) var(--photo-y, 50%); }
+  /* Keep furniture, circulation and services in the portrait view by cropping excess ceiling. */
+  .gsf-app[data-photo^="acoustic-"] .gsf-app__media { position: relative; overflow: hidden; }
+  .gsf-app[data-photo^="acoustic-"] .gsf-app__media img { position: absolute; bottom: 0; height: 135%; max-height: none; }
+}

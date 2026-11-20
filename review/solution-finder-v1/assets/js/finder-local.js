@@ -12,7 +12,6 @@ function drawRecap(){
   $('rBoard').textContent=r.board+(r.otherBoard?' — '+r.otherBoard:'');$('rProduct').textContent=r.product;
   $('rIssues').innerHTML=r.challenges.length?`<span>${r.challenges.length} challenge${r.challenges.length===1?'':'s'} selected.</span><ul class="gsf-recap__issues" tabindex="0" aria-label="Selected challenges">${r.challenges.map(v=>`<li>${esc(v)}</li>`).join('')}</ul>`:'No specific challenges selected.';
   $('rApps').textContent=r.applications.length?r.applications.map(a=>a==='Other Application'&&r.otherApplication?a+' — '+r.otherApplication:a).join(', '):'Not specified (optional)';
-  $('copyStatus').textContent=current==='other'?'Other Board / Product · REVIEW CANDIDATE · six generic challenge categories (36 positions) await business and technical approval. No automatic product recommendation.':current==='acoustic'?'Acoustic · primary QA workflow · Business Copy Final pending. No automatic product recommendation.':BOARDS[current].name+' · internal draft review only · technical and Business Copy approval pending. No approved public guidance.';
   $('challenge-panel').setAttribute('aria-labelledby','category-'+activeCat);
 }
 function clearError(el){
@@ -68,7 +67,7 @@ const originalDrawProblems=drawProblems;
 drawProblems=function(){originalDrawProblems();$('challenge-panel').setAttribute('aria-labelledby','category-'+activeCat);};
 const originalDrawSummary=drawSummary;
 drawSummary=function(){originalDrawSummary();$('selectedList').querySelectorAll('[data-rm]').forEach(button=>button.onclick=()=>{selected[current].delete(button.dataset.rm);drawCategories();drawProblems();drawSummary();($('selectedList').querySelector('[data-rm]')||$('clearBtn')).focus();});};
-function updateFloatingBar(){const r=$('finder-inquiry').getBoundingClientRect();$('mbar').classList.toggle('is-inquiry',r.top<innerHeight&&r.bottom>0);}
+function updateFloatingBar(){const r=$('finder-inquiry').getBoundingClientRect();$('mbar').classList.toggle('is-inquiry',r.top<innerHeight);}
 window.addEventListener('scroll',updateFloatingBar,{passive:true});window.addEventListener('resize',updateFloatingBar);
 if('IntersectionObserver' in window)new IntersectionObserver(updateFloatingBar).observe($('finder-inquiry'));
 

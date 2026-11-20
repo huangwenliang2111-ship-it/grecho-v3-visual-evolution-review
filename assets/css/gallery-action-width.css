@@ -1,0 +1,43 @@
+/* Optional component for completed Gallery templates. Unmarked controls keep their own layout. */
+@layer completed-gallery-actions {
+  [data-gallery-actions] {
+    --gallery-action-width: 240px;
+  }
+
+  /* The homepage request section contains other business content beside its single CTA. */
+  [data-gallery-actions]:not([data-gallery-actions="inline-final"]) {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--gallery-action-width)), min(100%, var(--gallery-action-width)))) !important;
+    justify-content: start !important;
+    justify-items: start !important;
+    align-items: stretch !important;
+    min-inline-size: 0 !important;
+    max-inline-size: 100% !important;
+  }
+
+  [data-gallery-actions] > [data-gallery-button] {
+    box-sizing: border-box !important;
+    inline-size: min(100%, var(--gallery-action-width)) !important;
+    min-inline-size: 0 !important;
+    max-inline-size: 100% !important;
+    block-size: auto !important;
+    align-self: stretch !important;
+    flex: none !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: center;
+  }
+
+  [data-gallery-actions] > [data-gallery-text-action] {
+    grid-column: 1 / -1 !important;
+    justify-self: start !important;
+    max-inline-size: 100% !important;
+  }
+
+  /* Size the final action column independently of the intrinsic label width. */
+  .t02-final__actions[data-gallery-actions],
+  .p01-a2__request .p01-a2__actions[data-gallery-actions] {
+    inline-size: var(--gallery-action-width) !important;
+    max-inline-size: 100%;
+  }
+}

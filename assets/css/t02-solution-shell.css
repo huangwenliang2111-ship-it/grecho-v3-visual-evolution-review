@@ -1,0 +1,111 @@
+/* Gallery's final content gutters, limited to the two reused Solution components. */
+:is(.t02-final, .t02-gallery-footer) {
+  --solution-shell-gutter: clamp(20px, calc(7.619048px + 3.174603vw), 32px);
+}
+@media (min-width: 768px) {
+  :is(.t02-final, .t02-gallery-footer) {
+    --solution-shell-gutter: clamp(32px, calc(-13.714286px + 5.952381vw), 72px);
+  }
+}
+main .t02-final {
+  padding-block: clamp(52px, 6.4vw, 100px);
+  margin: 0;
+  background: #f4f5f5;
+}
+main .t02-final__panel,
+#grecho-v3-footer.t02-gallery-footer > .grecho-v3-container {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--solution-shell-gutter));
+  max-width: 1440px;
+  margin-inline: auto;
+}
+main .t02-final__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(20px, 3vw, 48px);
+  padding: 58px 56px;
+  border-radius: 16px;
+  background: linear-gradient(100deg, rgba(9,42,96,.95), rgba(36,71,131,.71) 48%, rgba(103,118,144,.36)), var(--solution-cta-image) center 35% / cover no-repeat;
+  background-color: #173660;
+}
+main .t02-final .t02-final__panel h2 {
+  max-width: 27ch;
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  text-align: left;
+  text-wrap: wrap;
+}
+main .t02-final__actions { display: grid; gap: 10px; justify-items: start; }
+main .t02-final .t02-final__action {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 18px;
+  border: 1px solid #c3cdd6;
+  border-radius: 4px;
+  color: #173660;
+  background: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+}
+main .t02-final .t02-final__action:hover { background: #e3edf9; color: #102e65; }
+main .t02-final .t02-final__action:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 5px #1b4aa1; }
+@media (max-width: 760px) {
+  main .t02-final__panel { padding: 36px 24px; background-position: center, 46% center; }
+  main .t02-final .t02-final__panel h2 { max-width: 22ch; font-size: 26px; line-height: 36px; }
+}
+@media (max-width: 680px) {
+  main .t02-final__panel { grid-template-columns: minmax(0,1fr); }
+}
+/* Base footer layout, icons and link states come from the existing shared site sheet.
+   Reproduce the published Gallery scope without its homepage body classes. */
+#grecho-v3-footer.t02-gallery-footer { background: #f2f3f4 !important; color: #4f5961; }
+#grecho-v3-footer.t02-gallery-footer > .grecho-v3-container { padding-inline: 0; }
+#grecho-v3-footer.t02-gallery-footer :is(h2,a,p,span) { color: inherit; }
+#grecho-v3-footer.t02-gallery-footer h2 { color: #262d33; }
+#grecho-v3-footer.t02-gallery-footer .grecho-v3-footer-bottom { border-color: #d8dde1; color: #59646c; }
+#grecho-v3-footer.t02-gallery-footer a[href]:hover { color: #1b4aa1; }
+#grecho-v3-footer.t02-gallery-footer a[href]:focus-visible { outline: 3px solid #1b4aa1; outline-offset: 4px; }
+body.r13-solutions #grecho-v3-main[data-solution-directory] .grecho-solutions-direction-card {
+  border: 1px solid #dce2e4;
+  box-shadow: 0 2px 6px rgba(27,48,59,.06);
+}
+body.r13-solutions #grecho-v3-main[data-solution-directory] .grecho-solutions-direction-card:focus-within {
+  border-color: #879aa5;
+  box-shadow: 0 4px 12px rgba(27,48,59,.10);
+}
+@media (hover:hover) {
+  body.r13-solutions #grecho-v3-main[data-solution-directory] .grecho-solutions-direction-card:hover {
+    border-color: #aabac3;
+    box-shadow: 0 4px 12px rgba(27,48,59,.10);
+  }
+}
+body.r13-solutions [data-solution-directory] a.r13-r4-textlink { text-decoration: none; }
+/* Keep the directory's original card-wide click area; its visible arrow lives inside the link. */
+body.r13-solutions #grecho-v3-main[data-solution-directory] .grecho-solutions-direction-card h3 a::after {
+  content: ""; position: absolute; inset: 0;
+  border: 0; background: none; width: auto; height: auto; transform: none; margin: 0;
+}
+[data-solution-directory] .t02-directory-label { text-decoration: underline; text-underline-offset: .2em; }
+[data-solution-directory] .t02-directory-arrow { margin-inline-start: .35em; }
+
+/* Directory legacy type and primary-action rules use !important. Confine the
+   two exceptions to this final panel and leave other Finder buttons alone. */
+body.r13-solutions #grecho-v3-main[data-solution-directory] .t02-final h2 { color: #fff !important; }
+body.r13-solutions #grecho-v3-main[data-solution-directory] .t02-final a.t02-final__action[data-r13-cta] {
+  background: #fff !important; color: #173660 !important; border-color: #c3cdd6 !important;
+}
+body.r13-solutions #grecho-v3-main[data-solution-directory] .t02-final a.t02-final__action[data-r13-cta]:hover {
+  background: #e3edf9 !important; color: #102e65 !important; border-color: #c3cdd6 !important;
+}

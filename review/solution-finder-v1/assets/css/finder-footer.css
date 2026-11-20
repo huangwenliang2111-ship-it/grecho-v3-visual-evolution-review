@@ -1,0 +1,43 @@
+/* Gallery Footer V1. Shared site CSS supplies the original grid, type and icons. */
+.gsf #grecho-v3-footer {
+  --finder-footer-gutter: clamp(20px, calc(7.619048px + 3.174603vw), 32px);
+  background: #f2f3f4;
+  color: #4f5961;
+}
+
+@media (min-width: 768px) {
+  .gsf #grecho-v3-footer {
+    --finder-footer-gutter: clamp(32px, calc(-13.714286px + 5.952381vw), 72px);
+  }
+}
+
+.gsf #grecho-v3-footer > .grecho-v3-container {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--finder-footer-gutter));
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+.gsf #grecho-v3-footer :is(a, p, span) {
+  color: inherit;
+}
+
+.gsf #grecho-v3-footer h2 {
+  color: #262d33;
+}
+
+.gsf #grecho-v3-footer .grecho-v3-footer-bottom {
+  border-color: #d8dde1;
+  color: #59646c;
+}
+
+.gsf #grecho-v3-footer a[href]:hover {
+  color: #1b4aa1;
+  text-decoration: underline;
+}
+
+.gsf #grecho-v3-footer a[href]:focus-visible {
+  outline: 3px solid #1b4aa1;
+  outline-offset: 4px;
+}

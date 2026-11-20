@@ -44,3 +44,31 @@ body.r61-editorial #grecho-v3-footer h2{color:#262d33}
 body.r61-editorial #grecho-v3-footer .grecho-v3-footer-bottom{border-color:#d8dde1;color:#59646c}
 body.r61-editorial #grecho-v3-footer a:hover{color:#1b4aa1}
 @media(max-width:767px){body.r61-editorial main :is(#hero,#products-landing,#section-01,.r13-r3-hero).r13-r3-hero .r13-r3-content{padding-top:calc(var(--r61-nav-height,72px) + 32px)!important}body.r61-editorial main .r61-support-card{padding:24px}}
+
+@media (max-width: 374px) {
+  body.r61-editorial .grecho-v3-nav__inner {
+    width: calc(100% - 16px);
+    gap: 6px;
+  }
+  body.r61-editorial .grecho-v3-nav__brand {
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 0;
+    margin-inline: 0;
+  }
+  body.r61-editorial .grecho-v3-nav__brand img {
+    width: 100%;
+    max-width: 112px;
+    height: auto;
+  }
+  body.r61-editorial .grecho-v3-nav__actions {
+    flex: 0 0 auto;
+    gap: 4px;
+    margin-inline: 0;
+  }
+  body.r61-editorial .grecho-v3-nav__cta {
+    min-width: 0;
+    padding-inline: 8px;
+    font-size: 12px;
+  }
+}

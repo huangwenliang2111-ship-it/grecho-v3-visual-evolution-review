@@ -47,7 +47,16 @@
       link.textContent = item.label;
       link.setAttribute('data-challenge-review-existing', challengeReviewRoutes[item.label].slice(0, 3));
       if (window.location.pathname === target) link.setAttribute('aria-current', 'page');
-      item.node.parentNode.replaceChild(link, item.node);
+      // On mobile the board-system and challenge menus share a container.
+      // Keep the board link alongside the separate acoustic challenge destination.
+      if (container.id === 'grecho-mobile-solutions' &&
+          header.querySelector('#grecho-nav-products a[href$="/products/"]') &&
+          item.node.matches('a[href$="/solutions/acoustic-ceiling-wall-facers/"]')) {
+        link.textContent = 'Acoustic Performance Challenges';
+        container.insertBefore(link, container.querySelector('.grecho-v3-mobile-group__all'));
+      } else {
+        item.node.parentNode.replaceChild(link, item.node);
+      }
     });
     return true;
   }
