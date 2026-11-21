@@ -1,0 +1,200 @@
+/* C01 R2 card rails. Scroll clipping belongs to each rail, never the page. */
+#main #grecho-challenge-C01 :is(#problems, #applications) .c01-r2-rail-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: none;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail-heading > h2 {
+  min-width: 0;
+  margin-block: 0;
+  overflow-wrap: break-word;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail-controls:not([hidden]) {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail-controls > button {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: #162b40;
+  background: #fff;
+  border: 1px solid #aebdca;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color .18s ease, background-color .18s ease, border-color .18s ease;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail-controls > button[data-c01-rail-next] svg {
+  transform: rotate(180deg);
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail-controls > button:not(:disabled):hover {
+  color: #fff;
+  background: #1b4aa1;
+  border-color: #1b4aa1;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail-controls > button:disabled {
+  color: #9ca7b2;
+  border-color: #d5dce2;
+  cursor: default;
+}
+
+#main #grecho-challenge-C01 :is(.c01-r2-rail-controls > button, .c01-r2-rail):focus-visible {
+  outline: 3px solid #1b4aa1;
+  outline-offset: 3px;
+}
+
+#main #grecho-challenge-C01 :is(#problems, #applications) .c01-r2-rail {
+  --rail-gap: 24px;
+  --rail-card-width: calc((100% - 3 * var(--rail-gap)) / 3.5);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  gap: var(--rail-gap);
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0 0 9px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #9aabbc #eaf0f5;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail > :is(.gc-problem, .gc-application) {
+  display: flex;
+  flex: 0 0 var(--rail-card-width);
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #162b40;
+  background: #fff;
+  border: 1px solid #d9e2ea;
+  border-radius: 8px;
+  box-shadow: none;
+  transform: none;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail > :is(.gc-problem, .gc-application):is(:hover, :focus-within) {
+  border-color: #aebdca;
+  box-shadow: none;
+  transform: none;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail .c01-r2-rail-media {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  aspect-ratio: 3 / 2;
+  background: #eef1f4;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail .c01-r2-rail-media > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail :is(.gc-problem-body, .gc-card-body) {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(18px, 1.8vw, 26px);
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail h3 {
+  margin: 0 0 10px;
+  color: #162b40;
+  font-size: clamp(22px, 1.8vw, 26px);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  overflow-wrap: break-word;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail :is(.gc-problem-body, .gc-card-body) > p:not(.gc-card-link) {
+  margin: 0;
+  color: #384d61;
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail .gc-card-link {
+  margin: auto 0 0;
+  padding-top: 13px;
+}
+
+#main #grecho-challenge-C01 .c01-r2-rail .gc-card-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: #1b4aa1;
+  font-size: 15px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #main #grecho-challenge-C01 .c01-r2-rail[data-rail-ready]:not([data-rail-grabbing]) {
+    cursor: grab;
+  }
+
+  #main #grecho-challenge-C01 .c01-r2-rail[data-rail-grabbing],
+  #main #grecho-challenge-C01 .c01-r2-rail[data-rail-grabbing] * {
+    cursor: grabbing;
+    user-select: none;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  #main #grecho-challenge-C01 :is(#problems, #applications) .c01-r2-rail {
+    --rail-gap: 20px;
+    --rail-card-width: calc((100% - 2 * var(--rail-gap)) / 2.2);
+  }
+}
+
+@media (max-width: 600px) {
+  #main #grecho-challenge-C01 :is(#problems, #applications) .c01-r2-rail {
+    --rail-gap: 16px;
+    --rail-card-width: calc((100% - var(--rail-gap)) / 1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main #grecho-challenge-C01 .c01-r2-rail-controls > button {
+    transition: none;
+  }
+}
+

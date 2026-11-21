@@ -1,0 +1,165 @@
+/* C01 Targeted Solutions Gallery alignment — scoped visual-only delta.
+   Preserve the original 8-item selector, panel-switching JS, anchors, copy and CTA. */
+#main #grecho-challenge-C01 #solutions .gc-pair {
+  background: #fff;
+  border: 1px solid #e2e8ee;
+  border-radius: 6px;
+  box-shadow: none;
+  padding: clamp(20px, 2vw, 30px);
+}
+#main #grecho-challenge-C01 #solutions .gc-pair-top {
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e7edf2;
+  color: #526477;
+  font-weight: 600;
+}
+#main #grecho-challenge-C01 #solutions .gc-count {
+  background: #f1f5f9;
+  color: #1b4aa1;
+  border-radius: 3px;
+}
+#main #grecho-challenge-C01 #solutions .gc-pair-grid {
+  grid-template-columns: minmax(0, .94fr) 28px minmax(0, 1.12fr);
+  gap: clamp(12px, 1.7vw, 24px);
+  align-items: stretch;
+}
+#main #grecho-challenge-C01 #solutions .gc-problem-context,
+#main #grecho-challenge-C01 #solutions .gc-solution-copy {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  padding: clamp(16px, 1.7vw, 24px) clamp(12px, 1.7vw, 24px);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+  line-height: 1.58;
+  color: #435366;
+}
+#main #grecho-challenge-C01 #solutions .gc-problem-context {
+  background: transparent;
+  padding-left: 4px;
+  justify-content: center;
+}
+#main #grecho-challenge-C01 #solutions .gc-solution-copy {
+  background: transparent;
+  border-left: 2px solid #1b4aa1;
+  padding-left: clamp(18px, 1.7vw, 26px);
+}
+#main #grecho-challenge-C01 #solutions .gc-problem-context h4,
+#main #grecho-challenge-C01 #solutions .gc-solution-copy h3 {
+  color: #172d43;
+  font-family: "GRECHO Local Inter", Inter, Arial, sans-serif;
+  font-weight: 650;
+  line-height: 1.24;
+  letter-spacing: -.025em;
+  overflow-wrap: anywhere;
+}
+#main #grecho-challenge-C01 #solutions .gc-problem-context h4 {
+  font-size: clamp(18px, 1.4vw, 21px);
+  margin-bottom: 12px;
+}
+#main #grecho-challenge-C01 #solutions .gc-solution-copy h3 {
+  font-size: clamp(19px, 1.75vw, 25px);
+  margin-bottom: 13px;
+}
+#main #grecho-challenge-C01 #solutions .gc-arrow {
+  justify-self: center;
+  align-self: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #1b4aa1;
+  font-size: 25px;
+  line-height: 1;
+}
+#main #grecho-challenge-C01 #solutions .gc-related {
+  border-top: 1px solid #e5ebf0;
+  margin-top: auto;
+  padding-top: 13px;
+}
+#main #grecho-challenge-C01 #solutions .gc-related > p:first-child {
+  margin: 0 0 6px;
+  color: #5b6b7b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+#main #grecho-challenge-C01 #solutions .gc-related-links {
+  display: block;
+  margin: 0;
+}
+#main #grecho-challenge-C01 #solutions .gc-related-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  max-width: 100%;
+  min-height: 38px;
+  padding: 2px 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #1b4aa1;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+#main #grecho-challenge-C01 #solutions .gc-related-links a::after {
+  content: "\2192";
+  margin-left: 7px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 1;
+  transition: transform .18s ease;
+}
+#main #grecho-challenge-C01 #solutions .gc-related-links a:hover {
+  color: #103970;
+  background: transparent;
+}
+#main #grecho-challenge-C01 #solutions .gc-related-links a:hover::after,
+#main #grecho-challenge-C01 #solutions .gc-related-links a:focus-visible::after {
+  transform: translateX(4px);
+}
+#main #grecho-challenge-C01 #solutions .gc-related-links a:focus-visible {
+  outline: 2px solid #1b4aa1;
+  outline-offset: 4px;
+}
+@media (max-width: 760px) {
+  #main #grecho-challenge-C01 #solutions .gc-pair-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  #main #grecho-challenge-C01 #solutions .gc-problem-context,
+  #main #grecho-challenge-C01 #solutions .gc-solution-copy {
+    min-height: 0;
+    padding: 12px 5px 15px;
+  }
+  #main #grecho-challenge-C01 #solutions .gc-solution-copy {
+    padding: 14px 5px 13px 18px;
+  }
+  #main #grecho-challenge-C01 #solutions .gc-arrow {
+    transform: rotate(90deg);
+    height: 22px;
+    width: 22px;
+    font-size: 22px;
+  }
+  #main #grecho-challenge-C01 #solutions .gc-pair-top {
+    margin-bottom: 17px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #main #grecho-challenge-C01 #solutions .gc-related-links a,
+  #main #grecho-challenge-C01 #solutions .gc-related-links a::after {
+    transition: none;
+  }
+}

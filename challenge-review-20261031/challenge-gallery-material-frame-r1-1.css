@@ -1,0 +1,78 @@
+/* R1.1 Recommended materials media frames for C02–C06. The body copy
+   determines its own row height without stretching the image frame. */
+#main .challenge-gallery-family:is(#grecho-challenge-C02, #grecho-challenge-C03, #grecho-challenge-C04, #grecho-challenge-C05, #grecho-challenge-C06) #products .gc-material > figure.gc-image {
+  position: relative;
+  align-self: start;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  aspect-ratio: 16 / 10;
+  background-color: #f2f3f4;
+}
+
+/* The original C02 R13 sheet forces its material figure fill to white. */
+#main #grecho-challenge-C02.challenge-gallery-family #products .gc-material > figure.gc-image {
+  background-color: #f2f3f4 !important;
+}
+
+#main .challenge-gallery-family:is(#grecho-challenge-C02, #grecho-challenge-C03, #grecho-challenge-C04, #grecho-challenge-C05, #grecho-challenge-C06) #products .gc-material > figure.gc-image > :is(picture, img),
+#main .challenge-gallery-family:is(#grecho-challenge-C02, #grecho-challenge-C03, #grecho-challenge-C04, #grecho-challenge-C05, #grecho-challenge-C06) #products .gc-material > figure.gc-image > picture > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+}
+
+#main .challenge-gallery-family:is(#grecho-challenge-C02, #grecho-challenge-C03, #grecho-challenge-C04, #grecho-challenge-C05, #grecho-challenge-C06) #products .gc-material > figure.gc-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+#main .challenge-gallery-family:is(#grecho-challenge-C02, #grecho-challenge-C03, #grecho-challenge-C04, #grecho-challenge-C05, #grecho-challenge-C06) #products .gc-material > figure.gc-image[data-image-fit="contain"] img {
+  object-fit: contain;
+}
+
+/* Preserve the visible left board corner in the shared matte-black source. */
+#main .challenge-gallery-family:is(#grecho-challenge-C04, #grecho-challenge-C05) #products .gc-material > figure.gc-image:is([data-media-card="C04-M02"], [data-media-card="C05-M02"]) img {
+  object-position: 18% 50%;
+}
+
+@media (max-width: 1100px) {
+  #main .challenge-gallery-family:is(#grecho-challenge-C02, #grecho-challenge-C03, #grecho-challenge-C04, #grecho-challenge-C05, #grecho-challenge-C06) #products .gc-material {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* The portrait source ends at 767px. Keep its image slot unchanged and show
+   the lifted facer and the lower board/core interface in the wide frame. */
+@media (max-width: 767px) {
+  #main #grecho-challenge-C02.challenge-gallery-family .gc-hero > figure.gc-image img {
+    object-position: 55% 82%;
+  }
+}
+
+#main .challenge-gallery-family #products .gc-material > figure.gc-image:is([data-media-card="C03-M01"], [data-media-card="C04-M05"]) img {
+  object-position: 50% 63%;
+}
+
+#main .challenge-gallery-family #products .gc-material > figure.gc-image:is([data-media-card="C03-M02"]) img {
+  object-position: 100% 50%;
+}
+
+#main .challenge-gallery-family #products .gc-material > figure.gc-image:is([data-media-card="C05-M05"], [data-media-card="C06-M01"]) img {
+  object-position: 50% 28%;
+}
+
+#main .challenge-gallery-family #products .gc-material > figure.gc-image:is([data-media-card="C06-M03"]) img {
+  object-position: 50% 93%;
+}

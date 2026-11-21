@@ -1,0 +1,1128 @@
+/* Gallery B visual family for C02–C06.
+   The C01 R2.2 source supplies the visual values. The existing CTA keeps its page styles. */
+#main .challenge-gallery-family[data-challenge] {
+  --gallery-ink: #172c42;
+  --gallery-copy: #435264;
+  --gallery-blue: #1b4aa1;
+  --gallery-gutter: clamp(40px, 5vw, 72px);
+  --gallery-shell-width: min(1440px, calc(100vw - 2 * var(--gallery-gutter)));
+  --gallery-shell-start: max(var(--gallery-gutter), calc((100vw - 1440px) / 2));
+  --gallery-section-space: 80px;
+  --gallery-title-space: 40px;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-section:not(.gc-cta) {
+  box-sizing: border-box;
+  width: var(--gallery-shell-width);
+  max-width: none;
+  margin-inline: var(--gallery-shell-start) 0;
+  padding: var(--gallery-section-space) 0;
+}
+
+#main .challenge-gallery-family[data-challenge] :is(.gc-hero, .gc-section:not(.gc-cta), .gc-subnav) {
+  font-family: "GRECHO Local Inter", Inter, Arial, sans-serif;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-section:not(.gc-cta) > .gc-section-head {
+  max-width: none;
+  margin: 0 0 var(--gallery-title-space);
+  padding-inline: 0;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-section:not(.gc-cta) > .gc-section-head h2 {
+  margin: 0;
+  color: var(--gallery-ink);
+  font-size: clamp(30px, 3.05vw, 46px);
+  font-weight: 650;
+  letter-spacing: -.035em;
+  line-height: 1.12;
+  text-align: left;
+}
+
+#main .challenge-gallery-family[data-challenge] :is(#solutions, #applications).gc-tint::before {
+  inset-inline: 0;
+  background: #f1f6fb;
+  box-shadow: 0 0 0 100vmax #f1f6fb;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-context-note {
+  max-width: 80ch;
+  margin: 22px 0 0;
+  color: var(--gallery-copy);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero {
+  box-sizing: border-box;
+  min-height: clamp(425px, 34vw, 510px);
+  align-items: center;
+  padding: clamp(48px, 5vw, 74px) var(--gallery-shell-start);
+  background: #f5f4f1;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero::after {
+  background: linear-gradient(90deg, rgb(250 249 246 / 96%), rgb(250 249 246 / 91%) 36%, rgb(250 249 246 / 48%) 53%, transparent 70%);
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero-copy {
+  width: 100%;
+  max-width: min(605px, 100%);
+  margin-inline: 0;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero h1 {
+  max-width: 17ch;
+  margin: 0;
+  color: var(--gallery-ink);
+  font-size: clamp(42px, 4.2vw, 62px);
+  font-weight: 700;
+  letter-spacing: -.05em;
+  line-height: 1.05;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero .gc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 0;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero .gc-actions > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: min(240px, 100%);
+  min-height: 46px;
+  padding: 10px 14px;
+  gap: 10px;
+  border: 1px solid var(--gallery-blue);
+  border-radius: 5px;
+  box-shadow: none;
+  color: var(--gallery-blue);
+  background: #fff;
+  font: 700 13px/1.3 "GRECHO Local Inter", Inter, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero .gc-actions > a:first-child {
+  color: #fff;
+  background: var(--gallery-blue);
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero .gc-actions > a:first-child:hover {
+  background: #153f86;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero .gc-actions > a:last-child:hover {
+  background: #edf4ff;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-hero a:focus-visible {
+  outline: 3px solid var(--gallery-blue);
+  outline-offset: 3px;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-text-hero {
+  display: flex;
+  min-height: clamp(330px, 30vw, 440px);
+  background: #f5f7f8;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-text-hero .gc-hero-copy {
+  max-width: min(1000px, 100%);
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-text-hero h1 {
+  max-width: 26ch;
+}
+
+#main .challenge-gallery-family[data-challenge="C02"] .gc-subnav-inner {
+  width: var(--gallery-shell-width);
+  max-width: none;
+}
+
+#main .challenge-gallery-family[data-challenge] #products .gc-products {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+#main .challenge-gallery-family[data-challenge] #products .gc-material {
+  display: grid;
+  grid-template-columns: 44% minmax(0, 1fr);
+  min-width: 0;
+  border: 1px solid #c6d5e3;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+#main .challenge-gallery-family[data-challenge] #products .gc-material .gc-image {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  aspect-ratio: auto;
+}
+
+#main .challenge-gallery-family[data-challenge] #products .gc-material .gc-card-body {
+  min-width: 0;
+  padding: clamp(19px, 3.3vw, 42px);
+}
+
+#main .challenge-gallery-family[data-challenge] #products .gc-material .gc-card-body h3 {
+  color: #162b40;
+  font-size: clamp(20px, 2vw, 30px);
+  line-height: 1.19;
+  letter-spacing: -.02em;
+}
+
+#main .challenge-gallery-family[data-challenge] #products .gc-material .gc-card-body > p {
+  color: #384d61;
+  font-size: clamp(15px, 1.25vw, 17px);
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-material .gc-solves > span {
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+#main .challenge-gallery-family[data-challenge] .gc-material .gc-solves a {
+  gap: .45em;
+  padding-inline: 0;
+  color: #19478f;
+  background: transparent;
+  text-decoration: none;
+}
+
+#main .challenge-gallery-family[data-challenge] :is(#problems, #products, #applications) a:focus-visible {
+  outline: 3px solid var(--gallery-blue);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1023px) {
+  #main .challenge-gallery-family[data-challenge] {
+    --gallery-gutter: 32px;
+    --gallery-section-space: 64px;
+    --gallery-title-space: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  #main .challenge-gallery-family[data-challenge] .gc-hero:not(.gc-text-hero) {
+    display: grid;
+    grid-template-areas: "image" "copy";
+    min-height: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  #main .challenge-gallery-family[data-challenge] .gc-hero:not(.gc-text-hero)::after {
+    content: none;
+    background: none;
+  }
+
+  #main .challenge-gallery-family[data-challenge] .gc-hero .gc-image {
+    position: relative;
+    grid-area: image;
+    height: clamp(174px, 54vw, 300px);
+  }
+
+  #main .challenge-gallery-family[data-challenge] .gc-hero:not(.gc-text-hero) .gc-hero-copy {
+    box-sizing: border-box;
+    grid-area: copy;
+    width: var(--gallery-shell-width);
+    max-width: none;
+    margin-inline: var(--gallery-shell-start) 0;
+    padding: 24px 0 29px;
+  }
+
+  #main .challenge-gallery-family[data-challenge] .gc-hero h1 {
+    max-width: 20ch;
+    font-size: clamp(32px, 6.1vw, 46px);
+  }
+
+  #main .challenge-gallery-family[data-challenge] .gc-hero .gc-actions {
+    margin-top: 21px;
+  }
+}
+
+@media (max-width: 760px) {
+  #main .challenge-gallery-family[data-challenge] #products .gc-material {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #main .challenge-gallery-family[data-challenge] #products .gc-material .gc-image {
+    min-height: 0;
+    border-inline-end: 0;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 600px) {
+  #main .challenge-gallery-family[data-challenge] {
+    --gallery-gutter: 20px;
+    --gallery-section-space: 48px;
+    --gallery-title-space: 28px;
+  }
+
+  #main .challenge-gallery-family[data-challenge] .gc-text-hero {
+    min-height: 0;
+    padding-block: 36px;
+  }
+}
+
+/* C01 R2 card rails. Scroll clipping belongs to each rail, never the page. */
+#main .challenge-gallery-family[data-challenge] :is(#problems, #applications) .gallery-rail-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: none;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail-heading > h2 {
+  min-width: 0;
+  margin-block: 0;
+  overflow-wrap: break-word;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail-controls:not([hidden]) {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail-controls > button {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: #162b40;
+  background: #fff;
+  border: 1px solid #aebdca;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color .18s ease, background-color .18s ease, border-color .18s ease;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail-controls > button[data-gallery-rail-next] svg {
+  transform: rotate(180deg);
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail-controls > button:not(:disabled):hover {
+  color: #fff;
+  background: #1b4aa1;
+  border-color: #1b4aa1;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail-controls > button:disabled {
+  color: #9ca7b2;
+  border-color: #d5dce2;
+  cursor: default;
+}
+
+#main .challenge-gallery-family[data-challenge] :is(.gallery-rail-controls > button, .gallery-rail):focus-visible {
+  outline: 3px solid #1b4aa1;
+  outline-offset: 3px;
+}
+
+#main .challenge-gallery-family[data-challenge] :is(#problems, #applications) .gallery-rail {
+  --rail-gap: 24px;
+  --rail-card-width: calc((100% - 3 * var(--rail-gap)) / 3.5);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  gap: var(--rail-gap);
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0 0 9px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #9aabbc #eaf0f5;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail > :is(.gc-problem, .gc-application) {
+  display: flex;
+  flex: 0 0 var(--rail-card-width);
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #162b40;
+  background: #fff;
+  border: 1px solid #d9e2ea;
+  border-radius: 8px;
+  box-shadow: none;
+  transform: none;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail > :is(.gc-problem, .gc-application):is(:hover, :focus-within) {
+  border-color: #aebdca;
+  box-shadow: none;
+  transform: none;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail .gallery-rail-media {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  aspect-ratio: 3 / 2;
+  background: #eef1f4;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail .gallery-rail-media > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail :is(.gc-problem-body, .gc-card-body) {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+  padding: clamp(18px, 1.8vw, 26px);
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail h3 {
+  margin: 0 0 10px;
+  color: #162b40;
+  font-size: clamp(22px, 1.8vw, 26px);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  overflow-wrap: break-word;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail :is(.gc-problem-body, .gc-card-body) > p:not(.gc-card-link) {
+  margin: 0;
+  color: #384d61;
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail .gc-card-link {
+  margin: auto 0 0;
+  padding-top: 13px;
+}
+
+#main .challenge-gallery-family[data-challenge] .gallery-rail .gc-card-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: #1b4aa1;
+  font-size: 15px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #main .challenge-gallery-family[data-challenge] .gallery-rail[data-rail-ready]:not([data-rail-grabbing]) {
+    cursor: grab;
+  }
+
+  #main .challenge-gallery-family[data-challenge] .gallery-rail[data-rail-grabbing],
+  #main .challenge-gallery-family[data-challenge] .gallery-rail[data-rail-grabbing] * {
+    cursor: grabbing;
+    user-select: none;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  #main .challenge-gallery-family[data-challenge] :is(#problems, #applications) .gallery-rail {
+    --rail-gap: 20px;
+    --rail-card-width: calc((100% - 2 * var(--rail-gap)) / 2.2);
+  }
+}
+
+@media (max-width: 600px) {
+  #main .challenge-gallery-family[data-challenge] :is(#problems, #applications) .gallery-rail {
+    --rail-gap: 16px;
+    --rail-card-width: calc((100% - var(--rail-gap)) / 1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main .challenge-gallery-family[data-challenge] .gallery-rail-controls > button {
+    transition: none;
+  }
+}
+
+/* Original problem selector and paired technical panel. */
+#main .challenge-gallery-family[data-challenge] #solutions .gc-explorer {
+  --explorer-ink: #152d45;
+  --explorer-blue: #1b4aa1;
+  --explorer-border: #d8e3ed;
+  grid-template-columns: 330px minmax(0, 1fr);
+  gap: 22px;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-selector,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair {
+  border-color: var(--explorer-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(25 64 111 / 5%);
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-select {
+  color: var(--explorer-ink);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-select[aria-selected="true"] {
+  background: #e8f1fc;
+  color: #163a77;
+  font-weight: 650;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-select:focus-visible,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair:focus-visible,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related a:focus-visible,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-explorer-controls button:focus-visible {
+  outline: 2px solid var(--explorer-blue);
+  outline-offset: 2px;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair {
+  padding: clamp(18px, 2vw, 28px);
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair[hidden] {
+  display: none;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair-top {
+  color: #4e6276;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-count {
+  background: #e8f1fc;
+  color: var(--explorer-blue);
+  font-size: 13px;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  padding: clamp(16px, 1.7vw, 24px);
+  border-radius: 7px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context {
+  background: #fcf5ee;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy {
+  background: #edf5fb;
+  border-left-color: var(--explorer-blue);
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context h4,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy h3 {
+  margin: 0 0 10px;
+  color: var(--explorer-ink);
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context h4 {
+  font-size: clamp(18px, 1.5vw, 22px);
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy h3 {
+  font-size: clamp(20px, 1.8vw, 26px);
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context > p,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy > p {
+  margin: 0;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-arrow {
+  background: var(--explorer-blue);
+  box-shadow: none;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related > p:first-child {
+  color: #4e6276;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a {
+  border-color: #c8d9ec;
+  color: var(--explorer-blue);
+  font-size: 14px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-explorer-note {
+  margin: 0 0 10px;
+  color: #4e6276;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-explorer-controls button {
+  padding-inline: 6px;
+  color: var(--explorer-blue);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+#main .challenge-gallery-family[data-challenge] #solutions .gc-explorer-controls button:disabled {
+  color: #5e6d80;
+}
+
+@media (max-width: 1080px) {
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-explorer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-select {
+    padding-inline: 10px;
+  }
+}
+
+/* Final Gallery treatment for the active problem and solution panel. */
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair {
+  background: #fff;
+  border: 1px solid #e2e8ee;
+  border-radius: 6px;
+  box-shadow: none;
+  padding: clamp(20px, 2vw, 30px);
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair-top {
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e7edf2;
+  color: #526477;
+  font-weight: 600;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-count {
+  background: #f1f5f9;
+  color: #1b4aa1;
+  border-radius: 3px;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-pair-grid {
+  grid-template-columns: minmax(0, .94fr) 28px minmax(0, 1.12fr);
+  gap: clamp(12px, 1.7vw, 24px);
+  align-items: stretch;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  padding: clamp(16px, 1.7vw, 24px) clamp(12px, 1.7vw, 24px);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+  line-height: 1.58;
+  color: #435366;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context {
+  background: transparent;
+  padding-left: 4px;
+  justify-content: center;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy {
+  background: transparent;
+  border-left: 2px solid #1b4aa1;
+  padding-left: clamp(18px, 1.7vw, 26px);
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context h4,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy h3 {
+  color: #172d43;
+  font-family: "GRECHO Local Inter", Inter, Arial, sans-serif;
+  font-weight: 650;
+  line-height: 1.24;
+  letter-spacing: -.025em;
+  overflow-wrap: anywhere;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context h4 {
+  font-size: clamp(18px, 1.4vw, 21px);
+  margin-bottom: 12px;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy h3 {
+  font-size: clamp(19px, 1.75vw, 25px);
+  margin-bottom: 13px;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-arrow {
+  justify-self: center;
+  align-self: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #1b4aa1;
+  font-size: 25px;
+  line-height: 1;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related {
+  border-top: 1px solid #e5ebf0;
+  margin-top: auto;
+  padding-top: 13px;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related > p:first-child {
+  margin: 0 0 6px;
+  color: #5b6b7b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links {
+  display: block;
+  margin: 0;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  max-width: 100%;
+  min-height: 38px;
+  padding: 2px 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #1b4aa1;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a::after {
+  content: "\2192";
+  margin-left: 7px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 1;
+  transition: transform .18s ease;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a:hover {
+  color: #103970;
+  background: transparent;
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a:hover::after,
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a:focus-visible::after {
+  transform: translateX(4px);
+}
+#main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a:focus-visible {
+  outline: 2px solid #1b4aa1;
+  outline-offset: 4px;
+}
+@media (max-width: 760px) {
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-pair-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-problem-context,
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy {
+    min-height: 0;
+    padding: 12px 5px 15px;
+  }
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-solution-copy {
+    padding: 14px 5px 13px 18px;
+  }
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-arrow {
+    transform: rotate(90deg);
+    height: 22px;
+    width: 22px;
+    font-size: 22px;
+  }
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-pair-top {
+    margin-bottom: 17px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a,
+  #main .challenge-gallery-family[data-challenge] #solutions .gc-related-links a::after {
+    transition: none;
+  }
+}
+
+/* C02's earlier R13 styles use important on these non-CTA components.
+   The exceptions below retain the approved treatment without changing R13 or the CTA. */
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] :is(#solutions, #applications).gc-tint::before {
+  background: #f1f6fb !important;
+  box-shadow: 0 0 0 100vmax #f1f6fb !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-selector {
+  border: 1px solid #d8e3ed !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgb(25 64 111 / 5%) !important;
+  background: #fff !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-select {
+  border-radius: 8px !important;
+  color: #152d45 !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-select[aria-selected="true"] {
+  background: #e8f1fc !important;
+  color: #163a77 !important;
+  box-shadow: none;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-select-no {
+  color: #5e718b !important;
+  background: #eef2f7 !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-select[aria-selected="true"] .gc-select-no {
+  color: #fff !important;
+  background: var(--gallery-blue) !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-pair {
+  border-radius: 6px !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-pair-grid {
+  grid-template-columns: minmax(0, .94fr) 28px minmax(0, 1.12fr) !important;
+  gap: clamp(12px, 1.7vw, 24px) !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-arrow {
+  color: var(--gallery-blue) !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: none;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-count {
+  background: #f1f5f9 !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-explorer-controls button:disabled {
+  color: #5e6d80 !important;
+  background: transparent !important;
+  cursor: default !important;
+  opacity: .6 !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero {
+  min-height: clamp(425px, 34vw, 510px) !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero-copy {
+  display: block;
+}
+
+@media (max-width: 760px) {
+  body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-pair-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions .gc-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #solutions :is(.gc-problem-context, .gc-solution-copy) {
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #products .gc-material {
+  border: 1px solid #c6d5e3 !important;
+  border-radius: 12px !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] #applications .gallery-rail .gc-application {
+  border: 1px solid #d9e2ea !important;
+  border-radius: 8px !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero .gc-actions {
+  margin: 28px 0 0 !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero .gc-actions > a {
+  border-color: var(--gallery-blue) !important;
+  border-radius: 5px !important;
+  background: #fff !important;
+  color: var(--gallery-blue) !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero .gc-actions > a:first-child {
+  background: var(--gallery-blue) !important;
+  color: #fff !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero .gc-actions > a:first-child:hover {
+  background: #153f86 !important;
+}
+
+body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero .gc-actions > a:last-child:hover {
+  background: #edf4ff !important;
+}
+
+@media (max-width: 900px) {
+  body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero {
+    min-height: 0 !important;
+  }
+
+  body.r13-c02 #main .challenge-gallery-family[data-challenge="C02"] .gc-hero .gc-actions {
+    margin-top: 21px !important;
+  }
+}
+
+/* Footer V1 from the accepted Gallery shell, scoped to these review pages. */
+body.challenge-gallery-review #grecho-v3-footer.t02-gallery-footer {
+  --gallery-footer-gutter: clamp(20px, calc(7.619048px + 3.174603vw), 32px);
+  padding-block: 66px 28px;
+  color: #4f5961;
+  background: #f2f3f4;
+  font: 400 12px/1.56 "GRECHO Local Inter", Inter, Arial, sans-serif;
+}
+
+/* C02 retains R13 for the frozen CTA. Its legacy important footer fill only
+   applies to this page, so restore Footer V1 in that same narrow scope. */
+body.r13-c02.challenge-gallery-review #grecho-v3-footer.t02-gallery-footer {
+  background: #f2f3f4 !important;
+}
+
+body.challenge-gallery-review #grecho-v3-footer.t02-gallery-footer > .grecho-v3-container {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--gallery-footer-gutter));
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, minmax(0, 1fr));
+  gap: 48px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-grid > div {
+  min-width: 0;
+}
+
+body.challenge-gallery-review #grecho-v3-footer h2 {
+  margin: 0 0 16px;
+  color: #262d33;
+  font: 700 14px/1.56 "GRECHO Local Inter", Inter, Arial, sans-serif;
+}
+
+body.challenge-gallery-review #grecho-v3-footer p {
+  margin: 0;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-grid a {
+  display: block;
+  box-sizing: border-box;
+  width: fit-content;
+  min-height: 44px;
+  padding-block: 5px;
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-grid .grecho-v3-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-logo img {
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-social-links a {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  min-height: 38px;
+  padding: 0;
+  border: 1px solid #d8dde1;
+  border-radius: 50%;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-social-links svg {
+  width: 18px;
+  height: 18px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-contact {
+  display: grid;
+  gap: 3px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-contact > :is(a, span) {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+  gap: 7px;
+  width: auto;
+  min-height: 36px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-contact__icon,
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-contact__icon svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 50px;
+  padding-top: 22px;
+  border-top: 1px solid #d8dde1;
+  color: #59646c;
+  font-size: 11px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer a[href]:hover {
+  color: #1b4aa1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body.challenge-gallery-review #grecho-v3-footer a[href]:focus-visible {
+  outline: 3px solid #1b4aa1;
+  outline-offset: 4px;
+}
+
+@media (min-width: 768px) {
+  body.challenge-gallery-review #grecho-v3-footer.t02-gallery-footer {
+    --gallery-footer-gutter: clamp(32px, calc(-13.714286px + 5.952381vw), 72px);
+  }
+}
+
+@media (max-width: 850px) {
+  body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  body.challenge-gallery-review #grecho-v3-footer.t02-gallery-footer {
+    padding-top: 52px;
+  }
+
+  body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  body.challenge-gallery-review #grecho-v3-footer .grecho-v3-footer-bottom {
+    flex-direction: column;
+    margin-top: 34px;
+  }
+}
+
+/* The legacy C02 navigation keeps its disabled actions visible at narrow widths.
+   Keep the primary controls at their normal hit size and let the subnav action wrap. */
+@media (max-width: 360px) {
+  body.r13-c02.challenge-gallery-review header.grecho-v3-nav .grecho-v3-nav__inner {
+    width: calc(100% - 16px);
+  }
+
+  body.r13-c02.challenge-gallery-review header.grecho-v3-nav :is(.grecho-v3-nav__brand, .grecho-v3-nav__brand img) {
+    width: 30vw;
+  }
+
+  body.r13-c02.challenge-gallery-review header.grecho-v3-nav .grecho-v3-nav__actions {
+    gap: 4px;
+    margin-inline: 0;
+  }
+
+  body.r13-c02.challenge-gallery-review header.grecho-v3-nav .grecho-v3-nav__cta[data-r13-cta] {
+    max-width: 105px;
+    padding-inline: 6px !important;
+    overflow-wrap: anywhere;
+  }
+
+  body.r13-c02.challenge-gallery-review #main .challenge-gallery-family[data-challenge="C02"] .gc-subnav-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+    padding-bottom: 4px;
+  }
+
+  body.r13-c02.challenge-gallery-review #main .challenge-gallery-family[data-challenge="C02"] .gc-subnav-links {
+    min-width: 0;
+  }
+
+  body.r13-c02.challenge-gallery-review #main .challenge-gallery-family[data-challenge="C02"] .gc-subnav-cta {
+    justify-self: start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 0;
+    gap: 4px;
+    overflow-wrap: anywhere;
+  }
+}

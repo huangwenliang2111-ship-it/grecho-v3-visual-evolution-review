@@ -1,0 +1,146 @@
+/* R2 alignment for C01; the consultation CTA and approved footer retain their original rules. */
+#grecho-challenge-C01 {
+  --c01-r2-ink: #172c42;
+  --c01-r2-copy: #435264;
+  --c01-r2-blue: #1b4aa1;
+  --c01-r2-gutter: clamp(40px, 5vw, 72px);
+  --c01-r2-shell-width: min(1440px, calc(100vw - 2 * var(--c01-r2-gutter)));
+  --c01-r2-shell-start: max(var(--c01-r2-gutter), calc((100vw - 1440px) / 2));
+  --c01-r2-section-space: 80px;
+  --c01-r2-title-space: 40px;
+}
+
+#main #grecho-challenge-C01 .gc-section:not(.gc-cta) {
+  box-sizing: border-box;
+  width: var(--c01-r2-shell-width);
+  max-width: none;
+  margin-inline: var(--c01-r2-shell-start) 0;
+  padding: var(--c01-r2-section-space) 0;
+}
+
+#main #grecho-challenge-C01 :is(.gc-hero, .gc-section:not(.gc-cta)) {
+  font-family: "GRECHO Local Inter", Inter, Arial, sans-serif;
+}
+
+#main #grecho-challenge-C01 .gc-section:not(.gc-cta) > .gc-section-head {
+  max-width: none;
+  margin: 0 0 var(--c01-r2-title-space);
+}
+
+#main #grecho-challenge-C01 .gc-section:not(.gc-cta) > .gc-section-head h2 {
+  margin: 0;
+  color: var(--c01-r2-ink);
+  font-size: clamp(30px, 3.05vw, 46px);
+  font-weight: 650;
+  letter-spacing: -.035em;
+  line-height: 1.12;
+  text-align: left;
+}
+
+#main #grecho-challenge-C01 .gc-hero {
+  min-height: clamp(425px, 34vw, 510px);
+  padding: clamp(48px, 5vw, 74px) var(--c01-r2-shell-start);
+}
+
+#main #grecho-challenge-C01 .gc-hero-copy {
+  max-width: min(605px, 100%);
+}
+
+#main #grecho-challenge-C01 .gc-hero h1 {
+  max-width: 17ch;
+  margin: 0;
+  color: var(--c01-r2-ink);
+  font-size: clamp(42px, 4.2vw, 62px);
+  font-weight: 700;
+  letter-spacing: -.05em;
+  line-height: 1.05;
+  text-align: left;
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions {
+  margin: 28px 0 0;
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions a {
+  min-height: 46px;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions a:first-child {
+  color: #fff;
+  background: var(--c01-r2-blue);
+  border-color: var(--c01-r2-blue);
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions a:last-child {
+  color: var(--c01-r2-blue);
+  background: #fff;
+  border-color: var(--c01-r2-blue);
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions a:first-child:hover {
+  background: #153f86;
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions a:last-child:hover {
+  background: #edf4ff;
+}
+
+#grecho-challenge-C01 .c01-r2-material-note {
+  max-width: 80ch;
+  margin: 22px 0 0;
+  color: var(--c01-r2-copy);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+@media (max-width: 1023px) {
+  #grecho-challenge-C01 {
+    --c01-r2-gutter: 32px;
+    --c01-r2-section-space: 64px;
+    --c01-r2-title-space: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  #main #grecho-challenge-C01 .gc-hero {
+    min-height: 0;
+    padding: 0;
+  }
+
+  #main #grecho-challenge-C01 .gc-hero .gc-image {
+    height: clamp(174px, 54vw, 300px);
+  }
+
+  #main #grecho-challenge-C01 .gc-hero-copy {
+    max-width: none;
+    width: var(--c01-r2-shell-width);
+    box-sizing: border-box;
+    margin-inline: var(--c01-r2-shell-start) 0;
+    padding: 24px 0 29px;
+  }
+
+  #main #grecho-challenge-C01 .gc-hero h1 {
+    max-width: 20ch;
+    font-size: clamp(32px, 6.1vw, 46px);
+  }
+
+  #main #grecho-challenge-C01 .gc-hero .gc-actions {
+    margin-top: 21px;
+  }
+}
+
+@media (max-width: 600px) {
+  #grecho-challenge-C01 {
+    --c01-r2-gutter: 20px;
+    --c01-r2-section-space: 48px;
+    --c01-r2-title-space: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #main #grecho-challenge-C01 #c01-r2-applications-rail .gc-card-body {
+    justify-content: flex-start;
+  }
+}

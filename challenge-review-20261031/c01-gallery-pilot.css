@@ -1,0 +1,355 @@
+/* C01 local Gallery pilot. The shared markup and styling of the review CTA are unchanged. */
+.gc-c01-pilot {
+  --c01-ink: #162b40;
+  --c01-text: #384d61;
+  --c01-blue: #19478f;
+  --c01-line: #c6d5e3;
+  --c01-inner-line: #e3eaf1;
+  --c01-surface: #f1f6fb;
+  --c01-white: #fff;
+  --c01-gutter: clamp(20px, 5vw, 72px);
+}
+
+/* Match the Gallery's generous reading width without changing the CTA container. */
+.gc-c01-pilot .gc-section:not(.gc-cta) {
+  width: min(1296px, calc(100% - 2 * var(--c01-gutter)));
+  max-width: none;
+  padding-block: clamp(52px, 6.3vw, 90px);
+}
+
+.gc-c01-pilot .gc-section:not(.gc-cta) .gc-section-head {
+  max-width: 760px;
+  margin-bottom: clamp(28px, 3.8vw, 50px);
+}
+
+.gc-c01-pilot .gc-section:not(.gc-cta) h2 {
+  color: var(--c01-ink);
+  font-size: clamp(30px, 3.5vw, 50px);
+  line-height: 1.08;
+}
+
+.gc-c01-pilot .gc-section:not(.gc-cta) .gc-section-intro {
+  max-width: 65ch;
+  color: var(--c01-text);
+  font-size: clamp(15px, 1.35vw, 18px);
+  line-height: 1.7;
+}
+
+/* Match the shared designer selectors here while keeping the rest of the page inherited. */
+#main #grecho-challenge-C01 .gc-hero {
+  min-height: clamp(510px, 42vw, 620px);
+  align-items: center;
+  padding: clamp(52px, 6vw, 86px) max(var(--c01-gutter), calc((100% - 1200px) / 2));
+  background: #f5f4f1;
+}
+
+#main #grecho-challenge-C01 .gc-hero::after {
+  background: linear-gradient(90deg, rgba(250, 249, 246, .96), rgba(250, 249, 246, .91) 36%, rgba(250, 249, 246, .48) 53%, transparent 70%);
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-image img {
+  object-position: 58% 45%;
+}
+
+#main #grecho-challenge-C01 .gc-hero-copy {
+  max-width: 570px;
+  margin-inline: 0;
+}
+
+#main #grecho-challenge-C01 .gc-hero h1 {
+  max-width: 15ch;
+  color: var(--c01-ink);
+  font-size: clamp(38px, 4.4vw, 64px);
+  line-height: 1.05;
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-lead {
+  max-width: 60ch;
+  color: #26394a;
+  font-size: clamp(16px, 1.35vw, 19px);
+  line-height: 1.55;
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions a {
+  min-height: 48px;
+  box-shadow: none;
+}
+
+#main #grecho-challenge-C01 .gc-hero .gc-actions a:focus-visible {
+  outline: 3px solid var(--c01-blue);
+  outline-offset: 3px;
+}
+
+.gc-c01-pilot[data-challenge="C01"] .gc-problem {
+  min-width: 0;
+  padding: clamp(16px, 2vw, 24px);
+  border: 1px solid var(--c01-line);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.gc-c01-pilot[data-challenge="C01"] .gc-problem:hover,
+.gc-c01-pilot[data-challenge="C01"] .gc-problem:focus-within {
+  transform: none;
+  border-color: var(--c01-blue);
+}
+
+.gc-c01-pilot .gc-problem .gc-problem-icon {
+  background: var(--c01-surface);
+  color: var(--c01-blue);
+}
+
+.gc-c01-pilot .gc-problem .gc-problem-body > p:not(.gc-card-link) {
+  color: var(--c01-text);
+}
+
+.gc-c01-pilot .gc-problem .gc-card-link a {
+  color: var(--c01-blue);
+}
+
+.gc-c01-pilot #solutions::before,
+.gc-c01-pilot #applications::before {
+  background: var(--c01-surface);
+  box-shadow: 0 0 0 100vmax var(--c01-surface);
+}
+
+.gc-c01-pilot .c01-pairs {
+  border-top: 1px solid var(--c01-line);
+}
+
+.gc-c01-pilot .c01-pair {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.3fr);
+  gap: clamp(24px, 5vw, 72px);
+  padding: clamp(22px, 3vw, 42px) clamp(8px, 1.4vw, 20px);
+  border-bottom: 1px solid var(--c01-line);
+  align-items: start;
+}
+
+.gc-c01-pilot .c01-pair:target {
+  background: var(--c01-white);
+  box-shadow: inset 3px 0 var(--c01-blue);
+}
+
+.gc-c01-pilot .c01-pair:focus-visible {
+  outline: 3px solid var(--c01-blue);
+  outline-offset: -3px;
+}
+
+.gc-c01-pilot .c01-issue {
+  display: grid;
+  grid-template-columns: minmax(2ch, max-content) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.gc-c01-pilot .c01-issue-number {
+  padding-top: 4px;
+  color: var(--c01-blue);
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  line-height: 1.25;
+}
+
+.gc-c01-pilot .c01-issue h3,
+.gc-c01-pilot .c01-direction h4 {
+  margin: 0 0 9px;
+  color: var(--c01-ink);
+  font-size: clamp(19px, 1.75vw, 25px);
+  line-height: 1.26;
+  letter-spacing: -.025em;
+  overflow-wrap: anywhere;
+}
+
+.gc-c01-pilot .c01-direction h4 {
+  color: var(--c01-blue);
+}
+
+.gc-c01-pilot .c01-issue p,
+.gc-c01-pilot .c01-direction > p {
+  max-width: 58ch;
+  margin: 0;
+  color: var(--c01-text);
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.65;
+}
+
+.gc-c01-pilot .c01-related {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 14px;
+  margin-top: 10px;
+  color: var(--c01-text);
+  font-size: 14px;
+}
+
+.gc-c01-pilot .c01-related p {
+  margin: 0;
+}
+
+.gc-c01-pilot .c01-related a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--c01-blue);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.gc-c01-pilot .gc-material .gc-solves a,
+.gc-c01-pilot .gc-material .gc-solves a:hover {
+  padding-inline: 0;
+  color: var(--c01-blue);
+  background: transparent;
+}
+
+.gc-c01-pilot :is(.gc-card-link, .c01-related, .gc-solves) a {
+  gap: .45em;
+  text-decoration: none;
+}
+
+.gc-c01-pilot :is(.c01-related, .gc-solves) a::after {
+  content: "\2192" / "";
+}
+
+.gc-c01-pilot :is(.c01-related, .gc-solves) a::after,
+.gc-c01-pilot .gc-card-link a > span[aria-hidden="true"] {
+  flex: none;
+  transition: transform .18s ease-out;
+}
+
+.gc-c01-pilot :is(.c01-related, .gc-solves) a:is(:hover, :focus-visible)::after,
+.gc-c01-pilot .gc-card-link a:is(:hover, :focus-visible) > span[aria-hidden="true"] {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gc-c01-pilot :is(.c01-related, .gc-solves) a::after {
+    transition: none;
+  }
+
+  .gc-c01-pilot :is(.c01-related, .gc-solves) a:is(:hover, :focus-visible)::after,
+  .gc-c01-pilot .gc-card-link a:is(:hover, :focus-visible) > span[aria-hidden="true"] {
+    transform: none;
+  }
+}
+
+.gc-c01-pilot :is(#problems, #solutions, #products, #applications) a:focus-visible {
+  outline: 3px solid var(--c01-blue);
+  outline-offset: 3px;
+}
+
+.gc-c01-pilot .gc-material,
+.gc-c01-pilot .gc-application {
+  min-width: 0;
+  border: 1px solid var(--c01-line);
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.gc-c01-pilot .gc-material .gc-card-body,
+.gc-c01-pilot .gc-application .gc-card-body {
+  min-width: 0;
+  padding: clamp(19px, 3.3vw, 42px);
+}
+
+.gc-c01-pilot .gc-material .gc-card-body h3,
+.gc-c01-pilot .gc-application .gc-card-body h3 {
+  color: var(--c01-ink);
+  font-size: clamp(20px, 2vw, 30px);
+  line-height: 1.19;
+  letter-spacing: -.02em;
+}
+
+.gc-c01-pilot .gc-material .gc-card-body > p,
+.gc-c01-pilot .gc-application .gc-card-body > p {
+  color: var(--c01-text);
+  font-size: clamp(15px, 1.25vw, 17px);
+}
+
+.gc-c01-pilot .gc-material .gc-solves > span {
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (max-width: 900px) {
+  #main #grecho-challenge-C01 .gc-hero {
+    display: grid;
+    grid-template-areas: "image" "copy";
+    min-height: 0;
+    align-items: stretch;
+    padding: 0;
+    background: var(--c01-white);
+  }
+
+  #main #grecho-challenge-C01 .gc-hero::after {
+    content: none;
+    background: none;
+  }
+
+  #main #grecho-challenge-C01 .gc-hero .gc-image {
+    position: relative;
+    grid-area: image;
+    height: clamp(180px, 55vw, 330px);
+  }
+
+  #main #grecho-challenge-C01 .gc-hero .gc-image img {
+    object-position: 60% 47%;
+  }
+
+  #main #grecho-challenge-C01 .gc-hero-copy {
+    grid-area: copy;
+    max-width: 720px;
+    padding: clamp(28px, 5vw, 44px) var(--c01-gutter) clamp(37px, 5vw, 52px);
+  }
+
+  #main #grecho-challenge-C01 .gc-hero h1 {
+    max-width: 19ch;
+    font-size: clamp(32px, 7.8vw, 46px);
+  }
+
+  #main #grecho-challenge-C01 .gc-hero .gc-actions a:nth-child(2) {
+    border-color: var(--c01-blue);
+  }
+}
+
+@media (max-width: 760px) {
+  .gc-c01-pilot .c01-pair {
+    --c01-index-width: 2ch;
+    --c01-index-gap: 11px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .gc-c01-pilot .c01-issue {
+    grid-template-columns: var(--c01-index-width) minmax(0, 1fr);
+    gap: var(--c01-index-gap);
+  }
+
+  .gc-c01-pilot .c01-direction {
+    margin-inline-start: calc(var(--c01-index-width) + var(--c01-index-gap));
+    padding-top: 16px;
+    border-top: 1px solid var(--c01-inner-line);
+  }
+
+  .gc-c01-pilot .c01-issue-number {
+    font-size: 14px;
+  }
+
+  .gc-c01-pilot .c01-related a {
+    min-width: 0;
+  }
+
+  .gc-c01-pilot .gc-material .gc-image {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .gc-c01-pilot .c01-pair {
+    padding-inline: 7px;
+  }
+}
+
