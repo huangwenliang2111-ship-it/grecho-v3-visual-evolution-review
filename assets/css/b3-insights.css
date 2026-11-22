@@ -1,0 +1,184 @@
+/* Open article catalogue and next-step routes, scoped to Insights. */
+#grecho-v3-main .b3-insights [hidden] { display: none !important; }
+
+#grecho-v3-main .b3-insights .insight-anchor {
+  display: block;
+  block-size: 0;
+  scroll-margin-top: 110px;
+}
+#grecho-v3-main .b3-insights :is(#featured-insights, #document-access, #faq-preview) {
+  scroll-margin-top: 110px;
+  scroll-margin-inline: 0;
+}
+
+#grecho-v3-main .b3-insights .insight-tools {
+  --insight-action-width: 156px;
+  display: grid;
+  gap: 16px;
+  padding-block-end: 18px;
+  margin-block-end: 28px;
+  border-bottom: 1px solid #cbd4d9;
+}
+#grecho-v3-main .b3-insights .insight-search {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  max-inline-size: 680px;
+}
+#grecho-v3-main .b3-insights .insight-search label { font-weight: 650; }
+#grecho-v3-main .b3-insights .insight-search-line {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) var(--insight-action-width);
+  align-items: stretch;
+}
+#grecho-v3-main .b3-insights .insight-search input {
+  inline-size: 100%;
+  min-inline-size: 0;
+  min-block-size: 48px;
+  padding: 10px 14px;
+  border: 1px solid #8ca4b5;
+  border-radius: 6px;
+  background: #fff;
+  color: #182b3a;
+  font: inherit;
+}
+#grecho-v3-main .b3-insights .insight-search input::placeholder { color: #526879; }
+#grecho-v3-main .b3-insights .insight-search input::-webkit-search-cancel-button { appearance: none; }
+
+#grecho-v3-main .b3-insights :is(.insight-plain-button, .insight-topic) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 0;
+  min-block-size: 44px;
+  text-align: center;
+  padding: 8px 13px;
+  border: 1px solid #a8bac7;
+  border-radius: 4px;
+  color: #172d42;
+  background: #fff;
+  font: inherit;
+  font-size: .9375rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+#grecho-v3-main .b3-insights :is(.insight-plain-button, .insight-topic):hover {
+  color: #163c7c;
+  background: #eef3f8;
+  border-color: #6c8daf;
+}
+#grecho-v3-main .b3-insights .insight-topic { padding-inline: 10px; }
+#grecho-v3-main .b3-insights .insight-topic[aria-pressed="true"] {
+  color: #fff;
+  background: #1b4aa1;
+  border-color: #1b4aa1;
+}
+#grecho-v3-main .b3-insights :is(.insight-search input, .insight-plain-button, .insight-topic):focus-visible {
+  outline: 3px solid #1b4aa1;
+  outline-offset: 3px;
+}
+#grecho-v3-main .b3-insights .insight-topic-count {
+  flex: none;
+  white-space: nowrap;
+  margin-inline-start: 6px;
+  font-variant-numeric: tabular-nums;
+  font-size: .875em;
+}
+#grecho-v3-main .b3-insights .insight-topic-buttons {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  max-inline-size: 990px;
+}
+#grecho-v3-main .b3-insights .insight-plain-button {
+  inline-size: min(100%, var(--insight-action-width));
+  white-space: nowrap;
+}
+#grecho-v3-main .b3-insights .insight-result-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#grecho-v3-main .b3-insights .insight-result-bar { justify-content: space-between; }
+#grecho-v3-main .b3-insights :is(.insight-result-count, .insight-empty) { margin: 0; }
+#grecho-v3-main .b3-insights .insight-result-count { font-weight: 650; }
+
+#grecho-v3-main .b3-insights :is(.insight-catalog-grid, .insight-next-grid) {
+  display: grid;
+  gap: 36px clamp(18px, 2.2vw, 34px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+#grecho-v3-main .b3-insights :is(.insight-article, .insight-next-card) { min-inline-size: 0; }
+#grecho-v3-main .b3-insights :is(.insight-figure, .insight-next-card figure) {
+  display: block;
+  margin: 0 0 15px;
+  overflow: hidden;
+  border-radius: 7px;
+  aspect-ratio: 16 / 9;
+  background-color: #f1f3f3;
+}
+#grecho-v3-main .b3-insights :is(.insight-figure, .insight-next-card figure) img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+#grecho-v3-main .b3-insights .insight-figure--contain { background-color: #f5f6f5; }
+#grecho-v3-main .b3-insights .insight-figure.insight-figure--contain img { object-fit: contain; }
+#grecho-v3-main .b3-insights :is(.insight-article, .insight-next-card) h3 {
+  margin: 0 0 7px;
+  font-size: clamp(20px, 1.6667vw, 24px);
+  line-height: 1.33;
+}
+#grecho-v3-main .b3-insights :is(.insight-article, .insight-next-card) p { margin: 0 0 12px; }
+#grecho-v3-main .b3-insights .insight-topic-label {
+  margin: 0 0 6px;
+  color: #17468c;
+  font-size: .9375rem;
+  font-weight: 650;
+}
+#grecho-v3-main .b3-insights .insight-next-card {
+  padding-block-start: 14px;
+  border-top: 1px solid #cbd4d9;
+}
+#grecho-v3-main .b3-insights .insight-next-card figure { aspect-ratio: 3 / 2; }
+
+#grecho-v3-main .b3-insights .insight-catalog-grid.is-single { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 850px) {
+  #grecho-v3-main .b3-insights .is-single .insight-article {
+    display: grid;
+    grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(20px, 3vw, 40px);
+    max-inline-size: 1024px;
+  }
+  #grecho-v3-main .b3-insights .is-single .insight-figure { margin: 0; }
+}
+
+@media (max-width: 1040px) {
+  #grecho-v3-main .b3-insights .insight-topic-buttons { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #grecho-v3-main .b3-insights .insight-catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #grecho-v3-main .b3-insights .insight-next-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  #grecho-v3-main .b3-insights .insight-next-card {
+    display: grid;
+    grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(16px, 3vw, 28px);
+    max-inline-size: 840px;
+  }
+  #grecho-v3-main .b3-insights .insight-next-card figure { margin: 0; }
+}
+@media (max-width: 610px) {
+  #grecho-v3-main .b3-insights .insight-topic-buttons { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #grecho-v3-main .b3-insights .insight-catalog-grid { grid-template-columns: minmax(0, 1fr); }
+  #grecho-v3-main .b3-insights .insight-next-card { display: block; }
+  #grecho-v3-main .b3-insights .insight-next-card figure { margin-block-end: 14px; }
+}
+
+
+@media (max-width: 360px) {
+  #grecho-v3-main .b3-insights .insight-search-line { grid-template-columns: minmax(0, 1fr); }
+}

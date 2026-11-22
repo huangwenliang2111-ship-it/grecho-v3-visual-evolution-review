@@ -1,0 +1,131 @@
+/* About-only material review rows and the accepted Contact FAQ layout. */
+#grecho-v3-main .b3-about .b3-about-support-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: clamp(32px, 5vw, 80px);
+  align-items: start;
+}
+
+#grecho-v3-main .b3-about .b3-about-feature-media {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f5f6f5;
+}
+
+#grecho-v3-main .b3-about .b3-about-feature-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#grecho-v3-main .b3-about .b3-about-role-media img { object-position: 71% center; }
+#grecho-v3-main .b3-about .b3-about-scope-media img { object-position: 78% center; }
+
+#grecho-v3-main .b3-about .b3-about-copy > p { margin-top: 12px; }
+#grecho-v3-main .b3-about .b3-about-copy > a { margin-top: 20px; }
+
+#grecho-v3-main .b3-about .b3-about-rows {
+  margin: 24px 0 0;
+}
+
+#grecho-v3-main .b3-about .b3-about-rows > div {
+  padding-block: 13px;
+  border-top: 1px solid var(--b1-line);
+}
+
+#grecho-v3-main .b3-about .b3-about-rows > div:last-child {
+  border-bottom: 1px solid var(--b1-line);
+}
+
+#grecho-v3-main .b3-about .b3-about-rows dt {
+  font-weight: 650;
+  color: var(--b1-ink);
+}
+
+#grecho-v3-main .b3-about .b3-about-rows dd {
+  margin: 3px 0 0;
+  color: var(--b1-copy);
+}
+
+#grecho-v3-main .b3-about .b3-about-faq {
+  padding-block: clamp(48px, 5.5vw, 84px);
+  background: #f5f6f5;
+}
+
+#grecho-v3-main .b3-about .b3-about-faq-inner {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  gap: max(24px, 6vw);
+  align-items: start;
+}
+
+#grecho-v3-main .b3-about .b3-about-faq-intro h2 { max-width: 14ch; }
+#grecho-v3-main .b3-about .b3-about-faq-intro a { margin-top: 16px; }
+
+#grecho-v3-main .b3-about .b3-about-faq-list details {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #cbd4d9;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+#grecho-v3-main .b3-about .b3-about-faq-list details:last-child {
+  border-bottom: 1px solid #cbd4d9;
+}
+
+#grecho-v3-main .b3-about .b3-about-faq-list summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  min-height: 0;
+  padding: 17px 0;
+  border: 0;
+  list-style: none;
+  color: var(--b1-ink);
+  font-size: clamp(17px, 1.38vw, 21px);
+  font-weight: 620;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+#grecho-v3-main .b3-about .b3-about-faq-list summary::-webkit-details-marker { display: none; }
+#grecho-v3-main .b3-about .b3-about-faq-list summary::marker { content: ""; }
+
+#grecho-v3-main .b3-about .b3-about-faq-list summary::after {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  color: var(--b1-blue);
+  background:
+    linear-gradient(currentColor,currentColor) center / 100% 2px no-repeat,
+    linear-gradient(currentColor,currentColor) center / 2px 100% no-repeat;
+  content: "";
+}
+
+#grecho-v3-main .b3-about .b3-about-faq-list details[open] > summary::after {
+  background-size: 100% 2px, 2px 0;
+}
+
+#grecho-v3-main .b3-about .b3-about-faq-list details > p {
+  max-width: 68ch;
+  margin: -2px 24px 20px 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 820px) {
+  #grecho-v3-main .b3-about .b3-about-support-layout,
+  #grecho-v3-main .b3-about .b3-about-faq-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  #grecho-v3-main .b3-about .b3-about-faq-intro h2 { max-width: 22ch; }
+}
