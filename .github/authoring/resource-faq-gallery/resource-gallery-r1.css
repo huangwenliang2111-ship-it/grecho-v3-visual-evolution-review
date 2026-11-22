@@ -1,0 +1,592 @@
+#resource-gallery {
+  --rc-ink: #273338;
+  --rc-muted: #46565e;
+  --rc-line: #d6dcdf;
+}
+
+#resource-gallery .rc-type-list,
+#resource-gallery .rc-library-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#resource-gallery .rc-type-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 44px 26px;
+}
+
+#resource-gallery .rc-category {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+#resource-gallery .rc-category figure {
+  margin: 0 0 17px;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  border-radius: 4px;
+  background: #f1efeb;
+}
+
+#resource-gallery .rc-category img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#resource-gallery .rc-category h3,
+#resource-gallery .rc-record h3 {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+#resource-gallery .rc-category p,
+#resource-gallery .rc-record p {
+  margin: 7px 0 0;
+  color: var(--rc-muted);
+}
+
+#resource-gallery .rc-category .b1-text-action,
+#resource-gallery .rc-record .b1-text-action {
+  align-self: start;
+  margin-top: 8px;
+}
+
+#resource-gallery .rc-library {
+  background: #f4f5f5;
+  scroll-margin-top: 106px;
+}
+
+#resource-gallery .rc-search[hidden],
+#resource-gallery [data-rc-record][hidden] {
+  display: none;
+}
+
+#resource-gallery .rc-search {
+  display: grid;
+  grid-template-columns: minmax(0, 430px) minmax(0, auto);
+  justify-content: start;
+  align-items: end;
+  gap: 10px 12px;
+  margin: 0 0 27px;
+}
+
+#resource-gallery .rc-search-field {
+  display: grid;
+  gap: 6px;
+  align-content: end;
+  min-width: 0;
+}
+
+#resource-gallery .rc-search input,
+#resource-gallery .rc-search button {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 46px;
+  border: 1px solid #aab6ba;
+  border-radius: 4px;
+  background: #fff;
+  color: var(--rc-ink);
+  font: inherit;
+}
+
+#resource-gallery .rc-search input {
+  width: 100%;
+  padding: 10px 12px;
+}
+
+#resource-gallery .rc-search button {
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#resource-gallery .rc-search button:hover {
+  border-color: #1b4aa1;
+  color: #1b4aa1;
+}
+
+#resource-gallery .rc-search :is(input, button):focus-visible {
+  outline: 2px solid #1b4aa1;
+  outline-offset: 3px;
+}
+
+#resource-gallery .rc-search .rc-results {
+  grid-column: 1 / -1;
+  margin: 1px 0 0;
+  color: var(--rc-muted);
+  font-size: 14px;
+}
+
+#resource-gallery .rc-library-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 28px;
+}
+
+#resource-gallery .rc-record {
+  display: grid;
+  grid-template-columns: minmax(60px, 29%) minmax(0, 1fr);
+  gap: 16px;
+  min-width: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--rc-line);
+}
+
+#resource-gallery .rc-preview {
+  align-self: start;
+  aspect-ratio: 768 / 1085;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e1e5e7;
+}
+
+#resource-gallery .rc-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#resource-gallery .rc-record-info {
+  min-width: 0;
+}
+
+#resource-gallery .rc-record h3 {
+  font-size: clamp(17px, 1.45vw, 21px);
+  line-height: 1.3;
+}
+
+#resource-gallery .rc-record .rc-id {
+  display: block;
+  margin-bottom: 5px;
+  color: #1b4aa1;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+#resource-gallery .rc-record p {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+#resource-gallery .rc-process {
+  background: #f7f8f8;
+}
+
+@media (max-width: 1023px) {
+  #resource-gallery .rc-type-list,
+  #resource-gallery .rc-library-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  #resource-gallery .rc-type-list,
+  #resource-gallery .rc-library-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #resource-gallery .rc-type-list {
+    gap: 20px;
+  }
+
+  #resource-gallery .rc-category {
+    display: grid;
+    grid-template-columns: minmax(70px, 32%) minmax(0, 1fr);
+    gap: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rc-line);
+  }
+
+  #resource-gallery .rc-category figure {
+    align-self: start;
+    margin: 0;
+  }
+
+  #resource-gallery .rc-record {
+    grid-template-columns: minmax(66px, 28%) minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  #resource-gallery .rc-search {
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 8px;
+  }
+
+  #resource-gallery .rc-search button {
+    padding-inline: 10px;
+    font-size: 14px;
+  }
+
+  #resource-gallery .rc-library {
+    scroll-margin-top: 96px;
+  }
+}
+
+/* Resource access conditions stay independent of the shared accordion. */
+#resource-gallery .rc-category-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+}
+
+#resource-gallery .rc-category-heading h3 {
+  min-inline-size: 0;
+}
+
+#resource-gallery .rc-condition {
+  flex: none;
+  align-self: end;
+  inline-size: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+#resource-gallery .rc-condition > summary {
+  display: grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #1b4aa1;
+  cursor: pointer;
+  list-style: none;
+}
+
+#resource-gallery .rc-condition > summary::marker {
+  content: none;
+}
+
+#resource-gallery .rc-condition > summary::-webkit-details-marker {
+  display: none;
+}
+
+#resource-gallery .rc-condition > summary::after {
+  content: none;
+}
+
+#resource-gallery .rc-condition > summary:is(:hover, :focus-visible),
+#resource-gallery .rc-condition[open] > summary {
+  background: #edf4fa;
+}
+
+#resource-gallery .rc-condition > summary > svg {
+  display: block;
+  inline-size: 19px;
+  block-size: 19px;
+  max-inline-size: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#resource-gallery .rc-condition > summary:focus-visible,
+#resource-gallery .rc-gallery-controls button:focus-visible,
+#resource-gallery [data-rc-track]:focus-visible {
+  outline: 2px solid #1b4aa1;
+  outline-offset: 3px;
+}
+
+#resource-gallery .rc-condition > summary:focus-visible {
+  position: relative;
+  z-index: 101;
+}
+
+#resource-gallery .rc-condition-text {
+  position: absolute;
+  z-index: 100;
+  inset-block-start: 100%;
+  inset-inline-end: 0;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(15rem, 100%, calc(100vw - 16px));
+  padding: 7px 10px;
+  color: #fff;
+  background: #172c42;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#resource-gallery .rc-condition[data-rc-condition-ready] .rc-condition-text {
+  position: fixed;
+  top: var(--rc-tip-y, 8px);
+  right: auto;
+  left: var(--rc-tip-x, 8px);
+}
+
+@media (max-width: 360px) {
+  #resource-gallery .rc-category {
+    grid-template-columns: minmax(70px, 27%) minmax(0, 1fr);
+  }
+}
+
+#resource-gallery .rc-gallery-controls:not([hidden]) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+#resource-gallery [data-rc-count] {
+  margin-inline-end: 10px;
+  color: #5b646a;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+#resource-gallery .rc-gallery-controls button {
+  display: inline-grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  border: 1px solid #aeb4b6;
+  border-radius: 50%;
+  background: #fff;
+  color: #303638;
+  cursor: pointer;
+  transition: background-color 160ms, color 160ms, border-color 160ms;
+}
+
+#resource-gallery .rc-gallery-controls button svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#resource-gallery .rc-gallery-controls button:not(:disabled):is(:hover, :focus-visible) {
+  border-color: #1b4aa1;
+  background: #1b4aa1;
+  color: #fff;
+}
+
+#resource-gallery .rc-gallery-controls button:disabled {
+  border-color: #d9dddf;
+  background: #fff;
+  color: #b5babc;
+  opacity: 1;
+  cursor: default;
+}
+
+#resource-gallery [data-rc-track] {
+  --rc-gallery-gap: 24px;
+  --rc-card-width: calc((100% - 3 * var(--rc-gallery-gap)) / 3.5);
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: var(--rc-gallery-gap);
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0 0 12px;
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #aeb4b6 #f4f5f5;
+}
+
+#resource-gallery [data-rc-track] > .rc-gallery-card {
+  box-sizing: border-box;
+  flex: 0 0 var(--rc-card-width);
+  width: var(--rc-card-width);
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 3px;
+  scroll-snap-align: start;
+}
+
+#resource-gallery .rc-gallery-card figure {
+  margin: 0;
+  aspect-ratio: 3 / 2;
+  background: #edf0f0;
+}
+
+#resource-gallery .rc-process .rc-gallery-card figure {
+  aspect-ratio: 16 / 9;
+}
+
+#resource-gallery .rc-gallery-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center var(--rc-image-y, 54%);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#resource-gallery .rc-gallery-card h3 {
+  margin: 12px 0 0;
+}
+
+#resource-gallery .rc-gallery-card p {
+  margin: 6px 0 0;
+  color: var(--rc-muted);
+}
+
+#resource-gallery .rc-gallery-card .b1-text-action {
+  margin-top: 10px;
+  outline-offset: 1px;
+}
+
+#resource-gallery .rc-process .rc-gallery-card h3 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rc-line);
+}
+
+#resource-gallery .rc-process .rc-step-heading {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 9px;
+}
+
+#resource-gallery .rc-process .rc-step {
+  margin: 0;
+  color: #1b4aa1;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+#resource-gallery .rc-process .rc-gallery-card p {
+  margin-top: 12px;
+}
+
+#resource-gallery [data-rc-track][data-rc-dragging="true"] {
+  scroll-snap-type: none;
+  cursor: grabbing;
+  user-select: none;
+}
+
+#resource-gallery [data-rc-track][data-rc-dragging="true"] a {
+  cursor: grabbing;
+}
+
+#resource-gallery [data-rc-track][data-rc-edge] {
+  transform: translateX(var(--rc-edge-x, 0px));
+}
+
+#resource-gallery [data-rc-track][data-rc-edge="returning"] {
+  transition: transform 180ms cubic-bezier(.2,.7,.3,1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #resource-gallery [data-rc-track][data-rc-ready]:not([data-rc-dragging]) {
+    cursor: grab;
+  }
+
+  #resource-gallery [data-rc-track] .b1-text-action {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1099px) {
+  #resource-gallery [data-rc-track] {
+    --rc-gallery-gap: 20px;
+    --rc-card-width: calc((100% - 2 * var(--rc-gallery-gap)) / 2.1);
+  }
+}
+
+@media (max-width: 767px) {
+  #resource-gallery [data-rc-track] {
+    --rc-gallery-gap: 16px;
+    --rc-card-width: calc((100% - var(--rc-gallery-gap)) / 1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #resource-gallery [data-rc-track][data-rc-edge] {
+    transform: none;
+    transition: none;
+  }
+
+  #resource-gallery .rc-gallery-controls button {
+    transition: none;
+  }
+}
+
+/* Text support at the end of the review process, adapted from Home #diagnostic. */
+#resource-gallery [data-rc-track] > .rc-gallery-card.rc-process-guide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px;
+  border: 0;
+  border-radius: 0;
+  background: #eef2f7;
+  box-shadow: none;
+}
+
+#resource-gallery .rc-guide-copy {
+  display: grid;
+  gap: 10px;
+  padding-top: 28px;
+  border-top: 1px solid #a6b5c5;
+}
+
+#resource-gallery .rc-process .rc-process-guide h3 {
+  padding: 0;
+  border: 0;
+}
+
+#resource-gallery .rc-process .rc-process-guide p {
+  margin: 0;
+}
+
+#resource-gallery .rc-guide-kicker {
+  color: var(--b1-blue);
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 20px;
+}
+
+#resource-gallery .rc-guide-action {
+  align-self: flex-start;
+  width: min(240px, 100%);
+  white-space: normal;
+}
+
+@media (max-width: 767px) {
+  #resource-gallery [data-rc-track] > .rc-gallery-card.rc-process-guide {
+    padding: 24px;
+  }
+}

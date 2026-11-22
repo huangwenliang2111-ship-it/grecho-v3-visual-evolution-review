@@ -1,0 +1,382 @@
+/* Shared rules loaded only by the Resource Center / FAQ Gallery R2 candidates. */
+#grecho-v3-main > .b1-page {
+  --b1-ink: #172c42;
+  --b1-copy: #43566c;
+  --b1-blue: #1b4aa1;
+  --b1-line: #ccd6df;
+  --b1-neutral: #f5f6f5;
+  --b1-gutter: clamp(20px, calc(7.619048px + 3.174603vw), 32px);
+  --b1-section-space: 64px;
+  --b1-heading-gap: 32px;
+  --b1-anchor-offset: 96px;
+  margin: 0;
+  color: var(--b1-ink);
+  background: #fff;
+  font: 400 16px/1.6 "GRECHO Local Inter", Inter, Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  #grecho-v3-main > .b1-page {
+    --b1-gutter: clamp(32px, calc(-13.714286px + 5.952381vw), 72px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #grecho-v3-main > .b1-page {
+    --b1-section-space: 80px;
+    --b1-heading-gap: 40px;
+  }
+}
+
+#grecho-v3-main .b1-page .b1-container {
+  box-sizing: border-box;
+  width: min(1440px, calc(100% - 2 * var(--b1-gutter)));
+  min-width: 0;
+  margin-inline: auto;
+}
+
+#grecho-v3-main .b1-page :is(h1, h2, h3) {
+  color: var(--b1-ink);
+  margin: 0;
+  font-family: inherit;
+  font-weight: 650;
+  letter-spacing: -.022em;
+}
+
+#grecho-v3-main .b1-page h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 670;
+  letter-spacing: -.033em;
+}
+
+#grecho-v3-main .b1-page h2 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+#grecho-v3-main .b1-page h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#grecho-v3-main .b1-page p {
+  margin: 0;
+  color: var(--b1-copy);
+}
+
+#grecho-v3-main .b1-page [hidden] {
+  display: none;
+}
+
+#grecho-v3-main .b1-page .b1-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
+#grecho-v3-main .b1-page :is(a, button, input, summary, [tabindex="-1"]):focus-visible {
+  outline: 3px solid var(--b1-blue);
+  outline-offset: 4px;
+}
+
+#grecho-v3-main .b1-page section[id] {
+  scroll-margin-top: var(--b1-anchor-offset);
+}
+
+#grecho-v3-main .b1-page .b1-section {
+  padding-block: var(--b1-section-space);
+}
+
+#grecho-v3-main .b1-page .b1-section-heading {
+  margin-bottom: var(--b1-heading-gap);
+}
+
+#grecho-v3-main .b1-page .b1-section-heading p {
+  max-width: 69ch;
+  margin-top: 8px;
+}
+
+#grecho-v3-main .b1-page .b1-hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+  min-height: 474px;
+  background: #f3eee7;
+}
+
+#grecho-v3-main .b1-page .b1-hero-compact {
+  min-height: 424px;
+}
+
+#grecho-v3-main .b1-page .b1-hero-art {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  margin: 0;
+}
+
+#grecho-v3-main .b1-page .b1-hero-art :is(picture, img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#grecho-v3-main .b1-page .b1-hero-art img {
+  object-fit: cover;
+  object-position: 64% center;
+}
+
+#grecho-v3-main .b1-page .b1-hero-art::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(252,250,245,.98), rgba(252,250,245,.82) 30%, rgba(252,250,245,.49) 45%, rgba(252,250,245,0) 67%);
+  content: "";
+}
+
+#grecho-v3-main .b1-page .b1-hero-inner {
+  padding-block: 54px 59px;
+}
+
+#grecho-v3-main .b1-page .b1-hero-copy {
+  max-width: min(600px, 56%);
+}
+
+#grecho-v3-main .b1-page .b1-hero-copy p {
+  max-width: 48ch;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#grecho-v3-main .b1-page .b1-actions {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,240px));
+  gap: 10px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+#grecho-v3-main .b1-page .b1-button {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid #8d9fb6;
+  border-radius: 5px;
+  background: #fff;
+  color: var(--b1-blue);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#grecho-v3-main .b1-page .b1-button.b1-primary {
+  background: var(--b1-blue);
+  border-color: var(--b1-blue);
+  color: #fff;
+}
+
+#grecho-v3-main .b1-page .b1-button:hover {
+  border-color: var(--b1-blue);
+  background: #edf2f8;
+}
+
+#grecho-v3-main .b1-page .b1-button.b1-primary:hover {
+  background: #123471;
+}
+
+#grecho-v3-main .b1-page .b1-text-action {
+  display: inline-flex;
+  align-items: center;
+  gap: .55em;
+  min-height: 44px;
+  max-width: 100%;
+  width: fit-content;
+  color: var(--b1-blue);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+#grecho-v3-main .b1-page .b1-text-action:is(:hover, :focus-visible) {
+  color: var(--b1-blue);
+  text-decoration: none;
+}
+
+#grecho-v3-main .b1-page :is(.b1-text-action,.b1-button) span[aria-hidden="true"] {
+  display: inline-block;
+  flex: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #grecho-v3-main .b1-page :is(.b1-text-action,.b1-button) span[aria-hidden="true"] {
+    transition: transform .16s ease;
+  }
+
+  #grecho-v3-main .b1-page :is(.b1-text-action,.b1-button):is(:hover,:focus-visible) span[aria-hidden="true"] {
+    transform: translateX(3px);
+  }
+}
+
+#grecho-v3-main .b1-page .b1-final {
+  --solution-cta-image: url("/grecho-v3-visual-evolution-review/assets/media/t02i-solutions/cta-background-1672.webp");
+  margin: 0;
+  padding-block: var(--b1-section-space);
+}
+
+#grecho-v3-main .b1-page .b1-final .t02-final__panel {
+  background-position: center, center 65%;
+}
+
+#grecho-v3-main .b1-page .b1-final-copy h2,
+#grecho-v3-main .b1-page .b1-final-copy p {
+  color: #fff;
+}
+
+#grecho-v3-main .b1-page .b1-final-copy p {
+  margin-top: 10px;
+  max-width: 54ch;
+}
+
+#grecho-v3-main .b1-page .b1-final-copy .b1-cta-disclosure {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#grecho-v3-main .b1-page .b1-final .t02-final__actions {
+  width: min(100%,240px);
+}
+
+#grecho-v3-main .b1-page .b1-final .t02-final__action {
+  width: 100%;
+}
+
+#grecho-v3-main .b1-page .b1-final .b1-button.b1-primary {
+  background: #fff;
+  border-color: #fff;
+  color: var(--b1-blue);
+}
+
+#grecho-v3-main .b1-page .b1-final .b1-button.b1-primary:hover {
+  background: #e6eff9;
+}
+
+#grecho-v3-main .b1-page .b1-final .b1-button.b1-secondary {
+  border-color: #d3e2f6;
+  background: rgba(13,43,89,.88);
+  color: #fff;
+}
+
+#grecho-v3-main .b1-page .b1-final .b1-button.b1-secondary:hover {
+  background: var(--b1-blue);
+}
+
+#grecho-v3-main .b1-page .b1-final .b1-button:focus-visible {
+  outline-color: #fff;
+}
+
+@media (max-width: 920px) {
+  #grecho-v3-main .b1-page .b1-hero-art::after {
+    background: linear-gradient(90deg, rgba(252,250,245,.98), rgba(252,250,245,.88) 31%, rgba(252,250,245,.67) 53%, rgba(252,250,245,0) 84%);
+  }
+
+  #grecho-v3-main .b1-page .b1-final .t02-final__panel {
+    background-image:
+      linear-gradient(180deg, rgba(9,42,96,.53) 0 72%, rgba(9,42,96,.10) 97%),
+      linear-gradient(100deg, rgba(9,42,96,.95), rgba(36,71,131,.71) 48%, rgba(103,118,144,.36)),
+      var(--solution-cta-image);
+    background-position: center, center, center 53%;
+    background-size: auto, auto, cover;
+  }
+}
+
+@media (max-width: 767px) {
+  #grecho-v3-main > .b1-page {
+    --b1-section-space: 48px;
+    --b1-heading-gap: 28px;
+    --b1-anchor-offset: 84px;
+  }
+
+  #grecho-v3-main .b1-page h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  #grecho-v3-main .b1-page h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  #grecho-v3-main .b1-page h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero {
+    display: block;
+    min-height: 0;
+    background: #faf8f4;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-art {
+    position: static;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-art picture {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    max-height: 375px;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-compact .b1-hero-art picture {
+    max-height: 292px;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-art img {
+    object-position: center;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-art::after {
+    display: none;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-inner {
+    padding-block: 18px 29px;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-copy {
+    max-width: 530px;
+  }
+
+  #grecho-v3-main .b1-page .b1-hero-copy p {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  #grecho-v3-main .b1-page .b1-actions {
+    grid-template-columns: minmax(0,240px);
+    margin-top: 19px;
+  }
+
+  #grecho-v3-main .b1-page .b1-final .t02-final__panel {
+    background-position: center, center, 46% center;
+  }
+}
+
