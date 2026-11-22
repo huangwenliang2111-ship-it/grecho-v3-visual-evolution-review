@@ -1,7 +1,7 @@
 /* Contact R2 uses the Gallery content gutters and the existing t02-final shell. */
 #grecho-v3-main #contact-top {
   --cg-ink: #172c42;
-  --cg-copy: #425368;
+  --cg-copy: #43566c;
   --cg-line: #ccd6df;
   --cg-blue: #1b4aa1;
   --cg-blue-deep: #102e65;
@@ -943,14 +943,14 @@
 #contact-top .cg-faq-list details {
   margin: 0;
   border: 0;
-  border-top: 1px solid #cbd4d9;
+  border-top: 1px solid var(--cg-line);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
 }
 
 #contact-top .cg-faq-list details:last-child {
-  border-bottom: 1px solid #cbd4d9;
+  border-bottom: 1px solid var(--cg-line);
 }
 
 #contact-top .cg-faq-list details > summary {
@@ -1102,7 +1102,7 @@
 #contact-top #request-paths [data-contact-gallery-controls] button:disabled {
   border-color: #d9dddf;
   background: #fff;
-  color: #9aa3a8;
+  color: #b5babc;
   cursor: default;
 }
 
@@ -1157,7 +1157,7 @@
   height: auto;
   aspect-ratio: 3 / 2;
   margin-top: 0;
-  border-radius: 0;
+  border-radius: 6px;
   object-fit: cover;
   object-position: center;
   background: #f0efed;
@@ -1180,16 +1180,20 @@
 }
 
 #contact-top #request-paths .cg-path-action {
+  display: inline-flex;
+  align-items: center;
+  gap: .55em;
+  min-height: 44px;
+  max-width: 100%;
   margin-top: auto;
-  color: #303638;
+  color: var(--cg-blue);
   text-decoration: none;
-  transition: color 200ms ease;
 }
 
 #contact-top #request-paths .cg-path-action > span[aria-hidden="true"] {
   display: inline-block;
-  margin-inline: 1px;
-  transition: transform 200ms ease;
+  flex: none;
+  transition: transform 160ms ease;
 }
 
 #contact-top #request-paths .cg-path:is(:hover, :focus-within) .cg-path-action,
@@ -1199,7 +1203,7 @@
 }
 
 #contact-top #request-paths .cg-path:is(:hover, :focus-within) .cg-path-action > span[aria-hidden="true"] {
-  transform: rotate(-45deg);
+  transform: translateX(3px);
 }
 
 #contact-top #request-paths .cg-path-action:focus-visible {

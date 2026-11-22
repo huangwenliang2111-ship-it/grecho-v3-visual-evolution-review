@@ -40,12 +40,16 @@
 }
 
 #grecho-v3-main .b3-about .b3-about-rows dt {
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 650;
   color: var(--b1-ink);
 }
 
 #grecho-v3-main .b3-about .b3-about-rows dd {
   margin: 3px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--b1-copy);
 }
 
@@ -68,14 +72,14 @@
   margin: 0;
   padding: 0;
   border: 0;
-  border-top: 1px solid #cbd4d9;
+  border-top: 1px solid var(--b1-line);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
 }
 
 #grecho-v3-main .b3-about .b3-about-faq-list details:last-child {
-  border-bottom: 1px solid #cbd4d9;
+  border-bottom: 1px solid var(--b1-line);
 }
 
 #grecho-v3-main .b3-about .b3-about-faq-list summary {

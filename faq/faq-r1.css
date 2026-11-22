@@ -1,9 +1,9 @@
 
 .b1-faq .b1-faq-workspace {
   --faq-blue: #1b4aa1;
-  --faq-line: #cbd4d9;
-  --faq-ink: #202d36;
-  --faq-copy: #405367;
+  --faq-line: var(--b1-line);
+  --faq-ink: var(--b1-ink);
+  --faq-copy: var(--b1-copy);
   background: #f5f6f5;
   border-block: 1px solid #e4e9ed;
 }

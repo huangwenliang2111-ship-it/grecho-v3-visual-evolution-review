@@ -61,11 +61,14 @@
     return true;
   }
 
-  var solutionPanel = header.querySelector('[data-nav-panel="solutions"]');
-  var challengeHeading = solutionPanel && solutionPanel.querySelector('#grecho-nav-challenge-title');
-  var challengeSection = challengeHeading && challengeHeading.closest('section');
-  linkExistingChallengeSlots(challengeSection && challengeSection.querySelector('.grecho-v3-mega__links'));
-  linkExistingChallengeSlots(header.querySelector('#grecho-mobile-solutions'));
+  // Gallery closeout provides complete static links, including the native fallback.
+  if (!header.hasAttribute('data-static-challenge-nav')) {
+    var solutionPanel = header.querySelector('[data-nav-panel="solutions"]');
+    var challengeHeading = solutionPanel && solutionPanel.querySelector('#grecho-nav-challenge-title');
+    var challengeSection = challengeHeading && challengeHeading.closest('section');
+    linkExistingChallengeSlots(challengeSection && challengeSection.querySelector('.grecho-v3-mega__links'));
+    linkExistingChallengeSlots(header.querySelector('#grecho-mobile-solutions'));
+  }
 
   var desktopTriggers = Array.prototype.slice.call(header.querySelectorAll('[data-nav-trigger]'));
   var desktopPanels = Array.prototype.slice.call(header.querySelectorAll('[data-nav-panel]'));

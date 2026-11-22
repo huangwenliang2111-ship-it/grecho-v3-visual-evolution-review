@@ -122,16 +122,16 @@
   padding: 0;
   place-items: center;
   flex: none;
-  color: var(--b1-ink);
+  color: #303638;
   background: #fff;
-  border: 1px solid #c2cbd2;
+  border: 1px solid #aeb4b6;
   border-radius: 50%;
   cursor: pointer;
 }
 
 #grecho-v3-main .b3-page .b3-gallery-control svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -146,9 +146,9 @@
 }
 
 #grecho-v3-main .b3-page .b3-gallery-control:disabled {
-  color: #8e99a3;
-  border-color: #d4dce3;
-  background: #f5f7f8;
+  color: #b5babc;
+  border-color: #d9dddf;
+  background: #fff;
   cursor: default;
 }
 
@@ -221,7 +221,7 @@
   padding-bottom: 9px;
   border-bottom: 1px solid var(--b1-line);
 }
-#grecho-v3-main .b3-page .b3-gallery-step [aria-hidden="true"] {
+#grecho-v3-main .b3-page .b3-gallery-step .b3-step-number {
   color: var(--b1-blue);
   font-size: 13px;
   font-weight: 700;
@@ -265,6 +265,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  #grecho-v3-main .b3-page .b3-gallery-control {
+    transition: background-color 160ms, color 160ms, border-color 160ms;
+  }
+
   #grecho-v3-main .b3-page .b3-gallery-card:is(:hover,:focus-within) > .b1-text-action span[aria-hidden="true"] {
     transform: translateX(3px);
   }

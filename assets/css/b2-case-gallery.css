@@ -67,6 +67,10 @@
   gap: 10px 20px;
 }
 
+#top.b2-cases .case-hero-text .case-actions > .b1-button {
+  width: min(216px, 100%);
+}
+
 #top.b2-cases .case-controls {
   display: flex;
   flex-wrap: wrap;

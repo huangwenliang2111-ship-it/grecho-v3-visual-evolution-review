@@ -1,7 +1,7 @@
 #resource-gallery {
-  --rc-ink: #273338;
-  --rc-muted: #46565e;
-  --rc-line: #d6dcdf;
+  --rc-ink: var(--b1-ink);
+  --rc-muted: var(--b1-copy);
+  --rc-line: var(--b1-line);
 }
 
 #resource-gallery .rc-type-list,
@@ -27,7 +27,7 @@
   margin: 0 0 17px;
   overflow: hidden;
   aspect-ratio: 3 / 2;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #f1efeb;
 }
 
@@ -432,7 +432,9 @@
 
 #resource-gallery .rc-gallery-card figure {
   margin: 0;
+  overflow: hidden;
   aspect-ratio: 3 / 2;
+  border-radius: 6px;
   background: #edf0f0;
 }
 

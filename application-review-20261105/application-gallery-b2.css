@@ -40,7 +40,7 @@ body:has(.application-review > .b2-apps) { margin: 0; }
 }
 #grecho-v3-main .b2-apps .b2-app-hero-grid .b1-button {
   justify-content: space-between;
-  min-width: min(172px, 100%);
+  width: min(200px, 100%);
 }
 #grecho-v3-main .b2-apps .b2-app-hero-grid .b1-button:not(.b1-primary) { background: transparent; }
 
