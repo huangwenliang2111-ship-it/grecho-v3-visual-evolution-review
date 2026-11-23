@@ -74,8 +74,76 @@ if('IntersectionObserver' in window)new IntersectionObserver(updateFloatingBar).
 // Clone-only navigation controller; shared source remains byte-identical.
 (()=>{
   const header=document.querySelector('[data-grecho-v3-nav]'),desktop=[...header.querySelectorAll('[data-nav-trigger]:not([disabled])')],drawer=header.querySelector('[data-mobile-nav-panel]'),mobileButton=header.querySelector('[data-mobile-nav-trigger]'),backdrop=header.querySelector('[data-mobile-nav-backdrop]'),language=header.querySelector('[data-language-trigger]'),languagePanel=header.querySelector('[data-language-panel]');let mobileFocus=null;
-  const closeDesktop=()=>desktop.forEach(b=>{b.setAttribute('aria-expanded','false');$(b.getAttribute('aria-controls')).hidden=true;});
-  desktop.forEach(b=>b.addEventListener('click',()=>{const open=b.getAttribute('aria-expanded')!=='true';closeDesktop();b.setAttribute('aria-expanded',String(open));$(b.getAttribute('aria-controls')).hidden=!open;}));
+  const desktopHover = matchMedia('(min-width: 1100px) and (hover: hover)');
+  let desktopOrigin = '';
+  let hoverCloseTimer;
+
+  function cancelHoverClose() {
+    clearTimeout(hoverCloseTimer);
+  }
+
+  function closeDesktop() {
+    cancelHoverClose();
+    desktopOrigin = '';
+    desktop.forEach(button => {
+      button.setAttribute('aria-expanded', 'false');
+      $(button.getAttribute('aria-controls')).hidden = true;
+    });
+  }
+
+  function openDesktop(button, origin) {
+    closeDesktop();
+    button.setAttribute('aria-expanded', 'true');
+    $(button.getAttribute('aria-controls')).hidden = false;
+    desktopOrigin = origin;
+  }
+
+  desktop.forEach(button => {
+    const panel = $(button.getAttribute('aria-controls'));
+    button.addEventListener('pointerenter', event => {
+      if (event.pointerType !== 'mouse' || !desktopHover.matches) return;
+      cancelHoverClose();
+      if (button.getAttribute('aria-expanded') !== 'true') openDesktop(button, 'hover');
+    });
+    button.addEventListener('click', event => {
+      if (button.getAttribute('aria-expanded') !== 'true') {
+        openDesktop(button, 'click');
+      } else if (desktopOrigin === 'hover' && event.detail > 0 &&
+          (!event.pointerType || event.pointerType === 'mouse')) {
+        cancelHoverClose();
+        desktopOrigin = 'click';
+      } else {
+        closeDesktop();
+      }
+    });
+    button.addEventListener('keydown', event => {
+      if (event.key !== 'ArrowDown') return;
+      event.preventDefault();
+      openDesktop(button, 'keyboard');
+      const target = [...panel.querySelectorAll('a[href], button:not([disabled]), [tabindex]')].find(
+        item => item.tabIndex >= 0 && item.getAttribute('aria-disabled') !== 'true' &&
+          item.getClientRects().length && getComputedStyle(item).visibility === 'visible'
+      );
+      if (target) target.focus();
+    });
+    panel.addEventListener('focusin', () => {
+      if (desktopOrigin === 'hover') {
+        cancelHoverClose();
+        desktopOrigin = 'keyboard';
+      }
+    });
+  });
+
+  header.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'mouse') cancelHoverClose();
+  });
+  header.addEventListener('pointerleave', event => {
+    if (event.pointerType !== 'mouse' || !desktopHover.matches || desktopOrigin !== 'hover') return;
+    cancelHoverClose();
+    hoverCloseTimer = setTimeout(() => {
+      if (desktopOrigin === 'hover') closeDesktop();
+    }, 180);
+  });
   function closeMobile(){drawer.hidden=true;backdrop.hidden=true;mobileButton.setAttribute('aria-expanded','false');document.documentElement.classList.remove('grecho-v3-nav-lock');document.body.classList.remove('grecho-v3-nav-lock');if(mobileFocus)mobileFocus.focus();}
   mobileButton.addEventListener('click',()=>{mobileFocus=mobileButton;drawer.hidden=false;backdrop.hidden=false;mobileButton.setAttribute('aria-expanded','true');document.documentElement.classList.add('grecho-v3-nav-lock');document.body.classList.add('grecho-v3-nav-lock');drawer.querySelector('[data-mobile-nav-close]').focus();});
   drawer.querySelector('[data-mobile-nav-close]').addEventListener('click',closeMobile);backdrop.addEventListener('click',closeMobile);
