@@ -1,0 +1,165 @@
+/* Home R3 only. The Solution grid and its standalone resource row follow
+   the accepted V1.1 authoring source at 61dec9c147a22699e133699014fb642ecae7c2c8. */
+body.r61-closeout.r61-editorial main #solution-hubs #r13-r6-solutions-track {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: row;
+  gap: 48px 32px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  scroll-snap-type: none;
+  transform: none;
+}
+
+body.r61-closeout.r61-editorial main #solution-hubs #r13-r6-solutions-track > .grecho-v3-solution-card {
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  flex: none;
+}
+
+body.r61-closeout.r61-editorial main #solution-hubs .grecho-v3-solution-card__body {
+  padding: 22px 24px 20px !important;
+}
+
+body.r61-closeout.r61-editorial main #solution-hubs .r61-resource-support {
+  display: block;
+  flex: none;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  margin: 32px auto 0;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+body.r61-closeout.r61-editorial main #solution-hubs .r61-resource-support > .grecho-v3-inline-cta {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  gap: 24px;
+  margin: 0;
+  padding: 22px 24px;
+  border: 0;
+  box-shadow: none;
+  background: #f4f5f5;
+}
+
+body.r61-closeout.r61-editorial main #solution-hubs .r61-resource-support > .grecho-v3-inline-cta > div {
+  display: grid;
+  gap: 2px;
+  width: auto;
+  min-width: 0;
+  max-width: 72ch;
+  padding: 0;
+  border: 0;
+}
+
+body.r61-closeout.r61-editorial main #solution-hubs .r61-resource-support > .grecho-v3-inline-cta > a {
+  flex-shrink: 0;
+  width: auto;
+}
+
+/* Compact editorial feature below the Home diagnostic rail. */
+body.r61-closeout.r61-editorial main #diagnostic .home-r3-codevelopment {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px clamp(24px, 2vw, 32px);
+  align-items: center;
+  margin-block-start: clamp(24px, 2.5vw, 36px);
+  padding-block-start: clamp(24px, 2vw, 32px);
+  border-block-start: 1px solid #dbe1e8;
+}
+
+body.r61-closeout main #diagnostic .home-r3-codevelopment__media {
+  flex: 1 0 min(100%, 16rem);
+  min-width: 0;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+body.r61-closeout main #diagnostic .home-r3-codevelopment__media > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 33%;
+}
+
+/* At the minimum readable widths, flex wrapping hands each item a full row. */
+body.r61-closeout main #diagnostic .home-r3-codevelopment__copy {
+  flex: 1.38 0 min(100%, 19rem);
+  min-width: 0;
+}
+
+body.r61-closeout main #diagnostic .home-r3-codevelopment__copy > h3 {
+  margin: 0 0 8px;
+  color: var(--grecho-v3-brand-deep, #172e4e);
+  font-size: clamp(26px, 2.5vw, 36px);
+  line-height: 1.3333;
+  letter-spacing: -.025em;
+}
+
+body.r61-closeout main #diagnostic .home-r3-codevelopment__copy > p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.56;
+}
+
+@media (min-width: 1100px) {
+  body.r61-closeout main #diagnostic .home-r3-codevelopment__sentence {
+    display: block;
+  }
+}
+
+/* Adjust the two sides of this transition without changing other section padding. */
+body.r13-home.r61-closeout.r61-editorial main #diagnostic.r13-r4-section {
+  padding-block-end: clamp(34px, 5.5vw, 64px);
+}
+
+body.r13-home.r61-closeout.r61-editorial main #diagnostic.r13-r4-section + #application-examples.r13-r4-section {
+  padding-block-start: clamp(42px, 6.5vw, 64px);
+}
+
+@media (max-width: 1024px) {
+  body.r61-closeout.r61-editorial main #solution-hubs #r13-r6-solutions-track {
+    column-gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.r61-closeout.r61-editorial main #solution-hubs #r13-r6-solutions-track {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 36px;
+  }
+
+  body.r61-closeout.r61-editorial main #solution-hubs .grecho-v3-solution-card__body {
+    padding: 22px 20px 20px !important;
+  }
+
+  body.r61-closeout.r61-editorial main #solution-hubs .r61-resource-support > .grecho-v3-inline-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 22px;
+  }
+
+  body.r61-closeout.r61-editorial main #solution-hubs .r61-resource-support > .grecho-v3-inline-cta > a {
+    width: 100%;
+  }
+}

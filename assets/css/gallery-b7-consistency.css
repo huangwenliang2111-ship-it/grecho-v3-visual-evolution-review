@@ -1,0 +1,459 @@
+/* The review builder attaches this sheet only to the approved 103-page scope. */
+html[data-b7-page] {
+  --b7-brand: #1b4aa1;
+  --b7-ink: #272b2e;
+  --b7-reading-ink: #172c42;
+  --b7-copy: #596066;
+  --b7-reading-copy: #43566c;
+  --b7-line: #d9dddf;
+  --b7-reading-line: #ccd8e4;
+  --b7-hover: #f4f5f5;
+  --b7-action-height: 46px;
+  --b7-target: 44px;
+  --b7-action-radius: 4px;
+  --b7-reading-seam: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+/* The normal nav shell shares the measured Home action shape. The three
+   controllers, full/video header treatment, and disabled colors stay local. */
+html[data-b7-page]:not([data-b7-page="home"]) .grecho-v3-nav :is(.grecho-v3-nav__cta,.grecho-v3-nav__mobile-cta) {
+  min-block-size: var(--b7-action-height);
+  border-radius: var(--b7-action-radius);
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main) :is(a.b1-button,a.cg-button,a.so-button):not(.t02-final__action),
+html[data-b7-page="finder"] main a.grecho-v3-button {
+  min-block-size: var(--b7-action-height);
+  border-radius: var(--b7-action-radius);
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main) :is(a.b1-primary,a.cg-primary,a.so-primary):not(.t02-final__action):not([aria-disabled="true"]) {
+  background-color: var(--b7-brand);
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main) :is(a.b1-primary,a.cg-primary,a.so-primary):not(.t02-final__action):not([aria-disabled="true"]):hover {
+  background-color: #143a82;
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main) :is(a.b1-secondary,a.cg-secondary,a.so-secondary):not(.t02-final__action):not([aria-disabled="true"]) {
+  color: var(--b7-brand);
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main) :is(a.b1-button,a.cg-button,a.so-button):not(.t02-final__action):focus-visible {
+  outline: 2px solid var(--b7-brand);
+  outline-offset: 3px;
+}
+
+/* The existing data-gallery-actions contract controls accepted 240px pairs.
+   The Finder simulation and campaign require flow-specific local adapters. */
+html[data-b7-page="finder"] .gsf-form__actions > .grecho-v3-button {
+  inline-size: min(100%, 240px);
+  min-inline-size: 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+html[data-b7-page="campaign"] .campaign-button {
+  min-block-size: var(--b7-action-height);
+  border-radius: var(--b7-action-radius);
+}
+
+html[data-b7-page] main :is(.b1-text-action,.b6-pdf-link,.b6-request-link,.gtt-text-action) {
+  min-block-size: var(--b7-target);
+  text-underline-offset: .18em;
+}
+
+html[data-b7-page] main :is(.b1-text-action,.b6-pdf-link,.b6-request-link,.gtt-text-action):hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Gallery controls share the hit area and keyboard treatment. Track geometry,
+   card images, count, dragging, and disabled feedback stay with each rail. */
+html[data-b7-page] main :is(button[data-gallery-prev],button[data-gallery-next],
+  button.b3-gallery-control,button.b4-gallery-control,button.b1-rail-control) {
+  min-inline-size: var(--b7-target);
+  min-block-size: var(--b7-target);
+}
+
+html[data-b7-page] main :is(button[data-gallery-prev],button[data-gallery-next],
+  button.b3-gallery-control,button.b4-gallery-control,button.b1-rail-control):not(:disabled):not([aria-disabled="true"]):hover {
+  border-color: var(--b7-brand);
+}
+
+html[data-b7-page] :is(.b4-table-scroll,.b5-policy-table-scroll,.b6-table-scroll,
+  .b1-text-action,.b6-pdf-link,.b6-request-link,.gtt-text-action,
+  button[data-gallery-prev],button[data-gallery-next],
+  button.b3-gallery-control,button.b4-gallery-control,button.b1-rail-control):focus-visible {
+  outline: 2px solid var(--b7-brand);
+  outline-offset: 3px;
+}
+
+/* Equivalent editorial question rows. About retains its wider editorial type
+   scale, and the FAQ directory filter, TOCs, and Home dialogs keep their roles. */
+html[data-b7-page] #contact-top .cg-faq-list details > summary,
+html[data-b7-page] .b6-topic .campaign-faq-item > summary,
+html[data-b7-page] #grecho-v3-main details[data-b1-faq-item] > summary {
+  min-block-size: var(--b7-action-height);
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+html[data-b7-page] .b6-topic .campaign-faq-item > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+html[data-b7-page] .b6-topic .campaign-faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+html[data-b7-page] .b6-topic .campaign-faq-item > summary > span[aria-hidden="true"] {
+  position: relative;
+  flex: 0 0 14px;
+  inline-size: 14px;
+  block-size: 14px;
+  font-size: 0;
+  color: var(--b7-brand);
+  background:
+    linear-gradient(currentColor,currentColor) center / 100% 2px no-repeat,
+    linear-gradient(currentColor,currentColor) center / 2px 100% no-repeat;
+}
+
+html[data-b7-page] .b6-topic .campaign-faq-item[open] > summary > span[aria-hidden="true"] {
+  background-size: 100% 2px, 2px 0;
+}
+
+html[data-b7-page] #grecho-v3-main details[data-b1-faq-item] > summary::after {
+  inline-size: 14px;
+  block-size: 14px;
+  flex: 0 0 14px;
+  color: var(--b7-brand);
+  background:
+    linear-gradient(currentColor,currentColor) center / 100% 2px no-repeat,
+    linear-gradient(currentColor,currentColor) center / 2px 100% no-repeat;
+  content: "";
+}
+
+html[data-b7-page] #grecho-v3-main details[data-b1-faq-item][open] > summary::after {
+  background-size: 100% 2px, 2px 0;
+}
+
+html[data-b7-page] #contact-top .cg-faq-list details > summary:hover,
+html[data-b7-page] .b6-topic .campaign-faq-item > summary:hover,
+html[data-b7-page] #grecho-v3-main details[data-b1-faq-item] > summary:hover {
+  color: var(--b7-brand);
+}
+
+html[data-b7-page] :is(#contact-top .cg-faq-list,.campaign-faq-item,.b3-about-faq-list,details[data-b1-faq-item]) summary:focus-visible {
+  outline: 2px solid var(--b7-brand);
+  outline-offset: 3px;
+}
+
+/* CTA bands keep original inverse colors, content, and body spacing.
+   The approved Challenge CTA retains its exact metrics. */
+html[data-b7-page]:not([data-b7-page="challenge"]) main .t02-final .t02-final__action {
+  min-block-size: var(--b7-action-height);
+  border-radius: var(--b7-action-radius);
+}
+
+/* Match the local Footer text, and limit brand blue to fine-pointer hover. */
+html[data-b7-page] footer.grecho-v3-footer a[href]:not(.grecho-v3-footer-logo):not(.grecho-v3-social-links a):not([aria-disabled="true"]) {
+  color: inherit !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html[data-b7-page] footer.grecho-v3-footer a[href]:not(.grecho-v3-footer-logo):not(.grecho-v3-social-links a):not([aria-disabled="true"]):hover {
+    color: #1b4aa1 !important;
+  }
+}
+
+/* Keep legacy link states from restoring decoration on Footer links. */
+html[data-b7-page] footer.grecho-v3-footer a[href] {
+  text-decoration-line: none !important;
+}
+
+/* Long-form topic role adopts the approved editorial ink/copy. The campaign
+   uses photographic/inverse surfaces and keeps its original palette. */
+html:is([data-b7-page="topic"],[data-b7-page="locale"]) .grecho-v3 .b6-topic {
+  --b6-ink: var(--b7-reading-ink);
+  --b6-copy: var(--b7-reading-copy);
+  --b6-line: var(--b7-reading-line);
+  display: flow-root;
+}
+
+html:is([data-b7-page="topic"],[data-b7-page="locale"]) .b6-topic
+  :is(.entry-content,.grecho-topic-content):last-child:not(:has(.gtt-hero)) {
+  margin-block-end: 0;
+  padding-block-end: var(--b7-reading-seam);
+}
+
+html[data-b7-page="topic"] .b6-topic .gtt-section:last-child {
+  margin-block-end: 0;
+  padding-block-end: var(--b7-reading-seam);
+}
+
+html[data-b7-page] :is(.b4-table-scroll,.b5-policy-table-scroll,.b6-table-scroll) {
+  overscroll-behavior-inline: contain;
+}
+
+html[data-b7-page] .b6-topic :is(figcaption,caption,.b7-table-cue) {
+  color: var(--b7-reading-copy);
+  font-size: .875rem;
+  line-height: 1.55;
+}
+
+html[data-b7-page] .b6-topic .b7-table-cue {
+  margin: 1.25rem 0 .4rem;
+}
+
+html[data-b7-page] .b6-topic .b7-table-cue:not([hidden]) + .b6-table-scroll {
+  margin-block-start: 0;
+}
+
+html[data-b7-page="article"] #grecho-v3-main .b4-article .b4-article-diagram[data-b7-editorial-figure] {
+  margin-block-end: 20px;
+}
+
+/* State affordances are visual. The disabled properties and business logic
+   stay in their original controllers and preview markup. */
+html[data-b7-page="contact"] #request-form :is(input,select,textarea):disabled:not([type="hidden"]),
+html[data-b7-page="campaign"] [data-b6-form-status] :is(input,select,textarea):disabled:not([type="hidden"]) {
+  border-color: var(--b7-line);
+}
+
+html[data-b7-page="finder"] .gsf-form :is(input,textarea,select):focus-visible {
+  outline: 2px solid var(--b7-brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-b7-page] :is(.b1-text-action,.b6-pdf-link,.b6-request-link,.gtt-text-action,
+    button[data-gallery-prev],button[data-gallery-next],
+    button.b3-gallery-control,button.b4-gallery-control,button.b1-rail-control) {
+    transition-duration: 0s;
+  }
+}
+
+@media print {
+  html[data-b7-page] .b6-topic .b7-table-cue { display: none; }
+  html[data-b7-page] .b6-topic .b6-table-scroll { overflow: visible; }
+  html[data-b7-page] .b6-topic .b6-table-scroll > table { min-inline-size: 0; table-layout: fixed; }
+  html[data-b7-page] .b6-topic .b6-table-scroll :is(th,td) { overflow-wrap: anywhere; }
+}
+
+/* B7-03 role refinements. Values come from the effective Home R13/R61
+   cascade. Existing page families opt in via their B7-02 root attribute. */
+html[data-b7-page] {
+  --b7-ui-font: "GRECHO Local Inter", "Inter Tight", Inter, "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --b7-action-gap: 12px;
+  --b7-action-padding-block: 12px;
+  --b7-action-padding-inline: 18px;
+  --b7-action-secondary: #303638;
+  --b7-action-secondary-border: #899095;
+  --b7-action-hover: #153b82;
+  --b7-action-pressed: #123b7a;
+  --b7-footer-surface: #f2f3f4;
+  --b7-focus-width: 3px;
+  --b7-focus-offset: 4px;
+}
+
+/* The moving Home header and each nav controller's breakpoints are intact. */
+html[data-b7-page]:not([data-b7-page="home"]) .grecho-v3-nav :is(.grecho-v3-nav__cta,.grecho-v3-nav__mobile-cta) {
+  font-family: var(--b7-ui-font);
+  min-block-size: var(--b7-action-height);
+  border-radius: var(--b7-action-radius);
+  gap: var(--b7-action-gap);
+  padding: var(--b7-action-padding-block) var(--b7-action-padding-inline);
+}
+
+html[data-b7-page]:not([data-b7-page="home"]) .grecho-v3-nav .grecho-v3-nav__cta {
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1;
+}
+
+html[data-b7-page]:not([data-b7-page="home"]) .grecho-v3-nav .grecho-v3-nav__mobile-cta {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.56;
+}
+
+html[data-b7-page]:not([data-b7-page="home"]) .grecho-v3-nav
+  :is(.grecho-v3-nav__cta,.grecho-v3-nav__mobile-cta):not(:disabled):not([aria-disabled="true"]) {
+  color: #fff;
+  background-color: var(--b7-brand);
+  border-color: var(--b7-brand);
+  box-shadow: none;
+}
+
+html[data-b7-page]:not([data-b7-page="home"]) .grecho-v3-nav
+  :is(.grecho-v3-nav__cta,.grecho-v3-nav__mobile-cta):not(:disabled):not([aria-disabled="true"]):hover {
+  color: #fff;
+  background-color: var(--b7-action-hover);
+  border-color: var(--b7-action-hover);
+}
+
+@media (max-width: 1279px) {
+  html[data-b7-page]:not([data-b7-page="home"]) .grecho-v3-nav .grecho-v3-nav__cta {
+    font-size: 12px;
+    padding-inline: 12px;
+  }
+}
+
+/* These three established actions, and Finder's scoped equivalent, share
+   the Home body action token. The inverse and frozen CTA panels keep color. */
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main)
+  :is(a.b1-button,a.cg-button,a.so-button):not(.t02-final__action),
+html[data-b7-page="finder"] main a.grecho-v3-button {
+  font-family: var(--b7-ui-font);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: var(--b7-action-padding-block) var(--b7-action-padding-inline);
+  gap: var(--b7-action-gap);
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main)
+  :is(a.b1-primary,a.cg-primary,a.so-primary):not(.t02-final__action):not([aria-disabled="true"]) {
+  color: #fff;
+  background-color: var(--b7-brand);
+  border-color: var(--b7-brand);
+  box-shadow: none;
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main)
+  :is(a.b1-secondary,a.cg-secondary,a.so-secondary):not(.t02-final__action):not([aria-disabled="true"]) {
+  color: var(--b7-action-secondary);
+  background-color: #fff;
+  border-color: var(--b7-action-secondary-border);
+  box-shadow: none;
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main)
+  :is(a.b1-primary,a.cg-primary,a.so-primary):not(.t02-final__action):not([aria-disabled="true"]):hover {
+  color: #fff;
+  background-color: var(--b7-action-hover);
+  border-color: var(--b7-action-hover);
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main)
+  :is(a.b1-secondary,a.cg-secondary,a.so-secondary):not(.t02-final__action):not([aria-disabled="true"]):hover {
+  color: #fff;
+  background-color: var(--b7-brand);
+  border-color: var(--b7-brand);
+}
+
+html[data-b7-page] :is(main#grecho-v3-main,main#main,main)
+  :is(a.b1-primary,a.cg-primary,a.so-primary,a.b1-secondary,a.cg-secondary,a.so-secondary):not(.t02-final__action):not([aria-disabled="true"]):active {
+  color: #fff;
+  background-color: var(--b7-action-pressed);
+  border-color: var(--b7-action-pressed);
+}
+
+html[data-b7-page] :is(
+  .grecho-v3-nav__cta,.grecho-v3-nav__mobile-cta,
+  .b1-text-action,.b6-pdf-link,.b6-request-link,.gtt-text-action,
+  a.b1-button:not(.t02-final__action),a.cg-button:not(.t02-final__action),a.so-button:not(.t02-final__action),
+  button[data-gallery-prev],button[data-gallery-next],button.b3-gallery-control,button.b4-gallery-control,button.b1-rail-control
+):focus-visible {
+  outline: var(--b7-focus-width) solid var(--b7-brand);
+  outline-offset: var(--b7-focus-offset);
+}
+
+/* Native questions keep their responsive scale. Contact and the FAQ index
+   supply the About list's question weight, line-height and separator role. */
+html[data-b7-page] :is(#contact-top .cg-faq-list details,.b6-topic .campaign-faq-item,#grecho-v3-main details[data-b1-faq-item],#grecho-v3-main .b3-about .b3-about-faq-list details) > summary {
+  font-family: var(--b7-ui-font);
+}
+
+html[data-b7-page] :is(#contact-top .cg-faq-list details,#grecho-v3-main details[data-b1-faq-item],#grecho-v3-main .b3-about .b3-about-faq-list details) {
+  border-color: var(--b7-line);
+}
+
+html[data-b7-page] :is(#contact-top .cg-faq-list details,#grecho-v3-main details[data-b1-faq-item],#grecho-v3-main .b3-about .b3-about-faq-list details) > summary {
+  color: var(--b7-ink);
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+html[data-b7-page] :is(#contact-top .cg-faq-list details,#grecho-v3-main details[data-b1-faq-item],#grecho-v3-main .b3-about .b3-about-faq-list details) > summary:hover {
+  color: var(--b7-brand);
+}
+
+html[data-b7-page] :is(#contact-top .cg-faq-list details,.b6-topic .campaign-faq-item,#grecho-v3-main details[data-b1-faq-item],#grecho-v3-main .b3-about .b3-about-faq-list details) > summary:focus-visible {
+  outline: var(--b7-focus-width) solid var(--b7-brand);
+  outline-offset: var(--b7-focus-offset);
+}
+
+/* Gallery rails use the measured Home edge styling. Retain track widths,
+   arrow drawings, counts, disabled state machinery and motion contracts. */
+html[data-b7-page] main :is(button[data-gallery-prev],button[data-gallery-next],
+  button.b3-gallery-control,button.b4-gallery-control,button.b1-rail-control) {
+  border-color: var(--b7-line);
+}
+
+html[data-b7-page] main :is(button[data-gallery-prev],button[data-gallery-next],
+  button.b3-gallery-control,button.b4-gallery-control,button.b1-rail-control):not(:disabled):not([aria-disabled="true"]):hover {
+  border-color: var(--b7-brand);
+}
+
+/* These short support and request paths are comparable to the Home
+   editorial cards. Their respective image ratios and spacing are local. */
+html[data-b7-page="core"] #grecho-v3-main .b3-page .b3-support-copy > h3,
+html[data-b7-page="contact"] #grecho-v3-main #contact-top .cg-path-copy > h3 {
+  color: var(--b7-ink);
+}
+
+html[data-b7-page="core"] #grecho-v3-main .b3-page .b3-support-copy > p,
+html[data-b7-page="contact"] #grecho-v3-main #contact-top .cg-path-copy > p {
+  color: var(--b7-copy);
+}
+
+html[data-b7-page="core"] #grecho-v3-main [data-b3-track] > .b3-support-card,
+html[data-b7-page="contact"] #contact-top .cg-path:not(:has(.cg-path-action[aria-current="true"])) {
+  border-color: var(--b7-line);
+}
+
+/* Reused dark CTA layout: preserve its foreground/surface, keep paired
+   actions aligned, and use the Home action gap for these equivalent groups. */
+html[data-b7-page="core"] main#grecho-v3-main .t02-final:has(.so-help-panel) {
+  background-color: var(--b7-hover);
+  padding-block: 80px;
+}
+
+@media (max-width: 767px) {
+  html[data-b7-page="core"] main#grecho-v3-main .t02-final:has(.so-help-panel) {
+    padding-block: 48px;
+  }
+}
+
+html[data-b7-page]:not([data-b7-page="challenge"]) main .t02-final .t02-final__actions {
+  gap: var(--b7-action-gap);
+}
+
+html[data-b7-page]:not([data-b7-page="challenge"]) main .t02-final .t02-final__action {
+  font-family: var(--b7-ui-font);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  gap: var(--b7-action-gap);
+}
+
+html[data-b7-page] footer.grecho-v3-footer {
+  background-color: var(--b7-footer-surface);
+}
+
+/* Fields take the current role typography. Disabled states and the Finder
+   simulation are unchanged and keep separate colors. */
+html[data-b7-page="contact"] #request-form :is(input,select,textarea):not([type="hidden"]),
+html[data-b7-page="campaign"] [data-b6-form-status] :is(input,select,textarea):not([type="hidden"]),
+html[data-b7-page="finder"] .gsf-form :is(input,select,textarea):not([type="hidden"]) {
+  font-family: var(--b7-ui-font);
+  border-radius: var(--b7-action-radius);
+}
+
+html[data-b7-page="finder"] .gsf-form :is(input,select,textarea):not([type="hidden"]):not([aria-invalid="true"]):not(:disabled):not(:focus) {
+  border-color: var(--b7-line);
+}

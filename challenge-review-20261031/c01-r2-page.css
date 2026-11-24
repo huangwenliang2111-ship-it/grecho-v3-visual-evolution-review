@@ -137,6 +137,11 @@
     --c01-r2-section-space: 48px;
     --c01-r2-title-space: 28px;
   }
+
+  /* The shadow paints the full-bleed tint; the box stays inside the scrollport. */
+  #main #grecho-challenge-C01 :is(#solutions, #applications).gc-tint::before {
+    inset-inline-end: 0;
+  }
 }
 
 @media (min-width: 1024px) {

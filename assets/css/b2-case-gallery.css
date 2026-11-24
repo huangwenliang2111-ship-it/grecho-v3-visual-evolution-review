@@ -113,8 +113,7 @@
   font-size: 14px;
 }
 
-#top.b2-cases .case-scenarios-grid,
-#top.b2-cases .case-scope-grid {
+#top.b2-cases .case-scenarios-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
@@ -172,74 +171,8 @@
   background: #f5f6f5;
 }
 
-#top.b2-cases .case-steps,
-#top.b2-cases .case-index-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: start;
-  gap: clamp(20px, 3vw, 44px);
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#top.b2-cases .case-resource-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-#top.b2-cases .case-ruled {
-  display: grid;
-  gap: 8px;
-  padding-top: 16px;
-  border-top: 1px solid var(--b1-line);
-}
-
-#grecho-v3-main #top.b2-cases .case-ruled h3 {
-  font-size: 22px;
-  line-height: 1.33;
-}
-
-#top.b2-cases .case-step-number {
-  color: var(--b1-blue);
-  font-size: 15px;
-  font-variant-numeric: tabular-nums;
-  font-weight: 700;
-}
-
-#top.b2-cases .case-support {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
-  gap: 20px 36px;
-  margin-top: clamp(30px, 4vw, 54px);
-  padding: 32px;
-  border: 0;
-  border-radius: 0;
-  background: #eef2f7;
-  box-shadow: none;
-}
-
-#top.b2-cases .case-support-text {
-  display: grid;
-  gap: 8px;
-  padding-top: 28px;
-  border-top: 1px solid #a6b5c5;
-}
-
-#top.b2-cases .case-support .b1-button {
-  width: min(240px, 100%);
-  white-space: normal;
-}
-
 #grecho-v3-main #top.b2-cases .case-final .t02-final__panel {
   --solution-cta-image: url("../media/t02i-solutions/cta-background-1672.webp");
-}
-
-@media (max-width: 1000px) {
-  #top.b2-cases .case-steps,
-  #top.b2-cases .case-index-grid:not(.case-resource-grid) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 800px) {
@@ -272,21 +205,93 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  #top.b2-cases .case-scenarios-grid,
-  #top.b2-cases .case-scope-grid,
-  #top.b2-cases .case-steps,
-  #top.b2-cases .case-index-grid:not(.case-resource-grid),
-  #top.b2-cases .case-resource-grid,
-  #top.b2-cases .case-support {
+  #top.b2-cases .case-scenarios-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
   #top.b2-cases .case-scenario-fields > div {
     margin-bottom: 8px;
   }
-
-  #top.b2-cases .case-support {
-    padding: 24px;
-  }
 }
 
+/* Case Studies lower modules. Workflow layout and controls come from the
+   approved B3 component. This file sets only its local placement and fallback. */
+#grecho-v3-main .b2-cases #review-path .b3-gallery-card > :is(h3, p),
+#grecho-v3-main .b2-cases #review-path .b3-support-copy > :is(h3, p) {
+  min-width: 0;
+}
+
+#grecho-v3-main .b2-cases #review-path .b3-gallery-card p,
+#grecho-v3-main .b2-cases :is(#support-scope, #solution-hubs, #resources) article p {
+  color: var(--b7-copy);
+}
+
+#grecho-v3-main .b2-cases #review-path .b3-support-copy {
+  border-color: var(--b7-line);
+}
+
+#grecho-v3-main .b2-cases #review-path [data-b3-track]:not([data-b3-ready]) {
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: visible;
+  scroll-snap-type: none;
+  cursor: auto;
+}
+
+#top.b2-cases :is(.case-scope-grid, .case-hub-grid, .case-resource-grid) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 56px) clamp(18px, 2.5vw, 40px);
+}
+
+#top.b2-cases .case-resource-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#top.b2-cases :is(.case-scope-card, .case-resource-card) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  padding-top: clamp(16px, 1.6vw, 24px);
+  border-top: 1px solid var(--b7-line);
+}
+
+#top.b2-cases :is(.case-hub-card, .case-hub-copy) {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+#top.b2-cases .case-hub-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Matches the approved Solutions directory .so-card image frame. */
+  aspect-ratio: 1.68;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+#top.b2-cases .case-hub-copy {
+  flex: 1;
+  gap: 8px;
+  padding-top: clamp(16px, 1.6vw, 24px);
+}
+
+#grecho-v3-main #top.b2-cases :is(.case-scope-card, .case-hub-copy, .case-resource-card) h3 {
+  color: var(--b7-ink);
+}
+
+#grecho-v3-main #top.b2-cases :is(.case-hub-copy, .case-resource-card) .b1-text-action {
+  min-height: 44px;
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  #grecho-v3-main .b2-cases #review-path [data-b3-track]:not([data-b3-ready]),
+  #top.b2-cases :is(.case-scope-grid, .case-hub-grid, .case-resource-grid) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
