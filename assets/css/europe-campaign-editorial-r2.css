@@ -340,6 +340,7 @@
 
 #main-content.grecho-europe-campaign .campaign-application-card__image img {
   aspect-ratio: 1.68;
+  object-fit: cover;
 }
 
 #main-content.grecho-europe-campaign .campaign-application-card__body {
