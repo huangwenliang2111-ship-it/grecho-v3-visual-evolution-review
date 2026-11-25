@@ -1,0 +1,348 @@
+#grecho-v3-main [data-b6-reading-r3] .r3-review-paths {
+  padding-block: clamp(20px, 3vw, 35px);
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-review-paths .r2-fact {
+  min-inline-size: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-review-paths ul {
+  gap: 9px clamp(10px, 1.5vw, 20px);
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-review-paths .r2-fact > a {
+  display: grid;
+  align-content: start;
+  gap: 3px;
+  block-size: 100%;
+  min-block-size: 44px;
+  padding: 13px 15px;
+  color: var(--b1-blue);
+  background: #fff;
+  border: 1px solid var(--b1-line);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-review-paths .r2-fact > a:hover {
+  background: #eff4fc;
+  border-color: var(--b1-blue);
+}
+
+#grecho-v3-main [data-b6-reading-r3] :is(.r3-review-paths .r2-fact > a, .r3-worksheet-map a, .r3-language-disclosure > summary):focus-visible {
+  outline: 2px solid var(--b1-blue);
+  outline-offset: 3px;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-path-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-path-description {
+  color: var(--b1-copy);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-worksheet-map {
+  padding-block: clamp(15px, 2.7vw, 27px) 0;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-worksheet-map ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-block: 1px solid var(--b1-line);
+  list-style: none;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-worksheet-map a {
+  display: flex;
+  align-items: center;
+  min-block-size: 44px;
+  block-size: 100%;
+  padding: 10px 12px;
+  color: var(--b1-blue);
+  font-size: 14px;
+  line-height: 1.45;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-worksheet-map li + li {
+  border-inline-start: 1px solid var(--b1-line);
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-opening-answer {
+  padding-block: clamp(16px, 2.8vw, 30px);
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-opening-answer .r2-answer {
+  gap: 8px;
+  padding: clamp(14px, 1.8vw, 24px);
+  background: #eef3f9;
+  border-inline-start: 2px solid var(--b1-blue);
+  border-radius: 0 4px 4px 0;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-opening-answer .r2-answer p {
+  max-inline-size: 90ch;
+  color: var(--b1-ink);
+  font-size: clamp(15px, 1.25vw, 17px);
+  line-height: 1.55;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-language-disclosure > summary {
+  min-block-size: 44px;
+  padding-block: 11px;
+  color: var(--b1-ink);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#grecho-v3-main [data-b6-reading-r3] [data-b6-language-hold] p,
+#grecho-v3-main [data-b6-reading-r3] .b6-language-links > * {
+  font-size: 14px;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r2-language-status {
+  padding-block: 0 4px;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-action-pair {
+  max-inline-size: 490px;
+}
+
+#grecho-v3-main [data-b6-reading-r3] .r3-action-pair .b1-button span[aria-hidden="true"] {
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  #grecho-v3-main [data-b6-reading-r3] .r3-action-pair {
+    margin-block-start: 16px;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r3-worksheet-map ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r3-worksheet-map li + li {
+    border-block-start: 1px solid var(--b1-line);
+    border-inline-start: 0;
+  }
+}
+
+@media screen {
+  #grecho-v3-main [data-b6-reading-r3] .technical-reading-copy .b6-table-scroll > table {
+    table-layout: auto;
+    min-inline-size: 29rem;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .technical-reading-copy .b6-table-scroll[data-b6-cols="3"] > table {
+    min-inline-size: 37rem;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .technical-reading-copy .b6-table-scroll[data-b6-cols="4"] > table {
+    min-inline-size: 49rem;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .technical-reading-copy .b6-table-scroll :is(th,td) {
+    min-inline-size: 8rem;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .technical-reading-copy .b6-table-scroll tr > :first-child {
+    min-inline-size: 10rem;
+  }
+}
+
+@media print {
+  #grecho-v3-main [data-b6-reading-r3] :is(.r4-hero-photo,.r3-worksheet-map,.r3-language-disclosure,[data-r4-hero] .r3-action-pair) {
+    display: none;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r3-opening-answer {
+    padding-block: 8pt;
+  }
+}
+
+/* R4 adopts B4's outer photograph and independently constrained reading copy. */
+#grecho-v3-main [data-b6-reading-r3] [data-r4-hero] h1 {
+  font-size: clamp(36px, 3.65vw, 53px);
+  line-height: 1.08;
+}
+
+@media screen {
+  #grecho-v3-main [data-b6-reading-r3] header[data-r4-hero] {
+    --r4-photo-focus: 64% 60%;
+    --r4-photo-protection: linear-gradient(90deg, rgb(253 250 245 / 98%), rgb(253 250 245 / 96%) 29%, rgb(253 250 245 / 90%) 43%, rgb(253 250 245 / 57%) 56%, rgb(253 250 245 / 16%) 69%, transparent 83%);
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    align-items: center;
+    min-block-size: clamp(430px, 34vw, 520px);
+    padding-block: clamp(37px, 4.4vw, 68px);
+    background: #eeeae2;
+    border: 0;
+  }
+
+  #grecho-v3-main.b6-topic--resource [data-b6-reading-r3] header[data-r4-hero] {
+    --r4-photo-focus: 56% 58%;
+    --r4-photo-protection: linear-gradient(90deg, rgb(249 248 244 / 98%), rgb(249 248 244 / 97%) 29%, rgb(249 248 244 / 91%) 42%, rgb(249 248 244 / 62%) 55%, rgb(249 248 244 / 18%) 67%, transparent 81%);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] [data-r4-hero] > .r4-hero-photo {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    overflow: hidden;
+    display: block;
+    pointer-events: none;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] [data-r4-hero] > .r4-hero-photo img {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: var(--r4-photo-focus);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] header[data-r4-hero]::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: var(--r4-photo-protection);
+    pointer-events: none;
+    content: "";
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-hero-content .r2-hero-heading {
+    inline-size: min(626px, 63%);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-hero-content .r2-hero-heading p {
+    margin-block-start: clamp(10px, 1.5vw, 19px);
+    font-size: clamp(16px, 1.34vw, 19px);
+  }
+
+  #grecho-v3-main.b6-topic--technical [data-b6-reading-r3] .r4-hero-content .r2-hero-heading p {
+    color: var(--b1-ink);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r3-review-paths {
+    padding-block: clamp(16px, 2vw, 27px) 0;
+    border-block-end: 0;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-opening-utilities {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 5px 20px;
+    width: min(1440px, calc(100% - 2 * var(--b1-gutter)));
+    margin-inline: auto;
+    padding-block: 11px 0;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-opening-utilities :is(.r2-article-meta, .r2-language-status) {
+    min-inline-size: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-opening-utilities .b4-container {
+    width: 100%;
+    padding-block: 0;
+    gap: 4px;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-opening-utilities .r2-language-status {
+    max-inline-size: 35rem;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-opening-utilities .r3-language-disclosure > summary {
+    padding-block-start: 4px;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r3-opening-answer {
+    padding-block: clamp(14px, 2.1vw, 24px);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #grecho-v3-main [data-b6-reading-r3] header[data-r4-hero] {
+    --r4-photo-protection: linear-gradient(90deg, rgb(253 250 245 / 98%), rgb(253 250 245 / 96%) 35%, rgb(253 250 245 / 88%) 52%, rgb(253 250 245 / 52%) 68%, transparent 93%);
+  }
+
+  #grecho-v3-main.b6-topic--resource [data-b6-reading-r3] header[data-r4-hero] {
+    --r4-photo-protection: linear-gradient(90deg, rgb(249 248 244 / 98%), rgb(249 248 244 / 96%) 36%, rgb(249 248 244 / 91%) 53%, rgb(249 248 244 / 58%) 68%, transparent 94%);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-hero-content .r2-hero-heading {
+    inline-size: min(580px, 74%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #grecho-v3-main [data-b6-reading-r3] header[data-r4-hero] {
+    --r4-photo-focus: 66% center;
+    --r4-clearance: clamp(94px, 16vw, 118px);
+    --r4-photo-protection: linear-gradient(180deg, rgb(253 250 245 / 98%), rgb(253 250 245 / 96%) 38%, rgb(253 250 245 / 89%) calc(100% - var(--r4-clearance) - 28px), rgb(253 250 245 / 74%) calc(100% - var(--r4-clearance) + 7px), rgb(253 250 245 / 27%) calc(100% - var(--r4-clearance) / 2), transparent 99%);
+    min-block-size: 0;
+    padding-block: 22px var(--r4-clearance);
+  }
+
+  #grecho-v3-main.b6-topic--resource [data-b6-reading-r3] header[data-r4-hero] {
+    --r4-photo-focus: 49% center;
+    --r4-photo-protection: linear-gradient(180deg, rgb(249 248 244 / 98%), rgb(249 248 244 / 96%) 38%, rgb(249 248 244 / 82%) 53%, rgb(249 248 244 / 39%) 70%, rgb(249 248 244 / 8%) 87%, transparent 98%);
+    padding-block-end: clamp(103px, 18vw, 135px);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-hero-content .r2-hero-heading {
+    inline-size: 100%;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] [data-r4-hero] h1 {
+    font-size: clamp(29px, 8vw, 36px);
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] .r4-opening-utilities {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media print {
+  #grecho-v3-main [data-b6-reading-r3] #review-brief .r3-action-pair {
+    display: block;
+    margin-block: 8pt;
+    break-inside: avoid;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] #review-brief .r3-action-pair .b1-button {
+    display: block;
+    min-block-size: 0;
+    padding: 4pt 0;
+    border: 0;
+    background: transparent;
+    color: var(--b1-ink);
+    font: inherit;
+    text-align: start;
+    text-decoration: underline;
+  }
+
+  #grecho-v3-main [data-b6-reading-r3] #review-brief .r3-action-pair .b1-button > span[aria-hidden] {
+    display: none;
+  }
+}

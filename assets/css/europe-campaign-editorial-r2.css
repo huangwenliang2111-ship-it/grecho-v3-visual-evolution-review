@@ -1,0 +1,602 @@
+/* Campaign variant of the accepted GRECHO Gallery components. */
+#main-content.grecho-europe-campaign {
+  --campaign-canvas: #f4f5f5;
+  --campaign-ice: #d3e2ff;
+  --campaign-ink: var(--b7-reading-ink);
+  --campaign-copy: var(--b7-copy);
+  --campaign-line: var(--b7-line);
+  --campaign-band: clamp(48px, 6.2vw, 92px);
+  --campaign-gutter: clamp(16px, 5vw, 72px);
+  --campaign-gap: clamp(22px, 3vw, 44px);
+}
+
+#main-content.grecho-europe-campaign .campaign-container {
+  inline-size: calc(100% - 2 * var(--campaign-gutter));
+  max-inline-size: 1296px;
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+#main-content.grecho-europe-campaign .campaign-section {
+  padding-block: var(--campaign-band);
+  scroll-margin-block-start: 118px;
+}
+
+#main-content.grecho-europe-campaign .campaign-section :is(h2, h3) {
+  margin: 0;
+  color: var(--campaign-ink);
+}
+
+#main-content.grecho-europe-campaign .campaign-section h2 {
+  max-inline-size: 28ch;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 710;
+  line-height: 1.1;
+  letter-spacing: -.035em;
+}
+
+#main-content.grecho-europe-campaign .campaign-section h3 {
+  font-size: clamp(19px, 1.6vw, 25px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-section, .campaign-closing) h2 em {
+  font-style: normal;
+}
+
+#main-content.grecho-europe-campaign .campaign-section p:not(.campaign-eyebrow) {
+  max-inline-size: 67ch;
+  color: var(--campaign-copy);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#main-content.grecho-europe-campaign .campaign-eyebrow {
+  margin-block: 0 12px;
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.4;
+  letter-spacing: .025em;
+}
+
+#main-content.grecho-europe-campaign .campaign-section .campaign-eyebrow {
+  color: var(--b7-brand);
+}
+
+#main-content.grecho-europe-campaign .campaign-hero {
+  min-block-size: clamp(540px, 46vw, 690px);
+  padding-block: clamp(48px, 7vw, 96px);
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.85fr) minmax(260px, .85fr);
+  align-items: end;
+  gap: var(--campaign-gap);
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__overlay {
+  background: linear-gradient(90deg, #102948 0%, rgb(14 37 66 / 90%) 42%, rgb(14 37 66 / 50%) 100%);
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__copy {
+  max-inline-size: 50rem;
+}
+
+#main-content.grecho-europe-campaign .campaign-hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(35px, 4.15vw, 61px);
+  font-weight: 760;
+  line-height: 1.05;
+  letter-spacing: -.042em;
+  text-wrap: balance;
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__nowrap {
+  white-space: nowrap;
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__lede {
+  max-inline-size: 62ch;
+  margin-block: 20px 0;
+  font-size: clamp(16px, 1.32vw, 20px);
+  line-height: 1.55;
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__context {
+  padding: clamp(16px, 2vw, 28px);
+  border: 1px solid rgb(211 226 255 / 44%);
+  border-radius: 12px;
+  background: rgb(16 41 72 / 74%);
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__markets {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+#main-content.grecho-europe-campaign .campaign-hero__caption {
+  margin-block: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#main-content.grecho-europe-campaign .b6-language-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+#main-content.grecho-europe-campaign .b6-language-links > * {
+  justify-content: center;
+  min-block-size: var(--b7-target);
+  padding: 6px;
+  border-color: rgb(255 255 255 / 55%);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+#main-content.grecho-europe-campaign .b6-language-links [aria-current],
+#main-content.grecho-europe-campaign .b6-language-links a:hover {
+  background: rgb(255 255 255 / 18%);
+}
+
+#main-content.grecho-europe-campaign .campaign-actions {
+  grid-template-columns: repeat(2, minmax(0, 240px));
+  grid-auto-flow: row;
+  gap: 12px;
+  max-inline-size: 492px;
+  margin-block: 26px 0;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-actions > a,.campaign-closing .campaign-button,.campaign-pill-link) {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-block-size: var(--b7-action-height);
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: var(--b7-action-radius);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-actions .campaign-button,.campaign-closing .campaign-button) {
+  background: white;
+  color: #142e4d;
+}
+
+#main-content.grecho-europe-campaign .campaign-actions .campaign-text-link {
+  border-color: rgb(255 255 255 / 72%);
+  background: transparent;
+  color: white;
+}
+
+#main-content.grecho-europe-campaign .campaign-hero :is(a, button):focus-visible,
+#main-content.grecho-europe-campaign .campaign-closing a:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-actions .campaign-button,.campaign-closing .campaign-button):hover {
+  background-color: #e7efff;
+}
+
+#main-content.grecho-europe-campaign .campaign-actions .campaign-text-link:hover {
+  background-color: rgb(255 255 255 / 14%);
+}
+
+#main-content.grecho-europe-campaign .campaign-scope {
+  padding-block: clamp(36px, 4vw, 62px);
+  border-color: var(--campaign-line);
+}
+
+#main-content.grecho-europe-campaign .campaign-scope__inner {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+  gap: var(--campaign-gap);
+  align-items: center;
+}
+
+#main-content.grecho-europe-campaign .campaign-scope__qualification {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: clamp(18px, 2.5vw, 34px);
+  border-inline-start: 3px solid var(--b7-brand);
+  background: #eef4ff;
+}
+
+#main-content.grecho-europe-campaign .campaign-scope__qualification p {
+  margin: 0;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-scope__icon,.campaign-why__indicator > span,
+  .campaign-card-pictogram,.campaign-application-card__badge,.campaign-process-card__pictogram) svg {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  fill: none;
+  stroke: var(--b7-brand);
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-why__indicator > span,.campaign-card-pictogram,
+  .campaign-application-card__badge,.campaign-process-card__pictogram) {
+  flex: none;
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+#main-content.grecho-europe-campaign #why,
+#main-content.grecho-europe-campaign .campaign-process {
+  background: var(--campaign-canvas);
+}
+
+#main-content.grecho-europe-campaign .campaign-process {
+  --b1-blue: var(--b7-brand);
+  --b1-copy: var(--campaign-copy);
+}
+
+#main-content.grecho-europe-campaign .campaign-why__layout {
+  grid-template-columns: minmax(0, .87fr) minmax(0, 1.13fr);
+  gap: var(--campaign-gap);
+}
+
+#main-content.grecho-europe-campaign .campaign-why__visual img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: 8px;
+}
+
+#main-content.grecho-europe-campaign .campaign-why__indicators {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-block: var(--campaign-gap);
+  padding-block: 20px;
+  border-block: 1px solid var(--campaign-line);
+}
+
+#main-content.grecho-europe-campaign .campaign-why__indicator {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--campaign-ink);
+}
+
+#main-content.grecho-europe-campaign .campaign-why__indicator > div {
+  display: grid;
+  gap: 4px;
+}
+
+#main-content.grecho-europe-campaign .campaign-value-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 1.8vw, 24px);
+  margin: 0;
+}
+
+#main-content.grecho-europe-campaign .campaign-value-card {
+  gap: 8px;
+  padding: clamp(18px, 2.3vw, 32px);
+  border: 0;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+#main-content.grecho-europe-campaign .campaign-value-card:first-child {
+  background: var(--campaign-ice);
+}
+
+#main-content.grecho-europe-campaign .campaign-value-card p {
+  margin: 0;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-card-number,.campaign-card-kicker,.campaign-process-card__number) {
+  color: var(--b7-brand);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+#main-content.grecho-europe-campaign .campaign-application-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 56px) var(--campaign-gap);
+  margin-block-start: clamp(26px, 4vw, 50px);
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-application-card,.campaign-process-card) {
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-application-card__image,.campaign-process-card__image) {
+  display: block;
+  margin: 0;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-application-card__image,.campaign-process-card__image) img {
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: 6px;
+  background: var(--campaign-canvas);
+  object-fit: contain;
+}
+
+#main-content.grecho-europe-campaign .campaign-application-card__image img {
+  aspect-ratio: 1.68;
+}
+
+#main-content.grecho-europe-campaign .campaign-application-card__body {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  gap: 8px 10px;
+  padding: clamp(16px, 1.6vw, 24px) 0 0;
+}
+
+#main-content.grecho-europe-campaign .campaign-application-card__body > :is(h3, a) {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-application-card__body .campaign-text-link,.campaign-floating-cta) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-block-size: var(--b7-target);
+  color: var(--b7-brand);
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.35;
+  text-underline-offset: .18em;
+}
+
+#main-content.grecho-europe-campaign .campaign-inline-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  margin-block-start: var(--campaign-gap);
+  padding-block-start: 18px;
+  border-block-start: 1px solid var(--campaign-line);
+}
+
+#main-content.grecho-europe-campaign .campaign-pill-link {
+  color: white;
+  background: var(--b7-brand);
+}
+
+#main-content.grecho-europe-campaign .campaign-pill-link:hover {
+  background-color: #143a82;
+}
+
+#main-content.grecho-europe-campaign .campaign-buyers {
+  background: #eef4ff;
+}
+
+#main-content.grecho-europe-campaign .campaign-buyers__layout {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: var(--campaign-gap);
+}
+
+#main-content.grecho-europe-campaign .campaign-buyers .campaign-form-promise {
+  display: grid;
+  gap: 8px;
+  margin-block: 22px 0;
+  color: var(--campaign-copy);
+}
+
+#main-content.grecho-europe-campaign .campaign-buyers .campaign-form-promise strong {
+  color: var(--campaign-ink);
+}
+
+#main-content.grecho-europe-campaign .campaign-buyers__clauses {
+  display: grid;
+  row-gap: 14px;
+}
+
+#main-content.grecho-europe-campaign .campaign-buyers__clauses > span {
+  display: block;
+  padding-block: 15px;
+  border-top: 1px solid #b4c7e5;
+  color: var(--campaign-copy);
+  line-height: 1.55;
+}
+
+#main-content.grecho-europe-campaign .campaign-buyers__clauses b {
+  color: var(--campaign-ink);
+}
+
+#grecho-v3-main #main-content.grecho-europe-campaign .campaign-process-grid[data-b3-ready] {
+  grid-template-columns: none;
+  margin-block: 16px 0;
+  padding-inline: 1px;
+}
+
+#grecho-v3-main #main-content.grecho-europe-campaign .campaign-process-grid:not([data-b3-ready]) {
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: visible;
+  scroll-snap-type: none;
+}
+
+#main-content.grecho-europe-campaign .campaign-process-card__body {
+  padding: 16px 0 0;
+  gap: 8px;
+}
+
+#main-content.grecho-europe-campaign .campaign-process-card__body p {
+  margin: 0;
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-support__layout,.campaign-requirement__layout,.campaign-faq__layout) {
+  grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+  gap: var(--campaign-gap);
+}
+
+#main-content.grecho-europe-campaign :is(.campaign-support-list,.campaign-faq-list) {
+  border-top: 1px solid var(--campaign-line);
+}
+
+#main-content.grecho-europe-campaign .campaign-support-item {
+  display: grid;
+  grid-template-columns: 1.25em minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  padding-block: 18px;
+  border-color: var(--campaign-line);
+}
+
+#main-content.grecho-europe-campaign .campaign-support-icon {
+  color: var(--b7-brand);
+}
+
+#main-content.grecho-europe-campaign .campaign-requirement {
+  background: var(--campaign-canvas);
+}
+
+#main-content.grecho-europe-campaign .campaign-requirement__intro {
+  padding-inline-start: clamp(12px, 1.7vw, 24px);
+  border-inline-start: 3px solid var(--b7-brand);
+}
+
+#main-content.grecho-europe-campaign .campaign-form-shell {
+  padding: clamp(14px, 2.4vw, 36px);
+  border-color: var(--campaign-line);
+  border-radius: 12px;
+}
+
+#main-content.grecho-europe-campaign .campaign-closing {
+  padding-block: clamp(36px, 5vw, 76px);
+  background: var(--campaign-canvas);
+}
+
+#main-content.grecho-europe-campaign .campaign-closing__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "label action" "title action" "copy action";
+  align-items: center;
+  column-gap: 24px;
+  max-inline-size: none;
+  padding: clamp(24px, 4vw, 58px);
+  border-radius: 16px;
+  background: #17395d;
+  text-align: start;
+}
+
+#main-content.grecho-europe-campaign .campaign-closing__inner .campaign-eyebrow { grid-area: label; }
+#main-content.grecho-europe-campaign .campaign-closing__inner p:not(.campaign-eyebrow) { grid-area: copy; margin-block: 12px 0; }
+#main-content.grecho-europe-campaign .campaign-closing__inner .campaign-button { grid-area: action; inline-size: min(100%, 240px); }
+
+#main-content.grecho-europe-campaign .campaign-closing__inner h2 {
+  grid-area: title;
+  margin: 0;
+  color: white;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 710;
+  line-height: 1.1;
+}
+
+#main-content.grecho-europe-campaign .campaign-floating-cta {
+  margin-inline: max(var(--campaign-gutter), calc((100% - 1296px) / 2));
+}
+#main-content.grecho-europe-campaign .campaign-floating-cta__icon { order: 1; }
+#main-content.grecho-europe-campaign .campaign-floating-cta__mobile { display: none; }
+
+@media (max-width: 767px) {
+  #main-content.grecho-europe-campaign :is(.campaign-hero__inner,.campaign-scope__inner,.campaign-why__layout,
+    .campaign-why__indicators,.campaign-application-grid,.campaign-buyers__layout,.campaign-support__layout,
+    .campaign-requirement__layout,.campaign-faq__layout) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #main-content.grecho-europe-campaign .campaign-hero {
+    min-block-size: 0;
+  }
+
+  #main-content.grecho-europe-campaign .campaign-hero h1 {
+    font-size: clamp(30px, 7vw, 47px);
+    text-wrap: initial;
+  }
+
+  #main-content.grecho-europe-campaign .campaign-hero__overlay {
+    background: rgb(12 35 63 / 82%);
+  }
+
+  #main-content.grecho-europe-campaign .campaign-closing__inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "label" "title" "copy" "action";
+  }
+
+  #main-content.grecho-europe-campaign .campaign-closing__inner .campaign-button {
+    margin-block-start: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-content.grecho-europe-campaign :is(.campaign-actions,.campaign-value-grid) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #grecho-v3-main #main-content.grecho-europe-campaign .campaign-process-grid:not([data-b3-ready]) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #main-content.grecho-europe-campaign .campaign-floating-cta__desktop { display: none; }
+  #main-content.grecho-europe-campaign .campaign-floating-cta__mobile { display: inline; }
+}
+
+@media print {
+  #main-content.grecho-europe-campaign :is(.campaign-hero,.campaign-closing,.campaign-closing__inner) {
+    min-block-size: 0;
+    padding-block: 16px;
+    background: white;
+  }
+
+  #main-content.grecho-europe-campaign :is(.campaign-hero,.campaign-closing) :is(h1,h2,p,a) {
+    color: var(--campaign-ink);
+  }
+
+  #main-content.grecho-europe-campaign :is(.campaign-hero__overlay,.campaign-process [data-b3-controls]) {
+    display: none;
+  }
+
+  #main-content.grecho-europe-campaign .campaign-hero__media {
+    position: static;
+    inline-size: min(100%, 28rem);
+  }
+
+  #main-content.grecho-europe-campaign .campaign-hero__context {
+    background-color: white;
+  }
+
+  #grecho-v3-main #main-content.grecho-europe-campaign .campaign-process-grid[data-b3-track] {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  #main-content.grecho-europe-campaign :is(.campaign-process-card,.campaign-application-card) {
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,17 @@
+/* Consumers are de, fr and nl-be /europe-wide-width-facer-initiative/ only. */
+@media screen {
+  #main-content.campaign-europe-r5 .campaign-hero h1 {
+    hyphens: auto;
+  }
+
+  #main-content.campaign-europe-r5 .campaign-hero .campaign-actions .b1-button,
+  #main-content.campaign-europe-r5 .europe-r4-final .t02-final__action {
+    overflow-wrap: normal;
+  }
+
+  @media (max-width: 480px) {
+    #main-content.campaign-europe-r5 .campaign-hero .campaign-actions {
+      max-inline-size: min(100%, 272px);
+    }
+  }
+}

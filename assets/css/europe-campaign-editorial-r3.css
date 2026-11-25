@@ -1,0 +1,255 @@
+/* Europe EN only. The approved R2 reading sequence and B3 rail remain in place. */
+#main-content.campaign-europe-r3 .campaign-hero {
+  min-block-size: clamp(455px, 39vw, 570px);
+  padding-block: clamp(28px, 3.8vw, 54px);
+  background-color: #edf1f4;
+}
+
+#main-content.campaign-europe-r3 .campaign-hero__inner {
+  display: block;
+}
+
+#main-content.campaign-europe-r3 .campaign-hero__overlay {
+  background: linear-gradient(90deg, rgb(17 34 50 / 10%), transparent 52%);
+}
+
+#main-content.campaign-europe-r3 .campaign-hero__media img {
+  object-position: 50% 57%;
+}
+
+#main-content.campaign-europe-r3 .campaign-hero__copy {
+  box-sizing: border-box;
+  inline-size: min(61vw, 608px);
+  max-inline-size: 100%;
+  padding: clamp(22px, 3vw, 42px);
+  border: 1px solid rgb(204 216 228 / 85%);
+  border-radius: 12px;
+  background: rgb(255 255 255 / 96%);
+  box-shadow: 0 8px 28px rgb(23 44 66 / 13%);
+}
+
+#main-content.campaign-europe-r3 .campaign-hero__copy .campaign-eyebrow {
+  margin-block: 0 12px;
+  color: var(--b7-brand);
+  font-size: 12px;
+}
+
+#main-content.campaign-europe-r3 .campaign-hero h1 {
+  color: var(--b7-reading-ink);
+  font-size: clamp(33px, 3.65vw, 53px);
+  font-weight: 740;
+  line-height: 1.055;
+}
+
+#main-content.campaign-europe-r3 .campaign-hero__lede {
+  margin-block-start: 16px;
+  color: var(--b7-reading-copy);
+  font-size: clamp(15px, 1.22vw, 18px);
+  line-height: 1.5;
+}
+
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions {
+  --b1-blue: var(--b7-brand);
+  --b1-copy: var(--b7-reading-copy);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 240px));
+  gap: 12px;
+  margin-block: 21px 0;
+  max-inline-size: 492px;
+}
+
+/* B1 role styles and B7 action tokens match the live Resource hero donor. */
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-button {
+  gap: 12px;
+  min-block-size: var(--b7-action-height);
+  padding: 12px 18px;
+  border-radius: var(--b7-action-radius);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-primary {
+  color: #fff;
+  background-color: var(--b7-brand);
+  border-color: var(--b7-brand);
+}
+
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-secondary {
+  color: var(--b7-action-secondary);
+  background-color: #fff;
+  border-color: var(--b7-action-secondary-border);
+}
+
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-primary:hover {
+  background-color: var(--b7-action-hover);
+  border-color: var(--b7-action-hover);
+}
+
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-secondary:hover {
+  color: #fff;
+  background-color: var(--b7-brand);
+  border-color: var(--b7-brand);
+}
+
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-button:active {
+  color: #fff;
+  background-color: var(--b7-action-pressed);
+  border-color: var(--b7-action-pressed);
+}
+
+#main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-button:focus-visible {
+  outline: 2px solid var(--b7-brand);
+  outline-offset: 3px;
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band {
+  padding-block: 16px;
+  border-block-end: 1px solid var(--b7-line);
+  background: #f4f5f5;
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band__inner {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, auto);
+  gap: 14px 24px;
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band__markets .campaign-hero__markets {
+  margin: 0;
+  color: var(--b7-reading-ink);
+  font-weight: 700;
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band__markets .campaign-hero__caption {
+  margin: 4px 0 0;
+  color: var(--b7-reading-copy);
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band .b6-language-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band .b6-language-links > * {
+  padding-inline: 11px;
+  border-color: #a6b8cb;
+  background-color: #fff;
+  color: var(--b7-brand);
+  font-size: 13px;
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band .b6-language-links [aria-current] {
+  border-color: #9eb5d3;
+  background-color: #e9f0fc;
+  color: var(--b7-reading-ink);
+}
+
+#main-content.campaign-europe-r3 .campaign-context-band .b6-language-links a:hover {
+  background-color: #ecf2fc;
+}
+
+#main-content.campaign-europe-r3 .campaign-support__shortcut {
+  grid-column: 2;
+  margin-block-start: -10px;
+}
+
+#main-content.campaign-europe-r3 .campaign-support__shortcut .campaign-floating-cta {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  #main-content.campaign-europe-r3 .campaign-hero {
+    min-block-size: 0;
+    padding-block: clamp(108px, 35vw, 154px) 24px;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero__media,
+  #main-content.campaign-europe-r3 .campaign-hero__overlay {
+    inset-block-end: auto;
+    block-size: clamp(184px, 56vw, 265px);
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero__media img {
+    object-position: 50% 66%;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero__overlay {
+    background: transparent;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero__copy {
+    inline-size: 100%;
+    padding: clamp(14px, 4.3vw, 24px);
+    background: rgb(255 255 255 / 98%);
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero h1 {
+    font-size: clamp(27px, 7vw, 42px);
+    line-height: 1.08;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero .campaign-actions {
+    margin-block-start: 16px;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-context-band__inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #main-content.campaign-europe-r3 .campaign-support__shortcut {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-content.campaign-europe-r3 .campaign-hero .campaign-actions {
+    grid-template-columns: minmax(0, 1fr);
+    max-inline-size: 240px;
+    gap: 9px;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-context-band .b6-language-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media print {
+  html:has(#main-content.campaign-europe-r3) .grecho-v3-skip,
+  #main-content.campaign-europe-r3 .campaign-support__shortcut .campaign-floating-cta {
+    display: none;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero,
+  #main-content.campaign-europe-r3 .campaign-hero__copy {
+    min-block-size: 0;
+    padding: 16px 0;
+    background: white;
+    box-shadow: none;
+    border: 0;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero__media {
+    block-size: auto;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-hero .campaign-actions .b1-button {
+    color: var(--b7-reading-ink);
+    background: white;
+    border-color: var(--b7-line);
+  }
+
+  #main-content.campaign-europe-r3 .campaign-faq-item {
+    break-inside: avoid;
+  }
+
+  #main-content.campaign-europe-r3 .campaign-faq-item::details-content {
+    display: block;
+    content-visibility: visible;
+    block-size: auto;
+    overflow: visible;
+  }
+}

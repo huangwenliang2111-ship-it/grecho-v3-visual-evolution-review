@@ -1,0 +1,202 @@
+/* Approved Resource Center b1-gallery.css final rules, scoped to the Europe closing section. */
+#grecho-v3-main .europe-r4-final {
+  --b1-blue: #1b4aa1;
+  --b1-section-space: 64px;
+  font: 400 16px/1.6 var(--b7-ui-font);
+}
+@media (min-width: 1024px) {
+  #grecho-v3-main .europe-r4-final { --b1-section-space: 80px; }
+}
+#grecho-v3-main .europe-r4-final .b1-button {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid #8d9fb6;
+  border-radius: 5px;
+  background: #fff;
+  color: var(--b1-blue);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+#grecho-v3-main .europe-r4-final {
+  --solution-cta-image: url("/grecho-v3-visual-evolution-review/assets/media/t02i-solutions/cta-background-1672.webp");
+  margin: 0;
+  padding-block: var(--b1-section-space);
+}
+
+#grecho-v3-main .europe-r4-final .t02-final__panel {
+  background-position: center, center 65%;
+}
+
+#grecho-v3-main .europe-r4-final .b1-final-copy h2,
+#grecho-v3-main .europe-r4-final .b1-final-copy p {
+  color: #fff;
+}
+
+#grecho-v3-main .europe-r4-final .b1-final-copy p {
+  margin-top: 10px;
+  max-width: 54ch;
+}
+
+#grecho-v3-main .europe-r4-final .b1-final-copy .b1-cta-disclosure {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#grecho-v3-main .europe-r4-final .t02-final__actions {
+  width: min(100%,240px);
+}
+
+#grecho-v3-main .europe-r4-final .t02-final__action {
+  width: 100%;
+}
+
+#grecho-v3-main .europe-r4-final .b1-button.b1-primary {
+  background: #fff;
+  border-color: #fff;
+  color: var(--b1-blue);
+}
+
+#grecho-v3-main .europe-r4-final .b1-button.b1-primary:hover {
+  background: #e6eff9;
+}
+
+#grecho-v3-main .europe-r4-final .b1-button.b1-secondary {
+  border-color: #d3e2f6;
+  background: rgba(13,43,89,.88);
+  color: #fff;
+}
+
+#grecho-v3-main .europe-r4-final .b1-button.b1-secondary:hover {
+  background: var(--b1-blue);
+}
+
+#grecho-v3-main .europe-r4-final .b1-button:focus-visible {
+  outline-color: #fff;
+}
+
+
+@media (max-width: 920px) {
+  #grecho-v3-main .europe-r4-final .t02-final__panel {
+    background-image:
+      linear-gradient(180deg, rgba(9,42,96,.53) 0 72%, rgba(9,42,96,.10) 97%),
+      linear-gradient(100deg, rgba(9,42,96,.95), rgba(36,71,131,.71) 48%, rgba(103,118,144,.36)),
+      var(--solution-cta-image);
+    background-position: center, center, center 53%;
+    background-size: auto, auto, cover;
+  }
+}
+@media (max-width: 767px) {
+  #grecho-v3-main .europe-r4-final { --b1-section-space: 48px; }
+  #grecho-v3-main .europe-r4-final .t02-final__panel {
+    background-position: center, center, 46% center;
+  }
+}
+/* Only the English Europe campaign uses these screen overrides. */
+@media screen {
+  #main-content.campaign-europe-r4 .campaign-hero {
+    min-block-size: clamp(470px, 39vw, 610px);
+    padding-block: clamp(52px, 6.5vw, 94px);
+  }
+
+  #main-content.campaign-europe-r4 :is(.campaign-hero__media,.campaign-hero__overlay) {
+    inset: 0;
+    block-size: auto;
+  }
+
+  #main-content.campaign-europe-r4 .campaign-hero__poster,
+  #main-content.campaign-europe-r4 .campaign-hero__media img {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  #main-content.campaign-europe-r4 .campaign-hero__media img {
+    object-fit: cover;
+    object-position: 50% 59%;
+  }
+
+  #main-content.campaign-europe-r4 .campaign-hero__overlay {
+    background: linear-gradient(90deg, rgb(243 246 248 / 96%), rgb(243 246 248 / 94%) 42%, rgb(243 246 248 / 86%) 49%, rgb(243 246 248 / 54%) 60%, rgb(243 246 248 / 12%) 74%, transparent 84%);
+  }
+
+  #main-content.campaign-europe-r4 .campaign-hero__copy {
+    inline-size: min(100%, 580px);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  #main-content.campaign-europe-r4 .campaign-hero__lede {
+    color: var(--b7-reading-ink);
+  }
+
+  #main-content .europe-r4-final .b1-final-copy h2 {
+    font-weight: 650;
+  }
+
+  #main-content .europe-r4-final .b1-final-copy p {
+    margin-block-end: 0;
+    line-height: 1.65;
+  }
+
+  @media (768px <= width <= 1100px) {
+    #main-content.campaign-europe-r4 .campaign-hero__copy {
+      inline-size: min(64%, 480px);
+    }
+
+    #main-content.campaign-europe-r4 .campaign-hero__overlay {
+      background: linear-gradient(90deg, rgb(243 246 248 / 97%), rgb(243 246 248 / 94%) 48%, rgb(243 246 248 / 86%) 61%, rgb(243 246 248 / 58%) 68%, rgb(243 246 248 / 14%) 81%, transparent 94%);
+    }
+  }
+
+  @media (max-width: 767px) {
+    #main-content.campaign-europe-r4 .campaign-hero {
+      min-block-size: 0;
+      padding-block: clamp(142px, 42vw, 258px) 26px;
+    }
+
+    #main-content.campaign-europe-r4 .campaign-hero__media img {
+      object-position: 55% 60%;
+    }
+
+    #main-content.campaign-europe-r4 .campaign-hero__overlay {
+      background: linear-gradient(180deg, transparent 6%, rgb(243 246 248 / 12%) 18%, rgb(243 246 248 / 84%) 35%, rgb(243 246 248 / 94%) 58%, rgb(243 246 248 / 91%));
+    }
+  }
+}
+
+@media print {
+  #main-content .europe-r4-final .t02-final__panel {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    break-inside: avoid;
+  }
+
+  #main-content .europe-r4-final {
+    padding-block: 16px;
+    background: white;
+  }
+
+  #main-content .europe-r4-final .b1-final-copy :is(h2,p) {
+    color: #172c42;
+  }
+
+  #main-content .europe-r4-final .t02-final__actions {
+    margin-block-start: 10px;
+  }
+}
