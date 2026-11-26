@@ -1,7 +1,7 @@
 /* Solutions landing: scoped composition of the frozen V3 components.
    Visual tokens, global navigation, buttons and footer remain code-owned V3. */
 .grecho-solutions{background:var(--grecho-v3-tint)}
-.grecho-solutions-hero{position:relative;background:linear-gradient(100deg,rgba(226,236,253,.88),rgba(218,234,254,.8)),url('../images/solutions/hero-background-1672.webp') center 46%/cover no-repeat}
+.grecho-solutions-hero{position:relative;background:linear-gradient(100deg,rgba(226,236,253,.88),rgba(218,234,254,.8)),url('../images/solutions/hero-background-1672-gallery-opt.webp') center 46%/cover no-repeat}
 .grecho-solutions-hero__grid{display:grid;grid-template-columns:1fr 1.12fr;align-items:center;gap:32px;min-height:490px;padding-block:42px}
 .grecho-solutions-hero h1{max-width:540px;margin-bottom:20px;color:var(--grecho-v3-text);font-size:clamp(38px,3.6vw,50px);font-weight:750;letter-spacing:-.035em;line-height:1.08}
 .grecho-solutions-hero p{margin-bottom:22px;color:#33475d;font-size:16px;line-height:1.55}
@@ -47,7 +47,7 @@
 .grecho-solutions-steps{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0;padding:0}
 .grecho-solutions-steps li{padding:18px;border-radius:var(--grecho-v3-radius-md);background:var(--grecho-v3-tint);font-size:13px;line-height:1.45}
 .grecho-solutions-steps strong{display:block;margin-bottom:5px;color:var(--grecho-v3-brand);font-size:13px;line-height:1.3}
-.grecho-solutions-cta{padding-block:78px;min-height:268px;display:flex;align-items:center;text-align:center;color:#fff;background:linear-gradient(100deg,rgba(18,59,122,.82),rgba(27,74,161,.84)),url('../images/solutions/cta-background-1672.webp') center 50%/cover no-repeat}
+.grecho-solutions-cta{padding-block:78px;min-height:268px;display:flex;align-items:center;text-align:center;color:#fff;background:linear-gradient(100deg,rgba(18,59,122,.82),rgba(27,74,161,.84)),url('../images/solutions/cta-background-1672-gallery-opt.webp') center 50%/cover no-repeat}
 .grecho-solutions-cta h2{margin-bottom:18px;font-size:34px;line-height:1.15;letter-spacing:-.035em}
 .grecho-solutions-cta p{margin:0;color:#e7f2ff;font-size:15px}
 .grecho-solutions-cta__actions{justify-content:center}

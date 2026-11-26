@@ -268,7 +268,7 @@ html:has(#grecho-challenge-C02) body.r13-c02.challenge-gallery-review header.gre
   padding: 58px 56px;
   border: 0;
   border-radius: 16px !important;
-  background: linear-gradient(100deg, rgb(9 42 96 / 95%), rgb(36 71 131 / 85%) 48%, rgb(103 118 144 / 70%)), url("../content-review-20261023/assets/images/product/cta-background-1448.webp") center 35% / cover no-repeat !important;
+  background: linear-gradient(100deg, rgb(9 42 96 / 95%), rgb(36 71 131 / 85%) 48%, rgb(103 118 144 / 70%)), url("../content-review-20261023/assets/images/product/cta-background-1448-gallery-opt.webp") center 35% / cover no-repeat !important;
   box-shadow: 0 22px 50px rgb(16 44 90 / 18%) !important;
   color: #fff;
 }

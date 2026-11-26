@@ -26,7 +26,7 @@ body .grecho-v3-nav .grecho-v3-nav__brand img{width:176px;height:auto;max-width:
 #main :is(#grecho-challenge-C01,#grecho-challenge-C02) .gc-hero :is(h1,p){color:#123b7a}
 #main :is(#grecho-challenge-C01,#grecho-challenge-C02) .gc-hero .gc-pill{border-color:#b9cbe6;background:#f2f7fc}
 /* Existing P01 final-section design language, using its existing local asset. */
-#main .grecho-challenge #technical-discussion{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding:58px 56px;border-radius:16px;background:linear-gradient(100deg,rgba(9,42,96,.95),rgba(36,71,131,.85) 48%,rgba(103,118,144,.70)),url('../../content-review-20261023/assets/images/product/cta-background-1448.webp') center 35%/cover no-repeat;color:#fff}
+#main .grecho-challenge #technical-discussion{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding:58px 56px;border-radius:16px;background:linear-gradient(100deg,rgba(9,42,96,.95),rgba(36,71,131,.85) 48%,rgba(103,118,144,.70)),url('../../content-review-20261023/assets/images/product/cta-background-1448-gallery-opt.webp') center 35%/cover no-repeat;color:#fff}
 #main .grecho-challenge #technical-discussion :is(h2,h3,p,li){color:#fff}
 #main .grecho-challenge #technical-discussion .gc-eyebrow{color:#bdefff}
 #main .grecho-challenge #technical-discussion .gc-cta-copy{max-width:none}

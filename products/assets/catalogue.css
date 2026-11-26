@@ -158,7 +158,7 @@
 .pc-answers details[open] summary::after { background-size: 100% 2px, 2px 0; }
 .pc-answers details p { max-width: 68ch; margin: -2px 24px 20px 0; color: var(--pc-copy); font-size: 16px; line-height: 1.6; }
 .pc-main .pc-final { background: white; }
-.pc-final { --solution-cta-image: url("/grecho-v3-visual-evolution-review/assets/media/t02i-solutions/cta-background-1672.webp"); }
+.pc-final { --solution-cta-image: url("/grecho-v3-visual-evolution-review/assets/media/t02i-solutions/cta-background-1672-gallery-opt.webp"); }
 .pc-final .t02-final__panel { background-position: center, 56% 80%; }
 .pc-main .pc-final a.pc-primary { background: #fff; color: #173660; border-color: #fff; }
 .pc-main .pc-final a.pc-secondary { background: #173660; color: #fff; border-color: #c3cdd6; }

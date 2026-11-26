@@ -33,6 +33,29 @@ const boardPhotos = {
   gypsum: 'application-gypsum-concept.webp'
 };
 const boardPhotoBase = '/grecho-v3-visual-evolution-review/assets/media/r13-r3/';
+const galleryRasterSources = {
+  "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-acoustic-concept.webp": "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-acoustic-concept-gallery-opt.webp",
+  "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-gypsum-concept.webp": "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-gypsum-concept-gallery-opt.webp",
+  "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-mineral-wool-concept.webp": "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-mineral-wool-concept-gallery-opt.webp",
+  "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-pir-pur-concept.webp": "/grecho-v3-visual-evolution-review/assets/media/r13-r3/application-pir-pur-concept-gallery-opt.webp",
+  "assets/images/applications/acoustic-2.webp": "assets/images/applications/acoustic-2-gallery-opt.webp",
+  "assets/images/applications/acoustic-4.webp": "assets/images/applications/acoustic-4-gallery-opt.webp",
+  "assets/images/applications/gypsum-1.webp": "assets/images/applications/gypsum-1-gallery-opt.webp",
+  "assets/images/applications/gypsum-2.webp": "assets/images/applications/gypsum-2-gallery-opt.webp",
+  "assets/images/applications/gypsum-3.webp": "assets/images/applications/gypsum-3-gallery-opt.webp",
+  "assets/images/applications/gypsum-4.webp": "assets/images/applications/gypsum-4-gallery-opt.webp",
+  "assets/images/applications/mineral-wool-1.webp": "assets/images/applications/mineral-wool-1-gallery-opt.webp",
+  "assets/images/applications/mineral-wool-2.webp": "assets/images/applications/mineral-wool-2-gallery-opt.webp",
+  "assets/images/applications/mineral-wool-3.webp": "assets/images/applications/mineral-wool-3-gallery-opt.webp",
+  "assets/images/applications/mineral-wool-4.webp": "assets/images/applications/mineral-wool-4-gallery-opt.webp",
+  "assets/images/applications/pir-pur-1.webp": "assets/images/applications/pir-pur-1-gallery-opt.webp",
+  "assets/images/applications/pir-pur-2.webp": "assets/images/applications/pir-pur-2-gallery-opt.webp",
+  "assets/images/applications/pir-pur-3.webp": "assets/images/applications/pir-pur-3-gallery-opt.webp",
+  "assets/images/applications/pir-pur-4.webp": "assets/images/applications/pir-pur-4-gallery-opt.webp",
+  "assets/images/r1/acoustic-1.webp": "assets/images/r1/acoustic-1-gallery-opt.webp",
+  "assets/images/r1/acoustic-3.webp": "assets/images/r1/acoustic-3-gallery-opt.webp"
+};
+
 const applicationPhotoEdits = {
   'acoustic-1.webp': 'assets/images/r1/acoustic-1.webp',
   'acoustic-3.webp': 'assets/images/r1/acoustic-3.webp'
@@ -41,7 +64,7 @@ const applicationPhotoEdits = {
 function drawBoards(){
   $('boardGrid').innerHTML=keys.filter(k=>k!=='other').map(k=>{const b=BOARDS[k],on=k===current,n=selected[k].size;
     return `<button type="button" class="gsf-board ${on?'is-on':''}" data-id="${k}" role="radio" tabindex="${on?0:-1}" aria-checked="${on}" aria-labelledby="board-title-${k}" aria-describedby="board-description-${k}">
-      <span class="gsf-board__media"><img alt="${esc(b.name)}" loading="lazy" src="${boardPhotoBase}${boardPhotos[k]}"></span>
+      <span class="gsf-board__media"><img alt="${esc(b.name)}" loading="lazy" src="${galleryRasterSources[boardPhotoBase + boardPhotos[k]] || (boardPhotoBase + boardPhotos[k])}"></span>
       <span class="gsf-board__tick" aria-hidden="true">✓</span>
       ${n&&!on?`<span class="gsf-board__badge">${n} selected</span>`:''}
       <span class="gsf-board__body"><span class="gsf-board__title" id="board-title-${k}">${esc(b.short)}</span><span class="gsf-board__desc" id="board-description-${k}">${esc(b.desc)}</span></span>
@@ -110,7 +133,7 @@ function drawApps(){
     return `<label data-photo="${v.img}" class="gsf-app ${on?'is-on':''}">
       <input type="checkbox" data-index="${i}" ${on?'checked':''}>
       <span class="gsf-app__check" aria-hidden="true">✓</span>
-      <span class="gsf-app__media"><img alt="${esc(s)}" loading="lazy" width="1100" height="825" src="${applicationPhotoEdits[v.img] || APP_IMG_BASE + v.img}"></span>
+      <span class="gsf-app__media"><img alt="${esc(s)}" loading="lazy" width="1100" height="825" src="${galleryRasterSources[applicationPhotoEdits[v.img] || APP_IMG_BASE + v.img] || (applicationPhotoEdits[v.img] || APP_IMG_BASE + v.img)}"></span>
       <span class="gsf-app__body"><span class="grecho-v3-kicker">${esc(v.k)}</span><span class="gsf-app__title">${esc(s)}</span>${APP_DESC[s]?`<small>${esc(APP_DESC[s])}</small>`:''}<span class="gsf-app__pick">${on?'✓ Selected':'Select application +'}</span></span>
     </label>`}).join('');
   $('appGrid').querySelectorAll('input').forEach(inp=>inp.onchange=()=>{

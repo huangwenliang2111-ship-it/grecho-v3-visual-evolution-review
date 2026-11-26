@@ -163,3 +163,19 @@ body.r13-home.r61-closeout.r61-editorial main #diagnostic.r13-r4-section + #appl
     width: 100%;
   }
 }
+
+body.r61-closeout main #diagnostic .home-r3-codevelopment__action {
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+  min-height: 44px;
+  margin-block-start: 10px;
+  color: var(--grecho-v3-brand, #1b4aa1) !important;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+body.r61-closeout main #diagnostic .home-r3-codevelopment__action:focus-visible {
+  outline: 2px solid var(--grecho-v3-brand, #1b4aa1);
+  outline-offset: 3px;
+}

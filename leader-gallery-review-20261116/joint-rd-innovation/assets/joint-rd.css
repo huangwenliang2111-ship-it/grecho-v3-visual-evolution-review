@@ -1,0 +1,151 @@
+/* Joint R&D adjustments around reused homepage components. */
+body.joint-rd-page.r61-editorial main #joint-rd-hero::after {
+  background: linear-gradient(90deg, rgba(9, 27, 50, .86) 0%, rgba(9, 27, 50, .60) 42%, rgba(9, 27, 50, .18) 100%) !important;
+}
+body.joint-rd-page main #joint-rd-hero .r13-r3-copy > p {
+  max-width: 44ch;
+  margin: 0;
+  color: #fff !important;
+  font-size: clamp(16px, 1.4vw, 20px);
+}
+body.joint-rd-page main #joint-rd-hero .r13-r3-copy h1 {
+  max-width: 15ch !important;
+}
+body.joint-rd-page main #diagnostic .r61-diagnostic-link {
+  cursor: inherit;
+}
+body.joint-rd-page main #joint-rd-application-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 32px;
+}
+body.joint-rd-page main #joint-rd-application-grid .grecho-v3-solution-card__body {
+  padding: 22px 24px 20px !important;
+}
+body.joint-rd-page main #joint-rd-application-grid .grecho-v3-solution-card > img {
+  display: block;
+}
+body.joint-rd-page main .r61-editorial-lower > .grecho-v3-container {
+  width: min(1400px, calc(100% - (2 * var(--leadership-content-gutter, 48px))));
+}
+body.joint-rd-page main #joint-rd-principles .r61-lower-heading {
+  margin-block-end: 16px;
+}
+body.joint-rd-page main #joint-rd-principles .r61-lower-heading > h2 {
+  margin-block-end: 0;
+}
+body.joint-rd-page main #joint-rd-principles .grecho-v3-support-stack {
+  gap: 0;
+}
+body.joint-rd-page main #joint-rd-principles .grecho-v3-support-card {
+  padding: 20px 0;
+  border: 0;
+  border-top: 1px solid #dadddf;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+body.joint-rd-page main #joint-rd-principles .grecho-v3-support-card:last-child {
+  border-bottom: 1px solid #dadddf;
+}
+body.joint-rd-page main #joint-rd-outcomes .grecho-v3-check-card {
+  min-height: 0;
+}
+body.joint-rd-page main #joint-rd-outcomes .grecho-v3-check-card h3 {
+  margin-block: 0 6px;
+}
+body.joint-rd-page main :is(#joint-rd-principles .grecho-v3-support-card p, #joint-rd-outcomes .grecho-v3-check-card p) {
+  font-size: inherit;
+}
+body.joint-rd-page #grecho-v3-main #joint-rd-project {
+  --solution-cta-image: url("/grecho-v3-visual-evolution-review/leader-gallery-review-20261116/joint-rd-innovation/assets/project-discussion-gallery-opt.webp");
+  scroll-margin-top: 88px;
+}
+body.joint-rd-page #grecho-v3-main #joint-rd-project .b1-final-copy :is(h2, p) {
+  color: #fff !important;
+}
+@media (max-width: 767px) {
+  body.joint-rd-page main #joint-rd-application-grid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 36px;
+  }
+  body.joint-rd-page main #joint-rd-application-grid .grecho-v3-solution-card__body {
+    padding-inline: 20px !important;
+  }
+  body.joint-rd-page.r61-editorial main #joint-rd-hero::after {
+    background: linear-gradient(180deg, rgba(9, 27, 50, .86) 0%, rgba(9, 27, 50, .68) 53%, rgba(9, 27, 50, .18) 100%) !important;
+  }
+  body.joint-rd-page main #joint-rd-hero .r13-r3-picture img {
+    object-position: 62% center;
+  }
+}
+
+/* CTA rules from the shared t02 shell, limited here to the requested panel. */
+/* Gallery's final content gutters, limited to the two reused Solution components. */
+#joint-rd-project {
+  --solution-shell-gutter: clamp(20px, calc(7.619048px + 3.174603vw), 32px);
+}
+@media (min-width: 768px) {
+  #joint-rd-project {
+    --solution-shell-gutter: clamp(32px, calc(-13.714286px + 5.952381vw), 72px);
+  }
+}
+main #joint-rd-project {
+  padding-block: clamp(52px, 6.4vw, 100px);
+  margin: 0;
+  background: #f4f5f5;
+}
+main #joint-rd-project .t02-final__panel {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--solution-shell-gutter));
+  max-width: 1440px;
+  margin-inline: auto;
+}
+main #joint-rd-project .t02-final__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(20px, 3vw, 48px);
+  padding: 58px 56px;
+  border-radius: 16px;
+  background: linear-gradient(100deg, rgba(9,42,96,.95), rgba(36,71,131,.71) 48%, rgba(103,118,144,.36)), var(--solution-cta-image) center 35% / cover no-repeat;
+  background-color: #173660;
+}
+main #joint-rd-project .t02-final__panel h2 {
+  max-width: 27ch;
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  text-align: left;
+  text-wrap: wrap;
+}
+main #joint-rd-project .t02-final__actions { display: grid; gap: 10px; justify-items: start; }
+main #joint-rd-project .t02-final__action {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 18px;
+  border: 1px solid #c3cdd6;
+  border-radius: 4px;
+  color: #173660;
+  background: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+}
+main #joint-rd-project .t02-final__action:hover { background: #e3edf9; color: #102e65; }
+main #joint-rd-project .t02-final__action:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 5px #1b4aa1; }
+@media (max-width: 760px) {
+  main #joint-rd-project .t02-final__panel { padding: 36px 24px; background-position: center, 46% center; }
+  main #joint-rd-project .t02-final__panel h2 { max-width: 22ch; font-size: 26px; line-height: 36px; }
+}
+@media (max-width: 680px) {
+  main #joint-rd-project .t02-final__panel { grid-template-columns: minmax(0,1fr); }
+}
